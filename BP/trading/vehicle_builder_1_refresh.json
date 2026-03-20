@@ -1,0 +1,230 @@
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_hoverboard"
+								},
+								{
+									"item": "simple_vehicles:tire_hoverboard"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:hoverboard"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_container_van"
+								},
+								{
+									"item": "simple_vehicles:tire_container_van"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:container_van"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_double_deck_bus"
+								},
+								{
+									"item": "simple_vehicles:tire_double_deck_bus"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:double_deck_bus"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_hafei_zhongyi"
+								},
+								{
+									"item": "simple_vehicles:tire_hafei_zhongyi"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:hafei_zhongyi"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_VAN_V2"
+								},
+								{
+									"item": "simple_vehicles:tire_VAN_V2"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:van_v2"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_bike"
+								},
+								{
+									"item": "simple_vehicles:tire_bike"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:bike"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_century_luxury"
+								},
+								{
+									"item": "simple_vehicles:tire_century_luxury"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:century"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_motor"
+								},
+								{
+									"item": "simple_vehicles:tire_motor"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:motor_bike"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_volt_bike"
+								},
+								{
+									"item": "simple_vehicles:tire_volt_bike"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:volt_bike"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_scooter_A"
+								},
+								{
+									"item": "simple_vehicles:tire_scooter_A"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:scooter"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						}
+					]
+				}
+			]
+		}
+	]
+}

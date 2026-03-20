@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_fire_truck242"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" P ",
+			"PIP",
+			" P "
+		],
+		"key": {
+			"P": {
+				"item": "minecraft:light_gray_concrete"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_fire_truck"
+			}
+		]
+	}
+}

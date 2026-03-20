@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seat_hyundai_starex"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"St",
+			"SS",
+			"HH"
+		],
+		"key": {
+			"t": {"item": "minecraft:gray_carpet"},
+			"S": {
+				"item": "minecraft:wool",
+				"data": 6
+			},
+			"H": {
+				"item": "minecraft:planks",
+				"data": 3
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_hyundai_starex"
+			}
+		]
+	}
+}

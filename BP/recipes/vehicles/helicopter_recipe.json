@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:helicopter_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"STS",
+			" B",
+			"A A"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:iron_ingot"
+			},
+			"T": {
+				"item": "simple_vehicles:gyroplane_blade"
+			},
+			"B": {
+				"item": "simple_vehicles:body_helicopter"
+			},
+			"A": {
+				"item": "simple_vehicles:landing_skid_helicopter"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:helicopter_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

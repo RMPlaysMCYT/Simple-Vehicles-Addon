@@ -1,0 +1,69 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ambulance",
+			"materials": {
+				"default": "witch",
+				"ambu_lights": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/ambulance",
+				"ambu_lights": "textures/entity/vehi_lights/ambu_lights"
+			},
+			"geometry": {
+				"default": "geometry.ambulance",
+				"ambu_lights": "geometry.ambu_lights"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 0
+			},
+			"sound_effects": {
+				"ambulance.wiper": "simple_vehicles.ambulance.wiper",
+				"ambulance_door_open": "simple_vehicles.ambulance.open",
+				"ambulance_door_close": "simple_vehicles.ambulance.close"
+			},
+			"animations": {
+				"move": "animation.ambulance.move",
+				"idle": "animation.ambulance.idle",
+				"movereverse": "animation.ambulance.movereverse",
+				"move_mechanic": "controller.animation.ambulance.move_mechanic",
+				"turn": "animation.ambulance.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.ambulance.doors_idle",
+				"open": "animation.simple_vehicles.ambulance.open",
+				"close": "animation.simple_vehicles.ambulance.close",
+				"close2": "animation.simple_vehicles.ambulance.close2",
+				"door_mech": "controller.animation.ambulance.door_mechanica_v2",
+				"wiper": "animation.simple_vehicles.ambulance.wiper",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"render_controllers": [
+				"controller.render.ambulance"
+			],
+			"scripts": {
+				"pre_animation": [
+					"variable.moving_veh = query.modified_distance_moved;",
+					"variable.new_move_mechanic = variable.moving_veh * 25;",
+					"variable.new_move_mechreve = variable.moving_veh * -25;"
+				],
+				"animate": [
+					"general",
+					"door_mech",
+					"v_turn",
+					"move_mechanic",
+					{
+						"wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"
+					}
+				]
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

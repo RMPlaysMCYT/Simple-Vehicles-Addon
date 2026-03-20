@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:opel_astral",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/opel_astra"
+			},
+			"geometry": {
+				"default": "geometry.opel_astra"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 36
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.opel_astra.move",
+				"turn": "animation.opel_astra.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.corolla.door_idle",
+				"close": "animation.simple_vehicles.opel_astra.close",
+				"close2": "animation.simple_vehicles.opel_astra.close2",
+				"open": "animation.simple_vehicles.opel_astra.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"general",
+					"door_mech",
+					"general2"
+				]
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+			"sound_effects": {
+				"opel_astra_door_open": "simple_vehicles.auv_car.open",
+				"opel_astra_door_close": "simple_vehicles.auv_car.close"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

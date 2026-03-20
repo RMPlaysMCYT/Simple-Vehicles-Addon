@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:body_ae86",
+      "render_controllers": ["controller.render.body_3d_item"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/ae86"
+      },
+      "geometry": {
+        "default": "geometry.ae86"
+      },
+      "animations": {
+        "first_person_hold": "animation.body_ae86.first_person_hold2",
+        "third_person_hold": "animation.body_ae86.third_person_hold2"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

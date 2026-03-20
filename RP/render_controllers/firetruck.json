@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.firetruck_lights": {
+			"part_visibility": [
+				{
+					"*":true
+				},
+				{
+					"firetruck_lights": "query.is_saddled"
+				}
+			],
+			"geometry": "Geometry.firetruck_lights",
+			"materials": [
+				{
+					"*":"Material.default"
+				},
+				{
+					"firetruck_lights": "Material.firetruck_lights"
+				}
+			],
+			"textures": [
+				"Texture.firetruck_lights"
+			]
+		},
+		"controller.render.firetruck": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		}
+	}
+}

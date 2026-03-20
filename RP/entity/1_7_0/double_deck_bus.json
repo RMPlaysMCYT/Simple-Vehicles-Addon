@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:double_deck_bus",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/doubledeck_bus",
+				"white": "textures/entity/doubledeck_bus/white",
+				"orange": "textures/entity/doubledeck_bus/orange",
+				"magenta": "textures/entity/doubledeck_bus/magenta",
+				"light_blue": "textures/entity/doubledeck_bus/light_blue",
+				"yellow": "textures/entity/doubledeck_bus/yellow",
+				"lime": "textures/entity/doubledeck_bus/lime",
+				"pink": "textures/entity/doubledeck_bus/pink",
+				"gray": "textures/entity/doubledeck_bus/gray",
+				"silver": "textures/entity/doubledeck_bus/silver",
+				"cyan": "textures/entity/doubledeck_bus/cyan",
+				"purple": "textures/entity/doubledeck_bus/purple",
+				"blue": "textures/entity/doubledeck_bus/blue",
+				"brown": "textures/entity/doubledeck_bus/brown",
+				"green": "textures/entity/doubledeck_bus/green",
+				"red": "textures/entity/doubledeck_bus/red"
+			},
+			"geometry": {
+				"default": "geometry.double_deck_bus"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 49
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"turn": "animation.double_deck_bus.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.double_deck_bus.doors_idle",
+				"close": "animation.simple_vehicles.double_deck_bus.close",
+				"close2": "animation.simple_vehicles.double_deck_bus.close2",
+				"open": "animation.simple_vehicles.double_deck_bus.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general2",
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general",
+					"door_mech"
+				]
+			},
+			"render_controllers": [
+				"controller.render.van_v2"
+			],
+      		"sound_effects": {
+        		"double_deck_bus_door_open": "simple_vehicles.bus_v2.open",
+        		"double_deck_bus_door_close": "simple_vehicles.bus_v2.close"
+      		}
+		}
+	}
+}

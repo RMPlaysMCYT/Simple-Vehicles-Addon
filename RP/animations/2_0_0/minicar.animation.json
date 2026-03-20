@@ -1,0 +1,111 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles_minicar.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "minicar_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles_minicar.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "minicar_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles_minicar.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "minicar_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles_minicar.ups": {
+			"loop": true,
+			"bones": {
+				"minicar_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * 1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_minicar.downs": {
+			"loop": true,
+			"bones": {
+				"minicar_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * -1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_minicar.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

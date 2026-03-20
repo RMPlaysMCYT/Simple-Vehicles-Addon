@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:beetrpack",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehicles_beetrpack",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

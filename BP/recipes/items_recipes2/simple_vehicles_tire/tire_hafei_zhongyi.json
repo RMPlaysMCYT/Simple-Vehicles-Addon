@@ -1,0 +1,36 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tire_hafei_zhongyi"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"rIr",
+			"WBW"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"r": {"item": "minecraft:redstone"},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_hafei_zhongyi",
+				"count": 4
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:small_engine recipe"
+        },
+        "ingredients": [
+            {
+                "item": "minecraft:iron_ingot"
+            },
+            {
+                "item": "minecraft:wool"
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:small_engine"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

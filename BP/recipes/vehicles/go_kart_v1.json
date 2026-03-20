@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:go_kart_v1"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"ASA"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:go_kart_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_bike"
+			},
+			"S": {
+				"item": "minecraft:oak_slab"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:go_kart_withoutnumbers_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

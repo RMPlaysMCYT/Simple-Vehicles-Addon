@@ -1,0 +1,23 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.simveh_biplane.fly": {
+			"states": {
+				"default": {
+					"animations": ["land"],
+					"transitions": [
+						{"fly": "!query.is_on_ground"}
+					],
+					"blend_via_shortest_path": true
+				},
+				"fly": {
+					"animations": ["fly"],
+					"transitions": [
+						{"default": "!query.is_on_ground"}
+					],
+					"blend_transition": 0.45
+				}
+			}
+		}
+	}
+}

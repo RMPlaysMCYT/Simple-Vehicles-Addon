@@ -1,0 +1,265 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:modern_jeep_ph",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:vehicle": {
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+          "seat_count": 5,
+          "crouching_skip_interact": false,
+          "family_types": ["player"],
+          "interact_text": "Drive",
+          "pull_in_entities": true,
+          "seats": [
+            {
+              "position": [0.5, 0.5, 0.45]
+            },
+            {
+              "position": [-0.5, 0.5, 0.45]
+            },
+            {
+              "position": [-0.5, 0.5, -0.65]
+            },
+            {
+              "position": [0.5, 0.5, -0.65]
+            },
+            {
+              "position": [0.5, 0.5, -1.55]
+            }
+          ]
+        }
+      },
+      "minecraft:horse_saddled": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "operator": "equals",
+                    "value": "remove"
+                  },
+                  {
+                    "test": "hourly_clock_time",
+                    "operator": ">=",
+                    "value": 0
+                  },
+                  {
+                    "test": "hourly_clock_time",
+                    "operator": "<",
+                    "value": 12000
+                  }
+                ]
+              },
+              "event": "sfp:light_off"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "any_of": [
+                      {
+                        "all_of": [
+                          {
+                            "test": "hourly_clock_time",
+                            "operator": ">=",
+                            "value": 12000
+                          },
+                          {
+                            "test": "hourly_clock_time",
+                            "operator": "<",
+                            "value": 24000
+                          }
+                        ]
+                      },
+                      {
+                        "test": "light_level",
+                        "operator": "<",
+                        "value": 8
+                      }
+                    ]
+                  },
+                  {
+                    "test": "has_tag",
+                    "operator": "not",
+                    "value": "remove"
+                  }
+                ]
+              },
+              "event": "sfp:light_on"
+            }
+          ]
+        },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:behavior.player_ride_tamed": {}
+      }
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "simple_vehicles:key_jeepmode",
+            "accepted_items": ["simple_vehicles:key_jeepmode"],
+            "on_equip": {
+              "event": "minecraft:horse_saddled"
+            },
+            "on_unequip": {
+              "event": "minecraft:horse_unsaddled"
+            }
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": ["jeep_modernization"]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:collision_box": {
+        "width": 3,
+        "height": 3
+      },
+      "minecraft:health": {
+        "value": {
+          "range_min": 15,
+          "range_max": 15
+        }
+      },
+      "minecraft:inventory": {
+        "inventory_size": 15,
+        "container_type": "horse",
+        "private": false
+      },
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.1125,
+          "range_max": 0.3375
+        }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/jeep_ph_modern.json"
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": false,
+        "avoid_damage_blocks": true,
+        "is_amphibious": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+             "minecraft:nameable": {         "always_show": false       },
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.4,
+          "range_max": 0.6
+        }
+      },
+      "minecraft:balloonable": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:is_chested": {},
+      "minecraft:physics": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall"
+          }
+        ]
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.1
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 100,
+            "effects": [
+              {
+                "name": "absorption",
+                "chance": 0.8,
+                "duration": 5,
+                "amplifier": 5
+              }
+            ]
+          }
+        ],
+        "force_use": true
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["minecraft:vehicle"]
+        }
+      },
+      "simple_vehicles:remove_vehicle": {
+        "queue_command": {
+          "command": [
+            "tag @s add remove",
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "kill @s"
+          ]
+        }
+      },
+      "minecraft:horse_saddled": {
+        "add": {
+          "component_groups": ["minecraft:horse_saddled"]
+        },
+        "queue_command": {
+          "command": [
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block 13 keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air 0 replace light_block 13",
+            "fill ~-3~3~-3 ~3~4~3 air 0 replace light_block 13",
+            "fill ~-3~-2~2 ~3~4~3 air 0 replace light_block 13",
+            "fill ~-3~-2~-2 ~3~4~-3 air 0 replace light_block 13",
+            "fill ~-3~-2~-3 ~-2~4~3 air 0 replace light_block 13",
+            "fill ~2~-2~-3 ~3~4~3 air 0 replace light_block 13"
+          ]
+        }
+      },
+      "minecraft:horse_unsaddled": {
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        },
+        "remove": {
+          "component_groups": ["minecraft:horse_saddled"]
+        }
+      },
+      "sfp:light_off": {
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        }
+      },
+      "sfp:light_on": {
+        "queue_command": {
+          "command": [
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block 13 keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air 0 replace light_block 13",
+            "fill ~-3~3~-3 ~3~4~3 air 0 replace light_block 13",
+            "fill ~-3~-2~2 ~3~4~3 air 0 replace light_block 13",
+            "fill ~-3~-2~-2 ~3~4~-3 air 0 replace light_block 13",
+            "fill ~-3~-2~-3 ~-2~4~3 air 0 replace light_block 13",
+            "fill ~2~-2~-3 ~3~4~3 air 0 replace light_block 13"
+          ]
+        }
+      }
+    }
+  }
+}

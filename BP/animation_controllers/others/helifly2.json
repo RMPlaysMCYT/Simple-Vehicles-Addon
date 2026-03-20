@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.heli.fly2": {
+			"states": {
+				"flying_v1": {
+					"transitions": [
+						{
+							"flying_v2": "query.has_rider&&!query.is_on_ground&&math.random(1,10)>8"
+						},
+						{
+							"walking_v1": "query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"/function flying_system/helicopter"
+					]
+				},
+				"flying_v2": {
+					"transitions": [
+						{
+							"flying_v1": "query.has_rider&&!query.is_on_ground&&math.random(1,10)>8"
+						}
+					],
+					"on_entry": [
+						"/function flying_system/helicopter",
+						"/function flying_system/helicopter_sound"
+					]
+				},
+				"walking_v1": {
+					"transitions": [
+						{
+							"flying_v1": "!query.is_on_ground&&query.has_rider"
+						},
+						{
+							"walking_v2": "query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"/function flying_function/_walk_helicopter"
+					]
+				},
+				"walking_v2": {
+					"transitions": [
+						{
+							"walking_v1": "math.random(1,10)>8"
+						}
+					]
+				}
+			}
+		}
+	}
+}

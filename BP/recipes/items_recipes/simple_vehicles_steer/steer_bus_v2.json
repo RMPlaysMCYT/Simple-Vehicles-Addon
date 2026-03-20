@@ -1,0 +1,30 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_bus_v230005"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" w ",
+			"wIw",
+			" w "
+		],
+		"key": {
+			"w": {
+				"item": "minecraft:concrete",
+				"data": 13
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_bus_v2"
+			}
+		]
+	}
+}

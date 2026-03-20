@@ -1,0 +1,123 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.truck_cargo.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				},
+				"container_leg0": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				},
+				"container_leg1": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				},
+				"tire0": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				},
+				"tire1": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				}
+			}
+		},
+		"animation.truck_cargo.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": ["-this", "math.max(-30,math.min(30,query.yaw_speed*0.5))", "math.max(-30,math.min(30,query.yaw_speed*0.5))"]
+				},
+				"tire0": {
+					"rotation": ["-this", "math.max(-50,math.min(50,query.yaw_speed*0.5))", "-this"]
+				},
+				"tire1": {
+					"rotation": ["-this", "math.max(-50,math.min(50,query.yaw_speed*0.5))", "-this"]
+				}
+			}
+		},
+		"animation.truck_cargo.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -50, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 50, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "truck1_door_open"
+				}
+			}
+		},
+		"animation.truck_cargo.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, -50, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 50, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "truck1_door_close"
+				}
+			}
+		},
+		"animation.truck_cargo.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, -50, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 50, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "truck1_door_close"
+				}
+			}
+		},
+		"animation.truck_cargo.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

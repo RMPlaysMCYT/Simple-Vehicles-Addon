@@ -1,0 +1,248 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:volt_bike",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"command",
+					"durability",
+					"fuel2",
+					"move",
+					"voltbike_ride"
+				]
+			},
+			"animations": {
+				"command": "controller.animation.vehicle.command",
+				"move": "controller.animation.vehicle.move",
+				"durability": "controller.animation.vehicle.durability",
+				"fuel2": "controller.animation.simple_vehicles.fuel2",
+				"voltbike_ride": "controller.animation.voltbike_ride"
+			}
+		},
+		"component_groups": {
+			"minecraft:corolla": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:gas_nozzle"
+										}
+									]
+								}
+							},
+							"use_item": false
+						},
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:jerry_can"
+										}
+									]
+								}
+							},
+							"use_item": true
+						}
+					]
+				},
+				"minecraft:is_tamed": {},
+				"minecraft:equippable": {
+					"slots": [
+						{
+							"slot": 0,
+							"item": "simple_vehicles:key_volt_bike",
+							"accepted_items": [
+								"simple_vehicles:key_volt_bike"
+							],
+							"on_equip": {
+								"event": "minecraft:donkey_saddled"
+							},
+							"on_unequip": {
+								"event": "minecraft:donkey_unsaddled"
+							}
+						}
+					]
+				},
+				"minecraft:rideable": {
+					"seat_count": 1,
+					"crouching_skip_interact": true,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "Drive",
+					"seats": [
+						{
+							"position": [
+								0,
+								0.5,
+								0
+							]
+						}
+					]
+				}
+			},
+			"minecraft:donkey_saddled": {
+				"minecraft:is_saddled": {},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {}
+			},
+			"simple_vehicles:refuel": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"simple_vehicles:refueled": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "math.min(query.player_level*7,100)"
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"volt_bike",
+					"vehicles",
+					"simple_vehicles"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 3,
+				"height": 1.6
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 15,
+					"range_max": 30
+				}
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:inventory": {
+				"inventory_size": 16,
+				"container_type": "horse"
+			},
+			"minecraft:movement": {
+				"value": 0.15
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_damage_blocks": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:nameable": {
+				"always_show": false,
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:horse.jump_strength": {
+				"value": 0.5
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:balloonable": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 80,
+						"add": {
+							"component_groups": [
+								"minecraft:corolla"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:donkey_saddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:donkey_saddled"
+					]
+				}
+			},
+			"minecraft:donkey_unsaddled": {
+				"remove": {
+					"component_groups": [
+						"minecraft:donkey_saddled"
+					]
+				}
+			},
+			"simple_vehicles:refuel": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			},
+			"simple_vehicles:refuel_re": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refuel"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			}
+		}
+	}
+}

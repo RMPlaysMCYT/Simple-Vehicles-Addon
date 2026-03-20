@@ -1,0 +1,23 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_medium_tire1_recipe"
+        },
+        "pattern": [
+            "TTT",
+            "TRT",
+            "TTT"
+        ],
+        "key": {
+            "T": {"item": "minecraft:gray_concrete"},
+            "R": {"item": "minecraft:redstone"}
+        },
+        "result": {
+            "item": "simple_vehicles:medium_tire1"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

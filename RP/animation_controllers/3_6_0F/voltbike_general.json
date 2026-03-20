@@ -1,0 +1,16 @@
+//Credits to Spiicy_Miata
+//https://mcpedl.com/user/spiicy/
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.volt_bike.general": {
+			"states": {
+				"default": {
+					"animations": [
+						"tilt"
+					]
+				}
+			}
+		}
+	}
+}

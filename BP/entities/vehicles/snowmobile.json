@@ -1,0 +1,157 @@
+{
+  "format_version": "1.18.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:snowmobile",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": ["snowmobile_ride"]
+      },
+      "animations": {
+        "snowmobile_ride": "controller.animation.snowmobile_ride"
+      }
+    },
+    "component_groups": {
+      "minecraft:minecar": {
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": ["player"],
+          "interact_text": "Ride Tank",
+          "seats": {
+            "position": [0, 0.8, -0.49]
+          }
+        }
+      },
+      "minecraft:horse_saddled": {
+        "minecraft:movement": {
+          "value": 0.42
+        },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:behavior.player_ride_tamed": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["tank", "simple_vehicles"]
+      },
+      "minecraft:collision_box": {
+        "width": 2,
+        "height": 2.3
+      },
+      "minecraft:scale": {
+        "value": 0.85
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:health": {
+        "value": {
+          "range_min": 40,
+          "range_max": 40
+        }
+      },
+      "minecraft:navigation.generic": {},
+      "minecraft:inventory": {
+        "container_type": "horse",
+        "inventory_size": 5
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "simple_vehicles:key_snowmobile",
+            "accepted_items": ["simple_vehicles:key_snowmobile"],
+            "on_equip": {
+              "event": "minecraft:horse_saddled",
+              "target": "self"
+            },
+            "on_unequip": {
+              "event": "minecraft:horse_unsaddled",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+             "minecraft:nameable": {         "always_show": false       },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "damage_multiplier": 0,
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/simple_vehicles/tank.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["minecraft:minecar"]
+        }
+      },
+      "minecraft:horse_saddled": {
+        "add": {
+          "component_groups": ["minecraft:horse_saddled"]
+        },
+        "queue_command": {
+          "command": [
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block 13 keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air 0 replace light_block 13",
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~-3 ~-2~4~3 air 0 replace light_block 13",
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
+        }
+      },
+      "minecraft:horse_unsaddled": {
+        "remove": {
+          "component_groups": ["minecraft:horse_saddled"]
+        },
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        }
+      },
+      "simple_vehicles:lights_off": {
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        }
+      },
+      "simple_vehicles:lights_on": {
+        "queue_command": {
+          "command": [
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block 13 keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air 0 replace light_block 13",
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~-3 ~-2~4~3 air 0 replace light_block 13",
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
+        }
+      }
+    }
+  }
+}

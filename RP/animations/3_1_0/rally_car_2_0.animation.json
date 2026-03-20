@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.rally_car_2_0.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wheel0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"wheel2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"wheel3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"wheel1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "arrow_particle",
+					"locator": "vehicles_smoke"
+				},
+				"0.3": {
+					"effect": "arrow_particle",
+					"locator": "vehicles_smoke"
+				},
+				"0.6": {
+					"effect": "arrow_particle",
+					"locator": "vehicles_smoke"
+				},
+				"0.9": {
+					"effect": "arrow_particle",
+					"locator": "vehicles_smoke"
+				}
+			}
+		},
+		"animation.rally_car_2_0.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"wheel0": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				},
+				"wheel1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				}
+			}
+		}
+	}
+}

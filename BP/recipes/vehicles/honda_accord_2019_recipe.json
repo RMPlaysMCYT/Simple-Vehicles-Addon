@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:honda_accord_2019_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_honda_accord_2019"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_honda_accord_2019"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:honda_accord_2019_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

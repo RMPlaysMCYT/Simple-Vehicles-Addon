@@ -1,0 +1,130 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.hyundai_starex.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["query.anim_time * 10", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.anim_time * 10", 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "arrow_particle",
+					"locator": "vehicle_particle"
+				}
+			}
+		},
+		"animation.simple_vehicles.hyundai_starex.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"hatchback": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [127.5, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "hyunstar_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.hyundai_starex.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"hatchback": {
+					"rotation": {
+						"0.0": [127.5, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "hyunstar_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.hyundai_starex.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"hatchback": {
+					"rotation": {
+						"0.0": [127.5, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "hyunstar_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.hyundai_starex.doors_idle": {
+			"loop": true,
+			"bones": {
+				"hatchback": {
+					"rotation": [0, 0, 0]
+				},
+				"door2": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

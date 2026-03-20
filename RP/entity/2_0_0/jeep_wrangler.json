@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:jeep_wrangler",
+			"textures": {
+				"black": "textures/entity/jeep_wrangler/jeep_wrangler_black",
+				"white": "textures/entity/jeep_wrangler/jeep_wrangler_white"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.jeep_wrangler"
+			},
+			"render_controllers": [
+				"controller.render.jeep_wrangler"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 19
+			},
+			"animations": {
+				"move": "animation.jeep_wrangler.move",
+				"wiper": "animation.jeep_wrangler.wiper",
+				"close": "animation.jeep_wrangler.close",
+				"doors_idle": "animation.jeep_wrangler.doors_idle",
+				"open": "animation.jeep_wrangler.open",
+				"close2": "animation.jeep_wrangler.close2",
+				"steer": "animation.rancherogt_sass.turn",
+				"steer_ac": "controller.animation.vehicle.steer",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"steer_ac",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"wiper": "query.is_in_water_or_rain&&query.is_saddled&&query.has_rider"
+					},
+					"door_mechanic"
+				]
+			},
+			"sound_effects": {
+				"jeep_wrangler_door_open": "simple_vehicles.corolla.open",
+				"jeep_wrangler_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.car4x4.setup": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"setup",
+					    {
+                            "wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_player_rider"
+                        }
+					]
+				}
+			}
+		}
+	}
+}

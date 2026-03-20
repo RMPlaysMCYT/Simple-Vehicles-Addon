@@ -1,0 +1,37 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_rally_car_2_0_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "minecraft:wool",
+                "count": 2,
+                "data": 15
+            },
+            {
+                "item": "minecraft:glass",
+                "count": 1
+            },
+            {
+                "item": "minecraft:redstone",
+                "count": 1
+            },
+            {
+                "item": "simple_vehicles:medium_body_part",
+                "count": 1
+            },
+            {
+                "item": "cyan_concrete",
+                "count": 2
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:rally_car_2_0_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

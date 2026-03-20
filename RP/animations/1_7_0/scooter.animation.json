@@ -1,0 +1,75 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scooter.look_at_target": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": [0, "math.max(-1.5,math.min(1.5,query.yaw_speed*0.2))*query.modified_move_speed*5", 0]
+				},
+				"wheel0": {
+					"rotation": [0, "math.max(-1.5,math.min(1.5,query.yaw_speed*0.2))*query.modified_move_speed*5", 0]
+				}
+			}
+		},
+		"animation.scooter.jump": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": ["query.can_power_jump*-25", 0, 0]
+				}
+			}
+		},
+		"animation.scooter.ups": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * 1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.scooter.downs": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * -1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.scooter.setup": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 17.5],
+					"position": [0, 0, 0]
+				},
+				"stick": {
+					"rotation": [0, 90, 40],
+					"position": [0, 1, 0]
+				}
+			}
+		},
+		"animation.scooter.setup2": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0]
+				},
+				"stick": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

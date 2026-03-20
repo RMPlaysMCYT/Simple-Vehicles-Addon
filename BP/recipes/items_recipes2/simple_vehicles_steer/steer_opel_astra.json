@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_opel_astra"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"aBo",
+			"BIB",
+			"vBv"
+		],
+		"key": {
+			"a": {"item": "minecraft:redstone"},
+			"o": {"item": "minecraft:leather"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 7
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"v": {"item": "minecraft:blue_wool"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_opel_astra"
+			}
+		]
+	}
+}

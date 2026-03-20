@@ -1,0 +1,510 @@
+{
+  "format_version": "1.18.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:train_locomotive",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "command",
+          "durability",
+          "fuel",
+          "move"
+        ]
+      },
+      "animations": {
+        "command": "controller.animation.vehicle.command",
+        "move": "controller.animation.vehicle.move",
+        "durability": "controller.animation.vehicle.durability",
+        "fuel": "controller.animation.simple_vehicles.fuel"
+      }
+    },
+    "component_groups": {
+      "simple_vehicles:place_cart": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 1,
+              "max_wait_time": 1,
+              "spawn_entity": "simple_vehicles:train_cart",
+              "single_use": true,
+              "num_to_spawn": 1,
+              "should_leash": true
+            }
+          ]
+        }
+      },
+      "simple_vehicles:car": {
+        "minecraft:is_tamed": {},
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:add_train_cart",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:train_cart_add"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            },
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:jerry_can"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            },
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:gas_nozzle"
+                    }
+                  ]
+                }
+              },
+              "use_item": false
+            },
+            {
+              "swing": true,
+              "interact_text": "action.hint.exit.simple_vehicles:train_locomotive",
+              "on_interact": {
+                "event": "simple_vehicles:activate_towing_mode",
+                "target": "self",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "value": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "minecraft:donkey_saddled": {
+        "minecraft:is_saddled": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {}
+      },
+      "simple_vehicles:towing_mode": {
+        "minecraft:type_family": {
+          "family": [
+            "vehicles",
+            "train_locomotive",
+            "simple_vehicles",
+            "simple_vehicles_addon",
+            "towing_form"
+          ]
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:jerry_can"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            },
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:gas_nozzle"
+                    }
+                  ]
+                }
+              },
+              "use_item": false
+            },
+            {
+              "interact_text": "action.hint.exit.simple_vehicles:train_locomotive.deact",
+              "on_interact": {
+                "event": "simple_vehicles:untowed",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "value": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "minecraft:behavior.send_event": {
+          "priority": 0,
+          "event_choices": [
+            {
+              "min_activation_range": 0.0,
+              "max_activation_range": 64.0,
+              "cooldown_time": 6000.0,
+              "cast_duration": 10000,
+              "particle_color": "#FFB38033",
+              "weight": 3,
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "train_cart"
+                  }
+                ]
+              },
+              "start_sound_event": "cast.spell",
+              "sequence": [
+                {
+                  "base_delay": 0.1,
+                  "event": "simple_vehicles:add_train_towing_mode"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "simple_vehicles:refuel": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:refueled": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "simple_vehicles:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:nameable": {
+        "always_show": false
+      },
+      "minecraft:leashable": {
+        "hard_distance": 10,
+        "max_distance": 20,
+        "soft_distance": 6
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "simple_vehicles:key_train_locomotive",
+            "accepted_items": [
+              "simple_vehicles:key_train_locomotive"
+            ],
+            "on_equip": {
+              "event": "minecraft:donkey_saddled",
+              "target": "self"
+            },
+            "on_unequip": {
+              "event": "minecraft:donkey_unsaddled",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "Drive",
+        "rider_can_interact": true,
+        "crouching_skip_interact": false,
+        "seats": [
+          {
+            "position": [
+              0.0,
+              0.4,
+              -0.2
+            ]
+          }
+        ]
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "swing": true,
+            "interact_text": "action.hint.exit.simple_vehicles:train_locomotive",
+            "on_interact": {
+              "event": "simple_vehicles:activate_towing_mode",
+              "target": "self",
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "simple_vehicles:train_cart_add"
+                  },
+                  {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "value": false
+                  }
+                ]
+              },
+              "event": "simple_vehicles:add_train_cart"
+            },
+            "interact_text": "text.add",
+            "use_item": true,
+            "play_sounds": "armor.equip_chain"
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": [
+          "vehicles",
+          "train_locomotive",
+          "simple_vehicles",
+          "simple_vehicles_addon"
+        ]
+      },
+      "minecraft:collision_box": {
+        "height": 2.5,
+        "width": 2
+      },
+      "minecraft:horse.jump_strength": {
+        "value": 0.3
+      },
+      "minecraft:movement": {
+        "value": 0.35,
+        "max": 0.35
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:inventory": {
+        "inventory_size": 16,
+        "container_type": "horse"
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 100,
+            "effects": [
+              {
+                "name": "absorption",
+                "chance": 0.8,
+                "duration": 5,
+                "amplifier": 5
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": true
+      },
+      "minecraft:push_through": {
+        "value": 0
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player?10:0"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.03
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:can_climb": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/simple_vehicles_train_locomotive.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 80,
+                "add": {
+                  "component_groups": [
+                    "simple_vehicles:car"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:donkey_saddled": {
+        "add": {
+          "component_groups": [
+            "minecraft:donkey_saddled"
+          ]
+        }
+      },
+      "minecraft:donkey_unsaddled": {
+        "remove": {
+          "component_groups": [
+            "minecraft:donkey_saddled"
+          ]
+        }
+      },
+      "simple_vehicles:add_train_cart": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:place_cart"
+          ]
+        }
+      },
+      "simple_vehicles:activate_towing_mode": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:towing_mode"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:car"
+          ]
+        }
+      },
+      "simple_vehicles:untowed": {
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:towing_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "simple_vehicles:car"
+          ]
+        }
+      },
+      "simple_vehicles:refuel": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:refueled"
+          ]
+        }
+      },
+      "simple_vehicles:refuel_re": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:refuel"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:refueled"
+          ]
+        }
+      }
+    }
+  }
+}

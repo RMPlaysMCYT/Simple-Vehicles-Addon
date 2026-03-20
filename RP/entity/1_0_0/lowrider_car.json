@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:car_lowrider",
+			"materials": {
+				"default": "witch",
+				"car_lowrider_lights": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/car_lowrider",
+				"car_lowrider_lights": "textures/entity/vehi_lights/car_lowrider_lights"
+			},
+			"geometry": {
+				"default": "geometry.car_lowrider",
+				"car_lowrider_lights": "geometry.car_lowrider_lights"
+			},
+			"particle_effects": {
+				"arrow_particle": "minecraft:arrow_spell_emitter"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 24
+			},
+			"animations": {
+				"move": "animation.cadillac_dts_2010.move",
+				"turn": "animation.car_lowrider.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.car_lowrider",
+				"controller.render.carlow_lights"
+			],
+			"sound_effects": {
+				"lowrider1_door_open": "simple_vehicles.lowrider1.open",
+				"lowrider1_door_close": "simple_vehicles.lowrider1.close"
+			}
+		}
+	}
+}

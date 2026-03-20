@@ -1,0 +1,1 @@
+execute @a[tag=SimVehCumShot] ~ ~ ~ camera @a set minecraft:free pos ~ ~5 ~-10 rot ~30 ~

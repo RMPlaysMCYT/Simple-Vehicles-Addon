@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:key_monster_truck"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehicles_key_rally_car20",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

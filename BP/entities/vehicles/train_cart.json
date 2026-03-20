@@ -1,0 +1,448 @@
+{
+  "format_version": "1.18.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:train_cart",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "simple_vehicles:unlinked": {},
+      "simple_vehicles:door_close": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:add_train_cart",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:train_cart_add"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            },
+            {
+              "on_interact": {
+                "event": "simple_vehicles:door_open"
+              },
+              "use_item": false,
+              "interact_text": "Open Door"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:place_cart": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 1,
+              "max_wait_time": 1,
+              "spawn_entity": "simple_vehicles:train_cart",
+              "single_use": true,
+              "num_to_spawn": 1,
+              "should_leash": true
+            }
+          ]
+        }
+      },
+      "simple_vehicles:car": {
+        "minecraft:is_tamed": {}
+      },
+      "simple_vehicles:door_open": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_sneaking",
+                      "subject": "player",
+                      "value": true
+                    }
+                  ]
+                },
+                "event": "simple_vehicles:door_close"
+              },
+              "use_item": false,
+              "interact_text": "Close Door"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+          "seat_count": 2,
+          "family_types": [
+            "player",
+            "mob"
+          ],
+          "interact_text": "Drive",
+          "pull_in_entities": true,
+          "crouching_skip_interact": false,
+          "seats": [
+            {
+              "position": [
+                0,
+                0.7,
+                -0.7
+              ]
+            },
+            {
+              "position": [
+                0,
+                0.7,
+                0.7
+              ],
+              "rotate_rider_by": 180
+            }
+          ]
+        }
+      },
+      "simple_vehicles:cart_immobile": {
+        "minecraft:rail_movement": {}
+      },
+      "simple_vehicles:cart_mobile": {
+        "minecraft:navigation.generic": {},
+        "minecraft:movement.basic": {},
+        "minecraft:jump.static": {},
+        "minecraft:movement": {
+          "value": 0.25
+        }
+      },
+      "simple_vehicles:cart_towing": {
+        "minecraft:pushable": {
+          "is_pushable": true
+        },
+        "minecraft:behavior.nearest_prioritized_attackable_target": {
+          "priority": 1,
+          "reselect_targets": false,
+          "target_search_height": 32,
+          "within_radius": 32,
+          "must_see": false,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_leashed",
+                    "subject": "self",
+                    "value": true
+                  },
+                  {
+                    "test": "is_leashed_to",
+                    "subject": "self",
+                    "value": true
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "simple_vehicles"
+                  }
+                ]
+              },
+              "max_dist": 32,
+              "priority": 0
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_leashed",
+                    "subject": "self",
+                    "value": true
+                  },
+                  {
+                    "test": "is_leashed_to",
+                    "subject": "self",
+                    "value": true
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "train_cart"
+                  }
+                ]
+              },
+              "max_dist": 32,
+              "priority": 1
+            }
+          ]
+        },
+        "minecraft:attack": {
+          "damage": 0
+        },
+        "minecraft:behavior.look_at_target": {
+          "look_distance": 32,
+          "priority": 3
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "attack_radius": 32
+        },
+        "minecraft:follow_range": {
+          "value": 32,
+          "max": 32
+        }
+      }
+    },
+    "components": {
+      "minecraft:nameable": {
+        "always_show": false
+      },
+      "minecraft:leashable": {
+        "can_be_stolen": false,
+        "hard_distance": 3,
+        "max_distance": 50,
+        "soft_distance": 2.9,
+        "on_leash": {
+          "event": "simple_vehicles:is_leashed",
+          "target": "self"
+        },
+        "on_unleash": {
+          "event": "simple_vehicles:not_leashed",
+          "target": "self"
+        }
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "simple_vehicles:train_cart_add"
+                  },
+                  {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "value": false
+                  }
+                ]
+              },
+              "event": "simple_vehicles:add_train_cart"
+            },
+            "interact_text": "text.add",
+            "use_item": true,
+            "play_sounds": "armor.equip_chain"
+          },
+          {
+            "on_interact": {
+              "event": "simple_vehicles:door_open"
+            },
+            "use_item": false,
+            "interact_text": "Open Door"
+          }
+        ]
+      },
+      "minecraft:entity_sensor": {
+        "sensor_range": 20,
+        "relative_range": false,
+        "minimum_count": 1,
+        "event_filters": {
+          "all_of": [
+            {
+              "test": "is_leashed_to",
+              "subject": "other",
+              "value": true
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            }
+          ]
+        },
+        "event": "simple_vehicles:unlink"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "vehicle",
+          "train_cart",
+          "simple_vehicles",
+          "simple_vehicles_addon"
+        ]
+      },
+      "minecraft:collision_box": {
+        "height": 2.5,
+        "width": 2
+      },
+      "minecraft:horse.jump_strength": {
+        "value": 0.3
+      },
+      "minecraft:movement": {
+        "value": 0.35,
+        "max": 0.35
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 100,
+            "effects": [
+              {
+                "name": "absorption",
+                "chance": 0.8,
+                "duration": 5,
+                "amplifier": 5
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player?10:0"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.03
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:can_climb": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/simple_vehicles_train_cart.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 80,
+                "add": {
+                  "component_groups": [
+                    "simple_vehicles:car",
+                    "simple_vehicles:door_close"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "simple_vehicles:add_train_cart": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:place_cart"
+          ]
+        }
+      },
+      "simple_vehicles:unlink": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:unlinked"
+          ]
+        }
+      },
+      "simple_vehicles:is_leashed": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:cart_mobile"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:cart_immobile"
+          ]
+        }
+      },
+      "simple_vehicles:not_leashed": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:cart_immobile"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:cart_mobile"
+          ]
+        }
+      },
+      "simple_vehicles:remove_link": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:untagged"
+          ]
+        }
+      },
+      "simple_vehicles:door_open": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:door_open"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:door_close"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "playsound simple_vehicles.ae86.open @p[r=1]"
+          ]
+        }
+      },
+      "simple_vehicles:door_close": {
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:door_open"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "simple_vehicles:door_close"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "playsound simple_vehicles.ae86.close @p[r=1]"
+          ]
+        }
+      },
+      "simple_vehicles:add_train_towing_mode": {
+        "add": {
+          "component_groups": [
+            "simple_vehicles:cart_towing"
+          ]
+        }
+      }
+    }
+  }
+}

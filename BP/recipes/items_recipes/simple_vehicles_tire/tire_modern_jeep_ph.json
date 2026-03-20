@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_modern_jeep_ph_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"sIs",
+			"WBW"
+		],
+		"key": {
+			"s": {"item": "minecraft:redstone"},
+			"B": {
+				"item": "minecraft:gray_terracotta"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {"item": "minecraft:gray_wool"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_modern_jeep_ph",
+				"count": 4
+			}
+		]
+	}
+}

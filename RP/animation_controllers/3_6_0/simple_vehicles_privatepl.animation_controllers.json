@@ -1,0 +1,22 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.simple_vehicles.privatepl.flying": {
+			"initial_state": "landing",
+			"states": {
+				"landing": {
+					"animations": ["landing"],
+					"transitions": [
+						{"flying": "!query.is_on_ground"}
+					]
+				},
+				"flying": {
+					"animations": ["flying"],
+					"transitions": [
+						{"landing": "query.is_on_ground"}
+					]
+				}
+			}
+		}
+	}
+}

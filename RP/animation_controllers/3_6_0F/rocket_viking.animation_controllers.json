@@ -1,0 +1,51 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.simple_vehicles.rocket_viking.flying_ctrlr": {
+			"states": {
+				"default": {
+					"animations": ["landing"],
+					"transitions": [
+						{"flying": "query.is_on_ground == 0"}
+					]
+				},
+				"flying": {
+					"animations": ["flying"],
+					"transitions": [
+						{"default": "query.is_on_ground == 1"}
+					]
+				}
+			}
+		},
+		"controller.animation.simple_vehicles.rocket_viking.door_mech": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["doors_idle"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"close": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.mark_variant == 1"},
+						{"close2": "query.has_player_rider"}
+					]
+				},
+				"close2": {
+					"animations": ["close2"],
+					"transitions": [
+						{"open": "!query.has_player_rider"}
+					]
+				}
+			}
+		}
+	}
+}

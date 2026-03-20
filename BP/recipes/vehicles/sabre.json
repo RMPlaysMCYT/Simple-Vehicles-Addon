@@ -1,0 +1,27 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:sabre"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_sabre"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_sabre"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:sabre_spawn_egg"
+			}
+		]
+	}
+}

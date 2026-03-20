@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.submarine.dive": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{"diving": "(1.0)"}
+					],
+					"on_entry": [
+						"/function diving_system/submarine",
+						"/effect @e [r=1] water_breathing 1 99 true",
+						"/effect @e [r=1] night_vision 1 99 true"
+					]
+				},
+				"diving": {
+					"transitions": [
+						{"default": "query.has_rider && query.is_in_water"}
+					],
+					"on_entry": [
+						"/function diving_system/submarine",
+						"/effect @e [r=1] water_breathing 1 99 true",
+						"/effect @e [r=1] night_vision 1 99 true"
+					]
+				}
+			}
+		}
+	}
+}

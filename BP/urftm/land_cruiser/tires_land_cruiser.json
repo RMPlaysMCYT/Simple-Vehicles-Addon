@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_land_cruiser"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"BIB",
+			"WBW"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:black_concrete"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:black_wool"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_land_cruiser",
+				"count": 4
+			}
+		]
+	}
+}

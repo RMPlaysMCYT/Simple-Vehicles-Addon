@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:private_plane_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM",
+			" R"
+		],
+		"key": {
+			"R": {
+				"item": "simple_vehicles:tire_bus"
+			},
+			"B": {
+				"item": "simple_vehicles:privatepl_body"
+			},
+			"M": {
+				"item": "simple_vehicles:privatepl_wings"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:private_plane_spawn_egg"
+			}
+		]
+	}
+}

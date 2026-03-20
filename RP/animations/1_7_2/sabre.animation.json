@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sabre.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["query.anim_time*10", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.anim_time*10", 0, 0]
+				}
+			}
+		},
+		"animation.sabre.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 40, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -40, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "sabre_door_open"
+				}
+			}
+		},
+		"animation.sabre.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 40, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -40, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "sabre_door_close"
+				}
+			}
+		},
+		"animation.sabre.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 40, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -40, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "sabre_door_close"
+				}
+			}
+		},
+		"animation.sabre.doors_idle": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

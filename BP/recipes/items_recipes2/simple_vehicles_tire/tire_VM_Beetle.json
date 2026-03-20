@@ -1,0 +1,36 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tire_VM_Beetle"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"ISB",
+			"WBW"
+		],
+		"key": {
+			"S": {"item": "minecraft:redstone"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_VM_Beetle",
+				"count": 4
+			}
+		]
+	}
+}

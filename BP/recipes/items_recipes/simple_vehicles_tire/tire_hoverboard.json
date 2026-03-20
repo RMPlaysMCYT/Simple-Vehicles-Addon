@@ -1,0 +1,39 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_hoverboard"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"BRB",
+			"WBW"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"R": {
+				"item": "minecraft:redstone"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_hoverboard",
+				"count": 4
+			},
+			{
+				"item": "simple_vehicles:tire_volt_bike",
+				"count": 4
+			}
+		]
+	}
+}

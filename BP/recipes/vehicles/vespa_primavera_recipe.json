@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:vespa_primavera"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:vespa_primavera_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_scooter_A"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:vespa_primavera_spawn_egg"
+			}
+		]
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.custom_animation_1": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [-87.5, 42.5, 0]
+				},
+				"rightArm": {
+					"rotation": [-90, -15, 0]
+				}
+			}
+		}
+	}
+}

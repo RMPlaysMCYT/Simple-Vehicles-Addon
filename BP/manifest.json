@@ -1,0 +1,78 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"version": [
+			3,
+			7,
+			2
+		],
+		"uuid": "49b0cfa5-bd3f-4ad4-9317-37f1509a7d6b",
+		"min_engine_version": [
+			1,
+			20,
+			2
+		]
+	},
+	"modules": [
+		{
+			"type": "script",
+			"language": "javascript",
+			"entry": "SimpleVehiclesAddon/main.js",
+			"description": "",
+			"uuid": "26157812-38da-413a-80da-32340bceb454",
+			"version": [
+				1,
+				0,
+				2
+			]
+		},
+		{
+			"type": "data",
+			"uuid": "948a7543-159f-48ba-8833-afc81f495a84",
+			"version": [
+				3,
+				7,
+				2
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "284e5fad-b2c4-49ad-b823-55e261c49dd0",
+			"version": [
+				3,
+				7,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.1.0"
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	],
+	"metadata": {
+		"authors": [
+			"RMPlaysMC YT",
+			"RMPlaysMC Studios"
+		],
+		"license": "All Rights Reserved",
+		"product_type": "addon",
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	}
+}

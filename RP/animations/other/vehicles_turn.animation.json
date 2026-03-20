@@ -1,0 +1,53 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vehicle.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+					]
+				}
+			}
+		},
+		"animation.vehicle.turn_z": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+					]
+				}
+			}
+		},
+		"animation.vehicle.turn_y": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7",
+						0
+					]
+				}
+			}
+		},
+		"animation.vehicle.turn_x": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7",
+            0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

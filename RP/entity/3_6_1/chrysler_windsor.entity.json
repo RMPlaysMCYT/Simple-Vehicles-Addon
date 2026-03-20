@@ -1,0 +1,64 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:chrysler_windsor",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/chrysler_windsor"
+			},
+			"geometry": {
+				"default": "geometry.chrysler_windsor"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"idle": "animation.chrysler_windsor.idle",
+                "move": "animation.chrysler_windsor.move",
+				"move_rev": "animation.chrysler_windsor.movereverse",
+				"move_ctrl":"controller.animation.chrysler_windsor.move_ctrl",
+                "steer": "animation.chrysler_windsor.steer",
+                "doors_idle": "animation.chrysler_windsor.doors_idle",
+                "open": "animation.chrysler_windsor.open",
+                "close": "animation.chrysler_windsor.close",
+                "close2": "animation.chrysler_windsor.close2",
+                "door_mech": "controller.animation.chrysler_windsor.door_mechanic",
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"movingupdown_mech": "controller.animation.chrysler_windsor.general",
+				"particlesmoke": "animation.chrysler_windsor.particlesmoke"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
+				"pre_animation": [
+					"variable.steering_wheel = query.has_rider ? variable.steering : 0;",
+					"variable.steering = math.lerp(variable.steering, q.yaw_speed, 0.15);",
+					"variable.moving_veh = query.modified_distance_moved;",
+					"variable.new_move_mechanic = variable.moving_veh * 25;",
+					"variable.new_move_mechreve = variable.moving_veh * -25;"
+				],
+				"animate": [
+                    "steer",
+					"movingupdown_mech",
+                    "door_mech",
+					{
+						"particlesmoke": "query.is_saddled && query.modified_distance_moved"
+					},
+					"move_ctrl"
+				]
+			},
+			"spawn_egg": {
+				"texture": "vehicles_3",
+                "texture_index": 23
+			},
+			"particle_effects": {
+				"_simple_vehicles_arrowspell": "minecraft:arrow_spell_emitter"
+			}
+		}
+	}
+}

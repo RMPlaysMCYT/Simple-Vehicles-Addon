@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:jeep_wrangler_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:jeep_wrangler_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_car_4x4"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:jeep_wrangler_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

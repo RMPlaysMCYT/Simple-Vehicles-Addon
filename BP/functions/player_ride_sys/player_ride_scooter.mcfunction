@@ -1,0 +1,1 @@
+playanimation @p[r=2,c=1] animation.player.scooter.ride controller.animation.player.base 0 "!query.is_riding"

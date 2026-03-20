@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:body_century_luxury",
+      "render_controllers": ["controller.render.body_3d_item"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/century_luxury"
+      },
+      "geometry": {
+        "default": "geometry.century_luxury"
+      },
+      "animations": {
+        "first_person_hold": "animation.century_luxury_body.first_person_hold",
+        "third_person_hold": "animation.century_luxury_body.third_person_hold"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

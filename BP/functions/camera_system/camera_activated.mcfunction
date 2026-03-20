@@ -1,0 +1,1 @@
+execute @a[tag=Yawa] ~ ~ ~ camera @s set minecraft:free ease 0.3 linear pos ~ ~10 ~ rot ~40 ~

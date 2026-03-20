@@ -1,0 +1,182 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mitsubishi_minivan.ups": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.vertical_speed * 7", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.downs": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.vertical_speed * -7", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0]
+				},
+				"door2": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door3": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [2, 0, 0],
+						"1.0": [2, 0, 14]
+					}
+				},
+				"door2": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [-2, 0, 0],
+						"1.0": [-2, 0, 14]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [2, 0, 14],
+						"0.75": [2, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [-2, 0, 14],
+						"0.75": [-2, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [2, 0, 14],
+						"0.75": [2, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [-2, 0, 14],
+						"0.75": [-2, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.move": {
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"wheel2": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.reverse": {
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"wheel2": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan.steer": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, "variable.steering_wheel / 2"]
+				},
+				"wheel0": {
+					"rotation": [0, "variable.steering_wheel / 6", 0]
+				},
+				"wheel1": {
+					"rotation": [0, "variable.steering_wheel / 6", 0]
+				}
+			}
+		}
+	}
+}

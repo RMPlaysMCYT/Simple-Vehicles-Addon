@@ -1,0 +1,679 @@
+{
+  "format_version": "1.18.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:mitsubishi_montero",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": ["item_setpack", "command", "durability", "fuel2", "move"]
+      },
+      "animations": {
+        "item_setpack": "controller.animation.vehicle_ride.item_setpack",
+        "command": "controller.animation.vehicle.command",
+        "move": "controller.animation.vehicle.move",
+        "durability": "controller.animation.vehicle.durability",
+        "fuel2": "controller.animation.simple_vehicles.fuel2"
+      }
+    },
+    "component_groups": {
+      "simple_vehicles:steady": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:jerry_can"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            },
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:gas_nozzle"
+                    }
+                  ]
+                }
+              },
+              "use_item": false
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "value": "simple_vehicles:key_mitsubishi_montero"
+                    }
+                  ]
+                },
+                "event": "simple_vehicles:door_open"
+              },
+              "use_item": false,
+              "interact_text": "Open Door"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "value": "barrier"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_ability",
+                      "subject": "other",
+                      "value": "instabuild"
+                    }
+                  ]
+                },
+                "event": "simple_vehicles:remove_vehicle"
+              },
+              "use_item": false,
+              "interact_text": "Remove Vehicle?"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:door_close": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:gas_nozzle"
+                    }
+                  ]
+                }
+              },
+              "use_item": false
+            },
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:jerry_can"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "value": "simple_vehicles:key_mitsubishi_montero"
+                    }
+                  ]
+                },
+                "event": "simple_vehicles:door_open2"
+              },
+              "use_item": false,
+              "interact_text": "Open Door"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "all_of": [
+                        {
+                          "test": "has_equipment",
+                          "subject": "other",
+                          "domain": "hand",
+                          "value": "simple_vehicles:black_spray"
+                        }
+                      ]
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_ability",
+                      "subject": "other",
+                      "value": "instabuild"
+                    }
+                  ]
+                },
+                "event": "simple_vehicles:turn_black"
+              },
+              "use_item": true,
+              "interact_text": "Paint on it!"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "all_of": [
+                        {
+                          "test": "has_equipment",
+                          "subject": "other",
+                          "domain": "hand",
+                          "value": "simple_vehicles:white_spray"
+                        }
+                      ]
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_ability",
+                      "subject": "other",
+                      "value": "instabuild"
+                    }
+                  ]
+                },
+                "event": "simple_vehicles:turn_white"
+              },
+              "use_item": true,
+              "interact_text": "Paint on it!"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "simple_vehicles:door_open": {
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "accepted_items": ["simple_vehicles:key_mitsubishi_montero"],
+              "item": "simple_vehicles:key_mitsubishi_montero",
+              "on_equip": {
+                "event": "minecraft:donkey_saddled",
+                "target": "self"
+              },
+              "on_unequip": {
+                "event": "minecraft:donkey_unsaddled",
+                "target": "self"
+              }
+            }
+          ]
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "value": "simple_vehicles:key_mitsubishi_montero"
+                    }
+                  ]
+                },
+                "event": "simple_vehicles:door_close"
+              },
+              "use_item": false,
+              "interact_text": "Close Door"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+          "seat_count": 4,
+          "crouching_skip_interact": true,
+          "family_types": ["player"],
+          "interact_text": "Drive",
+          "seats": [
+            {
+              "position": [0.6, 0.5, 0.45]
+            },
+            {
+              "position": [-0.6, 0.5, 0.45]
+            },
+            {
+              "position": [0.6, 0.5, -0.45]
+            },
+            {
+              "position": [-0.6, 0.5, -0.45]
+            },
+            {
+              "position": [0.6, 0.5, -1.45]
+            },
+            {
+              "position": [-0.6, 0.5, -1.45]
+            }
+          ]
+        }
+      },
+      "minecraft:donkey_saddled": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "operator": "equals",
+                    "value": "remove"
+                  },
+                  {
+                    "test": "hourly_clock_time",
+                    "operator": ">=",
+                    "value": 0
+                  },
+                  {
+                    "test": "hourly_clock_time",
+                    "operator": "<",
+                    "value": 12000
+                  }
+                ]
+              },
+              "event": "simple_vehicles:light_off"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "any_of": [
+                      {
+                        "all_of": [
+                          {
+                            "test": "hourly_clock_time",
+                            "operator": ">=",
+                            "value": 12000
+                          },
+                          {
+                            "test": "hourly_clock_time",
+                            "operator": "<",
+                            "value": 24000
+                          }
+                        ]
+                      },
+                      {
+                        "test": "light_level",
+                        "operator": "<",
+                        "value": 8
+                      }
+                    ]
+                  },
+                  {
+                    "test": "has_tag",
+                    "operator": "not",
+                    "value": "remove"
+                  }
+                ]
+              },
+              "event": "simple_vehicles:light_on"
+            }
+          ]
+        },
+        "minecraft:is_saddled": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {}
+      },
+      "simple_vehicles:black": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:white": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "simple_vehicles:refuel": {
+        "minecraft:skin_id": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:refueled": {
+        "minecraft:skin_id": {
+          "value": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["aspire", "simple_vehicles_addon", "simple_vehicles"]
+      },
+      "minecraft:collision_box": {
+        "height": 0.9,
+        "width": 0.5
+      },
+      "minecraft:movement": {
+        "value": 0.15,
+        "max": 0.78
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:inventory": {
+        "inventory_size": 16,
+        "container_type": "horse"
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 100,
+            "effects": [
+              {
+                "name": "absorption",
+                "chance": 0.8,
+                "duration": 5,
+                "amplifier": 5
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 10 : 0"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.03
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "simple_vehicles:key_mitsubishi_montero"
+                  }
+                ]
+              },
+              "event": "simple_vehicles:door_open"
+            },
+            "use_item": false,
+            "interact_text": "Open Door"
+          }
+        ]
+      },
+      "minecraft:can_climb": {},
+      "minecraft:on_death": {
+        "event": "on:death",
+        "target": "self"
+      },
+      "minecraft:on_hurt": {
+        "event": "on:hurt",
+        "target": "self"
+      },
+      "minecraft:on_hurt_by_player": {
+        "event": "on:hurt_by_player",
+        "target": "self"
+      },
+      "minecraft:on_ignite": {
+        "event": "on:ignite",
+        "target": "self"
+      },
+      "minecraft:on_target_acquired": {
+        "event": "on:target_acquired",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "on:target_escape",
+        "target": "self"
+      },
+      "minecraft:on_wake_with_owner": {
+        "event": "on:wake_with_owner",
+        "target": "self"
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/simple_vehicles_mitsubishi_montero.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 80,
+                "add": {
+                  "component_groups": ["simple_vehicles:steady"]
+                }
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "add": {
+                  "component_groups": ["simple_vehicles:black"]
+                }
+              },
+              {
+                "add": {
+                  "component_groups": ["simple_vehicles:white"]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:donkey_saddled": {
+        "add": {
+          "component_groups": ["minecraft:donkey_saddled"]
+        },
+        "queue_command": {
+          "command": [
+            "fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block_13 [] keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air replace light_block_13",
+            "fill ~-3~3~-3 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~2 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~-2 ~3~4~-3 air replace light_block_13",
+            "fill ~-3~-2~-3 ~-2~4~3 air replace light_block_13",
+            "fill ~2~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
+        }
+      },
+      "minecraft:donkey_unsaddled": {
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        },
+        "remove": {
+          "component_groups": ["minecraft:donkey_saddled"]
+        }
+      },
+      "simple_vehicles:turn_black": {
+        "add": {
+          "component_groups": ["simple_vehicles:black"]
+        }
+      },
+      "simple_vehicles:turn_white": {
+        "add": {
+          "component_groups": ["simple_vehicles:white"]
+        }
+      },
+      "simple_vehicles:door_open": {
+        "add": {
+          "component_groups": ["simple_vehicles:door_open"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicles:steady"]
+        },
+        "queue_command": {
+          "command": ["playsound simple_vehicles.ae86.open @p[r=1]"]
+        }
+      },
+      "simple_vehicles:door_open2": {
+        "add": {
+          "component_groups": ["simple_vehicles:door_open"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicles:door_close"]
+        },
+        "queue_command": {
+          "command": ["playsound simple_vehicles.ae86.open @p[r=1]"]
+        }
+      },
+      "simple_vehicles:door_close": {
+        "remove": {
+          "component_groups": ["simple_vehicles:door_open"]
+        },
+        "add": {
+          "component_groups": ["simple_vehicles:door_close"]
+        },
+        "queue_command": {
+          "command": ["playsound simple_vehicles.ae86.close @p[r=1]"]
+        }
+      },
+      "on:death": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:hurt": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:hurt_by_player": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:ignite": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:target_acquired": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:target_escape": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "on:wake_with_owner": {
+        "queue_command": {
+          "command": []
+        }
+      },
+      "simple_vehicles:light_off": {
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        }
+      },
+      "simple_vehicles:light_on": {
+        "queue_command": {
+          "command": [
+            "fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block_13 [] keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air replace light_block_13",
+            "fill ~-3~3~-3 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~2 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~-2 ~3~4~-3 air replace light_block_13",
+            "fill ~-3~-2~-3 ~-2~4~3 air replace light_block_13",
+            "fill ~2~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
+        }
+      },
+      "simple_vehicles:refuel": {
+        "add": {
+          "component_groups": ["simple_vehicles:refueled"]
+        }
+      },
+      "simple_vehicles:refuel_re": {
+        "add": {
+          "component_groups": ["simple_vehicles:refuel"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicles:refueled"]
+        }
+      }
+    }
+  }
+}

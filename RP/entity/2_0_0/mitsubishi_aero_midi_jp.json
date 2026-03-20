@@ -1,0 +1,56 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:mit_aerojp",
+			"textures": {
+				"jp0": "textures/entity/aero_midi_jp/fuso_aero_midi_jp0",
+				"jp1": "textures/entity/aero_midi_jp/fuso_aero_midi_jp1",
+				"jp2": "textures/entity/aero_midi_jp/fuso_aero_midi_jp2"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.fuso_aero_midi"
+			},
+			"render_controllers": [
+				"controller.render.fuso_aero_midi_jp"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 16
+			},
+			"animations": {
+				"walk": "animation.mitsubishi_fuso_aero_midi_jp.move",
+				"turn": "animation.mitsubishi_fuso_aero_midi_jp.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"open": "animation.mitsubishi_fuso_aero_midi_jp.open",
+				"close": "animation.mitsubishi_fuso_aero_midi_jp.close",
+				"close2": "animation.mitsubishi_fuso_aero_midi_jp.close2",
+				"door_mech": "controller.animation.ae86.door_mech",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mech",
+					{
+						"walk": "query.is_moving"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"sound_effects": {
+				"fuso_aero_midi_door_open": "simple_vehicles.bus_v2.open",
+				"fuso_aero_midi_door_close": "simple_vehicles.bus_v2.close"
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:quad_bike",
+			"textures": {
+				"white": "textures/entity/quad_bike/quad_bike_white",
+				"orange": "textures/entity/quad_bike/quad_bike_orange",
+				"magenta": "textures/entity/quad_bike/quad_bike_magenta",
+				"light_blue": "textures/entity/quad_bike/quad_bike_light_blue",
+				"yellow": "textures/entity/quad_bike/quad_bike_yellow",
+				"lime": "textures/entity/quad_bike/quad_bike_lime",
+				"pink": "textures/entity/quad_bike/quad_bike_pink",
+				"gray": "textures/entity/quad_bike/quad_bike_gray",
+				"light_gray": "textures/entity/quad_bike/quad_bike_light_gray",
+				"cyan": "textures/entity/quad_bike/quad_bike_cyan",
+				"purple": "textures/entity/quad_bike/quad_bike_purple",
+				"blue": "textures/entity/quad_bike/quad_bike_blue",
+				"brown": "textures/entity/quad_bike/quad_bike_brown",
+				"green": "textures/entity/quad_bike/quad_bike_green",
+				"red": "textures/entity/quad_bike/quad_bike_red",
+				"black": "textures/entity/quad_bike"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.quad_bike"
+			},
+			"render_controllers": [
+				"controller.render.quad_bike"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 38
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.go_kart.move",
+				"steer": "animation.simple_vehicles.go_kart.steer",
+				"steer_ac": "controller.animation.go_kart.steer",
+				"ups": "animation.quad_bike.ups",
+				"downs": "animation.quad_bike.downs",
+				"general": "controller.animation.motorcycle.general"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"steer_ac",
+					"general"
+				]
+			}
+		}
+	}
+}

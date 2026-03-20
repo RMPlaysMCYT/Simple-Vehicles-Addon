@@ -1,0 +1,30 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:tricycle_ricksaw_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 2
+            },
+            {
+                "item": "simple_vehicles:medium_body_part"
+            },
+            {
+                "item": "minecraft:chest"
+            },
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 3
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:tricycle_ricksaw_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:sdkhkdssd"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"W",
+			"WW",
+			"GG"
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:wool",
+				"data": 3
+			},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 1
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_bus_v2"
+			}
+		]
+	}
+}

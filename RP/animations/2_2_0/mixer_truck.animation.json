@@ -1,0 +1,185 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.simple_vehicles.mixer_truck.setup": {
+      "loop": true,
+      "bones": {
+        "mixer": {
+          "rotation": [25, 0, 0]
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.move": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "leg0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "leg1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "leg2": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.open": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "door0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, -60, 0]
+          }
+        },
+        "door1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, 60, 0]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "mixer_door_open"
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.close": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "door0": {
+          "rotation": {
+            "0.0": [0, -60, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "door1": {
+          "rotation": {
+            "0.0": [0, 60, 0],
+            "1.0": [0, 0, 0]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "mixer_door_close"
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.close2": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "door0": {
+          "rotation": {
+            "0.0": [0, -60, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "door1": {
+          "rotation": {
+            "0.0": [0, 60, 0],
+            "1.0": [0, 0, 0]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "mixer_door_close"
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.doors_idle": {
+      "loop": true,
+      "bones": {
+        "door0": {
+          "rotation": [0, 0, 0]
+        },
+        "door1": {
+          "rotation": [0, 0, 0]
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.turn": {
+      "loop": true,
+      "bones": {
+        "steer": {
+          "rotation": [
+            0,
+            "math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7",
+            "math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+          ]
+        },
+        "tire0": {
+          "rotation": [0, "math.max(-15,math.min(15,query.yaw_speed*0.5))", 0]
+        },
+        "tire1": {
+          "rotation": [0, "math.max(-15,math.min(15,query.yaw_speed*0.5))", 0]
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.mix": {
+      "loop": true,
+      "animation_length": 2,
+      "bones": {
+        "mixer": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 360]
+          }
+        }
+      }
+    },
+    "animation.simple_vehicles.mixer_truck.wiper": {
+      "loop": true,
+      "animation_length": 0.79167,
+      "bones": {
+        "wiper0": {
+          "rotation": {
+            "0.0": {
+              "post": [0, 0, 0],
+              "lerp_mode": "catmullrom"
+            },
+            "0.5": {
+              "post": [40.02558, 21.82121, 102.14506],
+              "lerp_mode": "catmullrom"
+            },
+            "0.7917": {
+              "post": [0, 0, 0],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        },
+        "wiper1": {
+          "rotation": {
+            "0.0": {
+              "post": [0, 0, 0],
+              "lerp_mode": "catmullrom"
+            },
+            "0.5": {
+              "post": [40.02558, 21.82121, 102.14506],
+              "lerp_mode": "catmullrom"
+            },
+            "0.7917": {
+              "post": [0, 0, 0],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        }
+      }
+    }
+  }
+}

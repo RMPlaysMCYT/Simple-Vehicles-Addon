@@ -1,0 +1,33 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:submarine_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 2
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 2,
+                "data": 15
+            },
+            {
+                "item": "minecraft:redstone",
+                "count": 1
+            },
+            {
+                "item": "minecraft:yellow_concrete",
+                "count": 3
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:submarine_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

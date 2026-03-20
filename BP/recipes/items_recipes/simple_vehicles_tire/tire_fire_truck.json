@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_fire_truck"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"mom",
+			"oIo",
+			"mom"
+		],
+		"key": {
+			"o": {
+				"item": "minecraft:concrete",
+				"data": 6
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"m": {
+				"item": "minecraft:wool",
+				"data": 7
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_fire_truck",
+				"count": 4
+			}
+		]
+	}
+}

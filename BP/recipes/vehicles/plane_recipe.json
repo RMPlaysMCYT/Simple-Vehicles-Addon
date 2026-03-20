@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:plane_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM",
+			"S S"
+		],
+		"key": {
+			"S": {
+				"item": "simple_vehicles:tire_plane"
+			},
+			"B": {
+				"item": "simple_vehicles:body_plane_1"
+			},
+			"M": {
+				"item": "simple_vehicles:wings_plane"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:plane_spawn_egg"
+			}
+		]
+	}
+}

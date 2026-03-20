@@ -1,0 +1,60 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:multicab",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles_multicab"
+			},
+			"textures": {
+				"black": "textures/entity/multicab",
+				"white": "textures/entity/multicab/white",
+				"red": "textures/entity/multicab/red",
+				"green": "textures/entity/multicab_green",
+				"blue": "textures/entity/multicab/blue",
+				"pink": "textures/entity/multicab/pink"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"door_mech",
+					"v_turn",
+					{
+						"close2": "query.has_rider"
+					},
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"animations": {
+				"move": "animation.simple_vehicles_multicab.move",
+				"turn": "animation.simple_vehicles_multicab.turn",
+				"doors_idle": "animation.simple_vehicles_multicab.doors_idle",
+				"open": "animation.simple_vehicles_multicab.open",
+				"close": "animation.simple_vehicles_multicab.close",
+				"close2": "animation.simple_vehicles_multicab.close2",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"render_controllers": [
+				"controller.render.multicab"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 32
+			},
+			"sound_effects": {
+				"multicab_door_open": "simple_vehicles.corolla.open",
+				"multicab_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.small_tractor.setup": {
+			"loop": true,
+			"bones": {
+				"rootb1tch": {
+					"scale": 0.65
+				}
+			}
+		},
+		"animation.small_tractor.move": {
+			"loop": true,
+			"bones": {
+				"wheel1": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				},
+				"tire1": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				}
+			}
+		},
+		"animation.small_tractor.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*query.modified_move_speed*0.7", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*query.modified_move_speed*0.7", 0]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*query.modified_move_speed*0.7", 0]
+				}
+			}
+		}
+	}
+}

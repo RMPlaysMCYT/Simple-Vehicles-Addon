@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:van_v2",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "black": "textures/entity/van_v2/van_black",
+        "white": "textures/entity/van_v2/van_white",
+        "orange": "textures/entity/van_v2/van_orange",
+        "magenta": "textures/entity/van_v2/van_magenta",
+        "light_blue": "textures/entity/van_v2/van_light_blue",
+        "yellow": "textures/entity/van_v2/yellow",
+        "lime": "textures/entity/van_v2/lime",
+        "pink": "textures/entity/van_v2/pink",
+        "gray": "textures/entity/van_v2/gray",
+        "silver": "textures/entity/van_v2/silver",
+        "cyan": "textures/entity/van_v2/cyan",
+        "purple": "textures/entity/van_v2/purple",
+        "blue": "textures/entity/van_v2",
+        "brown": "textures/entity/van_v2/brown",
+        "green": "textures/entity/van_v2/van_v2_green",
+        "red": "textures/entity/van_v2/van_red"
+      },
+      "geometry": {
+        "default": "geometry.van_v2"
+      },
+      "spawn_egg": {
+        "texture": "vehicles",
+        "texture_index": 47
+      },
+      "animations": {
+        "move": "animation.car_v2.move",
+        "turn": "animation.van_v2.turn",
+        "general": "controller.animation.vehicle.v_turn",
+        "doors_idle": "animation.simple_vehicles.van_v2.doors_idle",
+        "close": "animation.simple_vehicles.van_v2.close",
+        "close2": "animation.simple_vehicles.van_v2.close2",
+        "open": "animation.simple_vehicles.van_v2.open",
+        "door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+      },
+      "scripts": {
+        "animate": [
+          "general2",
+          {
+            "move": "query.modified_move_speed"
+          },
+          "general",
+          "door_mech"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.van_v2"
+      ],
+      		"sound_effects": {
+        		"van_v2_door_open": "simple_vehicles.auv_car.open",
+        		"van_v2_door_close": "simple_vehicles.auv_car.close"
+      		}
+    }
+  }
+}

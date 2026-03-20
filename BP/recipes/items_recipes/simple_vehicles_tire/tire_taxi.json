@@ -1,0 +1,36 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:taxi_tire"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WTW",
+			"BRB",
+			"WTW"
+		],
+		"key": {
+			"T": {"item": "minecraft:black_concrete_powder"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 7
+			},
+			"R": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 8
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_taxi",
+				"count": 4
+			}
+		]
+	}
+}

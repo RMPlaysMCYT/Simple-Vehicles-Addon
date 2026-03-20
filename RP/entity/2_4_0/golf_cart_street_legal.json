@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:golf_cart_street_legal",
+			"textures": {
+				"white": "textures/entity/golf_cart_street_legal",
+				"orange": "textures/entity/golf_cart2/golf_cart2_orange",
+				"magenta": "textures/entity/golf_cart2/golf_cart2_magenta",
+				"light_blue": "textures/entity/golf_cart2/golf_cart2_light_blue",
+				"yellow": "textures/entity/golf_cart2/golf_cart2_yellow",
+				"lime": "textures/entity/golf_cart2/golf_cart2_lime",
+				"pink": "textures/entity/golf_cart2/golf_cart2_pink",
+				"gray": "textures/entity/golf_cart2/golf_cart2_gray",
+				"light_gray": "textures/entity/golf_cart2/golf_cart2_light_gray",
+				"cyan": "textures/entity/golf_cart2/golf_cart2_cyan",
+				"purple": "textures/entity/golf_cart2/golf_cart2_purple",
+				"blue": "textures/entity/golf_cart2/golf_cart2_blue",
+				"brown": "textures/entity/golf_cart2/golf_cart2_brown",
+				"green": "textures/entity/golf_cart2/golf_cart2_green",
+				"red": "textures/entity/golf_cart2/golf_cart2_red",
+				"black": "textures/entity/golf_cart2/golf_cart2_black"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.golf_cart_street_legal"
+			},
+			"render_controllers": [
+				"controller.render.quad_bike"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 40
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.go_kart.move",
+				"steer": "animation.simple_vehicles.go_kart.steer",
+				"steer_ac": "controller.animation.go_kart.steer",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"move",
+					"steer_ac"
+				]
+			}
+		}
+	}
+}

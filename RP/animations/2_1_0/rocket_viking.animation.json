@@ -1,0 +1,174 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.rocket_viking.setup": {
+			"loop": true,
+			"bones": {
+				"Root": {
+					"scale": [2, 2, 2]
+				}
+			}
+		},
+		"animation.simple_vehicles.rocket_viking.flying": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"pit0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [90, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 3, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"1.0": [0.8, 0.8, 0.8]
+					}
+				},
+				"leg0": {
+					"position": [0, 0, 0]
+				},
+				"pit1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [90, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [-4, 0, -17]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"pit2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [90, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [4, 0, -17]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.rocket_viking.landing": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"pit0": {
+					"rotation": {
+						"0.0": [90, 0, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 3, 0],
+						"1.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [0.8, 0.8, 0.8],
+						"1.0": [1, 1, 1]
+					}
+				},
+				"leg0": {
+					"position": [0, 0, 0]
+				},
+				"pit1": {
+					"rotation": {
+						"0.0": [90, 0, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [-4, 0, -17],
+						"1.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [0, 0, 0],
+						"1.0": [1, 1, 1]
+					}
+				},
+				"pit2": {
+					"rotation": {
+						"0.0": [90, 0, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [4, 0, -17],
+						"1.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [0, 0, 0],
+						"1.0": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.rocket_viking.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 80]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "viking_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.rocket_viking.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 80],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "viking_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.rocket_viking.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 80],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "viking_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.rocket_viking.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

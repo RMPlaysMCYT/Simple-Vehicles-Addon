@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:isuzu_erga",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/isuzuerga2017"
+			},
+			"geometry": {
+				"default": "geometry.isuzuerga2017"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 49
+			},
+			"animations": {
+				"move": "animation.cargo_cont_truck.move",
+				"doors_idle": "animation.isuzuerga2017.doors_idle",
+				"open": "animation.isuzuerga2017.open",
+				"close": "animation.isuzuerga2017.close",
+				"close2": "animation.isuzuerga2017.close2",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2"
+			},
+			"scripts": {
+				"animate": [
+					"door_mech",
+					"move"
+				]
+			},
+			"sound_effects": {
+				"erga_door_open": "simple_vehicles.corolla.open",
+				"erga_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

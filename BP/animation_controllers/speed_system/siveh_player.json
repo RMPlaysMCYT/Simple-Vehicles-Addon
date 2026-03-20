@@ -1,0 +1,64 @@
+//Credit to iMasterProX
+//bridge-file-version: #5
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.vehicle_command": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"a": "(1.0)"
+						}
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function speed_system/player"
+					]
+				}
+			}
+		},
+		"controller.animation.player.vehicle_ride": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tag @s remove ride"
+					],
+					"transitions": [
+						{
+							"a": "query.has_rider"
+						}
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "!query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/tag @s add ride"
+					]
+				}
+			}
+		},
+		"controller.animation.player.vehicle_join": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/function speed_system/objectives"
+					]
+				}
+			}
+		}
+	}
+}

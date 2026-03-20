@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:mixer_placer",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehicles_mixer_placer",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

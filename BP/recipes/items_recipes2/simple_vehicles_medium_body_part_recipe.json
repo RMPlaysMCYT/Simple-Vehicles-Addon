@@ -1,0 +1,24 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_medium_body_part_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 3
+            },
+            {
+                "item": "minecraft:light_weighted_pressure_plate",
+                "count": 3
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:medium_body_part"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

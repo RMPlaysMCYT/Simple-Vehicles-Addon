@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:scooterb",
+			"textures": {
+				"white": "textures/entity/scooterB_white",
+				"orange": "textures/entity/scooterB/scooterB_orange",
+				"magenta": "textures/entity/scooterB/scooterB_magenta",
+				"light_blue": "textures/entity/scooterB/scooterB_lightblue",
+				"yellow": "textures/entity/scooterB/scooterB_yellow",
+				"lime": "textures/entity/scooterB/scooterB_lime",
+				"pink": "textures/entity/scooterB/scooterB_pink",
+				"gray": "textures/entity/scooterB/scooterB_gray",
+				"light_gray": "textures/entity/scooterB/scooterB_lightgray",
+				"cyan": "textures/entity/scooterB/scooterB_cyan",
+				"purple": "textures/entity/scooterB/scooterB_purple",
+				"blue": "textures/entity/scooterB/scooterB_blue",
+				"brown": "textures/entity/scooterB/scooterB_brown",
+				"green": "textures/entity/scooterB/scooterB_green",
+				"red": "textures/entity/scooterB/scooterB_red",
+				"black": "textures/entity/scooterB/scooterB_black"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.scooterB"
+			},
+			"render_controllers": [
+				"controller.render.quad_bike"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 42
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.go_kart.move",
+				"steer": "animation.bike.turn",
+				"steer_ac": "controller.animation.go_kart.steer",
+				"setupride": "animation.scooterB.setupride",
+				"setup": "animation.scooterB.setup",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"general",
+					"steer_ac",
+					"setup",
+					{
+						"setupride": "query.has_rider"
+					}
+				]
+			}
+		}
+	}
+}

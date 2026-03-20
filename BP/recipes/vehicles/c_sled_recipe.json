@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:c_sled_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_c_sled"
+			},
+			"A": {
+				"item": "simple_vehicles:landing_skid_c_sled",
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:c_sled_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

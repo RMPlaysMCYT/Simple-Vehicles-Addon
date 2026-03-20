@@ -1,0 +1,124 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pajero.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.pajero.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.pajero.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "pajero_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.pajero.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.1": {
+					"effect": "pajero_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.pajero.close2": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"door0": {
+					"rotation": [0, -60, 0]
+				},
+				"door1": {
+					"rotation": [0, 60, 0]
+				},
+				"door2": {
+					"rotation": [0, 60, 0]
+				},
+				"door3": {
+					"rotation": [0, -60, 0]
+				}
+			}
+		}
+	}
+}

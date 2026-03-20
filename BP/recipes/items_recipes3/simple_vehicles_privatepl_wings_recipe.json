@@ -1,0 +1,23 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_privatepl_wings_recipe"
+        },
+        "pattern": [
+            "B B",
+            "WRW"
+        ],
+        "key": {
+            "W": {"item": "minecraft:iron_ingot"},
+            "B": {"item": "simple_vehicles:large_body_part"},
+            "R": {"item": "minecraft:redstone"}
+        },
+        "result": {
+            "item": "simple_vehicles:privatepl_wings"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

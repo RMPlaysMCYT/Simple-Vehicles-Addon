@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:hot_air_balloon_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"U",
+			"L"
+		],
+		"key": {
+			"L": {
+				"item": "simple_vehicles:air_balloon_bodylower"
+			},
+			"U": {
+				"item": "simple_vehicles:air_balloon_bodyupper"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:hot_air_balloon_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:wings_plane3232"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"IFI",
+			"ICI",
+			{}
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"C": {
+				"item": "minecraft:concrete",
+				"data": 6
+			},
+			"F": {
+				"item": "minecraft:feather"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:wings_plane",
+				"count": 1,
+				"data": 0
+			}
+		]
+	}
+}

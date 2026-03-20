@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.car_lowrider_lights",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "car_lowrider_lights",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-30, 12.5, -72.5], "size": [60, 0, 19], "pivot": [0, 12.5, -54], "rotation": [-30, 0, 0], "uv": [0, 19]},
+						{"origin": [-30, 8.5, -72.5], "size": [60, 0, 19], "pivot": [0, 8.5, -54], "rotation": [27.5, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

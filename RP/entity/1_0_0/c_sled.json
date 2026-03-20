@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:c_sled",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/c_sled"
+			},
+			"geometry": {
+				"default": "geometry.c_sled"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 18
+			},
+			"render_controllers": [
+				"controller.render.c_sled"
+			]
+		}
+	}
+}

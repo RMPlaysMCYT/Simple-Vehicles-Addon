@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ford_mustang_blue",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"blue": "textures/entity/mustang",
+				"red": "textures/entity/mustang/mustang_red"
+			},
+			"geometry": {
+				"default": "geometry.mustang"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.mustang.move",
+				"turn": "animation.mustang.turn",
+				"setup": "animation.mustang.setup",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"setup_ac": "controller.animation.mustang.setup",
+				"close": "animation.simple_vehicles.mustang.close",
+				"close2": "animation.simple_vehicles.mustang.close2",
+				"open": "animation.simple_vehicles.mustang.open",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"v_turn",
+					"general",
+					"setup_ac",
+					"door_mech",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"render_controllers": [
+				"controller.render.mustang"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 11
+			},
+			"sound_effects": {
+				"mustang_door_open": "simple_vehicles.corolla.open",
+				"mustang_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

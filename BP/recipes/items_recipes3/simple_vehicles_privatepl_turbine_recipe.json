@@ -1,0 +1,24 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_privatepl_turbine_recipe"
+        },
+        "pattern": [
+            "CCC",
+            "WRW",
+            "CCC"
+        ],
+        "key": {
+            "W": {"item": "minecraft:iron_ingot"},
+            "C": {"item": "simple_vehicles:large_body_part"},
+            "R": {"item": "minecraft:redstone"}
+        },
+        "result": {
+            "item": "simple_vehicles:privatepl_turbine"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

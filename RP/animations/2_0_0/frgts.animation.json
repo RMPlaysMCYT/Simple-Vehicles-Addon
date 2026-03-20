@@ -1,0 +1,99 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.rancherogt_sass.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "rancherogt_sass_door_open"
+				}
+			}
+		},
+		"animation.rancherogt_sass.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "rancherogt_sass_door_close"
+				}
+			}
+		},
+		"animation.rancherogt_sass.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "rancherogt_sass_door_close"
+				}
+			}
+		},
+		"animation.rancherogt_sass.doors_idle": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.rancherogt_sass.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-15,math.min(15,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-15,math.min(15,query.yaw_speed*0.5))", 0]
+				}
+			}
+		}
+	}
+}

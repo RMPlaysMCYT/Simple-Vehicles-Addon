@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:travis_tire"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"BIB",
+			"WBW"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:carpet",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_travis",
+				"count": 4
+			}
+		]
+	}
+}

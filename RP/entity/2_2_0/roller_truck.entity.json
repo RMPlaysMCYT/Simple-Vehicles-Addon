@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:roller_truck",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/simple_vehicles_roller_truck"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.roller_truck"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.roller_truck.move",
+				"doors_idle": "animation.simple_vehicles.roller_truck.doors_idle",
+				"open": "animation.simple_vehicles.roller_truck.open",
+				"close": "animation.simple_vehicles.roller_truck.close",
+				"close2": "animation.simple_vehicles.roller_truck.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"move",
+					"door_mechanic",
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 30
+			},
+			"sound_effects": {
+				"roller_truck_door_open": "simple_vehicles.corolla.open",
+				"roller_truck_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

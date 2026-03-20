@@ -1,0 +1,125 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mitsubishi_minivan_trucktype.ups": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.vertical_speed * 3", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.downs": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.vertical_speed * -3", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 55, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -55, 0]
+					}
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 55, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -55, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 55, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -55, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.move": {
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"wheel2": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.reverse": {
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"wheel2": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				}
+			}
+		},
+		"animation.mitsubishi_minivan_trucktype.steer": {
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": [0, "variable.steering_wheel / 7.5", 0]
+				},
+				"wheel1": {
+					"rotation": [0, "variable.steering_wheel / 7.5", 0]
+				}
+			}
+		}
+	}
+}

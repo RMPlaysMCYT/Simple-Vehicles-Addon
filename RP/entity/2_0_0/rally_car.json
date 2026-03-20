@@ -1,0 +1,56 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:rally_car",
+			"textures": {
+				"default": "textures/entity/rally_car"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.rally_car"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 15
+			},
+			"animations": {
+				"walk": "animation.vehicles.move",
+				"idle": "animation.simple_vehicles_vespa_primavera.idle",
+				"turn": "animation.bike.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.rally_car.doors_idle",
+				"open": "animation.simple_vehicles.rally_car.open",
+				"close": "animation.simple_vehicles.rally_car.close",
+				"close2": "animation.simple_vehicles.rally_car.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					{
+						"walk": "query.is_moving"
+					},
+					{
+						"idle": "!query.is_moving"
+					},
+					"door_mechanic"
+				]
+			},
+			"sound_effects": {
+				"tentmushi_car_door_open": "simple_vehicles.corolla.open",
+				"tentmushi_car_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

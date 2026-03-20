@@ -1,0 +1,64 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:motor_bike",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/motor/motor_black",
+				"white": "textures/entity/motor/motor_white",
+				"orange": "textures/entity/motor/motor_orange",
+				"magenta": "textures/entity/motor/motor_magenta",
+				"light_blue": "textures/entity/motor/motor_light_blue",
+				"yellow": "textures/entity/motor/motor_yellow",
+				"lime": "textures/entity/motor/motor_lime",
+				"pink": "textures/entity/motor/motor_pink",
+				"gray": "textures/entity/motor/motor_gray",
+				"silver": "textures/entity/motor/motor_silver",
+				"cyan": "textures/entity/motor/motor_cyan",
+				"purple": "textures/entity/motor/motor_purple",
+				"blue": "textures/entity/motor",
+				"brown": "textures/entity/motor/motor_brown",
+				"green": "textures/entity/motor/motor_green",
+				"red": "textures/entity/motor/motor_red"
+			},
+			"geometry": {
+				"default": "geometry.motor"
+			},
+			"animations": {
+				"move": "animation.motor.move",
+				"tilt": "animation.motor.tilt",
+				"ups": "animation.motor.ups",
+				"downs": "animation.motor.downs",
+				"setup": "animation.motor.setup",
+				"setup2": "animation.motor.setup2"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.climb_vehi.general"
+				},
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"tilt": "controller.animation.vehicle.tilt"
+				},
+				{
+					"setupp": "controller.animation.motor.setup"
+				}
+			],
+			"render_controllers": [
+				"controller.render.motorbike_colors"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 10
+			}
+		}
+	}
+}

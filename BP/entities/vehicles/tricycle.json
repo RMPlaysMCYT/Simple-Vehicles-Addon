@@ -1,0 +1,301 @@
+{
+	"format_version": "1.18.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:tricycle",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"item_setpack",
+					"command",
+					"durability",
+					"fuel2",
+					"move"
+				]
+			},
+			"animations": {
+				"item_setpack": "controller.animation.vehicle_ride.item_setpack",
+				"command": "controller.animation.vehicle.command",
+				"move": "controller.animation.vehicle.move",
+				"durability": "controller.animation.vehicle.durability",
+				"fuel2": "controller.animation.simple_vehicles.fuel2"
+			}
+		},
+		"component_groups": {
+			"minecraft:vehicle": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:gas_nozzle"
+										}
+									]
+								}
+							},
+							"use_item": false
+						},
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:jerry_can"
+										}
+									]
+								}
+							},
+							"use_item": true
+						}
+					]
+				},
+				"minecraft:is_tamed": {},
+				"minecraft:rideable": {
+					"seat_count": 5,
+					"crouching_skip_interact": false,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "Drive",
+					"pull_in_entities": true,
+					"seats": [
+						{
+							"position": [
+								0,
+								0.75,
+								0
+							]
+						},
+						{
+							"position": [
+								-1.5,
+								0.4,
+								0.3
+							]
+						},
+						{
+							"position": [
+								-0.8,
+								0.4,
+								-0.6
+							],
+							"rotate_rider_by": 90
+						},
+						{
+							"position": [
+								-2,
+								0.4,
+								-0.6
+							],
+							"rotate_rider_by": -90
+						},
+						{
+							"position": [
+								0,
+								0.75,
+								-0.6
+							],
+							"rotate_rider_by": -90
+						}
+					]
+				}
+			},
+			"minecraft:bugfixer": {
+				"minecraft:timer": {
+					"time": [
+						0.1,
+						0.1
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:bugfix",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:horse_saddled": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {},
+				"minecraft:behavior.player_ride_tamed": {}
+			},
+			"simple_vehicles:refuel": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"simple_vehicles:refueled": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"item": "simple_vehicles:key_tricycle",
+						"accepted_items": [
+							"simple_vehicles:key_tricycle"
+						],
+						"on_equip": {
+							"event": "minecraft:horse_saddled",
+							"target": "self"
+						},
+						"on_unequip": {
+							"event": "minecraft:horse_unsaddled",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"simple_vehicles_addon",
+					"simple_vehicles"
+				]
+			},
+			"minecraft:horse.jump_strength": {
+				"value": 0.5
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/tricycle.json"
+			},
+			"minecraft:breathable": {
+				"totalSupply": 10,
+				"suffocateTime": 0
+			},
+			"minecraft:is_chested": {},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 2
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 120,
+					"range_max": 120
+				}
+			},
+			"minecraft:inventory": {
+				"inventory_size": 15,
+				"container_type": "horse",
+				"private": false
+			},
+			"minecraft:movement": {
+				"value": 0.19
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:navigation.walk": {
+				"can_float": true,
+				"avoid_water": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:walk_animation_speed": {
+				"value": 20
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:nameable": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 100,
+						"add": {
+							"component_groups": [
+								"minecraft:vehicle"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:horse_saddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:horse_unsaddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:bugfix": {
+				"add": {
+					"component_groups": [
+						"minecraft:vehicle"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				}
+			},
+			"simple_vehicles:refuel": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			},
+			"simple_vehicles:refuel_re": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refuel"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			}
+		}
+	}
+}

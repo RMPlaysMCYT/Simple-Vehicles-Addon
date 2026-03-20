@@ -1,0 +1,1890 @@
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+
+
+
+//////This is an backup I'ts up to you if you like to modify, copy or paste it thanks
+//////This is an backup I'ts up to you if you like to modify, copy or paste it thanks
+//////This is an backup I'ts up to you if you like to modify, copy or paste it thanks
+//////This is an backup I'ts up to you if you like to modify, copy or paste it thanks
+/*
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.body_ae86.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [16, -18, 10],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.body_ae86.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -5, -6.5],
+          "scale": 0.1
+        }
+      }
+    },
+
+
+    "animation.body_bike.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.body_bike.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    "animation.ambulance.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.ambulance.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    "animation.bus_v2.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.bus_v2.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    "animation.air_balloon.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": 0.2
+        },
+        "base": {
+          "rotation": [25, 0, -122.5],
+          "position": [0, -3, 4],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [25, 0, -122.5],
+          "position": [9, 1, 8],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.air_balloon.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "base": {
+          "rotation": [22.5, 0, 0],
+          "position": [0, -3, -6],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [22.5, 0, 0],
+          "position": [0, -15, -6],
+          "scale": 0.2
+        }
+      }
+    },
+
+
+    
+    "animation.blimp.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.blimp.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+    "animation.tricycle.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.tricycle.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+
+    "animation.submarine.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.submarine.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.motorcycle.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.motorcycle.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.armored_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.armored_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.vw_beetle_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.vw_beetle_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.scooter_a_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.scooter_a_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.opel_astra_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.opel_astra_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.opel_corsa_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.opel_corsa_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.ice_cream_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.ice_cream_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.hafei_zhongyi_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.hafei_zhongyi_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.tractor_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.tractor_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.snowmobile_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.snowmobile_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.plane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.plane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.motorbike_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.motorbike_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.trucks_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.trucks_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.firetruck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.firetruck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.helicopter_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.helicopter_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.hoverboard_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.hoverboard_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.lowrider_v1_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.lowrider_v1_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.double_decker_bus_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.double_decker_bus_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.container_van_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.container_van_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+    
+    "animation.century_luxury_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.century_luxury_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.cadillac_dts_2010_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.cadillac_dts_2010_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.volt_bike_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.volt_bike_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.snow_mobile_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.snow_mobile_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.speedboat_v1_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.speedboat_v1_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+    
+    "animation.police_car_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.police_car_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+    
+
+    
+    "animation.car_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.car_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.car4x4_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.car_4x4.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.corolla_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.corolla_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.c_sled_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.c_sled_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.ev4_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.ev4_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.ambulance_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.ambulance_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.vespa_primavera_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.vespa_primavera_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.tractor_seeder_1_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tractor_seeder_1_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.tractor_sprinkler_0_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tractor_sprinkler_0_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.tricycle_container_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tricycle_container_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.tuktukthai_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tuktukthai_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.tiltrotor_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tiltrotor_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.small_tractor.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.small_tractor.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.pedicab_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.pedicab_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.shenhao_q5.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.shenhao_q5.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.scooter_b_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.scooter_b_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.rocket_viking_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.rocket_viking_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.rideable_lawn_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.rideable_lawn_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.mini_car_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.mini_car_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.minivan_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.minivan_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+    
+    "animation.minivan_trucktype_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.minivan_trucktype_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.mixer_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.mixer_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.monster_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.monster_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.private_plane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.private_plane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.lightermax_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+
+
+
+
+
+    "animation.jeep_wrangler.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.jeep_wrangler.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.gyroplane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.gyroplane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.farm_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.farm_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.dump_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.dump_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+
+
+
+
+
+    "animation.dragster_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.dragster_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.bulldozer_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.bulldozer_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.asphalt_paving_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.asphalt_paving_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+
+
+
+
+    
+    "animation.biplane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.biplane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    }
+  }
+}
+*/
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭
+//////Ahh not again I work on thousand of lines for this animaton format but I hope it doesn't loss the effort thank you 🥺🥺😭😭

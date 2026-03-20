@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:biplane_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM",
+			" T "
+		],
+		"key": {
+			"B": {"item": "simple_vehicles:biplane_body"},
+			"M": {"item": "simple_vehicles:wings_plane"},
+			"T": {"item": "simple_vehicles:tire_plane"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:biplane_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

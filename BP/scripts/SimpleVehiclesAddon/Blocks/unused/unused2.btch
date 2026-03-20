@@ -1,0 +1,61 @@
+
+/*
+
+const ItemJumpId = [
+    'simple_vehicles:jump1_item',
+    'simple_vehicles:jump2_item',
+    'simple_vehicles:jump3_item'
+];
+
+const HonkItemId = [
+    'simple_vehicles:honk_item'
+];
+
+const BeetrootPack = [
+    'simple_vehicles:beetrpack'
+];
+
+const WheatPack = [
+    'simple_vehicles:wheatpack'
+];
+
+const ToolsItemId = [
+    'simple_vehicles:mixer_placer',
+    'simple_vehicles:asphalt_paving_placer',
+    'simple_vehicles:bridge_building_placer'
+];
+
+const GasItemId = [
+    'simple_vehicles:jerry_can',
+    'simple_vehicles:air_jerry_can',
+    'simple_vehicles:gas_nozzle_air',
+    'simple_vehicles:gas_nozzle'
+];
+
+world.afterEvents.itemUse.subscribe(({source, itemStack})=>{
+        if(ItemJumpId.includes(itemStack.typeId)){
+            itemStack.setLore(['Controls:','Right Click to Jump']);
+            source.getComponent('equippable').setEquipment('Mainhand', itemStack);
+        };
+        if(HonkItemId.includes(itemStack.typeId)){
+            itemStack.setLore(['Controls:', 'Mobile: Press Cross or Long-Press to Honk','PC: Right Click to Honk','Gamepad: Press R2, RT to Honk']);
+            source.getComponent('equippable').setEquipment('Mainhand', itemStack);
+        };
+        if(BeetrootPack.includes(itemStack.typeId)){
+            itemStack.setLore(['Controls:','Right Click to Jump']);
+            source.getComponent('equippable').setEquipment('Mainhand', itemStack);
+        };
+        if(WheatPack.includes(itemStack.typeId)){
+            itemStack.setLore(['Controls:','Mobile: Press Cross or Long-Press to Place Wheat','PC: Right Click to Place Wheat','Gamepad: Press R2, RT to Place Wheat']);
+            source.getComponent('equippable').setEquipment('Mainhand', itemStack);
+        };
+        if(ToolsItemId.includes(itemStack.typeId)){
+            itemStack.setLore(['Controls','Right Click to Place some stuff']);
+            source.getComponent('equippable').setEquipment('Mainhand', itemStack);
+        };
+        if(GasItemId.includes(itemStack.typeId)){
+            itemStack.setLore(['Controls: ','Mobile: Interact or Long-Press to Fuel A Vehicle','PC: Right Click to Fuel A Vehicle','Gamepad: Press R2, RT to Fuel A Vehicle']);
+            source.getComponent('equippable').setEquipment('Mainhand', itemStack);
+        };
+    }
+)*/

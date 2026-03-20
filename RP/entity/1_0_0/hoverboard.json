@@ -1,0 +1,47 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:hoverboard",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/hoverboard/hoverboard_black",
+				"white": "textures/entity/hoverboard/hoverboard_white",
+				"orange": "textures/entity/hoverboard/hoverboard_orange",
+				"magenta": "textures/entity/hoverboard/hoverboard_magenta",
+				"light_blue": "textures/entity/hoverboard/hoverboard_light_blue",
+				"yellow": "textures/entity/hoverboard/hoverboard_yellow",
+				"lime": "textures/entity/hoverboard/hoverboard_lime",
+				"pink": "textures/entity/hoverboard/hoverboard_pink",
+				"gray": "textures/entity/hoverboard/hoverboard_gray",
+				"silver": "textures/entity/hoverboard/hoverboard_silver",
+				"cyan": "textures/entity/hoverboard/hoverboard_cyan",
+				"purple": "textures/entity/hoverboard/hoverboard_purple",
+				"blue": "textures/entity/hoverboard",
+				"brown": "textures/entity/hoverboard/hoverboard_brown",
+				"green": "textures/entity/hoverboard/hoverboard_green",
+				"red": "textures/entity/hoverboard/hoverboard_red"
+			},
+			"geometry": {
+				"default": "geometry.hoverboard"
+			},
+			"animations": {
+				"move": "animation.hoverboard.move"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.hoverboard.move"
+				}
+			],
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 20
+			}
+		}
+	}
+}

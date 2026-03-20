@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:jsdds"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WW",
+			"WW",
+			"ZZ"
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:wool",
+				"data": 12
+			},
+			"Z": {
+				"item": "minecraft:planks",
+				"data": 4
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_pick_up_truck"
+			}
+		]
+	}
+}

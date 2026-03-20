@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:scooter",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/scooter/scooter_black",
+				"white": "textures/entity/scooter",
+				"orange": "textures/entity/scooter/scooter_orange",
+				"magenta": "textures/entity/scooter/scooter_magenta",
+				"light_blue": "textures/entity/scooter/scooter_light_blue",
+				"yellow": "textures/entity/scooter/scooter_yellow",
+				"lime": "textures/entity/scooter/scooter_lime",
+				"pink": "textures/entity/scooter/scooter_pink",
+				"gray": "textures/entity/scooter/scooter_gray",
+				"silver": "textures/entity/scooter/scooter_silver",
+				"cyan": "textures/entity/scooter/scooter_cyan",
+				"purple": "textures/entity/scooter/scooter_purple",
+				"blue": "textures/entity/scooter/scooter_blue",
+				"brown": "textures/entity/scooter/scooter_brown",
+				"green": "textures/entity/scooter/scooter_green",
+				"red": "textures/entity/scooter/scooter_red"
+			},
+			"geometry": {
+				"default": "geometry.scooter"
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"look_at_target_car": "animation.scooter.look_at_target",
+				"jump": "animation.scooter.jump",
+				"ups": "animation.scooter.ups",
+				"downs": "animation.scooter.downs",
+				"setup": "animation.scooter.setup",
+				"setup2": "animation.scooter.setup2",
+				"general": "controller.animation.climb_vehi.general",
+				"general2": "controller.animation.scooter.general1"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"look_at_target_car",
+					"general",
+					"general2",
+					{
+						"jump": "!query.can_power_jump&&query.is_on_ground"
+					}
+				]
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 48
+			},
+			"render_controllers": [
+				"controller.render.van_v2"
+			]
+		}
+	}
+}

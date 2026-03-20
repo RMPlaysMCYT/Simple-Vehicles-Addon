@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.riding.bike": {
+			"loop": true,
+			"animation_length": 1,
+			"override_previous_animation": true,
+			"bones": {
+				"body": {
+					"rotation": [35, 0, 0],
+					"position": [0, -3, -7]
+				},
+				"head": {
+					"rotation": [-27.5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-95, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [-95, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [0, 0, -10]
+				},
+				"rightLeg": {
+					"rotation": [0, 0, 10],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, 1, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [0, 2, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.riding.hoverboard": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [5, 0, 0],
+					"position": [0, 0, -1]
+				},
+				"leftArm": {
+					"rotation": [60, 0, -10]
+				},
+				"rightArm": {
+					"rotation": [60, 0, 10]
+				},
+				"leftLeg": {
+					"rotation": [67.5, 0, -10]
+				},
+				"rightLeg": {
+					"rotation": [67.5, 0, 10]
+				}
+			}
+		}
+	}
+}

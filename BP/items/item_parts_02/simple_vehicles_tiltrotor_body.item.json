@@ -1,0 +1,17 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": {
+                "texture": "simple_vehicles_tiltrotor_body_i_tex"
+            },
+            "minecraft:max_stack_size": 64
+        },
+        "description": {
+            "identifier": "simple_vehicles:tiltrotor_body",
+            "menu_category": {
+                "category": "equipment"
+            }
+        }
+    }
+}

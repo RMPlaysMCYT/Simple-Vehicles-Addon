@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:mitsubishi_minivan_trucktype",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mitsubishi_minivan_trucktype"
+			},
+			"geometry": {
+				"default": "geometry.mitsubishi_minivan_trucktype"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"move_rev": "animation.mitsubishi_minivan_trucktype.reverse",
+                "move": "animation.mitsubishi_minivan_trucktype.move",
+				"move_ctrl":"controller.animation.chrysler_windsor.move_ctrl",
+                "steer": "animation.mitsubishi_minivan_trucktype.steer",
+                "doors_idle": "animation.mitsubishi_minivan_trucktype.doors_idle",
+                "open": "animation.mitsubishi_minivan_trucktype.open",
+                "close": "animation.mitsubishi_minivan_trucktype.close",
+                "close2": "animation.mitsubishi_minivan_trucktype.close2",
+                "door_mech": "controller.animation.vintage_bus_a.door_mechanic",
+				////Climb
+				"up": "animation.mitsubishi_minivan_trucktype.ups",
+				"down": "animation.mitsubishi_minivan_trucktype.downs",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
+				"pre_animation": [
+					"variable.steering_wheel = query.has_rider ? variable.steering : 0;",
+					"variable.steering = math.lerp(variable.steering, q.yaw_speed, 0.15);",
+					"variable.moving_veh = query.modified_distance_moved;",
+					"variable.new_move_mechanic = variable.moving_veh * 25;",
+					"variable.new_move_mechreve = variable.moving_veh * -25;"
+				],
+				"animate": [
+					"general",
+					"move_ctrl",
+                    "steer",
+                    "door_mech"
+				]
+			},
+			"spawn_egg": {
+				"texture": "vehicles_3",
+                "texture_index": 25
+			}
+		}
+	}
+}

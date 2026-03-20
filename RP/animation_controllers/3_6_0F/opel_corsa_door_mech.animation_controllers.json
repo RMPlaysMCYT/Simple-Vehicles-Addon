@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.opel_corsa.door_mechanic": {
+			"initial_state": "close",
+			"states": {
+				"close": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "query.mark_variant == 1"}
+					],
+					"blend_via_shortest_path": true
+				},
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.mark_variant == 0"},
+						{"close2": "query.has_player_rider"}
+					],
+					"blend_via_shortest_path": true
+				},
+				"close2": {
+					"animations": ["close2"],
+					"transitions": [
+						{"open": "!query.has_player_rider"}
+					],
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

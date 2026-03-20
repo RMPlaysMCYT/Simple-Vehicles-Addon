@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "simple_vehicles:red_spray",
+            "materials": { "default": "entity_alphatest" },
+            "textures": { "default": "textures/entity/sprays/red" },
+            "geometry": { "default": "geometry.red_spray" },
+            "render_controllers": [ "controller.render.default" ],
+            "animations": {
+                "thirdperson_main_hand": "animation.orange_spray.thirdperson_main_hand",
+                "firstperson_main_hand": "animation.orange_spray.firstperson_main_hand"
+            },
+            "scripts": {
+                "pre_animation": [ "v.main_hand = c.item_slot == 'main_hand';" ],
+                "animate": [
+                    { "thirdperson_main_hand": "v.main_hand && !c.is_first_person" },
+                    { "firstperson_main_hand": "v.main_hand && c.is_first_person" }
+                ]
+            }
+        }
+    }
+}

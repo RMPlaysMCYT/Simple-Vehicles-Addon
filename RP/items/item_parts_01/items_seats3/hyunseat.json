@@ -1,0 +1,12 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "simple_vehicles:seat_hyundai_starex",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": "seat_hyundai_starex"
+			}
+	}
+}

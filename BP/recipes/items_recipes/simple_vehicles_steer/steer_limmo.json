@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_limmo-5453"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"vBv",
+			"BIB",
+			"vBv"
+		],
+		"key": {
+			"v": {"item": "minecraft:light_gray_dye"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_limmo"
+			}
+		]
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ice_cream_truck",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"blue": "textures/entity/icecream_truck",
+				"red": "textures/entity/ice_cream_truck/red",
+				"purple": "textures/entity/ice_cream_truck/purple"
+			},
+			"geometry": {
+				"default": "geometry.ice_cream_truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 40
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.ice_cream_truck.move",
+				"turn": "animation.ice_cream_truck.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.ice_cream_truck.door_idle",
+				"close": "animation.simple_vehicles.ice_cream_truck.close",
+				"close2": "animation.simple_vehicles.ice_cream_truck.close2",
+				"open": "animation.simple_vehicles.ice_cream_truck.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"general",
+					"door_mech",
+					"general2"
+				]
+			},
+			"render_controllers": [
+				"controller.render.ice_cream_truck"
+			],
+			"sound_effects": {
+				"ice_ctruck_door_open": "simple_vehicles.auv_car.open",
+				"ice_ctruck_door_close": "simple_vehicles.auv_car.close"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

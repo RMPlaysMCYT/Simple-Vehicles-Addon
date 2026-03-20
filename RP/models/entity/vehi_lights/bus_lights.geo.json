@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 10,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bus_lights",
+					"pivot": [0, 0, -120],
+					"cubes": [
+						{"origin": [-35, 10, -87], "size": [70, 0, 30], "pivot": [0, 10, -57], "rotation": [20, 0, 0], "uv": [0, 30]},
+						{"origin": [-35, 13, -90], "size": [70, 0, 30], "pivot": [0, 10, -57], "rotation": [-42.5, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

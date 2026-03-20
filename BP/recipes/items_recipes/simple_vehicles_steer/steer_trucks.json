@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_trucks11232"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"3B3",
+			"BIB",
+			"DBD"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 8
+			},
+			"I": {
+				"item": "minecraft:stone_button"
+			},
+			"3": {"item": "minecraft:wool"},
+			"D": {"item": "minecraft:iron_ingot"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_trucks"
+			}
+		]
+	}
+}

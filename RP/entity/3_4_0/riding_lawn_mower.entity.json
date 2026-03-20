@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "simple_vehicles:riding_lawn_mower",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.riding_lawn_mower"
+            },
+            "textures": {
+                "default": "textures/entity/riding_lawn_mower"
+            },
+            "animations": {
+                "move": "animation.riding_lawn_mower.move",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+            },
+            "scripts": {
+                "animate": [
+                    "move",
+                    "general"
+                ]
+            },
+            "spawn_egg": {
+                "texture": "vehicles_3",
+                "texture_index": 5
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

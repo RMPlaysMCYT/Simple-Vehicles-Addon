@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.ride_scooterb": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"riding":"query.has_rider || query.is_moving "
+						}
+					]
+				},
+				"riding": {
+					"transitions": [
+						{
+							"default": "!query.has_rider || !query.is_moving"
+						}
+					],
+					"animations": [
+						"riding_playa"
+					]
+				}
+			}
+		}
+	}
+}

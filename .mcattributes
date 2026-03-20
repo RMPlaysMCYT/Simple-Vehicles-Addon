@@ -1,0 +1,3 @@
+
+diagnostic.disable.behaviorpack.animation_controllers.duplicate_id=true
+diagnostic.disable.minecraft.commands.effect.syntax=true

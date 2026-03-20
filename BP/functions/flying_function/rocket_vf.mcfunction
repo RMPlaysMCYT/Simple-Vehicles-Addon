@@ -1,0 +1,2 @@
+###execute @e[r=2,type=simple_vehicles:rocket_v] ~ ~ ~ effect @s slowness 2 5 true
+execute as @a[r=2] run effect @e[r=2,type=simple_vehicles:rocket_v] slowness 2 5 true

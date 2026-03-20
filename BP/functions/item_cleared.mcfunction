@@ -1,0 +1,1 @@
+replaceitem entity @p[r=1] slot.inventory 0 air 1 0

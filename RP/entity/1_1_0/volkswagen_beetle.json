@@ -1,0 +1,70 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:volkswagen_beetle",
+			"materials": {
+				"default": "witch"
+			},
+			"geometry": {
+				"default": "geometry.VW_Beetle"
+			},
+			"textures": {
+				"black": "textures/entity/VW_Beetle",
+				"white": "textures/entity/vm_beetle/VW_Beetle_white",
+				"orange": "textures/entity/vm_beetle/VW_Beetle_orange",
+				"magenta": "textures/entity/vm_beetle/VW_Beetle_magenta",
+				"light_blue": "textures/entity/vm_beetle/VW_Beetle_light_blue",
+				"yellow": "textures/entity/vm_beetle/VW_Beetle_yellow",
+				"lime": "textures/entity/vm_beetle/VW_Beetle_lime",
+				"pink": "textures/entity/vm_beetle/VW_Beetle_pink",
+				"gray": "textures/entity/vm_beetle/VW_Beetle_gray",
+				"silver": "textures/entity/vm_beetle/VW_Beetle_silver",
+				"cyan": "textures/entity/vm_beetle/VW_Beetle_cyan",
+				"purple": "textures/entity/vm_beetle/VW_Beetle_purple",
+				"blue": "textures/entity/vm_beetle/VW_Beetle_blue",
+				"brown": "textures/entity/vm_beetle/VW_Beetle_brown",
+				"green": "textures/entity/vm_beetle/VW_Beetle_green",
+				"red": "textures/entity/vm_beetle/VW_Beetle_red"
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 37
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.VW_Beetle.move",
+				"turn": "animation.VW_Beetle.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.VW_Beetle.doors_idle",
+				"close": "animation.simple_vehicles.VW_Beetle.close",
+				"close2": "animation.simple_vehicles.VW_Beetle.close2",
+				"open": "animation.simple_vehicles.VW_Beetle.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general",
+					"general2",
+					"door_mech"
+				]
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"sound_effects": {
+				"vwb_door_open": "simple_vehicles.auv_car.open",
+				"vwb_door_close": "simple_vehicles.auv_car.close"
+			}
+		}
+	}
+}

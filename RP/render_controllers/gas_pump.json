@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.gas_pump_rc": {
+			"part_visibility": [
+				{
+					"*": true
+				},
+				{
+					"nozzle": "q.property('simple_vehicles:get_gas') != 0"
+				},
+				{
+					"nozzle": "q.property('simple_vehicles:get_gas') == 1"
+				}
+			],
+			"rebuild_animation_matrices": true,
+			"geometry":"Geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			]
+		}
+	}
+}

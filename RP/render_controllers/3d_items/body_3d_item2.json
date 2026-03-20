@@ -1,0 +1,68 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.body_3d_item2": {
+			"part_visibility": [
+				{
+					"root": true
+				},
+				{
+					"body": true
+				},
+				{
+					"leg0": false
+				},
+				{
+					"steer": false
+				},
+				{
+					"steering_wheel": false
+				},
+				{
+					"leg1": false
+				},
+				{
+					"tire0": false
+				},
+				{
+					"tire1": false
+				},
+				{
+					"wings": false
+				},
+				{
+					"wings0": false
+				},
+				{
+					"wings1": false
+				},
+				{
+					"wing0": false
+				},
+				{
+					"wing1": false
+				},
+				{
+					"flap0": false
+				},
+				{
+					"flap1": false
+				},
+				{
+					"flap2": false
+				},
+				{
+					"flap3": false
+				}
+			],
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": ["Texture.default"]
+		}
+	}
+}

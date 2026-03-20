@@ -1,0 +1,51 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:car_body_recipe"
+		},
+		"tags": [
+			"vehicle_workbench",
+			"crafting_table"
+		],
+		"pattern": [
+			"bg",
+			"bsw",
+			"bbb"
+		],
+		"key": {
+			"b": {
+				"item": "minecraft:iron_ingot"
+			},
+			"g": {
+				"item": "minecraft:glass_pane"
+			},
+			"s": {
+				"item": "simple_vehicles:seat_ae86"
+			},
+			"w": {
+				"item": "simple_vehicles:steer_ae86"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_ae86"
+			},
+			{
+				"item": "simple_vehicles:body_auv_car"
+			},
+			{
+				"item": "simple_vehicles:body_car4x4"
+			},
+			{
+				"item": "simple_vehicles:body_car"
+			},
+			{
+				"item": "simple_vehicles:body_corolla"
+			},
+			{
+				"item": "simple_vehicles:body_ev4"
+			}
+		]
+	}
+}

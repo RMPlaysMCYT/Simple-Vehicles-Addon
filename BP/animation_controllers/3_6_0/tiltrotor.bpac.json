@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.tiltrotor.fly": {
+            "states": {
+                "flying_v1": {
+                    "transitions": [
+                        {
+                            "flying_v2": "query.is_saddled&&!query.is_on_ground&&math.random(1,10)>8"
+                        },
+                        {
+                            "walking_v1": "query.is_on_ground"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function flying_function/tiltrotor"
+                    ]
+                },
+                "flying_v2": {
+                    "transitions": [
+                        {
+                            "flying_v1": "query.is_saddled&&!query.is_on_ground&&math.random(1,10)>8"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function flying_function/tiltrotor"
+                    ]
+                },
+                "walking_v1": {
+                    "transitions": [
+                        {
+                            "flying_v1": "!query.is_on_ground && query.is_saddled"
+                        },
+                        {
+                            "walking_v2": "query.is_on_ground"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function flying_function/_walk_tiltrotor"
+                    ]
+                },
+                "walking_v2": {
+                    "transitions": [
+                        {
+                            "walking_v1": "math.random(1,10)>8"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

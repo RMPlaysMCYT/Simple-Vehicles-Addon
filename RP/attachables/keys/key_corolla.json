@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "simple_vehicles:key_corolla",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/keys/key_corolla"
+            },
+            "geometry": {
+                "default": "geometry.simple_vehicles.key"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "thirdperson_main_hand": "animation.key.thirdperson_main",
+                "firstperson_main_hand": "animation.key.firstperson_main"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "v.main_hand = c.item_slot == 'main_hand';"
+                ],
+                "animate": [
+                    {
+                        "thirdperson_main_hand": "v.main_hand && !c.is_first_person"
+                    },
+                    {
+                        "firstperson_main_hand": "v.main_hand && c.is_first_person"
+                    }
+                ]
+            }
+        }
+    }
+}

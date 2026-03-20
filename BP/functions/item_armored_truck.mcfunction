@@ -1,0 +1,1 @@
+replaceitem entity @p[r=1] slot.hotbar 1 simple_vehicles:breakable_item 1 0

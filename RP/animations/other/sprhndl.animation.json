@@ -1,0 +1,86 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.orange_spray.thirdperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"position": [
+						-4,
+						8,
+						-3
+					]
+				},
+				"spray3": {
+					"rotation": [
+						60,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-2,
+						0
+					],
+					"scale": 0.7
+				},
+				"spray": {
+					"rotation": [
+						62.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-1,
+						-4
+					],
+					"scale": 0.7
+				}
+			}
+		},
+		"animation.orange_spray.firstperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"spray": {
+					"rotation": [
+						90,
+						60,
+						-40
+					],
+					"position": [
+						0,
+						-5,
+						2
+					],
+					"scale": 0.7
+				},
+				"spray3": {
+					"rotation": [
+						90,
+						60,
+						-40
+					],
+					"position": [
+						0,
+						-5,
+						2
+					],
+					"scale": 0.9
+				},
+				"rightArm": {
+					"rotation": [
+						-90,
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

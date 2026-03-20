@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.speedboat": {
+			"arrays": {
+				"materials": {
+					"Array.materials": [
+						"Material.default",
+						"Material.invisible"
+					]
+				}
+			},
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "array.materials[query.is_invisible]"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		}
+	}
+}

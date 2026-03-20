@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:fire_truck",
+			"materials": {
+				"default": "witch",
+				"firetruck_lights": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/firetruck",
+				"firetruck_lights": "textures/entity/vehi_lights/firetruck_lights"
+			},
+			"geometry": {
+				"default": "geometry.firetruck",
+				"firetruck_lights": "geometry.firetruck_lights"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.firetruck.move",
+				"turn": "animation.firetruck.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_idle": "animation.simple_vehicles.car_new.door_idle",
+				"open": "animation.simple_vehicles.firetruck.open",
+				"close": "animation.simple_vehicles.firetruck.close",
+				"close2": "animation.simple_vehicles.firetruck.close2",
+				"door_mechanic_v2": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic_v2",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.firetruck"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 6
+			}
+		}
+	}
+}

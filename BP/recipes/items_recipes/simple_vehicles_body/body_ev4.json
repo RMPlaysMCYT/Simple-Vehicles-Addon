@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_ev4lkjds_0011"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BG",
+			"BDW",
+			""
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"D": {
+				"item": "simple_vehicles:seat_ev_4"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_ev_4"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_ev4"
+			}
+		]
+	}
+}

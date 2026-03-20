@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.container_van.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				}
+			}
+		}
+	}
+}

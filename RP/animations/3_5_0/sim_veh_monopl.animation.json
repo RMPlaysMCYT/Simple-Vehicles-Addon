@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sim_veh_monopl.look_at_target": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", "-this"]
+				}
+			}
+		},
+		"animation.sim_veh_monopl.loop": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"propeller": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 1440]
+					}
+				}
+			}
+		},
+		"animation.sim_veh_monopl.flying": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 3, 1]
+					}
+				}
+			}
+		},
+		"animation.sim_veh_monopl.landing": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 3, 1],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

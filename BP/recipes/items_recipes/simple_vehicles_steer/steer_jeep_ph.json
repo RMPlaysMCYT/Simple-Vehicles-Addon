@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_jeep_ph24224"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"aha",
+			"hIh",
+			"aha"
+		],
+		"key": {
+			"h": {
+				"item": "minecraft:concrete",
+				"data": 7
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"a": {"item": "minecraft:iron_nugget"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_jeep_ph"
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.mustang": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.blue",
+						"Texture.red"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.skin_id]"
+			]
+		}
+	}
+}

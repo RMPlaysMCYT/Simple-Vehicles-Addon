@@ -1,0 +1,302 @@
+{
+    "format_version": "1.18.30",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "simple_vehicles:tractor_seeder",
+            "is_experimental": false,
+            "is_spawnable": true,
+            "is_summonable": true,
+            "scripts": {
+                "animate": [
+                    "command",
+                    "durability",
+                    "fuel2",
+                    "move",
+                    //////WHEAT
+                    "seeder_wheat_north",
+                    "seeder_wheat_south",
+                    "seeder_wheat_west",
+                    "seeder_wheat_east",
+                    "seeder_wheat_diagonal_1",
+                    "seeder_wheat_diagonal_2",
+                    "seeder_wheat_diagonal_3",
+                    "seeder_wheat_diagonal_4",
+                    /////BEETROOT
+                    "seeder_beetroot_north",
+                    "seeder_beetroot_south",
+                    "seeder_beetroot_west",
+                    "seeder_beetroot_east",
+                    "seeder_beetroot_diagonal_1",
+                    "seeder_beetroot_diagonal_2",
+                    "seeder_beetroot_diagonal_3",
+                    "seeder_beetroot_diagonal_4"
+                ]
+            },
+            "animations": {
+                "command": "controller.animation.vehicle.command",
+                "durability": "controller.animation.vehicle.durability",
+                "fuel2": "controller.animation.simple_vehicles.fuel2",
+                "move": "controller.animation.vehicle.move",
+                    //////WHEAT
+                    //////WHEAT
+                    //////WHEAT
+                "seeder_wheat_north": "controller.animation.tractor_seeder.seeder_wheat_north",
+                "seeder_wheat_south": "controller.animation.tractor_seeder.seeder_wheat_south",
+                "seeder_wheat_east": "controller.animation.tractor_seeder.seeder_wheat_east",
+                "seeder_wheat_west": "controller.animation.tractor_seeder.seeder_wheat_west",
+                "seeder_wheat_diagonal_1": "controller.animation.tractor_seeder.seeder_wheat_diagonal_1",
+                "seeder_wheat_diagonal_2": "controller.animation.tractor_seeder.seeder_wheat_diagonal_2",
+                "seeder_wheat_diagonal_3": "controller.animation.tractor_seeder.seeder_wheat_diagonal_3",
+                "seeder_wheat_diagonal_4": "controller.animation.tractor_seeder.seeder_wheat_diagonal_4",
+/////BEETROOT
+/////BEETROOT
+/////BEETROOT
+                "seeder_beetroot_north": "controller.animation.tractor_seeder.seeder_beetroot_north",
+                "seeder_beetroot_south": "controller.animation.tractor_seeder.seeder_beetroot_south",
+                "seeder_beetroot_west": "controller.animation.tractor_seeder.seeder_beetroot_west",
+                "seeder_beetroot_east": "controller.animation.tractor_seeder.seeder_beetroot_east",
+                "seeder_beetroot_diagonal_1": "controller.animation.tractor_seeder.seeder_beetroot_diagonal_1",
+                "seeder_beetroot_diagonal_2": "controller.animation.tractor_seeder.seeder_beetroot_diagonal_2",
+                "seeder_beetroot_diagonal_3": "controller.animation.tractor_seeder.seeder_beetroot_diagonal_3",
+                "seeder_beetroot_diagonal_4": "controller.animation.tractor_seeder.seeder_beetroot_diagonal_4"
+            }
+        },
+        "component_groups": {
+            "simple_vehicles:door_close": {
+                "minecraft:interact": {
+                    "interactions": [
+                        {"interact_text": "Fuel It Up!!","on_interact": {"event": "simple_vehicles:refuel","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "simple_vehicles:gas_nozzle"}]}},"use_item": true},
+                        {"interact_text": "Fuel It Up!!","on_interact": {"event": "simple_vehicles:refuel","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "simple_vehicles:jerry_can"}]}},"use_item": false},
+                        {"interact_text": "Fuel It Up!!","on_interact": {"event": "simple_vehicles:farm_wheat_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "simple_vehicles:wheatpack"}]}},"use_item": true},
+                        {"interact_text": "Fuel It Up!!","on_interact": {"event": "simple_vehicles:farm_beetroot_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "simple_vehicles:beetrpack"}]}},"use_item": true}
+                    ]
+                },
+                "minecraft:rideable": {
+                    "controlling_seat": 1,
+                    "crouching_skip_interact": true,
+                    "family_types": [
+                        "player"
+                    ],
+                    "interact_text": "Ride",
+                    "rider_can_interact": true,
+                    "seat_count": 2,
+                    "seats": [
+                        {
+                            "position": [
+                                0,
+                                0.9,
+                                -0.2
+                            ]
+                        },
+                        {
+                            "position": [
+                                -0.6,
+                                0.6,
+                                0.8
+                            ]
+                        }
+                    ]
+                }
+            },
+            "simple_vehicles:activated": {
+                "minecraft:input_ground_controlled": {},
+                "minecraft:is_tamed": {}
+            },
+            "simple_vehicles:refuel": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "simple_vehicles:refueled": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "simple_vehicles:orange": {
+                "minecraft:variant": {
+                    "value": 0
+                }
+            },
+            "simple_vehicles:green": {
+                "minecraft:variant": {
+                    "value": 1
+                }
+            },
+            "simple_vehicles:no_bspnated": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "simple_vehicles:wheat_planted": {
+                "minecraft:is_tamed": {},
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": [
+                        30,
+                        35
+                    ],
+                    "time_down_event": {
+                        "event": "simple_vehicles:tractor_reset",
+                        "target": "self"
+                    }
+                },
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "simple_vehicles:beetroot_planted": {
+                "minecraft:is_tamed": {},
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": [
+                        30,
+                        35
+                    ],
+                    "time_down_event": {
+                        "event": "simple_vehicles:tractor_reset",
+                        "target": "self"
+                    }
+                },
+                "minecraft:mark_variant": {
+                    "value": 2
+                }
+            }
+        },
+        "components": {
+            "minecraft:loot": {
+                "table": "loot_tables/entities/vehicles_3_4_0/tractor_seeder.json"
+            },
+            "minecraft:collision_box": {
+                "width": 3,
+                "height": 2
+            },
+            "minecraft:health": {
+                "value": 50
+            },
+            "minecraft:movement.generic": {},
+            "minecraft:is_chested": {},
+            "minecraft:inventory": {
+                "inventory_size": 5,
+                "container_type": "horse"
+            },
+            "minecraft:equippable": {
+                "slots": [
+                    {
+                        "accepted_items": [
+                            "simple_vehicles:key_tractor_seeder"
+                        ],
+                        "item": "simple_vehicles:key_tractor_seeder",
+                        "on_equip": {
+                            "event": "simple_vehicles:activated"
+                        },
+                        "on_unequip": {
+                            "event": "simple_vehicles:deactivated"
+                        }
+                    }
+                ]
+            },
+            "minecraft:jump.static": {},
+                   "minecraft:nameable": {         "always_show": false       },
+            "minecraft:horse.jump_strength": {
+                "value": 0
+            },
+            "minecraft:physics": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {
+                        "randomize": [
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "simple_vehicles:door_close",
+                                        "simple_vehicles:no_bspnated"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "randomize": [
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "simple_vehicles:green"
+                                    ]
+                                }
+                            },
+                            {
+                                "add": {
+                                    "component_groups": [
+                                        "simple_vehicles:green"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "simple_vehicles:activated": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:activated"
+                    ]
+                }
+            },
+            "simple_vehicles:deactivated": {
+                "remove": {
+                    "component_groups": [
+                        "simple_vehicles:activated"
+                    ]
+                }
+            },
+            "simple_vehicles:refuel": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:refueled"
+                    ]
+                }
+            },
+            "simple_vehicles:refuel_re": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:refuel"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "simple_vehicles:refueled"
+                    ]
+                }
+            },
+            "simple_vehicles:farm_wheat_started": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:wheat_planted"
+                    ]
+                }
+            },
+            "simple_vehicles:farm_beetroot_started": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:beetroot_planted"
+                    ]
+                }
+            },
+            "simple_vehicles:tractor_reset": {
+                "remove": {
+                    "component_groups": [
+                        "simple_vehicles:wheat_planted",
+                        "simple_vehicles:beetroot_planted"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:no_bspnated"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.key.thirdperson_main": {
+			"loop": true,
+			"bones": {
+				"key": {
+					"rotation": [60, 0, 0],
+					"position": [6, -9, -11],
+					"scale": 0.2
+				},
+				"root": {
+					"position": [0, -4, 4]
+				}
+			}
+		},
+		"animation.key.firstperson_main": {
+			"loop": true,
+			"bones": {
+				"key": {
+					"rotation": [90, 60, -40],
+					"position": [2, -10, 2],
+					"scale": 0.7
+				},
+				"root": {
+					"position": [0, -2, -2],
+					"scale": 0.8
+				}
+			}
+		}
+	}
+}

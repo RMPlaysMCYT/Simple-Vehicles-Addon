@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:rocket_v",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/simple_vehicles_rocket_viking"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.rocket_viking"
+			},
+			"animations": {
+				"setup": "animation.simple_vehicles.rocket_viking.setup",
+				"flying": "animation.simple_vehicles.rocket_viking.flying",
+				"landing": "animation.simple_vehicles.rocket_viking.landing",
+				"doors_idle": "animation.simple_vehicles.rocket_viking.doors_idle",
+				"open": "animation.simple_vehicles.rocket_viking.open",
+				"close": "animation.simple_vehicles.rocket_viking.close",
+				"close2": "animation.simple_vehicles.rocket_viking.close2",
+				"door_mech": "controller.animation.simple_vehicles.rocket_viking.door_mech",
+				"flying_ctrlr": "controller.animation.simple_vehicles.rocket_viking.flying_ctrlr"
+			},
+			"scripts": {
+				"animate": [
+					"setup",
+					"door_mech",
+					"flying_ctrlr",
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 25
+			},
+			"sound_effects": {
+				"viking_door_open": "simple_vehicles.corolla.open",
+				"viking_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

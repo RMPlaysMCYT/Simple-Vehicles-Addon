@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_VM_Beetle"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"vBm",
+			"BIB",
+			"vBq"
+		],
+		"key": {
+			"m": {"item": "minecraft:redstone"},
+			"q": {"item": "minecraft:stick"},
+			"v": {"item": "minecraft:wool","data": 8},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_VM_Beetle"
+			}
+		]
+	}
+}

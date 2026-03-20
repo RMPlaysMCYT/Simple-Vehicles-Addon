@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:owkedsmf"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"LL",
+			"WW",
+			"GG"
+		],
+		"key": {
+			"L":{
+				"item": "minecraft:carpet",
+				"data": 8
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 12
+			},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 0
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_jeep_ph"
+			}
+		]
+	}
+}

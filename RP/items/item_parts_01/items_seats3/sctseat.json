@@ -1,0 +1,12 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "simple_vehicles:seat_scooter_A",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": "seat_scooter_A"
+			}
+	}
+}

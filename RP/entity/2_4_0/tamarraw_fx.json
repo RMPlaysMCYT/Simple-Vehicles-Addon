@@ -1,0 +1,48 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tamarraw_fx",
+			"materials": {
+				"default": "witch"
+			},
+			"animations": {
+				"move": "animation.tammarawfx.move",
+				"doors_idle": "animation.tammarawfx.doors_idle",
+				"open": "animation.tammarawfx.open",
+				"close": "animation.tammarawfx.close",
+				"close2": "animation.tammarawfx.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"general",
+					"door_mechanic"
+				]
+			},
+			"textures": {
+				"white": "textures/entity/tamarrawfx",
+				"black": "textures/entity/tamarrawfx/tamarrawfx_black"
+			},
+			"geometry": {
+				"default": "geometry.tammarawfx"
+			},
+			"render_controllers": [
+				"controller.render.tamrrawfx"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 35
+			},
+			"sound_effects": {
+				"tmrfx_door_open": "simple_vehicles.corolla.open",
+				"tmrfx_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

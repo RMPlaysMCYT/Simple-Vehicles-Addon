@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:asdfjkl"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"LL",
+			"WW",
+			"GG"
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:wool",
+				"data": 7
+			},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 3
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_lowrider_car"
+			}
+		]
+	}
+}

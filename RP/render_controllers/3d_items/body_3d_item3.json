@@ -1,0 +1,143 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.body_3d_itembusUpper": {
+			"part_visibility": [
+				{
+					"root": true
+				},
+				{
+					"upper_body": true
+				},
+				{
+					"bodyup": false
+				},
+				{
+					"body": false
+				},
+				{
+					"steer": false
+				},
+				{
+					"steering_wheel": false
+				},
+				{
+					"leg0": false
+				},
+				{
+					"leg1": false
+				},
+				{
+					"tire0": false
+				},
+				{
+					"tire1": false
+				},
+				{
+					"wings": false
+				},
+				{
+					"wings0": false
+				},
+				{
+					"wings1": false
+				},
+				{
+					"wing0": false
+				},
+				{
+					"wing1": false
+				},
+				{
+					"wheel0": false
+				},
+				{
+					"wheel1": false
+				},
+				{
+					"wheel2": false
+				},
+				{
+					"flap0": false
+				},
+				{
+					"flap1": false
+				},
+				{
+					"flap2": false
+				},
+				{
+					"flap3": false
+				}
+			],
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": ["Texture.default"]
+		},
+		"controller.render.body_3d_itembusLower": {
+			"part_visibility": [
+				{
+					"root": true
+				},
+				{
+					"upper_body": false
+				},
+				{
+					"bodyup": true
+				},
+				{
+					"body": true
+				},
+				{
+					"leg0": false
+				},
+				{
+					"leg1": false
+				},
+				{
+					"tire0": false
+				},
+				{
+					"tire1": false
+				},
+				{
+					"wings": false
+				},
+				{
+					"wings0": false
+				},
+				{
+					"wings1": false
+				},
+				{
+					"wing0": false
+				},
+				{
+					"wing1": false
+				},
+				{
+					"wheel0": false
+				},
+				{
+					"wheel1": false
+				},
+				{
+					"wheel2": false
+				}
+			],
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": ["Texture.default"]
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.seat.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "root_item": {
+          "rotation": [90, -66.5, -32],
+          "position": [30, 16, 19]
+        },
+        "seat": {
+          "rotation": [0, 0, -125],
+          "position": [0, 0, 0]
+        }
+      }
+    },
+    "animation.seat.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "root_item": {
+          "rotation": [25, 0, 0],
+          "position": [0.5, 19, -2.5],
+          "scale": 0.85
+        },
+        "seat": {
+          "position": [0, 4, -3],
+          "scale": 0.7
+        }
+      }
+    }
+  }
+}

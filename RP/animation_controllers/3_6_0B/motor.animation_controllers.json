@@ -1,0 +1,23 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.motor.setup": {
+			"states": {
+				"default": {
+					"animations": ["setup"],
+					"transitions": [
+						{"setup2": "query.has_player_rider"}
+					],
+					"blend_transition": 0.1
+				},
+				"setup2": {
+					"animations": ["setup2"],
+					"transitions": [
+						{"default": "!query.has_player_rider"}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

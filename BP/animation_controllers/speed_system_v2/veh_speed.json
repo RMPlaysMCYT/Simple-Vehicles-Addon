@@ -1,0 +1,58 @@
+{
+	"format_version": "1.17.0",
+	"animation_controllers": {
+		"controller.animation.simple_vehicles.vehicle_speed": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"speedup": "query.is_moving"
+						}
+					]
+				},
+				"speedup": {
+					"on_entry": [
+						"/tag @s add simple_vehicles_moving"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_moving"
+						}
+					],
+					"on_exit": [
+						"/tag @s remove simple_vehicles_moving",
+						"/scoreboard players set @s carspeed 30"
+					]
+				}
+			}
+		},
+		"controller.animation.simple_vehicles.vehicles_onair": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"caronair": "!query.is_on_ground"
+						}
+					]
+				},
+				"caronair": {
+					"on_entry": [
+						"/tag @s add simple_vehicles_on_air",
+						"/execute @s [scores={carspeed=230..}] ~ ~ ~ effect @s slow_falling 1 0 true"
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						}
+					],
+					"on_exit": [
+						"/tag @s remove simple_vehicles_on_air",
+						"/effect @s clear"
+					]
+				}
+			}
+		}
+	}
+}

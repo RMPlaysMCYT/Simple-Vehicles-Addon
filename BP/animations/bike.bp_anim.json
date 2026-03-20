@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.bike.riding.simveh_bike_move": {
+			"timeline": {
+				"0.0": [
+					"/function player_ride_sys/player_ride_bike"
+				],
+				"0.1": [
+					"/function player_ride_sys/player_ride_bike_move"
+				]
+			},
+			"animation_length": 1,
+			"loop": true
+		},
+		"animation.bike.riding.simveh_bike_stand": {
+			"start_delay": "!query.has_rider",
+			"loop_delay": "!query.has_rider",
+			"animation_length": 0.2,
+			"timeline": {
+				"0.0": [
+					"/function player_ride_sys/quad_bike"
+				]
+			},
+			"loop": true
+		}
+	}
+}

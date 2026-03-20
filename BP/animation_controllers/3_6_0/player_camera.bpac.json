@@ -1,0 +1,131 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.simple_vehicles.player_camera_north":{
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {
+                            "activated": "query.has_rider && (query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a remove SimVehCumShot",
+                        "/camera @a clear"
+                    ]
+                },
+                "activated":{
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider && !(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a[c=1] add SimVehCumShot",
+                        "/function camera_system/camera_directional/north"
+                    ]
+                }
+            }
+        },
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+        "controller.animation.simple_vehicles.player_camera_south":{
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {
+                            "activated": "query.has_rider && (query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a remove SimVehCumShot",
+                        "/camera @a clear"
+                    ]
+                },
+                "activated":{
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider && !(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a[c=1] add SimVehCumShot",
+                        "/function camera_system/camera_directional/south"
+                    ]
+                }
+            }
+        },
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+        "controller.animation.simple_vehicles.player_camera_west":{
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {
+                            "activated": "query.has_rider && (query.body_y_rotation >= -112.5 && query.body_y_rotation <= 67.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a remove SimVehCumShot",
+                        "/camera @a clear"
+                    ]
+                },
+                "activated":{
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider && !(query.body_y_rotation >= -112.5 && query.body_y_rotation <= 67.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a[c=1] add SimVehCumShot",
+                        "/function camera_system/camera_directional/wast"
+                    ]
+                }
+            }
+        },
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+////////Mierda
+        "controller.animation.simple_vehicles.player_camera_east":{
+            "initial_state": "default",
+            "states": {
+                "default":{
+                    "transitions": [
+                        {
+                            "activated": "query.has_rider && (query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a remove SimVehCumShot",
+                        "/camera @a clear"
+                    ]
+                },
+                "activated":{
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider && !(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a[c=1] add SimVehCumShot",
+                        "/function camera_system/camera_directional/east"
+                    ]
+                }
+            }
+        }
+    }
+}

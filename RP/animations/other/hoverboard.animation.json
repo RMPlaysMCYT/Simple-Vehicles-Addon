@@ -1,0 +1,56 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.hoverboard.move": {
+      "loop": true,
+      "animation_length": 1,
+      "anim_time_update": "query.modified_distance_moved",
+      "bones": {
+        "leg0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "leg1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "tire1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "tire0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.hoverboard.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [-639.96775, -60.28874, -576.4379],
+          "position": [0, 23, 3],
+          "scale": [0.4, 0.5, 0.4]
+        }
+      }
+    },
+    "animation.hoverboard.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [15, 0, 0],
+          "position": [0, 19, -4],
+          "scale": [0.4, 0.5, 0.4]
+        }
+      }
+    }
+  }
+}

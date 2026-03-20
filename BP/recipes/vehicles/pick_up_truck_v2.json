@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:pickup_flash_express_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"SB",
+			"A A"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:chest"
+			},
+			"B": {
+				"item": "simple_vehicles:pick_up_flash_exp_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_pick_up_truck"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:pickup_flash_express_spawn_egg"
+			}
+		]
+	}
+}

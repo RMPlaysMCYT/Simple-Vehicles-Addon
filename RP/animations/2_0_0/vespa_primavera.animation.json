@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles_vespa_primavera.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_vespa_primavera.idle": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles_vespa_primavera.ups": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * 1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_vespa_primavera.downs": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * -1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_vespa_primavera.setup": {
+			"loop": true,
+			"bones": {
+				"stick2": {
+					"rotation": [-90, 0, 35]
+				},
+				"stick1": {
+					"rotation": [-90, 0, -35]
+				}
+			}
+		},
+		"animation.simple_vehicles_vespa_primavera.setup2": {
+			"loop": true,
+			"bones": {
+				"stick2": {
+					"rotation": [0, 0, 0]
+				},
+				"stick1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

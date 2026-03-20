@@ -1,0 +1,15 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "simple_vehicles:breakable_item",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:use_duration": 30,
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:stacked_by_data": true
+		}
+	}
+}

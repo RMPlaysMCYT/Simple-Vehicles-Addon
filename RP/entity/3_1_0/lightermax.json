@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "simple_vehicles:lightermax",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.lightermax"
+            },
+            "textures": {
+                "lightermax": "textures/entity/3_1_0/lightermax",
+                "lightermax_black": "textures/entity/3_1_0/lightermax/lightermax_black",
+                "lightermax_white": "textures/entity/3_1_0/lightermax/lightermax_white"
+            },
+            "animations": {
+                "move": "animation.lightermax.move",
+                "turn": "animation.lightermax.turn",
+                "ups": "animation.lightermax.ups",
+                "downs": "animation.lightermax.downs",
+                "vehi2general": "controller.animation.vehicles2.general"
+            },
+            "scripts": {
+                "animate": [
+                    "vehi2general",
+                    {
+                        "move": "query.modified_move_speed"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.lightermax"
+            ],
+            "spawn_egg": {
+                "texture": "vehicles_3",
+                "texture_index": 3
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:jetmax"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BA"
+		],
+		"key": {
+			"A": {"item": "minecraft:redstone"},
+			"B": {
+				"item": "simple_vehicles:body_jetmax"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:jetmax_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

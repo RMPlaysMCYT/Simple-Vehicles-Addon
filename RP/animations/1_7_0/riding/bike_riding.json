@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.bike.ride": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [22.5, 0, 0],
+					"position": [0, 0, 2]
+				},
+				"leftArm": {
+					"rotation": [-28, 0, 0]
+				},
+				"leftSleeve": {
+					"rotation": [0, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [-28, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [60, 10, 0],
+					"position": [0, "math.cos(query.anim_time * query.is_moving * 580) * 1", 3]
+				},
+				"rightLeg": {
+					"rotation": [60, -10, 0],
+					"position": [0, "math.cos(query.anim_time * query.is_moving * 580) * -1", 3]
+				},
+				"root": {
+					"position": [0, -1, 3]
+				}
+			}
+		}
+	}
+}

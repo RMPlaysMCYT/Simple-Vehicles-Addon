@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.steer_ae86.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "steer": {
+          "rotation": [90, 56, -32],
+          "position": [16, -31, 24],
+          "scale": 0.8
+        },
+        "steering_wheel": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": 0.8
+        }
+      }
+    },
+    "animation.steer_ae86.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "steer": {
+          "rotation": [25, 0, 0],
+          "position": [7, -18, 6.5],
+          "scale": 0.8
+        },
+        "steering_wheel": {
+          "rotation": [25, 0, 0],
+          "position": [0, -23, 3.5],
+          "scale": 0.8
+        }
+      }
+    },
+    "animation.steer_bike.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "steer": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.steer_bike.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "steer": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_plane"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" W",
+			"BKB",
+			" B"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"K": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_plane",
+				"count": 4
+			}
+		]
+	}
+}

@@ -1,0 +1,232 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles_isuzu_dmax.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"mac": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"pedal0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [-72.5, 0, 0],
+						"0.4": [-145, 0, 0],
+						"0.6": [-215, 0, 0],
+						"0.8": [-287.5, 0, 0],
+						"1.0": [-360, 0, 0]
+					}
+				},
+				"pedal1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [-72.5, 0, 0],
+						"0.4": [-145, 0, 0],
+						"0.6": [-215, 0, 0],
+						"0.8": [-287.5, 0, 0],
+						"1.0": [-360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax.move_1": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_move_speed",
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax.move_2": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"wheel0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"wheel1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["720", 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["720", 0, 0]
+					}
+				},
+				"cover": {
+					"rotation": [0, 0, 0]
+				},
+				"tire0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["720", 0, 0]
+					}
+				},
+				"tire1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["720", 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "isuzu_dmax_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "isuzu_dmax_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "isuzu_dmax_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door2": {
+					"rotation": [0, 0, 0]
+				},
+				"door3": {
+					"rotation": [0, 60, 0]
+				}
+			}
+		}
+	}
+}

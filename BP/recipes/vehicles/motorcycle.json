@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:motorcycle"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B ",
+			"M M"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_motorcycle"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_motorcycle"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:motorcycle_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

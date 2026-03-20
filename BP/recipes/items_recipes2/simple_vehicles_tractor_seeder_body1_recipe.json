@@ -1,0 +1,27 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:tractor_seeder_body1_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 6
+            },
+            {
+                "item": "minecraft:bucket",
+                "count": 1
+            },
+            {
+                "item": "minecraft:iron_ingot"
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:tractor_seeder_body1"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

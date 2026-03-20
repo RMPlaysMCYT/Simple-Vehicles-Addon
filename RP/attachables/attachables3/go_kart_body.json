@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:go_kart_body",
+      "render_controllers": ["controller.render.body_3d_item"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/go_kart1/black"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles.go_kart"
+      },
+      "animations": {
+        "first_person_hold": "animation.body_go_kart.first_person_hold",
+        "third_person_hold": "animation.body_go_kart.third_person_hold"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

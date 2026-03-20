@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_ice_cream"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BG",
+			"BSW",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_ice_cream"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_ice_cream"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_ice_cream"
+			}
+		]
+	}
+}

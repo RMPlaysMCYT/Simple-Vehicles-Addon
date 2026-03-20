@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:mixer_truck",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/simple_vehicles_mixer_truck"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.mixer_truck"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.mixer_truck.move",
+				"setup": "animation.simple_vehicles.mixer_truck.setup",
+				"doors_idle": "animation.simple_vehicles.mixer_truck.doors_idle",
+				"open": "animation.simple_vehicles.mixer_truck.open",
+				"close": "animation.simple_vehicles.mixer_truck.close",
+				"close2": "animation.simple_vehicles.mixer_truck.close2",
+				"turn": "animation.simple_vehicles.mixer_truck.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				"wiper": "animation.simple_vehicles.mixer_truck.wiper",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"setup",
+					"v_turn",
+					"door_mechanic",
+					{
+						"wiper": "query.is_saddled && query.is_in_water_or_rain"
+					},
+					{
+						"move": "query.is_moving"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 29
+			},
+			"sound_effects": {
+				"mixer_door_open": "simple_vehicles.corolla.open",
+				"mixer_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

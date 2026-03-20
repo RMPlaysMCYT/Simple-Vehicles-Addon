@@ -1,0 +1,24 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:tiltrotor_blade recipe"
+        },
+        "ingredients": [
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 3
+            },
+            {
+                "item": "minecraft:birch_fence"
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:tiltrotor_blade",
+            "count": 2
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

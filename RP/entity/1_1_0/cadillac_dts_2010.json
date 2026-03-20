@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:cadillac_dts_2010",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/cadillac_dts_2010"
+			},
+			"geometry": {
+				"default": "geometry.cadillac_dts_2010"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 38
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+			"animations": {
+				"move": "animation.simple_vehicles.cadillac_dts_2010.move",
+				"turn": "animation.cadillac_dts_2010.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"close": "animation.simple_vehicles.ae86.close",
+				"close2": "animation.simple_vehicles.ae86.close2",
+				"open": "animation.simple_vehicles.ae86.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general",
+					"general2",
+					"door_mech"
+				]
+			},
+			"sound_effects": {
+				"cdts_door_open": "simple_vehicles.auv_car.open",
+				"cdts_door_close": "simple_vehicles.auv_car.close"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

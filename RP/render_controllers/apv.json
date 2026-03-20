@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.auv_car": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		},
+		"controller.render.auv_lights": {
+			"part_visibility": [
+				{
+					"*":true
+				},
+				{
+					"auv_lights": "query.is_saddled"
+				}
+			],
+			"geometry": "Geometry.auv_lights",
+			"materials": [
+				{
+					"*":"Material.default"
+				},
+				{
+					"auv_lights": "Material.auv_lights"
+				}
+			],
+			"textures": [
+				"Texture.auv_lights"
+			]
+		},
+		"controller.render.default": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		}
+	}
+}

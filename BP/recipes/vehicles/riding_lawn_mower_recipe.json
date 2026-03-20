@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:riding_lawn_mower_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" A",
+			"YSY"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:shears"
+			},
+			"A": {
+				"item": "simple_vehicles:quad_bike_body"
+			},
+			"Y": {
+				"item": "simple_vehicles:tire_car"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:riding_lawn_mower_spawn_egg"
+			}
+		]
+	}
+}

@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "simple_vehicles:tractor_sprinkler",
+            "materials": {"default": "entity_alphatest"},
+            "textures": {
+                "orange": "textures/entity/sprinkler_or",
+                "green": "textures/entity/sprinkler"
+            },
+            "geometry": {
+                "default": "geometry.tractor_sprinkler"
+            },
+            "animations": {
+                "move": "animation.tractor_sprinkler.move",
+                "turn": "animation.tractor_sprinkler.turn",
+                "v_turn": "controller.animation.vehicle.v_turn",
+                "water_pour": "animation.tractor_sprinkler.water_pour",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+            },
+            "scripts": {
+                "animate": [
+                    "general",
+                    {
+                        "move":"query.modified_move_speed"
+                    },
+                    "v_turn",
+                    {
+                        "water_pour": "query.mark_variant == 1 && query.has_rider"
+                    }
+                ]
+            },
+            "particle_effects": {
+                "water_splash": "minecraft:water_drip_particle"
+            },
+            "render_controllers": ["controller.render.tractor_small"],
+            "spawn_egg": {
+                "texture": "vehicles_3",
+                "texture_index": 9
+            }
+        }
+    }
+}

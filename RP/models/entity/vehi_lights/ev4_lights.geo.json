@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ev4_lights",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 12,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "ev4_lights",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-31, 11, -98], "size": [31, 0, 33], "pivot": [0, 11, -65.5], "rotation": [20, 0, 0], "uv": [0, 33]},
+						{"origin": [0, 11, -98], "size": [31, 0, 33], "pivot": [0, 11, -65.5], "rotation": [20, 0, 0], "uv": [128, 33]},
+						{"origin": [-31, 14, -98], "size": [31, 0, 33], "pivot": [0, 14, -65.5], "rotation": [-27.5, 0, 0], "uv": [0, 0]},
+						{"origin": [0, 14, -98], "size": [31, 0, 33], "pivot": [0, 14, -65.5], "rotation": [-27.5, 0, 0], "uv": [128, 0]}
+					]
+				}
+			]
+		}
+	]
+}

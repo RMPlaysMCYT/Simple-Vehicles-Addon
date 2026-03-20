@@ -1,0 +1,35 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.ice_cream_truck.door_mechanic": {
+			"states": {
+				"default": {
+					"animations": ["door_idle"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"close": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.mark_variant == 1"},
+						{"close2": "query.has_player_rider"}
+					],
+					"blend_transition": 0.1
+				},
+				"close2": {
+					"animations": ["close2"],
+					"transitions": [
+						{"open": "!query.has_player_rider"}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bike.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": ["-this", "math.max(-15,math.min(15,query.yaw_speed*0.2))*query.modified_move_speed*3", "-this"]
+				},
+				"handle": {
+					"rotation": [0, "Math.max(-10, Math.min(10,query.yaw_speed * 0.5))", 0]
+				}
+			}
+		},
+		"animation.bike.tilt": {
+			"loop": true,
+			"bones": {
+				"bike_root": {
+					"rotation": [0, 0, "Math.max(-15, math.min(15, query.yaw_speed * 0.4)) *-1"]
+				}
+			}
+		},
+		"animation.bike.setup": {
+			"loop": true,
+			"bones": {
+				"bike_root": {
+					"rotation": [0, 0, 0]
+				},
+				"stick": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.bike.setup2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"bike_root": {
+					"rotation": [0, 0, -12.5]
+				},
+				"stick": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [90, 0, 52.5]
+					}
+				}
+			}
+		},
+		"animation.bike.idle": {
+			"loop": true
+		},
+		"animation.bike.move": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				}
+			}
+		},
+		"animation.bike.moverev": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				}
+			}
+		}
+	}
+}

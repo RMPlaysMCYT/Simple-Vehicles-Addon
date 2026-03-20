@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.rancher.move_ac": {
+			"states": {
+				"default":{
+					"parameters": ["query.ground_speed"],
+					"animations": [
+						{
+							"move": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	}
+}

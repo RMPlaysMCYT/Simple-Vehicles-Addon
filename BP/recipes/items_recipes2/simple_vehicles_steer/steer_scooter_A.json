@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_scooter_A"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BRB",
+			" I",
+			" B "
+		],
+		"key": {
+			"R": {"item": "minecraft:redstone"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_scooter_A"
+			}
+		]
+	}
+}

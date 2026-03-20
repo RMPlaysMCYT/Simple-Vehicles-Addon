@@ -1,0 +1,76 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:corolla",
+			"materials": {
+				"default": "witch",
+				"corolla_lights": "entity_alphablend"
+			},
+			"textures": {
+				"black": "textures/entity/corolla",
+				"white": "textures/entity/corolla/corolla_white",
+				"orange": "textures/entity/corolla/corolla_orange",
+				"magenta": "textures/entity/corolla/corolla_magenta",
+				"light_blue": "textures/entity/corolla/corolla_light_blue",
+				"yellow": "textures/entity/corolla/corolla_yellow",
+				"lime": "textures/entity/corolla/corolla_lime",
+				"pink": "textures/entity/corolla/corolla_pink",
+				"gray": "textures/entity/corolla/corolla_gray",
+				"silver": "textures/entity/corolla/corolla_silver",
+				"cyan": "textures/entity/corolla/corolla_cyan",
+				"purple": "textures/entity/corolla/corolla_purple",
+				"blue": "textures/entity/corolla/corolla_blue",
+				"brown": "textures/entity/corolla/corolla_brown",
+				"green": "textures/entity/corolla/corolla_green",
+				"red": "textures/entity/corolla/corolla_red",
+				"corolla_lights": "textures/entity/vehi_lights/corolla_lights"
+			},
+			"geometry": {
+				"default": "geometry.corolla",
+				"corolla_lights": "geometry.corolla_lights"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 17
+			},
+			"particle_effects": {
+				"arrow_particle": "minecraft:arrow_spell_emitter"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.corolla.move",
+				"turn": "animation.corolla.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_idle": "animation.simple_vehicles.car_new.door_idle",
+				"open": "animation.simple_vehicles.corolla.open",
+				"close": "animation.simple_vehicles.corolla.close",
+				"close2": "animation.simple_vehicles.corolla.close2",
+				"door_mechanic_v2": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic_v2",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"sound_effects": {
+				"corolla_door_open": "simple_vehicles.corolla.open",
+				"corolla_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

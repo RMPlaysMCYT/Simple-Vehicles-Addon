@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tammaraw_fx_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:tammarawfx_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_land_cruiser"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tamarraw_fx_spawn_egg"
+			}
+		]
+	}
+}

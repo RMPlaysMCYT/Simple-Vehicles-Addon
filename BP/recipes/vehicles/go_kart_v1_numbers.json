@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:go_kart_v1_numbers"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" BS",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_busv2"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_bus_v2"
+			},
+			"S": {"item": "minecraft:paper"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:go_kart_withnumbers_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

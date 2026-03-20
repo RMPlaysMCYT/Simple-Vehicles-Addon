@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:cargo_truck2",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/cargo_truck2"
+			},
+			"geometry": {
+				"default": "geometry.cargo_truck2"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"move": "animation.truck_cargo.move",
+				"doors_idle": "animation.truck_cargo.doors_idle",
+				"open": "animation.truck_cargo.open",
+				"close": "animation.truck_cargo.close",
+				"close2": "animation.truck_cargo.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"move",
+					"door_mechanic"
+				]
+			},
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 41
+			},
+			"sound_effects": {
+				"truck1_door_open": "simple_vehicles.corolla.open",
+				"truck1_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

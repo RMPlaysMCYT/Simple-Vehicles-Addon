@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.rocket_viking.fly": {
+			"states": {
+				"flying_v1": {
+					"transitions": [
+						{
+							"flying_v2": "query.has_rider&&!query.is_on_ground&&math.random(1,10)>8"
+						},
+						{
+							"walking_v1": "query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"/function flying_function/rocket_vi"
+					]
+				},
+				"flying_v2": {
+					"transitions": [
+						{
+							"flying_v1": "query.has_rider&&!query.is_on_ground&&math.random(1,10)>8"
+						}
+					],
+					"on_entry": [
+						"/function flying_function/rocket_vi"
+					]
+				},
+				"walking_v1": {
+					"transitions": [
+						{
+							"flying_v1": "!query.is_on_ground && query.has_rider"
+						},
+						{
+							"walking_v2": "query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"/function flying_function/rocket_vf"
+					]
+				},
+				"walking_v2": {
+					"transitions": [
+						{
+							"walking_v1": "math.random(1,10)>8"
+						}
+					]
+				}
+			}
+		}
+	}
+}

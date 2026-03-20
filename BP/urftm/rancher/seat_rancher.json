@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seat_rancher"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"W",
+			"WW",
+			""
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:white_wool"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_rancher"
+			}
+		]
+	}
+}

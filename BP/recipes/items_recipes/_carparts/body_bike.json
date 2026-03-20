@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:ddd11"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" ",
+			"BSW",
+			" B "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_bike"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_bike"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_bike"
+			}
+		]
+	}
+}

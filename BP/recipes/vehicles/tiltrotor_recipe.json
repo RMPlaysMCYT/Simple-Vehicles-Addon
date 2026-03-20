@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tiltrotor_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"M M",
+			" B ",
+			"S S"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:tiltrotor_body"
+			},
+			"M": {
+				"item": "simple_vehicles:tiltrotor_blade"
+			},
+			"S": {
+				"item": "simple_vehicles:landing_skid_helicopter"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tiltrotor_spawn_egg"
+			}
+		]
+	}
+}

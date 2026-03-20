@@ -1,0 +1,61 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.corolla": {
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		},
+		"controller.render.corolla_lights": {
+			"part_visibility": [
+				{
+					"*":true
+				},
+				{
+					"corolla_lights": "query.is_saddled"
+				}
+			],
+			"geometry": "Geometry.corolla_lights",
+			"materials": [
+				{
+					"*":"Material.default"
+				},
+				{
+					"corolla_lights": "Material.corolla_lights"
+				}
+			],
+			"textures": [
+				"Texture.corolla_lights"
+			]
+		},
+		"controller.render.ev4_lights": {
+			"part_visibility": [
+				{
+					"*":true
+				},
+				{
+					"ev4_lights": "query.is_saddled"
+				}
+			],
+			"geometry": "Geometry.ev4_lights",
+			"materials": [
+				{
+					"*":"Material.default"
+				},
+				{
+					"ev4_lights": "Material.ev4_lights"
+				}
+			],
+			"textures": [
+				"Texture.ev4_lights"
+			]
+		}
+	}
+}

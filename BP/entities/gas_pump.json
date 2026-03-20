@@ -1,0 +1,142 @@
+{
+	"format_version": "1.18.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:gas_pump",
+			"is_summonable": true,
+			"is_spawnable": true,
+			"properties": {
+				"simple_vehicles:get_gas":{
+					"client_sync": true,
+					"default": 0,
+					"type": "int",
+					"range": [0, 1]
+				}
+			}
+		},
+		"components": {
+			"minecraft:health": {
+				"value": 2
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 2
+			},
+			"minecraft:physics": {
+				"has_collision": true
+			},
+			"minecraft:type_family": {
+				"family": [
+					"simple_vehicles",
+					"vehicles",
+					"vehicle_builder"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/gas_pump.json"
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 2
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"simple_vehicles:get_gas": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"interact_text": "Get Gas Pump",
+							"use_item": false,
+							"on_interact": {
+								"event": "simple_vehicles:get_gas"
+							}
+						}
+					]
+				}
+			},
+			"simple_vehicles:upsetted": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"interact_text": "Put It Back",
+							"use_item": true,
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:gas_nozzle"
+										}
+									]
+								},
+								"event": "simple_vehicles:return_gas"
+							}
+						}
+					]
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"set_property": {
+					"simple_vehicles:get_gas": "q.property('simple_vehicles:get_gas') == 0"
+				},
+				"add": {
+					"component_groups": [
+						"simple_vehicles:get_gas"
+					]
+				}
+			},
+			"simple_vehicles:get_gas": {
+				"set_property": {
+					"simple_vehicles:get_gas": "q.property('simple_vehicles:get_gas') != 1"
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:get_gas"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"give @p[r=3] simple_vehicles:gas_nozzle 1 0"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"simple_vehicles:upsetted"
+					]
+				}
+			},
+			"simple_vehicles:return_gas": {
+				"set_property": {
+					"simple_vehicles:get_gas": "q.property('simple_vehicles:get_gas') == 0"
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:upsetted"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"clear @p[r=3] simple_vehicles:gas_nozzle 0 1"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"simple_vehicles:get_gas"
+					]
+				}
+			}
+		}
+	}
+}

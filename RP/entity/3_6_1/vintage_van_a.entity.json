@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:vintage_van_a",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/vintage_van_a"
+			},
+			"geometry": {
+				"default": "geometry.vintage_van_a"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+                "move": "animation.vintage_van_a.move",
+                "setup": "animation.vintage_van_a.setup",
+                "steer": "animation.vintage_van_a.steer",
+                "doors_idle": "animation.vintage_van_a.doors_idle",
+                "open": "animation.vintage_van_a.open",
+                "close": "animation.vintage_van_a.close",
+                "close2": "animation.vintage_van_a.close2",
+                "door_mech": "controller.animation.vintage_bus_a.door_mechanic",
+                "wiper": "animation.vintage_van_a.wiper",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
+				"pre_animation": [
+					"query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"
+				],
+				"animate": [
+					"general",
+					"move",
+                    "setup",
+                    "steer",
+                    "door_mech",
+                    {
+                        "wiper": "query.is_saddled && query.is_in_water_or_rain"
+                    }
+                    
+				]
+			},
+			"spawn_egg": {
+				"texture": "vehicles_3",
+                "texture_index": 20
+			}
+		}
+	}
+}

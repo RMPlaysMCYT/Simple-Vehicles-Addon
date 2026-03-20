@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:volt_bike_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_volt_bike"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_volt_bike"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:volt_bike_spawn_egg"
+			}
+		]
+	}
+}

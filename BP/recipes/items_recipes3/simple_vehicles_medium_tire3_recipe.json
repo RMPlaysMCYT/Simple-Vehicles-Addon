@@ -1,0 +1,25 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_medium_tire3b_recipe"
+        },
+        "pattern": [
+            "1P1",
+            "SRS",
+            "1P1"
+        ],
+        "key": {
+            "S": {"item": "minecraft:stick"},
+            "1": {"item": "minecraft:gray_terracotta"},
+            "R": {"item": "minecraft:redstone"},
+            "P": {"item": "minecraft:black_wool"}
+        },
+        "result": {
+            "item": "simple_vehicles:medium_tire3"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

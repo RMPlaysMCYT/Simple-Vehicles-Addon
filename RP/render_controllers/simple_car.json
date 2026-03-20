@@ -1,0 +1,93 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.car_lights": {
+			"part_visibility": [
+				{
+					"*":true
+				},
+				{
+					"car_lights": "query.is_saddled"
+				}
+			],
+			"geometry": "Geometry.car_lights",
+			"materials": [
+				{
+					"*":"Material.default"
+				},
+				{
+					"car_lights": "Material.car_lights"
+				}
+			],
+			"textures": [
+				"Texture.car_lights"
+			]
+		},
+		"controller.render.simple_car": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.black",
+						"Texture.white",
+						"Texture.orange",
+						"Texture.magenta",
+						"Texture.light_blue",
+						"Texture.yellow",
+						"Texture.lime",
+						"Texture.pink",
+						"Texture.gray",
+						"Texture.silver",
+						"Texture.cyan",
+						"Texture.purple",
+						"Texture.blue",
+						"Texture.brown",
+						"Texture.green",
+						"Texture.red"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		},
+		"controller.render.simple_car2": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.black",
+						"Texture.white",
+						"Texture.orange",
+						"Texture.magenta",
+						"Texture.light_blue",
+						"Texture.yellow",
+						"Texture.lime",
+						"Texture.pink",
+						"Texture.gray",
+						"Texture.light_gray",
+						"Texture.cyan",
+						"Texture.purple",
+						"Texture.blue",
+						"Texture.brown",
+						"Texture.green",
+						"Texture.red"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

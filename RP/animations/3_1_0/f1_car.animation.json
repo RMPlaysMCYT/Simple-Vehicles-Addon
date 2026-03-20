@@ -1,0 +1,85 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.f1_car.setup":{
+			"loop": true,
+			"bones": {
+				"f1_root": {
+					"position":[
+						0,0,0
+					]
+				}
+			}
+		},
+		"animation.f1_car.move": {
+			"loop": true,
+      		"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["360 * 2", 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["360 * 2", 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["360 * 2", 0, 0]
+					}
+				},
+				"leg3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": ["360 * 2", 0, 0]
+					}
+				}
+			}
+		},
+		"animation.f1_car.ups": {
+			"loop": true,
+			"bones": {
+				"f1_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * 1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.f1_car.downs": {
+			"loop": true,
+			"bones": {
+				"f1_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * -1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.f1_car.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"leg2": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				},
+				"leg3": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				}
+			}
+		}
+	}
+}

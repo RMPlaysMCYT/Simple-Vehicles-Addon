@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.fuso_aero_midi_jp": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.jp0",
+						"Texture.jp1",
+						"Texture.jp2"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

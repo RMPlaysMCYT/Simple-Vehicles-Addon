@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:f1_car",
+			"textures": {
+				"white": "textures/entity/3_1_0/f1_car/fl_car_white",
+				"orange": "textures/entity/3_1_0/f1_car/fl_car_orange",
+				"magenta": "textures/entity/3_1_0/f1_car/fl_car_magenta",
+				"light_blue": "textures/entity/3_1_0/f1_car/fl_car_light_blue",
+				"yellow": "textures/entity/3_1_0/f1_car/fl_car_yellow",
+				"lime": "textures/entity/3_1_0/f1_car/fl_car_lime",
+				"pink": "textures/entity/3_1_0/f1_car/fl_car_pink",
+				"gray": "textures/entity/3_1_0/f1_car/fl_car_gray",
+				"silver": "textures/entity/3_1_0/f1_car/fl_car_silver",
+				"cyan": "textures/entity/3_1_0/f1_car/fl_car_cyan",
+				"purple": "textures/entity/3_1_0/f1_car/fl_car_purple",
+				"blue": "textures/entity/3_1_0/f1_car/fl_car_blue",
+				"brown": "textures/entity/3_1_0/f1_car/fl_car_brown",
+				"green": "textures/entity/3_1_0/f1_car/fl_car_green",
+				"red": "textures/entity/3_1_0/f1_car/fl_car_red",
+				"black": "textures/entity/3_1_0/f1_car"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.f1_car"
+			},
+			"render_controllers": [
+				"controller.render.f1_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 1
+			},
+			"animations": {
+				"move": "animation.f1_car.move",
+				"turn": "animation.f1_car.turn",
+				"ups": "animation.f1_car.ups",
+				"downs": "animation.f1_car.downs",
+				"general": "controller.animation.f1_car.general",
+				"move_ac": "controller.animation.f1_car.move_ac"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"move_ac"
+				]
+			}
+		}
+	}
+}

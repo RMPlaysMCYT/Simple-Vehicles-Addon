@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:motorcycle",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/motorcycle"
+			},
+			"geometry": {
+				"default": "geometry.motorcycle"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 2
+			},
+			"animations": {
+				"move": "animation.motorcycle.move",
+				"turn": "animation.motorcycle.turn",
+				"tilt": "animation.motorcycle.tilt",
+				"ups": "animation.motorcycle.ups",
+				"downs": "animation.motorcycle.downs",
+				"setup": "animation.motorcycle.setup1",
+				"setup2": "animation.motorcycle.setup2",
+				"motorcycle_general": "controller.animation.motorcycle.general",
+				"motorcycle_general2": "controller.animation.motorcycle.general2"
+			},
+			"scripts": {
+				"animate": [
+					"motorcycle_general",
+					"motorcycle_general2",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.auv_lights",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "auv_lights",
+					"pivot": [0, 10.66667, -37.66667],
+					"cubes": [
+						{"origin": [-27, 13.5, -65.5], "size": [54, 0, 28], "pivot": [0, 13.5, -37], "rotation": [-32.5, 0, 0], "uv": [7, 0]},
+						{"origin": [-27, 13.4, -65.5], "size": [54, 0, 28], "pivot": [0, 13.5, -37], "rotation": [-32.5, 0, 0], "uv": [7, 0], "mirror": true},
+						{"origin": [-27, 13.5, -68.5], "size": [54, 0, 35], "pivot": [0, -4, -19], "rotation": [15, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:isuzu_dmax",
+			"textures": {
+				"black": "textures/entity/pamobile/isuzu_dmax_black",
+				"white": "textures/entity/pamobile/isuzu_dmax_white",
+				"orange": "textures/entity/pamobile/isuzu_dmax_orange",
+				"magenta": "textures/entity/pamobile/isuzu_dmax_magenta",
+				"light_blue": "textures/entity/pamobile/isuzu_dmax_light_blue",
+				"yellow": "textures/entity/pamobile/isuzu_dmax_yellow",
+				"lime": "textures/entity/pamobile/isuzu_dmax_lime",
+				"pink": "textures/entity/pamobile/isuzu_dmax_pink",
+				"gray": "textures/entity/pamobile/isuzu_dmax_gray",
+				"silver": "textures/entity/pamobile/isuzu_dmax_silver",
+				"cyan": "textures/entity/pamobile/isuzu_dmax_cyan",
+				"purple": "textures/entity/pamobile/isuzu_dmax_purple",
+				"blue": "textures/entity/pamobile/isuzu_dmax_blue",
+				"brown": "textures/entity/pamobile/isuzu_dmax_brown",
+				"green": "textures/entity/pamobile/isuzu_dmax_green",
+				"red": "textures/entity/pamobile/isuzu_dmax_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles_isuzu_dmax"
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 12
+			},
+			"animations": {
+				"walk": "animation.simple_vehicles_isuzu_dmax.move_2",
+				"steer": "animation.rancherogt_sass.turn",
+				"steer_ac": "controller.animation.vehicle.steer",
+				"doors_idle": "animation.simple_vehicles_isuzu_dmax.doors_idle",
+				"open": "animation.simple_vehicles_isuzu_dmax.open",
+				"close": "animation.simple_vehicles_isuzu_dmax.close",
+				"close2": "animation.simple_vehicles_isuzu_dmax.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"steer_ac",
+					"general",
+					{
+						"walk": "query.is_moving"
+					},
+					"door_mechanic"
+				]
+			},
+			"sound_effects": {
+				"isuzu_dmax_door_open": "simple_vehicles.corolla.open",
+				"isuzu_dmax_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

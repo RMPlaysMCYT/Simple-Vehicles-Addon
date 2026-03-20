@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ford_rancherogt_sass",
+			"textures": {
+				"red": "textures/entity/pamobile/rancherogt_sass_red1",
+				"green": "textures/entity/pamobile/rancherogt_sass_green",
+				"blue": "textures/entity/pamobile/rancherogt_sass_blue"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.rancherogt_sass"
+			},
+			"render_controllers": [
+				"controller.render.rancherogt_sass"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 14
+			},
+			"animations": {
+				"move": "animation.vehicles.move",
+				"idle": "animation.moto.idle",
+				"turn": "animation.rancherogt_sass.turn",
+				"open": "animation.rancherogt_sass.open",
+				"doors_idle": "animation.rancherogt_sass.doors_idle",
+				"close": "animation.rancherogt_sass.close",
+				"close2": "animation.rancherogt_sass.close2",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic",
+					{
+						"move": "query.is_moving"
+					},
+					{
+						"idle": "!query.is_moving"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"sound_effects": {
+				"rancherogt_sass_door_open": "simple_vehicles.corolla.open",
+				"rancherogt_sass_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

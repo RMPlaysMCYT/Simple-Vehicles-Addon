@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.vespa_primavera.player_ride": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "riding": "1"
+            }
+          ],
+          "on_entry": [
+            "/function player_ride_sys/vespa_primavera"
+          ]
+        },
+        "riding": {
+          "transitions": [
+            {
+              "default": "query.has_rider"
+            }
+          ],
+          "on_entry": [
+            "/function player_ride_sys/vespa_primavera"
+          ]
+        }
+      }
+    }
+  }
+}

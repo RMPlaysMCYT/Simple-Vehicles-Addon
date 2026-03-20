@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:go_kart_withoutnumbers",
+			"textures": {
+				"black": "textures/entity/go_kart2/go_black",
+				"white": "textures/entity/go_kart2/go_white",
+				"orange": "textures/entity/go_kart2/go_orange",
+				"magenta": "textures/entity/go_kart2/go_magenta",
+				"light_blue": "textures/entity/go_kart2/go_light",
+				"yellow": "textures/entity/go_kart2/go_yellow",
+				"lime": "textures/entity/go_kart2/go_lime",
+				"pink": "textures/entity/go_kart2/go_pink",
+				"gray": "textures/entity/go_kart2/go_gray",
+				"silver": "textures/entity/go_kart2/go_silver",
+				"cyan": "textures/entity/go_kart2/go_cyan",
+				"purple": "textures/entity/go_kart2/go_purple",
+				"blue": "textures/entity/go_kart2/go_blue",
+				"brown": "textures/entity/go_kart2/go_brown",
+				"green": "textures/entity/go_kart2/go_green",
+				"red": "textures/entity/go_kart2/go_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.go_kart"
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 24
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.go_kart.move",
+				"steer": "animation.simple_vehicles.go_kart.steer",
+				"ups": "animation.simple_vehicles.go_kart.ups",
+				"downs": "animation.simple_vehicles.go_kart.downs",
+				"general": "controller.animation.climb_vehi.general",
+				"steer_ac": "controller.animation.go_kart.steer"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"general",
+					"steer_ac"
+				]
+			}
+		}
+	}
+}

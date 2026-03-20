@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:simple_vehicles_body_cadillac_dts"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BG",
+			"BSW",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_cadillac_dts_2010"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_cadillac_dts_2010"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_cadillac_dts_2010"
+			}
+		]
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:private_plane",
+			"textures": {
+				"black": "textures/entity/private_plane",
+				"white": "textures/entity/private_plane/private_plane_white",
+				"orange": "textures/entity/private_plane/private_plane_orange",
+				"magenta": "textures/entity/private_plane/private_plane_magenta",
+				"light_blue": "textures/entity/private_plane/private_plane_light_blue",
+				"yellow": "textures/entity/private_plane/private_plane_yellow",
+				"lime": "textures/entity/private_plane/private_plane_lime",
+				"pink": "textures/entity/private_plane/private_plane_pink",
+				"gray": "textures/entity/private_plane/private_plane_gray",
+				"light_gray": "textures/entity/private_plane/private_plane_light_gray",
+				"cyan": "textures/entity/private_plane/private_plane_cyan",
+				"purple": "textures/entity/private_plane/private_plane_purple",
+				"blue": "textures/entity/private_plane/private_plane_blue",
+				"brown": "textures/entity/private_plane/private_plane_brown",
+				"green": "textures/entity/private_plane/private_plane_green",
+				"red": "textures/entity/private_plane/private_plane_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.privatepl"
+			},
+			"render_controllers": [
+				"controller.render.simple_car2"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 17
+			},
+			"animations": {
+				"flying": "animation.simple_vehicles.privatepl.flying",
+				"landing": "animation.simple_vehicles.privatepl.landing",
+				"flying_ac": "controller.animation.simple_vehicles.privatepl.flying",
+				"look_at_target": "animation.simple_vehicles.privatepl.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"flying_ac",
+					{
+						"look_at_target": "!query.is_on_ground"
+					}
+				]
+			}
+		}
+	}
+}

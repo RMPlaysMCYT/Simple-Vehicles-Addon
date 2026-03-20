@@ -1,0 +1,80 @@
+/*import { world, BlockPermutation, system, ItemStack } from '@minecraft/server';
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+  eventData.blockTypeRegistry.registerCustomComponent('simple_vehicles:get_gas', {
+    onPlayerInteract({ block, player }) {
+      const equipment = player.getComponent('equippable');
+      const selectedItem = equipment.getEquipment('Mainhand');
+
+      if (!selectedItem) {
+        equipment.setEquipment('Mainhand', new ItemStack('simple_vehicles:gas_nozzle', 1)); // Set the equipment to the desired item
+        system.runCommand(`give ${player.name} simple_vehicles:gas_nozzle`); // Run the command to give the item
+      } else if (selectedItem.typeId === 'simple_vehicles:gas_nozzle') {
+        equipment.setEquipment('Mainhand', null); // Remove the item by setting it to null
+        system.runCommand(`clear @p[c=1] simple_vehicles:gas_nozzle 1`); // Run the command to remove the item
+      }
+
+      const currentState = block.permutation.getState('simple_vehicles:get_interactgas');
+      const newOpenState = !currentState;
+      const newPermutation = BlockPermutation.resolve(block.typeId, {
+        ...block.permutation.getAllStates(),
+        'simple_vehicles:get_interactgas': newOpenState
+      });
+
+      block.setPermutation(newPermutation);
+
+      const sound = currentState ? 'open.wooden_trapdoor' : 'close.wooden_trapdoor';
+      player.playSound(sound);
+    }
+  });
+});*/
+
+
+
+/*
+world.beforeEvents.playerInteractWithBlock.subscribe(eventData => {
+  const block = eventData.block;
+  const player = eventData.player;
+  const inventory = player.getComponent('minecraft:inventory')?.container;
+
+  if (!inventory) return;
+
+  let itemToCheck;
+  let itemToGive;
+  let soundEffect;
+
+  if (block.typeId === 'simple_vehicles:get_gas') {
+    itemToCheck = 'simple_vehicles:gas_nozzle';
+    itemToGive = 'simple_vehicles:gas_nozzle';
+    soundEffect = { open: 'open.wooden_trapdoor', close: 'close.wooden_trapdoor' };
+  } else if (block.typeId === 'simple_vehicles:get_gas_air') {
+    itemToCheck = 'simple_vehicles:gas_nozzle_air';
+    itemToGive = 'simple_vehicles:gas_nozzle_air';
+    soundEffect = { open: 'open.wooden_trapdoor', close: 'close.wooden_trapdoor' };
+  }
+
+  if (itemToCheck && itemToGive && soundEffect) {
+    const selectedItem = inventory.getItem(0);
+
+    if (!selectedItem) {
+      inventory.setItem(0, new ItemStack(itemToGive, 1));
+      player.runCommand(`give ${player.name} ${itemToGive}`);
+    } else if (selectedItem.typeId === itemToCheck) {
+      inventory.setItem(0, null);
+      player.runCommand(`clear @p[c=1] ${itemToCheck} 1`);
+    }
+
+    const currentState = block.permutation.getProperty('simple_vehicles:get_interactgas');
+    const newOpenState = !currentState;
+    const newPermutation = BlockPermutation.resolve(block.typeId, {
+      ...block.permutation.getProperties(),
+      'simple_vehicles:get_interactgas': newOpenState
+    });
+
+    block.setPermutation(newPermutation);
+
+    const sound = currentState ? soundEffect.close : soundEffect.open;
+    player.playSound(sound);
+  }
+});
+*/

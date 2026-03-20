@@ -1,0 +1,276 @@
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_tank"
+								},
+								{
+									"item": "simple_vehicles:track_tank"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:tank"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_plane"
+								},
+								{
+									"item": "simple_vehicles:tire_plane"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:plane"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_cadillac_dts_2010"
+								},
+								{
+									"item": "simple_vehicles:tire_cadillac_dts_2010"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:cadillac_dts_2010"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_honda_accord_2019"
+								},
+								{
+									"item": "simple_vehicles:tire_honda_accord_2019"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:honda_accord_2019"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_hyundai_starex"
+								},
+								{
+									"item": "simple_vehicles:tire_hyundai_starex"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:hyundai_starex"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_hyundai_starex_with_casket"
+								},
+								{
+									"item": "simple_vehicles:tire_hyundai_starex"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:hyundai_starex_casket"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_ice_cream"
+								},
+								{
+									"item": "simple_vehicles:tire_ice_cream"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:ice_cream_truck"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_opel_astra"
+								},
+								{
+									"item": "simple_vehicles:tire_opel_astra"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:opel_astral"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_opel_crosa"
+								},
+								{
+									"item": "simple_vehicles:tire_opel_crosa"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:opel_corsa"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_VM_Beetle"
+								},
+								{
+									"item": "simple_vehicles:tire_VM_Beetle"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:volkswagen_beetle"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_pajero"
+								},
+								{
+									"item": "simple_vehicles:tire_pajero"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:pajero"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_sabre"
+								},
+								{
+									"item": "simple_vehicles:tire_sabre"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:pajero"
+										}
+									]
+								}
+							],
+							"max_uses": 16
+						}
+					]
+				}
+			]
+		}
+	]
+}

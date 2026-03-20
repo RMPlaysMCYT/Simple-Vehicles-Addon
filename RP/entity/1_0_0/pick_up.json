@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:pick_up_truck",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/pick_up_truck"
+			},
+			"geometry": {
+				"default": "geometry.pick_up_truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 27
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.pick_up_truck.move2",
+				"turn": "animation.pick_up_truck.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"close": "animation.simple_vehicles.pick_up_truck.close",
+				"close2": "animation.simple_vehicles.pick_up_truck.close2",
+				"open": "animation.simple_vehicles.pick_up_truck.open",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"v_turn",
+					"door_mech",
+					"general",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.pick_up_truck"
+			],
+			"sound_effects": {
+				"pick_up_truck_door_open": "simple_vehicles.corolla.open",
+				"pick_up_truck_door_close": "simple_vehicles.corolla.close"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

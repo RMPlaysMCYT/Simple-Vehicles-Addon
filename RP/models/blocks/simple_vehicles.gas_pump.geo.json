@@ -1,0 +1,225 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.simple_vehicles.gas_pump",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3.5,
+        "visible_bounds_offset": [0, 1.25, 0]
+      },
+      "bones": [
+        {
+          "name": "gas_pump",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {
+              "origin": [-6, 2, -3],
+              "size": [12, 25, 6],
+              "uv": {
+                "north": {"uv": [0, 0], "uv_size": [12, 25]},
+                "east": {"uv": [26, 11], "uv_size": [6, 25]},
+                "south": {"uv": [13, 0], "uv_size": [12, 25]},
+                "west": {"uv": [17, 26], "uv_size": [6, 25]},
+                "up": {"uv": [33, 11], "uv_size": [12, 6]},
+                "down": {"uv": [33, 24], "uv_size": [12, -6]}
+              }
+            },
+            {
+              "origin": [6, 10, -1],
+              "size": [1, 6, 3],
+              "uv": {
+                "north": {"uv": [24, 26], "uv_size": [1, 6]},
+                "east": {"uv": [0, 37], "uv_size": [3, 6]},
+                "south": {"uv": [24, 33], "uv_size": [1, 6]},
+                "west": {"uv": [4, 37], "uv_size": [3, 6]},
+                "up": {"uv": [32, 42], "uv_size": [1, 3]},
+                "down": {"uv": [34, 45], "uv_size": [1, -3]}
+              }
+            },
+            {
+              "origin": [-7, 10, -1],
+              "size": [1, 6, 3],
+              "uv": {
+                "north": {"uv": [24, 26], "uv_size": [1, 6]},
+                "east": {"uv": [0, 37], "uv_size": [3, 6]},
+                "south": {"uv": [24, 33], "uv_size": [1, 6]},
+                "west": {"uv": [4, 37], "uv_size": [3, 6]},
+                "up": {"uv": [32, 42], "uv_size": [1, 3]},
+                "down": {"uv": [34, 45], "uv_size": [1, -3]}
+              }
+            },
+            {
+              "origin": [-8, 0, -5],
+              "size": [16, 2, 10],
+              "uv": {
+                "north": {"uv": [33, 25], "uv_size": [16, 2]},
+                "east": {"uv": [33, 31], "uv_size": [10, 2]},
+                "south": {"uv": [33, 28], "uv_size": [16, 2]},
+                "west": {"uv": [33, 34], "uv_size": [10, 2]},
+                "up": {"uv": [0, 26], "uv_size": [16, 10]},
+                "down": {"uv": [26, 10], "uv_size": [16, -10]}
+              }
+            }
+          ]
+        },
+        {
+          "name": "nozzle",
+          "parent": "gas_pump",
+          "pivot": [8, 12.5, 0.5],
+          "rotation": [0, 0, -42.5],
+          "cubes": [
+            {
+              "origin": [8, 12, 0],
+              "size": [1, 4, 1],
+              "inflate": 0.1,
+              "uv": {
+                "north": {"uv": [26, 37], "uv_size": [1, 4]},
+                "east": {"uv": [28, 37], "uv_size": [1, 4]},
+                "south": {"uv": [30, 37], "uv_size": [1, 4]},
+                "west": {"uv": [32, 37], "uv_size": [1, 4]},
+                "up": {"uv": [42, 41], "uv_size": [1, 1]},
+                "down": {"uv": [43, 1], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [7, 10, 0],
+              "size": [1, 4, 1],
+              "inflate": 0.1,
+              "uv": {
+                "north": {"uv": [34, 37], "uv_size": [1, 4]},
+                "east": {"uv": [36, 37], "uv_size": [1, 4]},
+                "south": {"uv": [38, 37], "uv_size": [1, 4]},
+                "west": {"uv": [24, 40], "uv_size": [1, 4]},
+                "up": {"uv": [43, 2], "uv_size": [1, 1]},
+                "down": {"uv": [43, 5], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [6.80965, 5.65305, 0],
+              "size": [1, 5, 1],
+              "pivot": [7.30965, 10.15305, 0.5],
+              "rotation": [0, 0, 57.5],
+              "uv": {
+                "north": {"uv": [8, 37], "uv_size": [1, 5]},
+                "east": {"uv": [10, 37], "uv_size": [1, 5]},
+                "south": {"uv": [12, 37], "uv_size": [1, 5]},
+                "west": {"uv": [14, 37], "uv_size": [1, 5]},
+                "up": {"uv": [43, 6], "uv_size": [1, 1]},
+                "down": {"uv": [8, 44], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [1.26314, 5.72579, 0],
+              "size": [1, 4, 1],
+              "pivot": [1.76314, 7.72579, 0.5],
+              "rotation": [0, 0, 87.5],
+              "uv": {
+                "north": {"uv": [40, 37], "uv_size": [1, 4]},
+                "east": {"uv": [26, 42], "uv_size": [1, 4]},
+                "south": {"uv": [28, 42], "uv_size": [1, 4]},
+                "west": {"uv": [30, 42], "uv_size": [1, 4]},
+                "up": {"uv": [43, 8], "uv_size": [1, 1]},
+                "down": {"uv": [10, 44], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [7, 11, 0],
+              "size": [2, 1, 1],
+              "inflate": 0.1,
+              "pivot": [8, 11.5, 0.5],
+              "rotation": [0, 0, -52.5],
+              "uv": {
+                "north": {"uv": [36, 42], "uv_size": [2, 1]},
+                "east": {"uv": [12, 43], "uv_size": [1, 1]},
+                "south": {"uv": [42, 37], "uv_size": [2, 1]},
+                "west": {"uv": [14, 43], "uv_size": [1, 1]},
+                "up": {"uv": [39, 42], "uv_size": [2, 1]},
+                "down": {"uv": [42, 40], "uv_size": [2, -1]}
+              }
+            }
+          ]
+        },
+        {
+          "name": "nozzle2",
+          "parent": "gas_pump",
+          "pivot": [-8, 12.5, 0.5],
+          "rotation": [180, 0, -137.5],
+          "cubes": [
+            {
+              "origin": [-8, 12, 0],
+              "size": [1, 4, 1],
+              "inflate": 0.1,
+              "uv": {
+                "north": {"uv": [26, 37], "uv_size": [1, 4]},
+                "east": {"uv": [28, 37], "uv_size": [1, 4]},
+                "south": {"uv": [30, 37], "uv_size": [1, 4]},
+                "west": {"uv": [32, 37], "uv_size": [1, 4]},
+                "up": {"uv": [42, 41], "uv_size": [1, 1]},
+                "down": {"uv": [43, 1], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [-9, 10, 0],
+              "size": [1, 4, 1],
+              "inflate": 0.1,
+              "uv": {
+                "north": {"uv": [34, 37], "uv_size": [1, 4]},
+                "east": {"uv": [36, 37], "uv_size": [1, 4]},
+                "south": {"uv": [38, 37], "uv_size": [1, 4]},
+                "west": {"uv": [24, 40], "uv_size": [1, 4]},
+                "up": {"uv": [43, 2], "uv_size": [1, 1]},
+                "down": {"uv": [43, 5], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [-9.19035, 5.65305, 0],
+              "size": [1, 5, 1],
+              "pivot": [-8.69035, 10.15305, 0.5],
+              "rotation": [0, 0, 57.5],
+              "uv": {
+                "north": {"uv": [8, 37], "uv_size": [1, 5]},
+                "east": {"uv": [10, 37], "uv_size": [1, 5]},
+                "south": {"uv": [12, 37], "uv_size": [1, 5]},
+                "west": {"uv": [14, 37], "uv_size": [1, 5]},
+                "up": {"uv": [43, 6], "uv_size": [1, 1]},
+                "down": {"uv": [8, 44], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [-14.73686, 5.72579, 0],
+              "size": [1, 4, 1],
+              "pivot": [-14.23686, 7.72579, 0.5],
+              "rotation": [0, 0, 87.5],
+              "uv": {
+                "north": {"uv": [40, 37], "uv_size": [1, 4]},
+                "east": {"uv": [26, 42], "uv_size": [1, 4]},
+                "south": {"uv": [28, 42], "uv_size": [1, 4]},
+                "west": {"uv": [30, 42], "uv_size": [1, 4]},
+                "up": {"uv": [43, 8], "uv_size": [1, 1]},
+                "down": {"uv": [10, 44], "uv_size": [1, -1]}
+              }
+            },
+            {
+              "origin": [-9, 11, 0],
+              "size": [2, 1, 1],
+              "inflate": 0.1,
+              "pivot": [-8, 11.5, 0.5],
+              "rotation": [0, 0, -52.5],
+              "uv": {
+                "north": {"uv": [36, 42], "uv_size": [2, 1]},
+                "east": {"uv": [12, 43], "uv_size": [1, 1]},
+                "south": {"uv": [42, 37], "uv_size": [2, 1]},
+                "west": {"uv": [14, 43], "uv_size": [1, 1]},
+                "up": {"uv": [39, 42], "uv_size": [2, 1]},
+                "down": {"uv": [42, 40], "uv_size": [2, -1]}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

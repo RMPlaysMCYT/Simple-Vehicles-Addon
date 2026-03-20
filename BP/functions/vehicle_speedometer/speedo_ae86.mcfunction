@@ -1,0 +1,1 @@
+playanimation @s animation.ae86.speedometer animation.ae86.speedometer 0 "!query.is_moving"

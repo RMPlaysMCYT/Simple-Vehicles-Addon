@@ -1,0 +1,103 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.VW_Beetle.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["query.anim_time * 25", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.anim_time * 25", 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "arrow_particle",
+					"locator": "vehicle_particle"
+				}
+			}
+		},
+		"animation.simple_vehicles.VW_Beetle.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 45, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -45, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "vwb_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.VW_Beetle.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 45, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -45, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.1": {
+					"effect": "vwb_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.VW_Beetle.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 45, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -45, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.1": {
+					"effect": "vwb_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.VW_Beetle.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

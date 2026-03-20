@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:vespa_primavera",
+			"textures": {
+				"black": "textures/entity/pamobile/vespa_primavera",
+				"white": "textures/entity/pamobile/vespa_primavera_white",
+				"red": "textures/entity/pamobile/vespa_primavera_red",
+				"green": "textures/entity/pamobile/vespa_primavera_green",
+				"blue": "textures/entity/pamobile/vespa_primavera_blue"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.vespa_primavera"
+			},
+			"render_controllers": [
+				"controller.render.vespa_primavera"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 10
+			},
+			"animations": {
+				"walk": "animation.simple_vehicles_vespa_primavera.move",
+				"idle": "animation.simple_vehicles_vespa_primavera.idle",
+				"turn": "animation.bike.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"ups": "animation.simple_vehicles_vespa_primavera.ups",
+				"downs": "animation.simple_vehicles_vespa_primavera.downs",
+				"setup": "animation.simple_vehicles_vespa_primavera.setup",
+				"setup2": "animation.simple_vehicles_vespa_primavera.setup2",
+				"general": "controller.animation.motorcycle.general",
+				"general2": "controller.animation.motorcycle.general2"
+			},
+			"scripts": {
+				"animate": [
+					"turn",
+					"general",
+					"general2",
+					{
+						"walk": "query.is_moving"
+					},
+					{
+						"idle": "!query.is_moving"
+					}
+				]
+			}
+		}
+	}
+}

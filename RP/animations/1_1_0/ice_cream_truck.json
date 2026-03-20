@@ -1,0 +1,88 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.ice_cream_truck.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg1": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				},
+				"tire0": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				},
+				"tire1": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "_simple_vehicles_arrowspell",
+					"locator": "vehicle_particle"
+				}
+			}
+		},
+		"animation.simple_vehicles.ice_cream_truck.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [-3, 0, 0],
+						"1.0": [-2, 0, 20]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "ice_ctruck_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.ice_cream_truck.door_idle": {
+			"loop": true,
+			"sound_effects": {
+				"0.0": {
+					"effect": "ice_ctruck_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.ice_cream_truck.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [-2, 0, 20],
+						"0.75": [-3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0833": {
+					"effect": "ice_ctruck_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.ice_cream_truck.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [-2, 0, 20],
+						"0.75": [-3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0833": {
+					"effect": "ice_ctruck_door_close"
+				}
+			}
+		}
+	}
+}

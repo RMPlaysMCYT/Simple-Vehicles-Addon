@@ -1,0 +1,37 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_lightermax_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 2
+            },
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 1
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 2,
+                "data": 15
+            },
+            {
+                "item": "minecraft:glass",
+                "count": 1
+            },
+            {
+                "item": "minecraft:redstone",
+                "count": 1
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:lightermax_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

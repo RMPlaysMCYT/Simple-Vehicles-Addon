@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:monoplane",
+			"textures": {
+				"black": "textures/entity/monoplane/monopl_1/monopl_1black",
+				"white": "textures/entity/monoplane/monopl_1white",
+				"orange": "textures/entity/monoplane/monopl_1/monopl_1orange",
+				"magenta": "textures/entity/monoplane/monopl_1/monopl_1magenta",
+				"light_blue": "textures/entity/monoplane/monopl_1/monopl_1light_blue",
+				"yellow": "textures/entity/monoplane/monopl_1/monopl_1yellow",
+				"lime": "textures/entity/monoplane/monopl_1/monopl_1lime",
+				"pink": "textures/entity/monoplane/monopl_1/monopl_1pink",
+				"gray": "textures/entity/monoplane/monopl_1/monopl_1gray",
+				"light_gray": "textures/entity/monoplane/monopl_1/monopl_1light_gray",
+				"cyan": "textures/entity/monoplane/monopl_1/monopl_1cyan",
+				"purple": "textures/entity/monoplane/monopl_1/monopl_1purple",
+				"blue": "textures/entity/monoplane/monopl_1/monopl_1blue",
+				"brown": "textures/entity/monoplane/monopl_1/monopl_1brown",
+				"green": "textures/entity/monoplane/monopl_1/monopl_1green",
+				"red": "textures/entity/monoplane/monopl_1/monopl_1red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.sim_veh_monopl"
+			},
+			"render_controllers": [
+				"controller.render.simple_car2"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 14
+			},
+			"animations": {
+				"loop": "animation.sim_veh_monopl.loop",
+				"flying": "animation.sim_veh_monopl.flying",
+				"landing": "animation.sim_veh_monopl.landing",
+				"fly_ctrl": "controller.animation.sim_veh_monopl.fly_ctrl",
+				"look_at_target": "animation.sim_veh_monopl.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"loop": "query.has_rider"
+					},
+					"fly_ctrl",
+					{
+						"look_at_target": "!query.is_on_ground"
+					}
+				]
+			}
+		}
+	}
+}

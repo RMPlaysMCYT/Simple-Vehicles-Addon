@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.scooterb.riding_playa": {
+			"timeline": {
+				"0.0": [
+					"/function player_ride_sys/scooterBstand"
+				],
+				"0.1": [
+					"/function player_ride_sys/scooterB"
+				]
+			},
+			"animation_length": 1.6,
+			"loop": true
+		},
+		"animation.scooterb.riding_playastand": {
+			"start_delay": "!query.has_rider",
+			"loop_delay": "!query.is_moving",
+			"animation_length": 0.2,
+			"timeline": {
+				"0.0": [
+					"/function player_ride_sys/scooterBstand"
+				]
+			},
+			"loop": true
+		}
+	}
+}

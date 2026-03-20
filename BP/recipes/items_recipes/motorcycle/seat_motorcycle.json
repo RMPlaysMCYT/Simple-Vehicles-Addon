@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seat_motorcycle"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"   ",
+			"WWG",
+			"   "
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:black_wool"
+			},
+			"G": {
+				"item": "minecraft:chest"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_motorcycle"
+			}
+		]
+	}
+}

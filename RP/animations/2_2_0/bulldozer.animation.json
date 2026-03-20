@@ -1,0 +1,173 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.bulldozer.setup": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0]
+				},
+				"claw": {
+					"rotation": [-5, 0, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.door_open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -50, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 50, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.door_close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, -50, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 50, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.door_close2": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [0, 50, 0]
+				},
+				"door1": {
+					"rotation": [0, -50, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 75, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -75, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "bulldozer_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 75, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -75, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "bulldozer_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 75, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -75, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "bulldozer_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.bulldozer.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

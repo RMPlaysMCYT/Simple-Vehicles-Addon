@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.plane.fly": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "(1.0)"
+						}
+					]
+				},
+				"flying": {
+					"transitions": [
+						{
+							"default": "query.is_saddled"
+						}
+					],
+					"on_entry": [
+						"/function flying_system/plane"
+					]
+				}
+			}
+		}
+	}
+}

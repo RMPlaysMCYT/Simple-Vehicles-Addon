@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.honda_accord_2019": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.black",
+						"Texture.white",
+						"Texture.red",
+						"Texture.green",
+						"Texture.blue"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

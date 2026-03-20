@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:car4x4",
+      "materials": {
+        "default": "witch",
+        "car4x4_lights": "entity_alphablend"
+      },
+      "textures": {
+        "default": "textures/entity/car_4x4",
+        "car4x4_lights": "textures/entity/vehi_lights/car4x4_lights"
+      },
+      "geometry": {
+        "default": "geometry.car_4x4",
+        "car4x4_lights": "geometry.car4x4_lights"
+      },
+      "particle_effects": {
+        "arrow_particle": "minecraft:arrow_spell_emitter"
+      },
+      "animations": {
+        "move": "animation.simple_vehicles.car_4x4.move",
+        "turn": "animation.car4x4_1.turn",
+        "v_turn": "controller.animation.vehicle.v_turn",
+        "setup": "animation.simple_vehicles.car_4x4.setup",
+        "setup_ac": "controller.animation.car4x4.setup",
+        "door_idle": "animation.simple_vehicles.car_4x4.door_idle",
+        "open": "animation.simple_vehicles.car_4x4.open",
+        "close": "animation.simple_vehicles.car_4x4.close",
+        "close2": "animation.simple_vehicles.car_4x4.close2",
+        "wiper": "animation.simple_vehicles.car_4x4.wiper",				
+        "door_mechanic_v2": "controller.animation.bus_v2.door_mechanic_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+      },
+      "sound_effects": {
+        "car_4x4.wiper": "simple_vehicles.car_4x4.wiper"
+      },
+      "scripts": {
+        "animate": [
+          "general",
+          "v_turn",
+          "setup_ac",
+          "door_mechanic_v2",
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.car4x4"
+      ],
+      "spawn_egg": {
+        "texture": "vehicles",
+        "texture_index": 5
+      }
+    }
+  }
+}

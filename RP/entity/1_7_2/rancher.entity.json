@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:rancher",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/rancher"
+			},
+			"geometry": {
+				"default": "geometry.rancher"
+			},
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 3
+			},
+			"animations": {
+				"move": "animation.rancher.move",
+				"setup": "animation.rancher.setup",
+				"doors_idle": "animation.rancher.doors_idle",
+				"open": "animation.rancher.open",
+				"close": "animation.rancher.close",
+				"close2": "animation.rancher.close2",
+				"turn": "animation.rancher.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				"move_ac": "controller.animation.rancher.move_ac",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"setup",
+					"v_turn",
+					"door_mechanic",
+					"move_ac"
+				]
+			},
+			"render_controllers": [
+				"controller.render.rancher"
+			],
+			"sound_effects": {
+				"rancher_door_open": "simple_vehicles.corolla.open",
+				"rancher_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers":{
+		"controller.animation.mixer_truck.item_setpack": {
+            "initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{"given_ride": "query.has_rider"},
+						{"taken_notride": "!query.has_rider"}
+					]
+				},
+				"given_ride": {
+					"transitions": [
+						{"taken_notride": "!query.has_rider"}
+					],
+					"on_entry": [
+						"/tag @p[c=1] add MixerTruck",
+                        "/function item_essentials",
+						"/tellraw @p[c=1] {\"rawtext\":[{\"translate\":\"action.hint.action.mixer_truck\"}]}"
+					]
+				},
+				"taken_notride": {
+					"transitions": [
+						{"given_ride": "query.has_rider"}
+					],
+					"on_entry": [
+                        "/function item_essentials_cleared",
+						"/tag @p[c=1] remove MixerTruck"
+					]
+				}
+			}
+		}
+    }
+}

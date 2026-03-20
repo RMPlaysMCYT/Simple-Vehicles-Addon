@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:cdfkdf"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"l",
+			"ll",
+			"GG"
+		],
+		"key": {
+			"l": {
+				"item": "minecraft:wool",
+				"data": 7
+			},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 2
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_travis"
+			}
+		]
+	}
+}

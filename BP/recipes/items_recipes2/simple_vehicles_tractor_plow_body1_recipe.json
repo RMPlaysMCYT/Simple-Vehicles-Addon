@@ -1,0 +1,32 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:tractor_plow_body1_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:small_body_part",
+                "count": 5
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 1,
+                "data": 3
+            },
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 2
+            },
+            {
+                "item": "minecraft:shears"
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:tractor_plow_body1"
+        },
+        "tags": [
+           "vehicle_workbench"
+        ]
+    }
+}

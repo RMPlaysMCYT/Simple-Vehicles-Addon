@@ -1,0 +1,99 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.opel_corsa.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["query.anim_time * 10", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.anim_time * 10", 0, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.opel_corsa.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.opel_corsa.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "opel_corsa_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.opel_corsa.close2": {
+			"loop": true,
+			"bones": {
+				"door1": {
+					"rotation": [0, 60, 0]
+				},
+				"door0": {
+					"rotation": [0, 60, 0]
+				},
+				"door2": {
+					"rotation": [0, -60, 0]
+				},
+				"door3": {
+					"rotation": [0, -60, 0]
+				}
+			}
+		}
+	}
+}

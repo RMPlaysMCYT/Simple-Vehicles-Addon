@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.gyroplane_propeller.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "propeller": {
+          "rotation": [64.35341, 59.99539, -75.0764],
+          "position": [5, -31, -17],
+          "scale": [0.2, 0.3, 0.2]
+        }
+      }
+    },
+    "animation.gyroplane_propeller.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "propeller": {
+          "rotation": [82.5, 0, 0],
+          "position": [0, -25, -20],
+          "scale": [0.1, 0.2, 0.1]
+        }
+      }
+    }
+  }
+}

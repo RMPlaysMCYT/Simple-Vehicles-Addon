@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:pajero",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/pajero"
+			},
+			"geometry": {
+				"default": "geometry.pajero"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 26
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.pajero.move",
+				"turn": "animation.pajero.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"close": "animation.simple_vehicles.pajero.close",
+				"close2": "animation.simple_vehicles.pajero.close2",
+				"open": "animation.simple_vehicles.pajero.open",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mech",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+			"sound_effects": {
+				"pajero_door_open": "simple_vehicles.corolla.open",
+				"pajero_door_close": "simple_vehicles.corolla.close"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

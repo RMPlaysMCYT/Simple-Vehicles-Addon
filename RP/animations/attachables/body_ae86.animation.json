@@ -1,0 +1,2626 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.body_ae86.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-6, -2, 0],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.body_tiltrotor.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [16, -18, -10],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_tiltrotor.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -5, -6.5],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.body_bike.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-5, -6, 4],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.body_bike.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [1, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.ambulance.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.ambulance.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.4, 0.4, 0.4]
+        }
+      }
+    },
+    "animation.bus_v2.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.bus_v2.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -6.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.air_balloon.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [27, -40, -11],
+          "scale": 0.2
+        },
+        "base": {
+          "rotation": [25, 0, -122.5],
+          "position": [0, -3, 4],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [25, 0, -122.5],
+          "position": [9, 1, 8],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.air_balloon.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.4, 0.4, 0.4]
+        },
+        "base": {
+          "rotation": [22.5, 0, 0],
+          "position": [0, -3, -6],
+          "scale": [0.2, 0.2, 0.2]
+        },
+        "balloon": {
+          "rotation": [22.5, 0, 0],
+          "position": [0, -15, -6],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.blimp.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.2, 0.2, 0.2]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.blimp.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [70, -1, -9.5],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [34, 8, 33],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.tricycle.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.2, 0.2, 0.2]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.tricycle.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.submarine.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [19, 17, 20],
+          "scale": [0.2, 0.2, 0.2]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.submarine.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 19, -7.5],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.motorcycle.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-1, -10, 7],
+          "scale": [0.2, 0.2, 0.2]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.motorcycle.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [75, 0, 0],
+          "position": [0, -12, -5.5],
+          "scale": 0.3
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.armored_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [7, -31, -2],
+          "scale": 0.1
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.armored_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -21, -7.5],
+          "scale": 0.1
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.vw_beetle_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [12, -9, 21],
+          "scale": [0.2, 0.2, 0.2]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.vw_beetle_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [1, 6, -5.5],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.scooter_a_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 2],
+          "scale": [0.2, 0.2, 0.2]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.scooter_a_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [1, -14, -3.5],
+          "scale": [0.4, 0.4, 0.4]
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.opel_astra_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [1, -9, 8],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.opel_astra_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -6, -2.5],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.opel_corsa_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.opel_corsa_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -4, -4.5],
+          "scale": 0.1
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.ice_cream_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [3, 2, -13],
+          "scale": 0.1
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.ice_cream_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 7, -16.5],
+          "scale": 0.1
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.hafei_zhongyi_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.hafei_zhongyi_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -6, 14.5],
+          "scale": 0.1
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.tractor_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [3, -30, 17],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.tractor_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, -21, -3.5],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.snowmobile_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-10, -2, 7],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.snowmobile_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.4, 0.4, 0.4]
+        }
+      }
+    },
+    "animation.plane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [26, -27, 36],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.plane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, -1, 5.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.motorbike_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [20, -28, 25],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.motorbike_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -10, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.trucks_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [20, -37, -13],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.trucks_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -20, -33.5],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.firetruck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [10, -25, -13],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.firetruck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [1, -8, -33.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.helicopter_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.helicopter_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.hoverboard_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.hoverboard_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.lowrider_v1_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.lowrider_v1_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.double_decker_bus_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [28, -40, 29],
+          "scale": 0.2
+        },
+        "balloon": {
+          "rotation": [53.74127, 58.39167, -73.23592],
+          "position": [5, -8, 8],
+          "scale": 0.1
+        },
+        "upper_body": {
+          "rotation": [90, 56, -32],
+          "position": [28, -40, 29],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.double_decker_bus_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -8, -6.5],
+          "scale": 0.1
+        },
+        "balloon": {
+          "rotation": [10, 0, 0],
+          "position": [-3, -25, -6],
+          "scale": 0.1
+        },
+        "upper_body": {
+          "rotation": [25, 0, 0],
+          "position": [21, -38, 10],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.container_van_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [32, -36, 36],
+          "scale": [0.4, 0.41, 0.4]
+        }
+      }
+    },
+    "animation.container_van_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -3, 10.5],
+          "scale": [0.1, 0.09, 0.1]
+        }
+      }
+    },
+    "animation.century_luxury_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [7, -11, 18],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.century_luxury_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -4, -3.5],
+          "scale": 0.11
+        }
+      }
+    },
+    "animation.cadillac_dts_2010_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.cadillac_dts_2010_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.volt_bike_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.volt_bike_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.snow_mobile_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.snow_mobile_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 0, -0.5],
+          "scale": 0.3
+        }
+      }
+    },
+    "animation.speedboat_v1_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.speedboat_v1_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 16, -5.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.police_car_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.police_car_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.car_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [17, -25, 22],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.car_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -8, -11.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.car4x4_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.car_4x4.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.corolla_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.corolla_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-0.6, -14, -2.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.c_sled_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.c_sled_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        },
+        "sled": {
+          "position": [13, 49, 26],
+          "scale": [0.7, 0.7, 0.7]
+        }
+      }
+    },
+    "animation.ev4_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [33, -32, 45],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.ev4_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -5, -1.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.ambulance_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [25, -30, 21],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.ambulance_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 9, -18.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.vespa_primavera_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [6, -17, 11],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.vespa_primavera_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [1, -11, -6.5],
+          "scale": 0.3
+        }
+      }
+    },
+    "animation.tractor_seeder_1_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tractor_seeder_1_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, -23, -3.5],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tractor_sprinkler_0_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tractor_sprinkler_0_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, -22, 3.5],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.tricycle_container_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [5, -20, 7],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tricycle_container_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [40, 0, 0],
+          "position": [2, -1, -5.5],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tuktukthai_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.tuktukthai_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-2, -5, -5.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.tiltrotor_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [24, -40, 21],
+          "scale": [0.16, 0.16, 0.16]
+        }
+      }
+    },
+    "animation.tiltrotor_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [27.5, 0, 0],
+          "position": [0, -24, -6.5],
+          "scale": 0.08
+        }
+      }
+    },
+    "animation.small_tractor.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.small_tractor.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.pedicab_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.pedicab_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.shenhao_q5.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.shenhao_q5.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -6, -4.5],
+          "scale": 0.1
+        }
+      }
+    },
+    "animation.scooter_b_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.scooter_b_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -5, -6.5],
+          "scale": 0.4
+        }
+      }
+    },
+    "animation.rocket_viking_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [8, -12, 14],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.rocket_viking_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -13, -7.5],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.rideable_lawn_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": 0.2
+        }
+      }
+    },
+    "animation.rideable_lawn_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -6, -4.5],
+          "scale": 0.25
+        }
+      }
+    },
+    "animation.mini_car_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.mini_car_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.minivan_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [13, -18, 19],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.minivan_trucktype_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.minivan_trucktype_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.mixer_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.mixer_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -19, -22.5],
+          "scale": 0.05
+        }
+      }
+    },
+    "animation.monster_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.monster_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -30, -6.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.private_plane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.private_plane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [67.5, 0, 0],
+          "position": [0, -7, -54.5],
+          "scale": 0.05
+        }
+      }
+    },
+    "animation.lightermax_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.jeep_wrangler.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.jeep_wrangler.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.gyroplane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.gyroplane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -26, -12.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.farm_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.farm_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -23, 14.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.dump_truck_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.dump_truck_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.dragster_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.dragster_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, -2, -0.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.bulldozer_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.bulldozer_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -8, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.asphalt_paving_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [45, -40, -26],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.asphalt_paving_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, -5, -0.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.biplane_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [33, -48, 4],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.biplane_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-6, -16, -21.5],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.gyroplane.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [0, -23, -5],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.gyroplane.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 60, -42.5],
+          "position": [-20, 0, 15],
+          "scale": [0.3, 0.3, 0.3]
+        }
+      }
+    },
+    "animation.car_lowrider.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [0, -13, -2],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.car_lowrider.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [4, -24, 17],
+          "scale": [0.4, 0.4, 0.4]
+        }
+      }
+    },
+    "animation.body_ae86.first_person_hold2": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [11, 7, 2],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_ae86.third_person_hold2": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, 13, -19.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_bajajRE.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -1, -7.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_bajajRE.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-4, 0, 6],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.bridge_builder_body.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-4, 0, -10],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.bridge_builder_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -10, -23.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_jeep_wrangler.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [57.78709, 57.23961, -82.05168],
+          "position": [0, -8, 6],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_jeep_wrangler.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [0, -6, -3],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.minivan_body.first_person_hold2": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [7, -18, 19],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.minivan_body.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 8, 4.5],
+          "scale": [0.11, 0.11, 0.11]
+        }
+      }
+    },
+    "animation.minivan_body.third_person_hold2": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 3, 22.5],
+          "scale": [0.11, 0.11, 0.11]
+        }
+      }
+    },
+    "animation.body_minicar.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_ae86.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -10.5],
+          "scale": 0.1
+        },
+        "seat": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0],
+          "scale": 0
+        }
+      }
+    },
+    "animation.body_minicar.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_dump_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_dump_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -21, -36.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.body_cargo_container.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_cargo_container.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-2, -10, -15.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_f1_car.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_f1_car.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -14, -8.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.body_farm_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_farm_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_ranchero_gt_sass.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_ranchero_gt_sass.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -5.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.body_mit_aerojp.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_mit_aerojp.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -6, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_golf_cart_a.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_golf_cart_a.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_general_vehicle.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-7, 0, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_general_vehicle.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -5, -5.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_isuzu_dmax.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_isuzu_dmax.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -6.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.body_go_kart.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_go_kart.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -15.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.body_private_plane.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_private_plane.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_rally_car_20.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_rally_car_20.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_roller_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_roller_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_scooter_b.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_scooter_b.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_seaplane.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_seaplane.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [67.5, 0, 0],
+          "position": [0, -3, -3.5],
+          "scale": [0.05, 0.05, 0.05]
+        }
+      }
+    },
+    "animation.body_tentmushi.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_tentmushi.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_tamarraw_fx.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.body_tamarraw_fx.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_tractor_seeder.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_tractor_seeder.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_train_cart.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.body_train_cart.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_cargo_truck_v1.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_cargo_truck_v1.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [80, 0, 0],
+          "position": [-5, -9, -5.5],
+          "scale": [0.05, 0.05, 0.05]
+        }
+      }
+    },
+    "animation.body_vespa_primavera.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_vespa_primavera.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_vintage_bus.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_vintage_bus.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_vintage_van.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_vintage_van.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-5, 2, -4.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_auv_car.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-8, -14, -2],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_auv_car.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [-1, -17, -7.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_bus_v1.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-1, -4, 6],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_bus_v1.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_car4x4.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_car4x4.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -20, -7.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_jeep_ph.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_jeep_ph.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -10, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_limmo.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_limmo.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -8, -6.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_mini_bus.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_mini_bus.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_ob_van.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_ob_van.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_pajero.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_pajero.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_travis.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_travis.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_speedboat_v1.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_speedboat_v1.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_tesla_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_tesla_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_honda_accord.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_honda_accord.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_hyundai_starex.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_hyundai_starex.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 13, 17.5],
+          "scale": 0.15
+        }
+      }
+    },
+    "animation.body_jetmax.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_jetmax.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, 15, -3.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_van_v2.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_van_v2.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_school_bus.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_school_bus.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_sabre.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_sabre.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_land_cruiser.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_land_cruiser.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [25, 0, 0],
+          "position": [0, -7, -7.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_monoplane.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-9, -4, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.body_monoplane.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [67.5, 0, 0],
+          "position": [0, 8, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.speedboat_1_14.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [6, 4, 4],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.speedboat_1_14.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [67.5, 0, 0],
+          "position": [0, 13, -8.5],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.helicopter.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [6, 5, 4],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.helicopter.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [67.5, 0, 0],
+          "position": [0, 13, -4.5],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.pick_up_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-8, 0, 0],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.pick_up_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [67.5, 0, 0],
+          "position": [0, -6, -4.5],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    },
+    "animation.double_deck_bus_v2.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [90, 56, -32],
+          "position": [-8, 0, 0],
+          "scale": [0.15, 0.15, 0.15]
+        },
+        "upper_body": {
+          "rotation": [90, 56, -32],
+          "position": [13, -33, 19],
+          "scale": [0.15, 0.15, 0.15]
+        }
+      }
+    },
+    "animation.double_deck_bus_v2.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [67.5, 0, 0],
+          "position": [0, -6, -4.5],
+          "scale": [0.1, 0.1, 0.1]
+        },
+        "upper_body": {
+          "rotation": [67.5, 0, 0],
+          "position": [21.6, -34.6, 10.3],
+          "scale": [0.1, 0.1, 0.1]
+        }
+      }
+    }
+  }
+}

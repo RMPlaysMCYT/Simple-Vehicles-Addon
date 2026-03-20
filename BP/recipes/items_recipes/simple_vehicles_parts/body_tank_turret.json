@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:kjdskdskds"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"",
+			"ICB",
+			""
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:concrete",
+				"data": 4
+			},
+			"B": {
+				"item": "minecraft:bow"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:turret_tank"
+			}
+		]
+	}
+}

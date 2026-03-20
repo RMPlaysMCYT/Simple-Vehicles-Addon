@@ -1,0 +1,12 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "simple_vehicles:seat_c_sled",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": "seat_c_sled"
+			}
+	}
+}

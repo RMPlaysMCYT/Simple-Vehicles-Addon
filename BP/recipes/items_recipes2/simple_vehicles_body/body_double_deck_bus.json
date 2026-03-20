@@ -1,0 +1,28 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_double_deck_bus"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"B",
+			"D"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_upper_double_deck_bus"
+			},
+			"D": {
+				"item": "simple_vehicles:body_lower_double_deck_bus"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_double_deck_bus"
+			}
+		]
+	}
+}

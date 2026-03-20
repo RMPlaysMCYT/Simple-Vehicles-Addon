@@ -1,0 +1,146 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.helicopter.loop": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"propeller1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": ["360*10", 0, 0]
+					}
+				},
+				"propeller0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [0, "360*10 ", 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "heli0"
+				}
+			}
+		},
+		"animation.simple_vehicles.helicopter.door_idle": {
+			"animation_length": 1,
+			"bones": {
+				"door2": {
+					"rotation": [0, 0, 0]
+				},
+				"door3": {
+					"rotation": [0, 0, 0]
+				},
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.helicopter.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.helicopter.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door2": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.helicopter.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door2": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.helicopter.propeller_setup": {
+			"loop": true,
+			"bones": {
+				"propeller1": {
+					"rotation": [0, 0, 0]
+				},
+				"propeller0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

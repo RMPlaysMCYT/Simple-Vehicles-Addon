@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seat_scooter_A"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"",
+			"zzz",
+			"sGI"
+		],
+		"key": {
+			"z": {
+				"item": "minecraft:wool",
+				"data": 12
+			},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 0
+			},
+			"I": {"item": "minecraft:iron_ingot"},
+			"s": {"item": "minecraft:chest"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_scooter_A"
+			}
+		]
+	}
+}

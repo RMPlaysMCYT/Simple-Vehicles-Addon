@@ -1,0 +1,61 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ev_4",
+			"materials": {
+				"default": "witch",
+				"ev4_lights": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/ev_4",
+				"ev4_lights": "textures/entity/vehi_lights/ev4_lights"
+			},
+			"geometry": {
+				"default": "geometry.ev_4",
+				"ev4_lights": "geometry.ev4_lights"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 31
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.ev_4.move",
+				"turn": "animation.ev_4.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_idle": "animation.simple_vehicles.car_new.door_idle",
+				"open": "animation.simple_vehicles.ev_4.open",
+				"close": "animation.simple_vehicles.ev_4.close",
+				"close2": "animation.simple_vehicles.ev_4.close2",
+				"door_mechanic_v2": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"particle_effects": {
+				"arrow_particle": "minecraft:arrow_spell_emitter"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic_v2",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+			"sound_effects": {
+				"ev4_door_open": "simple_vehicles.ev4.open",
+				"ev4_door_close": "simple_vehicles.ev4.close"
+			}
+		}
+	}
+}

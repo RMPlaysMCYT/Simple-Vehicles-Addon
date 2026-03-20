@@ -1,0 +1,17 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.car.look_at_target": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"look_at_target": "query.target_y_rotation"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "simple_vehicles:rally_car_2_0",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.rally_car_2_0"
+            },
+            "textures": {
+                "default": "textures/entity/3_1_0/rallycar_2_0"
+            },
+            "animations": {
+                "move": "animation.rally_car_2_0.move",
+                "turn": "animation.rally_car_2_0.turn",
+                "ups": "animation.motorcycle.ups",
+                "downs": "animation.motorcycle.downs",
+                "vehi2general": "controller.animation.vehicles2.general"
+            },
+            "scripts": {
+                "animate": [
+                    "vehi2general",
+                    {
+                        "move": "query.modified_move_speed"
+                    }
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "spawn_egg": {
+                "texture": "vehicles_3",
+                "texture_index": 0
+            },
+            "particle_effects": {
+	            "arrow_particle": "minecraft:arrow_spell_emitter"
+            }
+        }
+    }
+}

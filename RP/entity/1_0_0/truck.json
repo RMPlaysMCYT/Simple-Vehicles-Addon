@@ -1,0 +1,78 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:truck",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/truck/truck_black",
+				"white": "textures/entity/truck/truck_white",
+				"orange": "textures/entity/truck/truck_orange",
+				"magenta": "textures/entity/truck/truck_magenta",
+				"light_blue": "textures/entity/truck/truck_light_blue",
+				"yellow": "textures/entity/truck/truck_yellow",
+				"lime": "textures/entity/truck/truck_lime",
+				"pink": "textures/entity/truck/truck_pink",
+				"gray": "textures/entity/truck",
+				"silver": "textures/entity/truck/truck_silver",
+				"cyan": "textures/entity/truck/truck_cyan",
+				"purple": "textures/entity/truck/truck_purple",
+				"blue": "textures/entity/truck/truck_blue",
+				"brown": "textures/entity/truck/truck_brown",
+				"green": "textures/entity/truck/truck_green",
+				"red": "textures/entity/truck/truck_red"
+			},
+			"geometry": {
+				"default": "geometry.truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 15
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.truck.move2",
+				"turn": "animation.truck.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"close": "animation.simple_vehicles.truck.close",
+				"close2": "animation.simple_vehicles.truck.close2",
+				"open": "animation.simple_vehicles.truck.open",
+				"wiper": "animation.simple_vehicles.truck.wiper",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mech",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"close2": "query.has_rider"
+					},
+					{
+						"wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"sound_effects": {
+				"move": "vehicles.drive",
+				"truck_door_open": "simple_vehicles.corolla.open",
+				"truck_door_close": "simple_vehicles.corolla.close"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:century",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/century_luxury"
+			},
+			"geometry": {
+				"default": "geometry.century_luxury"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 45
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"turn": "animation.century_luxury.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.century_luxury.doors_idle",
+				"close": "animation.simple_vehicles.century_luxury.close",
+				"close2": "animation.simple_vehicles.century_luxury.close2",
+				"open": "animation.simple_vehicles.century_luxury.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general2",
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general",
+					"door_mech"
+				]
+			},
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+      		"sound_effects": {
+        		"century_luxury_door_open": "simple_vehicles.auv_car.open",
+        		"century_luxury_door_close": "simple_vehicles.auv_car.close"
+      		}
+		}
+	}
+}

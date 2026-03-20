@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seat_century_luxury"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"W",
+			"Wt",
+			"GG"
+		],
+		"key": {
+			"t": {"item": "minecraft:light_gray_carpet"},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 8
+			},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 8
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_century_luxury"
+			}
+		]
+	}
+}

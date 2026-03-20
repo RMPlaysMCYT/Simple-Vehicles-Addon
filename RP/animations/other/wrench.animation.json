@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.wrench.thirdperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"wrench": {
+					"rotation": [60, 0, 0],
+					"position": [5, -5, -4],
+					"scale": 0.5
+				},
+				"jerry_can": {
+					"rotation": [15, 0, 0],
+					"position": [6, -3, -8],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.wrench.firstperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"wrench": {
+					"rotation": [90, 60, -40],
+					"position": [2, -2, 4],
+					"scale": 0.7
+				},
+				"root": {
+					"position": [0, -2, -2],
+					"scale": 0.8
+				},
+				"jerry_can": {
+					"rotation": [68.40143, 56.68078, -58.15253],
+					"position": [10, -13, 2],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.gas_nozzle.thirdperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"wrench": {
+					"rotation": [60, 0, 0],
+					"position": [5, -5, -4],
+					"scale": 0.5
+				},
+				"jerry_can": {
+					"rotation": [15, 0, 0],
+					"position": [6, -3, -8],
+					"scale": 0.6
+				},
+				"gas_nozzle": {
+					"rotation": [65, 0, 0],
+					"position": [3, -7, -3],
+					"scale": 0.8
+				}
+			}
+		},
+		"animation.gas_nozzle.firstperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"wrench": {
+					"rotation": [90, 60, -40],
+					"position": [2, -2, 4],
+					"scale": 0.7
+				},
+				"root": {
+					"position": [0, -2, -2],
+					"scale": 0.8
+				},
+				"jerry_can": {
+					"rotation": [68.40143, 56.68078, -58.15253],
+					"position": [10, -13, 2],
+					"scale": 0.6
+				},
+				"gas_nozzle": {
+					"rotation": [82.29335, 61.68767, -70.57589],
+					"position": [6, -20, 9]
+				}
+			}
+		}
+	}
+}

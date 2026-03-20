@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.helicopter.fly": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "1"
+						}
+					],
+					"on_entry": [
+						"/function flying_system/helicopter"
+					]
+				},
+				"flying": {
+					"transitions": [
+						{
+							"default": "query.is_jumping"
+						}
+					],
+					"on_entry": [
+						"/function flying_system/helicopter"
+					]
+				}
+			}
+		}
+	}
+}

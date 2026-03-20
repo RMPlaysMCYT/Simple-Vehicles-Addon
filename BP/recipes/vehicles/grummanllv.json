@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:grummanllv"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_grummanllv"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_grummanllv"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:grummanllv_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

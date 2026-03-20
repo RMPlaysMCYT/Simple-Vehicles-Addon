@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:container_van_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_container_van"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_container_van",
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:container_van_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

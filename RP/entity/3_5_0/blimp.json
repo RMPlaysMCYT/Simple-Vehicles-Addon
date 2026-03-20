@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:blimp",
+			"textures": {
+				"black": "textures/entity/blimp/blimp_black",
+				"white": "textures/entity/blimp_white",
+				"orange": "textures/entity/blimp/blimp_orange",
+				"magenta": "textures/entity/blimp/blimp_magenta",
+				"light_blue": "textures/entity/blimp/blimp_light_blue",
+				"yellow": "textures/entity/blimp/blimp_yellow",
+				"lime": "textures/entity/blimp/blimp_lime",
+				"pink": "textures/entity/blimp/biplane_pink",
+				"gray": "textures/entity/blimp/blimp_gray",
+				"light_gray": "textures/entity/blimp/blimp_light_gray",
+				"cyan": "textures/entity/blimp/blimp_cyan",
+				"purple": "textures/entity/blimp/blimp_purple",
+				"blue": "textures/entity/blimp/blimp_blue",
+				"brown": "textures/entity/blimp/blimp_brown",
+				"green": "textures/entity/blimp/blimp_green",
+				"red": "textures/entity/blimp/blimp_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.simveh_blimp"
+			},
+			"render_controllers": [
+				"controller.render.simple_car2"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 12
+			},
+			"animations": {
+				"loop": "animation.simveh_blimp.loop",
+				"unloop": "animation.simveh_blimp.unloop",
+				"loop_init": "controller.animation.simple_vehicles_gyroplane.loop_init",
+				"look_at_target": "animation.simveh_blimp.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					"loop_init",
+					"look_at_target"
+				]
+			}
+		}
+	}
+}

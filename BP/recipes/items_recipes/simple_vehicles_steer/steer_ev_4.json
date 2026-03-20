@@ -1,0 +1,30 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_ev_43242"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B ",
+			"BIB",
+			" B "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 7
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_ev_4"
+			}
+		]
+	}
+}

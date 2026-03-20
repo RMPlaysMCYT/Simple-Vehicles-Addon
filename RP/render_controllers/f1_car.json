@@ -1,0 +1,71 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.f1_car": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.white",
+						"Texture.orange",
+						"Texture.magenta",
+						"Texture.light_blue",
+						"Texture.yellow",
+						"Texture.lime",
+						"Texture.pink",
+						"Texture.gray",
+						"Texture.silver",
+						"Texture.cyan",
+						"Texture.purple",
+						"Texture.blue",
+						"Texture.brown",
+						"Texture.green",
+						"Texture.red",
+						"Texture.black"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		},
+		"controller.render.f1_car2": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.black",
+						"Texture.white",
+						"Texture.orange",
+						"Texture.magenta",
+						"Texture.light_blue",
+						"Texture.yellow",
+						"Texture.lime",
+						"Texture.pink",
+						"Texture.gray",
+						"Texture.silver",
+						"Texture.cyan",
+						"Texture.purple",
+						"Texture.blue",
+						"Texture.brown",
+						"Texture.green",
+						"Texture.red"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

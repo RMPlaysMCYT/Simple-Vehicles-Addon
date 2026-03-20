@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tractor_sprinkler.move": {
+			"loop": true,
+			"bones": {
+				"tire1": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				},
+				"tire2": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["query.anim_time * 15", 0, 0]
+				}
+			}
+		},
+		"animation.tractor_sprinkler.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*query.modified_move_speed*0.7", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*query.modified_move_speed*0.7", 0]
+				}
+			}
+		},
+		"animation.tractor_sprinkler.water_pour": {
+			"loop": true,
+			"animation_length": 0.3,
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "water_splash",
+						"locator": "sprnk1"
+					},
+					{
+						"effect": "water_splash",
+						"locator": "sprnk2"
+					},
+					{
+						"effect": "water_splash",
+						"locator": "sprnk3"
+					}
+				]
+			}
+		}
+	}
+}

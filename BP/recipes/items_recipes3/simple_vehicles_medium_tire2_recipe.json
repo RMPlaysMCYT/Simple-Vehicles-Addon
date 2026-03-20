@@ -1,0 +1,24 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_medium_tire2_recipe"
+        },
+        "pattern": [
+            "QQQ",
+            "SRS",
+            "QQQ"
+        ],
+        "key": {
+            "S": {"item": "minecraft:stick"},
+            "Q": {"item": "minecraft:gray_wool"},
+            "R": {"item": "minecraft:redstone"}
+        },
+        "result": {
+            "item": "simple_vehicles:medium_tire2"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_modern_jeep_ph2323"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"aBa",
+			"BIB",
+			"aBa"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 5
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"a": {
+				"item": "minecraft:gray_concrete_powder"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_modern_jeep_ph"
+			}
+		]
+	}
+}

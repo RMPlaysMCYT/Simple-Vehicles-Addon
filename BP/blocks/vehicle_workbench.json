@@ -1,0 +1,49 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "simple_vehicles:vehicle_workbench",
+			"is_experimental": false,
+			"menu_category": {
+				"category": "construction",
+				"is_hidden_in_commands": false
+			},
+			"traits": {
+				"minecraft:placement_direction": {"y_rotation_offset": 180,"enabled_states": ["minecraft:facing_direction"]}
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.vehicle_workbench",
+			"minecraft:loot": "loot_tables/blocks/vehicle_builder.json",
+			"minecraft:collision_box": {"origin": [-8,0,-8],"size": [16,16,16]},
+			"minecraft:crafting_table": {"table_name": "Vehicle Workbench","crafting_tags": ["vehicle_workbench"],"grid_size": 3},
+			"minecraft:material_instances": {"*": {"texture": "vehicle_workbench","render_method": "alpha_test"}}
+		},
+		"permutations": [
+            {
+                "condition": "q.block_state('minecraft:facing_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 0, 0] }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:facing_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 90, 0] }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:facing_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, -180, 0] }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:facing_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": { "rotation": [0, 270, 0] }
+                }
+            }
+		]
+	}
+}

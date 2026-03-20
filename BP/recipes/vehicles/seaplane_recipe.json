@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seaplane_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM",
+			"S S"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:seaplane_body"
+			},
+			"M": {
+				"item": "simple_vehicles:wings_plane"
+			},
+			"S": {
+				"item": "minecraft:oak_boat"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seaplane_spawn_egg"
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.riding_simveh_bike": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"riding": "query.has_rider"
+						}
+					]
+				},
+				"riding": {
+					"transitions": [
+						{
+							"default": "!query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function player_ride_sys/player_ride_bike"
+					]
+				}
+			}
+		}
+	}
+}

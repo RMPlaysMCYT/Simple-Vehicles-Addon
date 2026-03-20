@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:biplane",
+			"textures": {
+				"black": "textures/entity/biplane/biplane_black",
+				"white": "textures/entity/biplane",
+				"orange": "textures/entity/biplane/biplane_orange",
+				"magenta": "textures/entity/biplane/biplane_magenta",
+				"light_blue": "textures/entity/biplane/biplane_light_blue",
+				"yellow": "textures/entity/biplane/biplane_yellow",
+				"lime": "textures/entity/biplane/biplane_lime",
+				"pink": "textures/entity/biplane/biplane_pink",
+				"gray": "textures/entity/biplane/biplane_gray",
+				"light_gray": "textures/entity/biplane/biplane_light_gray",
+				"cyan": "textures/entity/biplane/biplane_cyan",
+				"purple": "textures/entity/biplane/biplane_purple",
+				"blue": "textures/entity/biplane/biplane_blue",
+				"brown": "textures/entity/biplane/biplane_brown",
+				"green": "textures/entity/biplane/biplane_green",
+				"red": "textures/entity/biplane/biplane_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.simveh_biplane"
+			},
+			"render_controllers": [
+				"controller.render.simple_car2"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 15
+			},
+			"animations": {
+				"setup": "animation.simveh_biplane.setup",
+				"loop": "animation.sim_veh_monopl.loop",
+				"flying": "animation.sim_veh_monopl.flying",
+				"landing": "animation.sim_veh_monopl.landing",
+				"fly_ctrl": "controller.animation.sim_veh_monopl.fly_ctrl",
+				"look_at_target": "animation.simveh_biplane.look_at_target",
+				"unloop": "animation.sim_veh_monopl.unloop",
+				"loop_init": "controller.animation.simple_vehicles_gyroplane.loop_init"
+			},
+			"scripts": {
+				"animate": [
+					"setup",
+					"look_at_target",
+					"loop_init",
+					"fly_ctrl"
+				]
+			}
+		}
+	}
+}

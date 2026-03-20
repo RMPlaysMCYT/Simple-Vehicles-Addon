@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.car4x4_lights",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 9,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "car4x4_lights",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-30, 17, -78.35041], "size": [60, 0, 32], "pivot": [0, 17, -46.85041], "rotation": [-30, 0, 0], "uv": [0, 34]},
+						{"origin": [-30, 14, -80.35041], "size": [60, 0, 34], "pivot": [0, 14, -46.85041], "rotation": [25, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

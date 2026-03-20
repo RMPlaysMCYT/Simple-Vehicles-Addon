@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_sabre"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" G ",
+			"XSW",
+			" X "
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_sabre"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_sabre"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_sabre"
+			}
+		]
+	}
+}

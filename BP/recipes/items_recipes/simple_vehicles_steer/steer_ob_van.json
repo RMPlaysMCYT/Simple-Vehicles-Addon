@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_ob_van911381"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"lBl",
+			"BIB",
+			"lBl"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"l": {"item": "minecraft:gray_terracotta"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_ob_van"
+			}
+		]
+	}
+}

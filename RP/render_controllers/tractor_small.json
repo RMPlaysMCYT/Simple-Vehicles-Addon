@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.tractor_small": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.orange",
+						"Texture.green"
+					]
+				}
+			},
+            "rebuild_animation_matrices": true,
+            "geometry": "geometry.default",
+            "materials": [{ "*": "material.default" }],
+            "textures": [
+				"Array.skins[query.variant]"
+			]
+        }
+    }
+}

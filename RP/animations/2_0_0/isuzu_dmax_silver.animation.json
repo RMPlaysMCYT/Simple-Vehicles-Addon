@@ -1,0 +1,224 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles_isuzu_dmax_silver.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"mac": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"pedal0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							-72.5,
+							0,
+							0
+						],
+						"0.4": [
+							-145,
+							0,
+							0
+						],
+						"0.6": [
+							-215,
+							0,
+							0
+						],
+						"0.8": [
+							-287.5,
+							0,
+							0
+						],
+						"1.0": [
+							-360,
+							0,
+							0
+						]
+					}
+				},
+				"pedal1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							-72.5,
+							0,
+							0
+						],
+						"0.4": [
+							-145,
+							0,
+							0
+						],
+						"0.6": [
+							-215,
+							0,
+							0
+						],
+						"0.8": [
+							-287.5,
+							0,
+							0
+						],
+						"1.0": [
+							-360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax_silver.move_1": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_move_speed",
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax_silver.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+					]
+				}
+			}
+		},
+		"animation.simple_vehicles_isuzu_dmax_silver.move_2": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"wheel0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"wheel1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							"720",
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							"720",
+							0,
+							0
+						]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							"720",
+							0,
+							0
+						]
+					}
+				},
+				"cover": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

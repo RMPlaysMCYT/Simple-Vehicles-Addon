@@ -1,0 +1,1 @@
+execute @e[r=3,type=simple_vehicles:tiltrotor] ~ ~ ~ effect @s slowness 2 5 true

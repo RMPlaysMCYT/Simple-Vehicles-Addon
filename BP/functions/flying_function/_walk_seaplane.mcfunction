@@ -1,0 +1,1 @@
+execute as @e[r=3,type=simple_vehicles:seaplane] run effect @s slowness 2 5 true

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.car_4x4.door_mechanic": {
+			"states": {
+				"default": {
+					"animations": ["door_idle"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"closed": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "q.mark_variant == 2"}
+					]
+				},
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.has_player_rider"},
+						{"closed": "query.mark_variant == 1"}
+					],
+					"blend_transition": 0.1
+				},
+				"close": {
+					"animations": ["close2"],
+					"transitions": [
+						{"open": "!query.has_player_rider"}
+					]
+				}
+			}
+		}
+	}
+}

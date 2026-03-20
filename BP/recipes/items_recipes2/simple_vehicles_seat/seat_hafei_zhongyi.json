@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seat_hafei_zhongyi"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WS",
+			"WW",
+			"GG"
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:wool",
+				"data": 0
+			},
+			"S": {"item": "minecraft:gray_dye"},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 0
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_hafei_zhongyi"
+			}
+		]
+	}
+}

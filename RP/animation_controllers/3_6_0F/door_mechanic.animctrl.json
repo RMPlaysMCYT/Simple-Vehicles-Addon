@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.armored_truck.door_mechanic": {
+			"initial_state": "close",
+			"states": {
+				"close": {
+					"animations": [
+						"close"
+					],
+					"transitions": [
+						{
+							"open": "query.mark_variant==1"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"open": {
+					"animations": [
+						"open"
+					],
+					"transitions": [
+						{
+							"close": "query.mark_variant==0"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"close2": {
+					"animations": [
+						"close2"
+					]
+				}
+			}
+		},
+		"controller.animation.armored_truck.door_mechanica_v2": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["doors_idle"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"close": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.mark_variant == 1"},
+						{"close2": "query.has_player_rider"}
+					]
+				},
+				"close2": {
+					"animations": ["close2"],
+					"transitions": [
+						{"open": "!query.has_player_rider"}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.isuzuerga2017.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"Door": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [3, 0, 0],
+						"1.0": [3, 0, 14]
+					}
+				},
+				"Door2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [3, 0, 0],
+						"1.0": [3, 0, 17]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "erga_door_open"
+				}
+			}
+		},
+		"animation.isuzuerga2017.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"Door": {
+					"position": {
+						"0.0": [3, 0, 14],
+						"0.75": [3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"Door2": {
+					"position": {
+						"0.0": [3, 0, 17],
+						"0.75": [3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "erga_door_close"
+				}
+			}
+		},
+		"animation.isuzuerga2017.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"Door": {
+					"position": {
+						"0.0": [3, 0, 14],
+						"0.75": [3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"Door2": {
+					"position": {
+						"0.0": [3, 0, 17],
+						"0.75": [3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "erga_door_close"
+				}
+			}
+		},
+		"animation.isuzuerga2017.doors_idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Door": {
+					"position": [0, 0, 0]
+				},
+				"Door2": {
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

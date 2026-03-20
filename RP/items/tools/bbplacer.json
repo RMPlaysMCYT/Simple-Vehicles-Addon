@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:bridge_building_placer",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehicles_bridge_building_placer",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

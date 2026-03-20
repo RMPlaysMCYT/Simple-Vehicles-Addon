@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:rally_car_1_0_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:rally_car_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_car"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:rally_car_spawn_egg"
+			}
+		]
+	}
+}

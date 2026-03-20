@@ -1,0 +1,70 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:minicar",
+			"textures": {
+				"black": "textures/entity/pamobile/minicar",
+				"white": "textures/entity/minicar/minicar_white",
+				"orange": "textures/entity/minicar/minicar_orange",
+				"magenta": "textures/entity/minicar/minicar_magenta",
+				"light_blue": "textures/entity/minicar/minicar_light_blue",
+				"yellow": "textures/entity/minicar/minicar_yellow",
+				"lime": "textures/entity/minicar/minicar_lime",
+				"pink": "textures/entity/minicar/minicar_pink",
+				"gray": "textures/entity/minicar/minicar_gray",
+				"silver": "textures/entity/minicar/minicar_silver",
+				"cyan": "textures/entity/minicar/minicar_cyan",
+				"purple": "textures/entity/minicar/minicar_purple",
+				"blue": "textures/entity/minicar/minicar_blue",
+				"brown": "textures/entity/minicar/minicar_brown",
+				"green": "textures/entity/minicar/minicar_green",
+				"red": "textures/entity/minicar/minicar_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles_minicar"
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 11
+			},
+			"animations": {
+				"walk": "animation.vehicles.move",
+				"idle": "animation.moto.idle",
+				"turn": "animation.car_lowrider.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles_minicar.doors_idle",
+				"open": "animation.simple_vehicles_minicar.open",
+				"close": "animation.simple_vehicles_minicar.close",
+				"close2": "animation.simple_vehicles_minicar.close2",
+				"ups": "animation.simple_vehicles_minicar.ups",
+				"downs": "animation.simple_vehicles_minicar.downs",
+				"minicar_general1": "controller.animation.simple_vehicles_minicar.general1",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2"
+			},
+			"scripts": {
+				"animate": [
+					"v_turn",
+					{
+						"walk": "query.is_moving"
+					},
+					{
+						"idle": "!query.is_moving"
+					},
+					"minicar_general1",
+					"door_mechanic"
+				]
+			},
+			"sound_effects": {
+				"minicar_door_open": "simple_vehicles.corolla.open",
+				"minicar_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

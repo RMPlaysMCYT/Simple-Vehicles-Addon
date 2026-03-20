@@ -1,0 +1,246 @@
+{
+	"format_version": "1.18.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:speedboat",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"command",
+					"durability",
+					"fuel",
+					"move"
+				]
+			},
+			"animations": {
+				"command": "controller.animation.vehicle.command",
+				"move": "controller.animation.vehicle.move",
+				"durability": "controller.animation.vehicle.durability",
+				"fuel": "controller.animation.simple_vehicles.fuel"
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"startup"
+					]
+				}
+			},
+			"rmplaysmcyt:activated": {
+				"add": {
+					"component_groups": [
+						"saddled"
+					]
+				}
+			},
+			"rmplaysmcyt:deactivated": {
+				"remove": {
+					"component_groups": [
+						"saddled"
+					]
+				}
+			},
+			"simple_vehicles:refuel": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			},
+			"simple_vehicles:refuel_re": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refuel"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"saddled": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:behavior.controlled_by_player": {},
+				"minecraft:is_saddled": {},
+				"minecraft:behavior.player_ride_tamed": {}
+			},
+			"startup": {
+				"minecraft:is_tamed": {},
+				"minecraft:is_chested": {}
+			},
+			"simple_vehicles:refuel": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"simple_vehicles:refueled": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"interact_text": "Fuel It Up!!",
+						"on_interact": {
+							"event": "simple_vehicles:refuel",
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"value": "simple_vehicles:gas_nozzle"
+									}
+								]
+							}
+						},
+						"use_item": false
+					},
+					{
+						"interact_text": "Fuel It Up!!",
+						"on_interact": {
+							"event": "simple_vehicles:refuel",
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"value": "simple_vehicles:jerry_can"
+									}
+								]
+							}
+						},
+						"use_item": true
+					}
+				]
+			},
+			"minecraft:water_movement": {
+				"drag_factor": 0.8
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"item": "simple_vehicles:key_speed_boat1",
+						"accepted_items": [
+							"simple_vehicles:key_speed_boat1"
+						],
+						"on_equip": {
+							"event": "rmplaysmcyt:activated"
+						},
+						"on_unequip": {
+							"event": "rmplaysmcyt:deactivated"
+						}
+					}
+				]
+			},
+			"minecraft:inventory": {
+				"inventory_size": 27,
+				"container_type": "horse",
+				"restrict_to_owner": false
+			},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.34
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:rideable": {
+				"seat_count": 5,
+				"controlling_seat": 1,
+				"rider_can_interact": true,
+				"crouching_skip_interact": true,
+				"pull_in_entities": true,
+				"family_types": [
+					"player",
+					"villager",
+					"captain"
+				],
+				"interact_text": "action.interact.get_on",
+				"seats": [
+					{
+						"position": [
+							0,
+							0.5,
+							0
+						]
+					},
+					{
+						"position": [
+							0,
+							0.5,
+							-0.7
+						]
+					}
+				]
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:collision_box": {
+				"width": 4,
+				"height": 2
+			},
+			"minecraft:type_family": {
+				"family": [
+					"vehicle",
+					"ferry",
+					"simple_vehicles"
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 2
+			},
+			"minecraft:health": {
+				"value": 50,
+				"max": 50
+			},
+			"minecraft:buoyant": {
+				"base_buoyancy": 1,
+				"apply_gravity": true,
+				"simulate_waves": true,
+				"big_wave_probability": 0.03,
+				"big_wave_speed": 10,
+				"liquid_blocks": [
+					"minecraft:water",
+					"minecraft:flowing_water"
+				]
+			},
+			"minecraft:leashable": {
+				"soft_distance": 10,
+				"hard_distance": 12,
+				"max_distance": 15
+			},
+			"minecraft:balloonable": {},
+			       "minecraft:nameable": {         "always_show": false       },
+			"minecraft:physics": {},
+			"minecraft:persistent": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/speedboat.json"
+			}
+		}
+	}
+}

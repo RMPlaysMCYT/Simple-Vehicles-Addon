@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:isuzu_erga_2017_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:isuzuerga2017_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_bus"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:isuzu_erga_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

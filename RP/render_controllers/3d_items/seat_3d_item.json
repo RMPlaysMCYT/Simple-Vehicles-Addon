@@ -1,0 +1,134 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.seat_3d_item": {
+			"part_visibility": [
+				{
+					"root": false
+				},
+				{
+					"body": false
+				},
+				{
+					"steer": false
+				},
+				{
+					"steering_wheel": false
+				},
+				{
+					"door": false
+				},
+				{
+					"door0": false
+				},
+				{
+					"door1": false
+				},
+				{
+					"door2": false
+				},
+				{
+					"door3": false
+				},
+				{
+					"seat": true
+				},
+				{
+					"leg0": false
+				},
+				{
+					"leg1": false
+				},
+				{
+					"leg2": false
+				},
+				{
+					"leg3": false
+				},
+				{
+					"leg4": false
+				},
+				{
+					"leg5": false
+				},
+				{
+					"leg6": false
+				},
+				{
+					"leg7": false
+				},
+				{
+					"tire0": false
+				},
+				{
+					"tire1": false
+				},
+				{
+					"tire2": false
+				},
+				{
+					"tire3": false
+				},
+				{
+					"tire4": false
+				},
+				{
+					"tire5": false
+				},
+				{
+					"tire6": false
+				},
+				{
+					"tire7": false
+				},
+				{
+					"wheel0": false
+				},
+				{
+					"wheel1": false
+				},
+				{
+					"wheel2": false
+				},
+				{
+					"wheel3": false
+				},
+				{
+					"wheel4": false
+				},
+				{
+					"wheel5": false
+				},
+				{
+					"wheel6": false
+				},
+				{
+					"wheel7": false
+				},
+				{
+					"bone": false
+				},
+				{
+					"bone0": false
+				},
+				{
+					"bone1": false
+				},
+				{
+					"bone2": false
+				},
+				{
+					"bone3": false
+				}
+			],
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": ["Texture.default"]
+		}
+	}
+}

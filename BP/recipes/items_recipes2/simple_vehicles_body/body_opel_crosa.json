@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_opel_crosa"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BG",
+			"BSW",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_opel_crosa"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_opel_crosa"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_opel_crosa"
+			}
+		]
+	}
+}

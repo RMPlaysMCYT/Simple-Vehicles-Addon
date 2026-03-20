@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:mini_bus",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/mini_bus"
+			},
+			"geometry": {
+				"default": "geometry.mini_bus"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 9
+			},
+			"animations": {
+				"move": "animation.mini_bus.move",
+				"turn": "animation.mini_bus.turn",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.chrysler_windsor.general"
+				},
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				}
+			],
+			"render_controllers": [
+				"controller.render.mini_bus"
+			]
+		}
+	}
+}

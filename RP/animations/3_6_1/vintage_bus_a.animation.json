@@ -1,0 +1,81 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vintage_bus_a.move": {
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				},
+				"steering_wheel": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.vintage_bus_a.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [-4, 0, 0],
+						"1.0": [-4, 0, 15]
+					}
+				}
+			}
+		},
+		"animation.vintage_bus_a.doors_idle": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.vintage_bus_a.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [-4, 0, 15],
+						"0.8333": [-4, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vintage_bus_a.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"position": {
+						"0.0": [-4, 0, 15],
+						"0.8333": [-4, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vintage_bus_a.steer": {
+			"loop": true,
+			"bones": {
+				"tire1": {
+					"rotation": [0, "variable.steering / 10", 0]
+				},
+				"tire0": {
+					"rotation": [0, "variable.steering / 10", 0]
+				},
+				"steering_wheel": {
+					"rotation": [0, "variable.steering / 10", 0]
+				}
+			}
+		}
+	}
+}

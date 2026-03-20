@@ -1,0 +1,104 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.simple_vehicles.bridge_building_machine.place1": {
+      "initial_state": "no_concrete",
+      "states": {
+        "deactivated": {
+          "transitions": [
+            {
+              "start_concrete": "1"
+            }
+          ]
+        },
+        "no_concrete": {
+          "transitions": [
+            {
+              "start_concrete": "1"
+            }
+          ],
+          "on_entry": [
+            "/title @p actionbar §2Out Of Wood - Please Top Up some wood to continue",
+            "/playsound random.explode @a[r=30]"
+          ]
+        },
+        "start_concrete": {
+          "transitions": [
+            {
+              "black_concrete1": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+            },
+            {
+              "start_concrete2": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 0"
+            }
+          ]
+        },
+        "start_concrete2": {
+          "transitions": [
+            {
+              "black_concrete1": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+            },
+            {
+              "start_concrete": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 0"
+            }
+          ]
+        },
+        "black_concrete_south": {
+          "transitions": [
+            {
+              "no_concrete": "q.mark_variant == 0"
+            },
+            {
+              "black_concrete1": "q.mark_variant == 1"
+            },
+            {
+              "deactivated": "!q.mark_variant == 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[type=simple_vehicles:bridge_building_machine,r=4] ~ ~ ~ fill ~ ~-3 ~ ~ ~-50 ~ stone 0 replace water 0",
+            "/execute @e[type=simple_vehicles:bridge_building_machine,r=4] ~ ~ ~ fill ~ ~-2 ~ ~ ~-50 ~ stone_wall 1 replace air 0"
+          ]
+        },
+        "black_concrete1": {
+          "transitions": [
+            {
+              "no_concrete": "q.mark_variant == 2"
+            },
+            {
+              "black_concrete2": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+            },
+            {
+              "black_concrete_south": "q.has_rider && query.ground_speed > 0 && math.mod(q.time_of_day * 10000,2) == 0"
+            },
+            {
+              "deactivated": "!q.has_rider || !q.mark_variant == 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[type=simple_vehicles:bridge_building_machine,r=4] ~ ~ ~ fill ~2 ~-2 ~2 ~-2 ~-1 ~-2 planks 1 replace air",
+            "/execute @e[type=simple_vehicles:bridge_building_machine,r=4] ~ ~ ~ fill ~1 ~-2 ~1 ~-1 ~-1 ~-1 air replace planks"
+          ]
+        },
+        "black_concrete2": {
+          "transitions": [
+            {
+              "no_concrete": "q.mark_variant == 2"
+            },
+            {
+              "black_concrete1": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+            },
+            {
+              "black_concrete_south": "q.has_rider && query.ground_speed > 0 && math.mod(q.time_of_day * 10000,2) == 0"
+            },
+            {
+              "deactivated": "!q.has_rider || !q.mark_variant == 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[type=simple_vehicles:bridge_building_machine,r=4] ~ ~ ~ fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 air"
+          ]
+        }
+      }
+    }
+  }
+}

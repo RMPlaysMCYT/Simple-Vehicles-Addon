@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tiltrotor",
+			"textures": {
+				"default": "textures/entity/tiltrotor"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles_tiltrotor"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 19
+			},
+			"animations": {
+				"look_at_target": "animation.simple_vehicles_tiltrotor.look_at_target",
+				"loop": "animation.simple_vehicles_tiltrotor.loop",
+				"unloop": "animation.simple_vehicles_tiltrotor.unloop",
+				"loop_init": "controller.animation.simple_vehicles_gyroplane.loop_init"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"look_at_target": "!query.is_on_ground"
+					},
+					"loop_init"
+				]
+			}
+		}
+	}
+}

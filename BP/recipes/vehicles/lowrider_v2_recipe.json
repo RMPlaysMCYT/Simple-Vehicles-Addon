@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:lowrider_v2_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:car_lowrider_v2_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_lowrider_car"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:lowrider_v2_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

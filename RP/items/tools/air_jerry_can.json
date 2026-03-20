@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:air_jerry_can",
+      "is_experimental": false,
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "air_jerry_can",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

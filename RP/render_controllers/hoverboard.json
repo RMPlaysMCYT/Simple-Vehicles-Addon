@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.hoverboard": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.black",
+						"Texture.white",
+						"Texture.orange",
+						"Texture.magenta",
+						"Texture.light_blue",
+						"Texture.yellow",
+						"Texture.lime",
+						"Texture.pink",
+						"Texture.gray",
+						"Texture.silver",
+						"Texture.cyan",
+						"Texture.purple",
+						"Texture.blue",
+						"Texture.brown",
+						"Texture.green",
+						"Texture.red"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

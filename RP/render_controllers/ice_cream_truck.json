@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.ice_cream_truck": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.blue",
+						"Texture.red",
+						"Texture.purple"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

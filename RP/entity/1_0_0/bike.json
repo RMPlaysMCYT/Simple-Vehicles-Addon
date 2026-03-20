@@ -1,0 +1,65 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:bike",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/bike/bike_black",
+				"white": "textures/entity/bike/bike_white",
+				"orange": "textures/entity/bike/bike_orange",
+				"magenta": "textures/entity/bike/bike_magenta",
+				"light_blue": "textures/entity/bike/bike_light_blue",
+				"yellow": "textures/entity/bike/bike_yellow",
+				"lime": "textures/entity/bike/bike_lime",
+				"pink": "textures/entity/bike/bike_pink",
+				"gray": "textures/entity/bike/bike_gray",
+				"silver": "textures/entity/bike/bike_silver",
+				"cyan": "textures/entity/bike/bike_cyan",
+				"purple": "textures/entity/bike/bike_purple",
+				"blue": "textures/entity/bike/bike_blue",
+				"brown": "textures/entity/bike/bike_brown",
+				"green": "textures/entity/bike/bike_green",
+				"red": "textures/entity/bike_red"
+			},
+			"geometry": {
+				"default": "geometry.bike"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.moving_veh = query.modified_distance_moved;",
+					"variable.new_move_mechanic = variable.moving_veh * 25;",
+					"variable.new_move_mechreve = variable.moving_veh * -25;"
+				]
+			},
+			"animations": {
+				"move": "animation.bike.move",
+				"moverev": "animation.bike.moverev",
+				"turn": "animation.bike.turn",
+				"tilt": "animation.bike.tilt",
+				"setup": "animation.bike.setup",
+				"setup2": "animation.bike.setup2"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.bike.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				},
+				{
+					"general": "controller.animation.bike.general"
+				}
+			],
+			"render_controllers": [
+				"controller.render.bike"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 32
+			}
+		}
+	}
+}

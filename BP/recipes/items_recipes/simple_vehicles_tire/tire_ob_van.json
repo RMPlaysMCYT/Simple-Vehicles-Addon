@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_ob_van"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"bkb",
+			"kzb",
+			"bkb"
+		],
+		"key": {
+			"b": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"z": {
+				"item": "minecraft:iron_ingot"
+			},
+			"k": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_ob_van",
+				"count": 4
+			}
+		]
+	}
+}

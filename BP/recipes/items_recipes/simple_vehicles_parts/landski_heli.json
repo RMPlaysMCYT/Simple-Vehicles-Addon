@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:landing_skid_helicopter54665"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"",
+			"BIB",
+			""
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 8
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:landing_skid_helicopter",
+				"count": 4
+			}
+		]
+	}
+}

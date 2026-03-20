@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.hot_air_balloon.fly": {
+            "states": {
+                "flying_v1": {
+                    "transitions": [
+                        {
+                            "flying_v2": "query.has_rider&&!query.is_on_ground&&math.random(1,10)>8"
+                        },
+                        {
+                            "walking_v1": "query.is_on_ground"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function flying_function/hot_air_balloon"
+                    ]
+                },
+                "flying_v2": {
+                    "transitions": [
+                        {
+                            "flying_v1": "query.has_rider&&!query.is_on_ground&&math.random(1,10)>8"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function flying_function/hot_air_balloon"
+                    ]
+                },
+                "walking_v1": {
+                    "transitions": [
+                        {
+                            "flying_v1": "!query.is_on_ground && query.has_rider"
+                        },
+                        {
+                            "walking_v2": "query.is_on_ground"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function helicopter_walk"
+                    ]
+                },
+                "walking_v2": {
+                    "transitions": [
+                        {
+                            "walking_v1": "math.random(1,10)>8"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

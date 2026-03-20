@@ -1,0 +1,66 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:helicopter",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/helicopter",
+				"white": "textures/entity/helicopter/helicopter_white",
+				"orange": "textures/entity/helicopter/helicopter_orange",
+				"magenta": "textures/entity/helicopter/helicopter_magenta",
+				"light_blue": "textures/entity/helicopter/helicopter_light_blue",
+				"yellow": "textures/entity/helicopter/helicopter_yellow",
+				"lime": "textures/entity/helicopter/helicopter_lime",
+				"pink": "textures/entity/helicopter/helicopter_pink",
+				"gray": "textures/entity/helicopter/helicopter_gray",
+				"silver": "textures/entity/helicopter/helicopter_silver",
+				"cyan": "textures/entity/helicopter/helicopter_cyan",
+				"purple": "textures/entity/helicopter/helicopter_purple",
+				"blue": "textures/entity/helicopter/helicopter_blue",
+				"brown": "textures/entity/helicopter/helicopter_brown",
+				"green": "textures/entity/helicopter/helicopter_green",
+				"red": "textures/entity/helicopter/helicopter_red"
+			},
+			"geometry": {
+				"default": "geometry.helicopter"
+			},
+			"animations": {
+				"loop": "animation.simple_vehicles.helicopter.loop",
+				"propeller_setup": "animation.simple_vehicles.helicopter.propeller_setup",
+				"propeller_ctrl": "controller.animation.helicopter.propeller_ctrl",
+				"door_idle": "animation.simple_vehicles.helicopter.door_idle",
+				"open": "animation.simple_vehicles.helicopter.open",
+				"close": "animation.simple_vehicles.helicopter.close",
+				"close2": "animation.simple_vehicles.helicopter.close2",
+				"door_mech": "controller.animation.helicopter.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"sound_effects": {
+				"heli0": "simple_vehicles.helicopter.loop"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"door_mech",
+					"propeller_ctrl",
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.motorbike_colors"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 7
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:simple_vehicles_gliding_plane_wings",
+      "render_controllers": ["controller.render.body_3d_item_blade"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/glider_plane"
+      },
+      "geometry": {
+        "default": "geometry.glider_plane_wings"
+      },
+      "animations": {
+        "first_person_hold": "animation.glider_plane_wings.first_person_hold",
+        "third_person_hold": "animation.glider_plane_wings.third_person_hold"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

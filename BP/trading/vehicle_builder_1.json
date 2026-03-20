@@ -1,0 +1,844 @@
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_grummanllv"
+								},
+								{
+									"item": "simple_vehicles:tire_grummanllv"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:grummanllv"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_jetmax"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:jetmax"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_land_cruiser"
+								},
+								{
+									"item": "simple_vehicles:tire_land_cruiser"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:land_cruiser"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_motorcycle"
+								},
+								{
+									"item": "simple_vehicles:tire_motorcycle"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:motorcycle"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_rancher"
+								},
+								{
+									"item": "simple_vehicles:tire_rancher"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:rancher"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_sabre"
+								},
+								{
+									"item": "simple_vehicles:tire_sabre"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:sabre"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_submarine"
+								},
+								{
+									"item": "simple_vehicles:propeller_submarine"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:submarine"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:motorcycle"
+										}
+									]
+								},
+								{
+									"item": "simple_vehicles:body_tricycle"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:tricycle"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_armored_truck",
+									"quantity": 1
+								},
+								{
+									"item": "simple_vehicles:tire_armored_truck",
+									"quantity": 2
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:armored_truck"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_school_bus",
+									"quantity": 1
+								},
+								{
+									"item": "simple_vehicles:tire_school_bus",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:school_bus"
+										}
+									]
+								}
+							]
+						},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_car"
+								},
+								{
+									"item": "simple_vehicles:tire_car",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"quantity":{
+										"min": 2,
+										"max": 2
+									},
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:car"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_auv_car"
+								},
+								{
+									"item": "simple_vehicles:tire_auv_car",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"quantity":{
+										"min": 2,
+										"max": 2
+									},
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:apv"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_car4x4"
+								},
+								{
+									"item": "simple_vehicles:tire_car_4x4",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:car4x4_1"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_busv2"
+								},
+								{
+									"item": "simple_vehicles:tire_bus_v2",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:bus_2"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_bus"
+								},
+								{
+									"item": "simple_vehicles:tire_bus",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:bus"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_van"
+								},
+								{
+									"item": "simple_vehicles:tire_van",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:van"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_police_car"
+								},
+								{
+									"item": "simple_vehicles:tire_police_car",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:police_car"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_taxi"
+								},
+								{
+									"item": "simple_vehicles:tire_taxi",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:taxi"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_mustang"
+								},
+								{
+									"item": "simple_vehicles:tire_mustang",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:ford_mustang_blue"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_corolla"
+								},
+								{
+									"item": "simple_vehicles:tire_corolla",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:corolla"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_jeep_ph"
+								},
+								{
+									"item": "simple_vehicles:tire_jeep_ph",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:jeep_ph"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_modern_jeep_ph"
+								},
+								{
+									"item": "simple_vehicles:tire_modern_jeep_ph",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:modern_jeep_ph"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_limmo"
+								},
+								{
+									"item": "simple_vehicles:tire_limmo",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:limmo"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_ob_van"
+								},
+								{
+									"item": "simple_vehicles:tire_ob_van",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:ob_van"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_tank"
+								},
+								{
+									"item": "simple_vehicles:track_tank",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:tank"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_ae86"
+								},
+								{
+									"item": "simple_vehicles:tire_ae86",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:ae86"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_mini_bus"
+								},
+								{
+									"item": "simple_vehicles:tire_mini_bus",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:mini_bus"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_tesla_truck"
+								},
+								{
+									"item": "simple_vehicles:tire_tesla_truck",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:tesla_truck"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_pick_up_truck"
+								},
+								{
+									"item": "simple_vehicles:tire_pick_up_truck",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:pick_up_truck"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_fire_truck"
+								},
+								{
+									"item": "simple_vehicles:tire_fire_truck",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:fire_truck"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_speedboat"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:speedboat"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_plane_1"
+								},
+								{
+									"item": "simple_vehicles:tire_plane",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:plane"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_helicopter"
+								},
+								{
+									"item": "simple_vehicles:landing_skid_helicopter",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:helicopter"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_c_sled"
+								},
+								{
+									"item": "simple_vehicles:landing_skid_c_sled",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:c_sled"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_tractor"
+								},
+								{
+									"item": "simple_vehicles:tire_tractor",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:tractor"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_travis"
+								},
+								{
+									"item": "simple_vehicles:tire_travis",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:travis"
+										}
+									]
+								}
+							]
+						},
+						{
+							"wants": [
+								{
+									"item": "simple_vehicles:body_trucks"
+								},
+								{
+									"item": "simple_vehicles:tire_trucks",
+									"quantity": 4
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:spawn_egg",
+									"functions": [
+										{
+											"function": "set_actor_id",
+											"id": "simple_vehicles:truck"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

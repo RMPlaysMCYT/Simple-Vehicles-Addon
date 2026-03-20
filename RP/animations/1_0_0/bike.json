@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bike.move": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"pedal": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"0.0": [0, 0, 0.01],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"pedal1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [90, 0, 0],
+						"0.5": [180, 0, 0],
+						"0.75": [270, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"pedal0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [90, 0, 0],
+						"0.5": [180, 0, 0],
+						"0.75": [270, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

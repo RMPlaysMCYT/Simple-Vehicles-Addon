@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:mitsubishi_montero",
+			"textures": {
+				"black": "textures/entity/montero/montero_black",
+				"white": "textures/entity/montero/montero_white"
+			},
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.mitsubishi_montero"
+			},
+			"render_controllers": [
+				"controller.render.montero"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 17
+			},
+			"animations": {
+				"walk": "animation.mitsubishi_montero.move",
+				"idle": "animation.simple_vehicles_vespa_primavera.idle",
+				"turn": "animation.mitsubishi_montero.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.mitsubishi_montero.doors_idle",
+				"open": "animation.mitsubishi_montero.open",
+				"close": "animation.mitsubishi_montero.close",
+				"close2": "animation.mitsubishi_montero.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					{
+						"walk": "query.is_moving"
+					},
+					{
+						"idle": "!query.is_moving"
+					},
+					"door_mechanic"
+				]
+			},
+			"sound_effects": {
+				"montero_door_open": "simple_vehicles.corolla.open",
+				"montero_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

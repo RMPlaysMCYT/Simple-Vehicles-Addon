@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "simple_vehicles:farm_truck",
+            "geometry": {"default": "geometry.farm_truck"},
+            "textures": {"default": "textures/entity/farm_truck"},
+            "materials": {"default": "entity_alphatest"},
+            "render_controllers": ["controller.render.default"],
+            "animations": {
+                "move": "animation.farm_truck.move",
+                "open": "animation.farm_truck.open",
+                "close": "animation.farm_truck.close",
+                "close2": "animation.farm_truck.close2",
+                "door_mech": "controller.animation.ae86.door_mech",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+            },
+            "scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
+				"pre_animation": [
+					"query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"
+				],
+                "animate": [
+                    "move",
+                    "general",
+                    {
+                        "close2": "query.has_rider"
+                    },
+                    "door_mech"
+                ]
+            },
+            "spawn_egg": {"texture": "vehicles_3", "texture_index": 6}
+        }
+    }
+}

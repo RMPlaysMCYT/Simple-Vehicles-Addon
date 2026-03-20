@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.pedicab": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.red",
+						"Texture.green",
+						"Texture.blue",
+						"Texture.pink"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

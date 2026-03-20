@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_ev_4"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"lzl",
+			"zIz",
+			"lzl"
+		],
+		"key": {
+			"l": {
+				"item": "minecraft:concrete",
+				"data": 5
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"z": {
+				"item": "minecraft:wool",
+				"data": 8
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_ev_4",
+				"count": 4
+			}
+		]
+	}
+}

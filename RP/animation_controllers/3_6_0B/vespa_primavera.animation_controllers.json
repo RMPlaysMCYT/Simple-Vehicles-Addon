@@ -1,0 +1,26 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.vespa_primavera.general1": {
+			"initial_state": "setup",
+			"states": {
+				"setup": {
+					"animations": ["setup"],
+					"transitions": [
+						{"setup2": "query.has_player_rider"}
+					],
+					"blend_transition": 0.5,
+					"blend_via_shortest_path": true
+				},
+				"setup2": {
+					"animations": ["setup2"],
+					"transitions": [
+						{"setup": "!query.has_player_rider"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tire_double_deck_bus"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"sIf",
+			"WBW"
+		],
+		"key": {
+			"f": {"item": "minecraft:redstone"},
+			"s": {"item": "minecraft:gray_carpet"},
+			"B": {
+				"item": "minecraft:gray_concrete"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:white_terracotta"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_double_deck_bus",
+				"count": 4
+			}
+		]
+	}
+}

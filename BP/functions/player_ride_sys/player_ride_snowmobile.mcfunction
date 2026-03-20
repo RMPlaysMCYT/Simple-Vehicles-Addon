@@ -1,0 +1,1 @@
+playanimation @p[r=1] animation.player.ride_snowmobile controller.animation.player.base 1 "!query.is_riding"

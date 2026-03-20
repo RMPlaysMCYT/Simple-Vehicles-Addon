@@ -1,0 +1,1217 @@
+//////Credits to Jean Lucas MCPE Based from Advanced Farming Addon 
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    ////WHEAT
+    ////WHEAT
+    ////WHEAT
+    ////WHEAT
+    ////WHEAT
+    ////WHEAT
+    "controller.animation.tractor_seeder.seeder_wheat_north": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 0 keep"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 0 keep"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_wheat_south": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~ ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep"
+            
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~ ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            
+            "/execute @s ~1 ~ ~3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~ ~ ~3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-1 ~ ~3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_wheat_east": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_wheat_west": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -112.5 && query.body_y_rotation <= 67.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) && query.is_tamed && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep",
+            "/execute @s ~-3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ wheat 1 keep"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_wheat_diagonal_1": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~ ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~ ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~ ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~ ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~ ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~ ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~ ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~ ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~ ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_wheat_diagonal_2": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_wheat_diagonal_3": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 0 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 0 replace air"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_wheat_diagonal_4": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) && query.is_powered && query.has_rider && query.mark_variant == 1"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) || !query.is_powered || !query.has_rider || query.mark_variant != 1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ wheat 1 replace air"
+          ]
+        }
+      }
+    },
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    "controller.animation.tractor_seeder.seeder_beetroot_north": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 0 keep"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -22.5 && query.body_y_rotation <= 22.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 0 keep",
+
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 0 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 0 keep"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_beetroot_south": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 157.5 && query.body_y_rotation <= -157.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~ ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~-1 ~ ~-3 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_beetroot_east": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+          
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 67.5 && query.body_y_rotation <= 112.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+          
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_beetroot_west": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -112.5 && query.body_y_rotation <= 67.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) && query.is_tamed && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -112.5 && query.body_y_rotation <= -67.5) || !query.is_tamed || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 7 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 0 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 1 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 2 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 3 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 4 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 5 setblock ~ ~ ~ beetroot 1 keep",
+
+            "/execute @s ~3 ~ ~1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~ detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep",
+            "/execute @s ~3 ~ ~-1 detect ~ ~-1 ~ farmland 6 setblock ~ ~ ~ beetroot 1 keep"
+          ]
+        }
+      }
+    },
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT
+    ////BEETROOT_Diagonal
+    "controller.animation.tractor_seeder.seeder_beetroot_diagonal_1": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 22.5 && query.body_y_rotation <= 67.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_beetroot_diagonal_2": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -67.5 && query.body_y_rotation <= -22.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_beetroot_diagonal_3": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 0 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= -157.5 && query.body_y_rotation <= -112.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 0 replace air",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 0 replace air"
+          ]
+        }
+      }
+    },
+    "controller.animation.tractor_seeder.seeder_beetroot_diagonal_4": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            }
+          ]
+        },
+        "function": {
+          "transitions": [
+            {
+              "reset_function": "(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air"
+          ]
+        },
+        "reset_function": {
+          "transitions": [
+            {
+              "function": "(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) && query.is_powered && query.has_rider && query.mark_variant == 2"
+            },
+            {
+              "default": "!(query.body_y_rotation >= 112.5 && query.body_y_rotation <= 157.5) || !query.is_powered || !query.has_rider || query.mark_variant != 2"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 7 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 0 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-3 ~-1 ~-3 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-4 ~-1 ~-2 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air",
+            "/execute @s ~-2 ~-1 ~-4 detect ~ ~ ~ farmland 1 setblock ~ ~ ~ beetroot 1 replace air"
+          ]
+        }
+      }
+    }
+  }
+}

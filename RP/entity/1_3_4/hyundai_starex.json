@@ -1,0 +1,56 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:hyundai_starex",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"grey": "textures/entity/starex",
+				"white": "textures/entity/starex/starex_white",
+				"black": "textures/entity/starex/starex_black",
+				"brown": "textures/entity/starex/starex_brown"
+			},
+			"geometry": {
+				"default": "geometry.hyundai_starex"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 41
+			},
+			"render_controllers": [
+				"controller.render.hyundai_starex_variant"
+			],
+			"animations": {
+				"move": "animation.simple_vehicles.hyundai_starex.move",
+				"turn": "animation.hyundai_starex.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.hyundai_starex.doors_idle",
+				"close": "animation.simple_vehicles.hyundai_starex.close",
+				"close2": "animation.simple_vehicles.hyundai_starex.close2",
+				"open": "animation.simple_vehicles.hyundai_starex.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"general",
+					"general2",
+					"door_mech"
+				]
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"sound_effects": {
+				"hyunstar_door_open": "simple_vehicles.auv_car.open",
+				"hyunstar_door_close": "simple_vehicles.auv_car.close"
+			}
+		}
+	}
+}

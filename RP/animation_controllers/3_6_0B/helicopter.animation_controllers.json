@@ -1,0 +1,56 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.helicopter.propeller_ctrl": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["propeller_setup"],
+					"transitions": [
+						{"walking": "q.is_saddled"}
+					],
+					"blend_transition": 1,
+					"blend_via_shortest_path": true
+				},
+				"walking": {
+					"animations": ["loop"],
+					"transitions": [
+						{"idle": "!q.is_saddled"}
+					],
+					"blend_transition": 4,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"controller.animation.helicopter.door_mechanica_v2": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["door_idle"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"close": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.mark_variant == 1"},
+						{"close2": "query.has_player_rider"}
+					]
+				},
+				"close2": {
+					"animations": ["close2"],
+					"transitions": [
+						{"open": "!query.has_player_rider"}
+					]
+				}
+			}
+		}
+	}
+}

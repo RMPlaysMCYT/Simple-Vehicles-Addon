@@ -1,0 +1,27 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:speed_boat_two_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_speedboat_two"
+			},
+			"M": {
+				"item": "minecraft:redstone"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:speedboat_two_spawn_egg"
+			}
+		]
+	}
+}

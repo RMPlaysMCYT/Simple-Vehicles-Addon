@@ -1,0 +1,31 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:cargo_cont_truck_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 5
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 1
+            },
+            {
+                "item": "minecraft:chest"
+            },
+            {
+                "item": "redstone",
+                "count": 1
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:cargo_cont_truck_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

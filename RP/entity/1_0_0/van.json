@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:van",
+      "materials": {
+        "default": "witch"
+      },
+      "textures": {
+        "default": "textures/entity/van"
+      },
+      "geometry": {
+        "default": "geometry.van"
+      },
+      "spawn_egg": {
+        "texture": "vehicles",
+        "texture_index": 29
+      },
+      "animations": {
+        "move": "animation.van.move",
+        "turn": "animation.van.turn",
+        "v_turn": "controller.animation.vehicle.v_turn",
+        "close": "animation.simple_vehicles.van.close",
+        "close2": "animation.simple_vehicles.van.close2",
+        "open": "animation.simple_vehicles.van.open",
+        "wiper": "animation.simple_vehicles.van.wiper",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+        ////Climb
+        "up": "animation.chrysler_windsor.up",
+        "down": "animation.chrysler_windsor.down",
+        "general": "controller.animation.chrysler_windsor.general"
+      },
+      "scripts": {
+        "animate": [
+          "v_turn",
+          "door_mech",
+          "general",
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "close2": "query.has_rider"
+          },
+          {
+            "wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.corolla"
+      ],
+      "sound_effects": {
+        "van.wiper": "simple_vehicles.van.wiper",
+        "van_door_open": "simple_vehicles.van.open",
+        "van_door_close": "simple_vehicles.van.close"
+      },
+      "particle_effects": {
+        "arrow_particle":"simple_vehicles:arrow_spell_emitter"
+      }
+    }
+  }
+}

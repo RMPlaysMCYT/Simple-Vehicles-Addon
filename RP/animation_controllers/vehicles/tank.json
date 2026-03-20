@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tank.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"move": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"move": "query.modified_move_speed"
+						}
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"particle_effects": [
+						{
+							"effect": "smoke_particles",
+							"locator": "smoke"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.modified_move_speed"
+						}
+					]
+				}
+			}
+		}
+	}
+}

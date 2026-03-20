@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:dkfkx"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BGB",
+			"BSW",
+			"   "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_car"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_car"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_car"
+			}
+		]
+	}
+}

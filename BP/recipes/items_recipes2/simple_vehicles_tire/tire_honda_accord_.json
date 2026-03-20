@@ -1,0 +1,37 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tire_honda_accord_2019"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"kB9",
+			"BIB",
+			"WBW"
+		],
+		"key": {
+			"9": {"item": "minecraft:redstone"},
+			"k": {"item": "minecraft:raw_iron"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_honda_accord_2019",
+				"count": 4
+			}
+		]
+	}
+}

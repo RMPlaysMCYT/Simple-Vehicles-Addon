@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:hot_air_balloon",
+			"textures": {
+				"black": "textures/entity/hotairbal/hotair_balloon_black",
+				"white": "textures/entity/hotair_balloon",
+				"orange": "textures/entity/hotairbal/hotair_balloon_orange",
+				"magenta": "textures/entity/hotairbal/hotair_balloon_magenta",
+				"light_blue": "textures/entity/hotairbal/hotair_balloon_light_blue",
+				"yellow": "textures/entity/hotairbal/hotair_balloon_yellow",
+				"lime": "textures/entity/hotairbal/hotair_balloon_lime",
+				"pink": "textures/entity/hotairbal/hotair_balloon_pink",
+				"gray": "textures/entity/hotairbal/hotair_balloon_gray",
+				"light_gray": "textures/entity/hotairbal/hotair_balloon_light_gray",
+				"cyan": "textures/entity/hotairbal/hotair_balloon_cyan",
+				"purple": "textures/entity/hotairbal/hotair_balloon_purple",
+				"blue": "textures/entity/hotairbal/hotair_balloon_blue",
+				"brown": "textures/entity/hotairbal/hotair_balloon_brown",
+				"green": "textures/entity/hotairbal/hotair_balloon_green",
+				"red": "textures/entity/hotairbal/hotair_balloon_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.air_balloon"
+			},
+			"render_controllers": [
+				"controller.render.simple_car2"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 11
+			}
+		}
+	}
+}

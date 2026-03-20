@@ -1,0 +1,27 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:ob_van_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"aBa"
+		],
+		"key": {
+			"a": {
+				"item": "simple_vehicles:tire_ob_van"
+			},
+			"B": {
+				"item": "simple_vehicles:body_ob_van"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:ob_van_spawn_egg"
+			}
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "simple_vehicles:gas_nozzle_air",
+			"category": "equipment"
+		},
+		"components": {
+		  "minecraft:hand_equipped": true,
+		  "minecraft:max_stack_size": 2,
+		  "minecraft:stacked_by_data": true
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.motor.ride": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [
+						12.5,
+						0,
+						0
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						-20,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-20,
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						45,
+						0,
+						-15
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						45,
+						0,
+						15
+					]
+				}
+			}
+		}
+	}
+}

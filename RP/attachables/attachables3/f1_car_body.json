@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:f1_car_body",
+      "render_controllers": ["controller.render.body_3d_item"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/3_1_0/f1_car"
+      },
+      "geometry": {
+        "default": "geometry.f1_car"
+      },
+      "animations": {
+        "first_person_hold": "animation.body_f1_car.first_person_hold",
+        "third_person_hold": "animation.body_f1_car.third_person_hold"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

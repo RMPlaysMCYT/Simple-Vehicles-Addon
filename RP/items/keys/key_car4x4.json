@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:key_car4x4"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehicles_key_car4x4",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

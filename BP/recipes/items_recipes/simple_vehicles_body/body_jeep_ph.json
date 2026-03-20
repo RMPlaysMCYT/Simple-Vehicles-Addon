@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:hjfvjdnlsknkc"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BG",
+			"BSW",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_jeep_ph"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_jeep_ph"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_jeep_ph"
+			}
+		]
+	}
+}

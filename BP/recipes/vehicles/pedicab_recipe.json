@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:pedicab_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" BS",
+			"A "
+		],
+		"key": {
+			"S": {
+				"item": "simple_vehicles:bike_spawn_egg"
+			},
+			"B": {
+				"item": "simple_vehicles:pedicab_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_pajero"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:pedicab_spawn_egg"
+			}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_corolla343443"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" x ",
+			"xIx",
+			" x "
+		],
+		"key": {
+			"x": {
+				"item": "minecraft:gray_concrete_powder"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_corolla"
+			}
+		]
+	}
+}

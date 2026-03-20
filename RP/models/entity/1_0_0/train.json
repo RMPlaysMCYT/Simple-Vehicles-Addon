@@ -1,0 +1,66 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.train_locomotive",
+        "texture_width": 256,
+        "texture_height": 256,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [0, 1.5, 0]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [0, 0, 0],
+          "cubes": [
+            {"origin": [-12, 4, -24], "size": [24, 4, 48], "uv": [84, 46]},
+            {"origin": [-8, 8, -1], "size": [16, 4, 10], "uv": [132, 20]},
+            {"origin": [-8, 12, 7], "size": [16, 10, 2], "uv": [132, 0]},
+            {"origin": [-5, 22, 7], "size": [10, 6, 2], "uv": [132, 12]},
+            {"origin": [-8, 1, -24], "size": [16, 3, 48], "uv": [0, 102]},
+            {"origin": [-14, 35, -11], "size": [28, 2, 35], "uv": [128, 116]},
+            {"origin": [-14, 8, -24], "size": [28, 10, 8], "uv": [52, 0]},
+            {"origin": [12, 4, -16], "size": [2, 14, 40], "uv": [0, 48]},
+            {"origin": [12, 18, 22], "size": [2, 17, 2], "uv": [0, 0]},
+            {"origin": [12, 18, -12], "size": [2, 17, 2], "uv": [0, 0]},
+            {"origin": [12, 18, 5], "size": [2, 19, 2], "uv": [0, 0]},
+            {"origin": [-14, 18, 22], "size": [2, 17, 2], "uv": [0, 0]},
+            {"origin": [-14, 18, -12], "size": [2, 17, 2], "uv": [0, 0]},
+            {"origin": [-14, 18, 5], "size": [2, 17, 2], "uv": [0, 0]},
+            {"origin": [-14, 4, -16], "size": [2, 14, 40], "uv": [84, 48]},
+            {"origin": [-14, 4, -24], "size": [2, 4, 8], "uv": [0, 48]},
+            {"origin": [12, 4, -24], "size": [2, 4, 8], "uv": [0, 48]},
+            {"origin": [-12, 8, 22], "size": [24, 27, 2], "uv": [0, 19]}
+          ]
+        },
+        {
+          "name": "body3",
+          "parent": "body",
+          "pivot": [0, 17, 6],
+          "rotation": [-25, 0, 0]
+        },
+        {
+          "name": "body2",
+          "parent": "body",
+          "pivot": [0, 13, -12],
+          "rotation": [40, 0, 0],
+          "cubes": [
+            {"origin": [-12, 12, -17], "size": [24, 11, 7], "uv": [52, 18]}
+          ]
+        },
+        {
+          "name": "body0",
+          "parent": "body",
+          "pivot": [-13, 23, -17],
+          "rotation": [-33, 0, 0],
+          "cubes": [
+            {"origin": [-14, 15, -20], "size": [2, 23, 2], "uv": [124, 0]},
+            {"origin": [12, 15, -20], "size": [2, 23, 2], "uv": [124, 0]}
+          ]
+        }
+      ]
+    }
+  ]
+}

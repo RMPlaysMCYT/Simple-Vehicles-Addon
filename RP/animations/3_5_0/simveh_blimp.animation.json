@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simveh_blimp.loop": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"propeller0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, "360*4*2"]
+					}
+				}
+			}
+		},
+		"animation.simveh_blimp.look_at_target": {
+			"loop": true,
+			"bones": {
+				"flap0": {
+					"rotation": [0, "query.target_y_rotation", 0]
+				},
+				"flap3": {
+					"rotation": [0, "query.target_y_rotation", 0]
+				},
+				"flap1": {
+					"rotation": ["query.target_x_rotation", 0, 0]
+				},
+				"flap2": {
+					"rotation": ["query.target_x_rotation", 0, 0]
+				}
+			}
+		},
+		"animation.simveh_blimp.unloop": {
+			"loop": true,
+			"bones": {
+				"propeller0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

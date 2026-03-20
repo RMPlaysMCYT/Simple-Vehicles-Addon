@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.simple_vehicles.speedometer": {
+			"initial_state": "speedometer_down_idle",
+			"states": {
+				"speedometer_down_idle": {
+					"animations": ["speedometer_rev"],
+					"transitions": [
+						{"speedometer_up": "q.ground_speed > 3.0"}
+					],
+					"blend_transition": 0.05
+				},
+				"speedometer_up": {
+					"animations": ["speedometer"],
+					"transitions": [
+						{"speedometer_down_idle": "q.ground_speed < 0.5"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

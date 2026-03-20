@@ -1,0 +1,31 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:isuzuerga2017_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 4
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 2,
+                "data": 15
+            },
+            {
+                "item": "minecraft:glass"
+            },
+            {
+                "item": "minecraft:redstone"
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:isuzuerga2017_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Simple Vehicles Addon 3.4.0 - The Speed and Gas Update Behavior Pack",
+		"description": "This Addon Adds 100+ Vehicles and Over 200+ Items and perfect for creative, survival, city role-play, and other creative maps inside Minecraft World \nThis is now all in one pack which includes items, traders and more but the structure pack will be stayed as separated so there's no problem to have a contact to your structures with this structures",
+		"version": [
+			3,
+			4,
+			0
+		],
+		"uuid": "bc797e6a-1c9d-4730-a250-ce8ad6be45bf",
+		"min_engine_version": [
+			1,
+			14,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "004de394-e2b8-4364-87f4-f1c56348b47c",
+			"version": [
+				3,
+				4,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "c5ff2a77-0fac-443c-947a-67f0ccfa7453",
+			"version": [
+				3,
+				4,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.7.7"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			]
+		}
+	}
+}

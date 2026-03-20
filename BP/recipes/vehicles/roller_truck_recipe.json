@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:roller_truck_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A C"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:roller_truck_body"
+			},
+			"A": {
+				"item": "simple_vehicles:tire_bus_v2"
+			},
+			"C":{
+				"item": "minecraft:stone"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:roller_truck_spawn_egg"
+			}
+		]
+	}
+}

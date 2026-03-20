@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_jetmax"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" K ",
+			"BIB",
+			" K "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:black_wool"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"K": {
+				"item": "minecraft:black_concrete_powder"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_jetmax"
+			}
+		]
+	}
+}

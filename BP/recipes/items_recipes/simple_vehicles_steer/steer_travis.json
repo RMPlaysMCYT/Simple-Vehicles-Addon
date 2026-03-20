@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_travis11321"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"pBp",
+			"BIB",
+			"pBp"
+		],
+		"key": {
+			"p": {"item": "minecraft:gray_dye"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 0
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_travis"
+			}
+		]
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:pick_up_flash_exp_body",
+      "render_controllers": ["controller.render.body_3d_item"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/pick_up_flash_exp"
+      },
+      "geometry": {
+        "default": "geometry.pick_up_flash_exp"
+      },
+      "animations": {
+        "first_person_hold": "animation.body_ae86.first_person_hold",
+        "third_person_hold": "animation.body_ae86.third_person_hold"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

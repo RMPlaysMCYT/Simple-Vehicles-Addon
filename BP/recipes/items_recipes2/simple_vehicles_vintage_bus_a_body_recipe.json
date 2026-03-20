@@ -1,0 +1,33 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:vintage_bus_a_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 5
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 1,
+                "data": 15
+            },
+            {
+                "item": "minecraft:redstone",
+                "count": 2
+            },
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 1
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:vintage_bus_a_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

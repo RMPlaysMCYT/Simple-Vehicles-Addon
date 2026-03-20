@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.simple_vehicles.base": {
+			"geometry": "geometry.default",
+			"materials": [{"base": "material.base"}],
+			"textures": [
+				"texture.default"
+			],
+			"part_visibility": [
+				{
+					"*": true
+				}
+			]
+		},
+		"controller.render.simple_vehicles.outline": {
+			"geometry": "geometry.inflated",
+			"materials": [{"outline": "material.outline"}],
+			"textures": [
+				"texture.default"
+			],
+			"ignore_lighting": true,
+			"overlay_color": {
+				"a": 0.5,
+				"r": 0.05,
+				"g": 0.2,
+				"b": 0.35
+			},
+			"part_visibility": [
+				{
+					"*": true
+				}
+			]
+		}
+	}
+}

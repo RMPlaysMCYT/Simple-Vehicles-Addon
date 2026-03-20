@@ -1,0 +1,126 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.train_cart.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"tire": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"tire2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.train_cart.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							-90,
+							0
+						]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.train_cart.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							-90,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							-90,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.train_cart.close2": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [
+						0,
+						90,
+						0
+					]
+				},
+				"door1": {
+					"rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			}
+		}
+	}
+}

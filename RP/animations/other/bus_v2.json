@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bus_v2.turn": {
+			"loop": true,
+			"bones": {
+				"steering_wheel": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-20,math.min(20,query.yaw_speed*0.5))", 0]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-20,math.min(20,query.yaw_speed*0.5))", 0]
+				}
+			}
+		}
+	}
+}

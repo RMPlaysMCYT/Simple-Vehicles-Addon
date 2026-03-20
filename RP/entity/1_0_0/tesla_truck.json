@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tesla_truck",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/tesla_truck"
+			},
+			"geometry": {
+				"default": "geometry.tesla_truck"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 19
+			},
+			"animations": {
+				"move": "animation.tesla_truck.move",
+				"turn": "animation.tesla_truck.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"open": "animation.simple_vehicles.tesla_truck.open",
+				"close": "animation.simple_vehicles.tesla_truck.close",
+				"close2": "animation.simple_vehicles.ae86.close2",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mech",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.tesla"
+			],
+			"sound_effects": {
+				"cybertruck_door_open": "simple_vehicles.corolla.open",
+				"cybertruck_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

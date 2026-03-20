@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:auv_car_b",
+			"materials": {
+				"default": "witch",
+				"auv_lights": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/auv_car/auv_car_baggage1",
+				"auv_lights": "textures/entity/vehi_lights/auv_lights"
+			},
+			"geometry": {
+				"default": "geometry.auv_car",
+				"auv_lights": "geometry.auv_lights"
+			},
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 26
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.auv_car.move",
+				"turn": "animation.auv_car.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"open": "animation.simple_vehicles.auv_car.open",
+				"door_idle": "animation.simple_vehicles.auv_car.doors_idle",
+				"close": "animation.simple_vehicles.auv_car.close",
+				"close2": "animation.simple_vehicles.auv_car.close2",
+				"door_mechanic_v2": "controller.animation.bus_v2.door_mechanic_v2",
+				"wiper": "animation.simple_vehicles.auv_car.wiper",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"render_controllers": [
+				"controller.render.ambulance"
+			],
+			"scripts": {
+				"animate": [
+					"general",
+					"general2",
+					"door_mechanic_v2",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"
+					}
+				]
+			},
+			"sound_effects": {
+				"auv_car_door_open": "simple_vehicles.auv_car.open",
+				"auv_car_door_close": "simple_vehicles.auv_car.close"
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_grummanllv"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" W ",
+			"BIB",
+			" W "
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:light_gray_wool"
+			},
+			"B": {
+				"item": "minecraft:gray_concrete"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_grummanllv"
+			},
+			{
+				"item": "simple_vehicles:steer_jetmax"
+			},
+			{
+				"item": "simple_vehicles:steer_land_cruiser"
+			},
+			{
+				"item": "simple_vehicles:steer_rancher"
+			}
+		]
+	}
+}

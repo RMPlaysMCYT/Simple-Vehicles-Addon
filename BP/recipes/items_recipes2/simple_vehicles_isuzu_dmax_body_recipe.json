@@ -1,0 +1,39 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:isuzu_dmax_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 1
+            },
+            {
+                "item": "minecraft:white_concrete",
+                "count": 3
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 2,
+                "data": 3
+            },
+            {
+                "item": "minecraft:redstone"
+            },
+            {
+                "item": "minecraft:glass"
+            },
+            {
+                "item": "minecraft:iron_ingot",
+                "count": 1
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:isuzu_dmax_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

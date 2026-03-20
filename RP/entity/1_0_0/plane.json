@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:plane",
+      "materials": {
+        "default": "witch"
+      },
+      "textures": {
+        "default": "textures/entity/plane"
+      },
+      "geometry": {
+        "default": "geometry.plane"
+      },
+      "animations": {
+        "move": "animation.simple_vehicles.plane.move",
+        "close": "animation.simple_vehicles.plane.close",
+        "close2": "animation.simple_vehicles.ae86.close2",
+        "open": "animation.simple_vehicles.plane.open",
+        "flying": "animation.simple_vehicles.plane.flying",
+        "landing": "animation.simple_vehicles.plane.landing",
+        "door_mech": "controller.animation.ae86.door_mechanica_v2",
+        "flying_mech": "controller.animation.plane.flying"
+      },
+      "scripts": {
+        "animate": [
+          "door_mech",
+          "flying_mech",
+          {
+            "move": "query.modified_move_speed"
+          }
+        ]
+      },
+      "spawn_egg": {
+        "texture": "vehicles",
+        "texture_index": 23
+      },
+      "render_controllers": [
+        "controller.render.corolla"
+      ]
+    }
+  }
+}

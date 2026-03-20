@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:mustang_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"CB ",
+			"M M"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:chest"
+			},
+			"B": {
+				"item": "simple_vehicles:body_mustang"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_mustang"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:ford_mustang_blue_spawn_egg",
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.lightermax": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.lightermax",
+						"Texture.lightermax_black",
+						"Texture.lightermax_white"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

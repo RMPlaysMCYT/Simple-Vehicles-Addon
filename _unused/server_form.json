@@ -1,0 +1,25 @@
+{
+    "namespace": "server_form",
+
+    "long_form": {
+        "type": "panel",
+        "size": ["100%", "100%"],
+        "controls": [
+            {
+                "im5mqxnamespace@im5mqxnamespace.im5mqxnamespace": {
+                    "layer": 2,
+                    "bindings": [
+                        {
+                            "binding_name": "#title_text"
+                        },
+                        {
+                            "binding_type": "view",
+                            "source_property_name": "(#title_text - VehicleCustomizer)",
+                            "target_property_name": "#text"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

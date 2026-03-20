@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_limmo"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"BIB",
+			"WBW"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 2
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 9
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_limmo",
+				"count": 4
+			}
+		]
+	}
+}

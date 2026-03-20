@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tesla_truck_tire"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"BVB",
+			"WBW"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 8
+			},
+			"V": {
+				"item": "minecraft:redstone"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 3
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_tesla_truck",
+				"count": 4
+			}
+		]
+	}
+}

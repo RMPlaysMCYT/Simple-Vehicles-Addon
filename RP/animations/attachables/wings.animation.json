@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.monopl_wings.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "wings": {
+          "rotation": [-251.83159, 56.1582, -392.25311],
+          "position": [15, -3, 18],
+          "scale": [0.2, 0.3, 0.2]
+        }
+      }
+    },
+    "animation.monopl_wings.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "wings": {
+          "rotation": [12.5, 0, 0],
+          "position": [0, 30, -13],
+          "scale": [0.1, 0.2, 0.1]
+        }
+      }
+    },
+    "animation.privatepl_wings.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "wings": {
+          "rotation": [-251.83159, 56.1582, -392.25311],
+          "position": [15, -3, 18],
+          "scale": [0.2, 0.3, 0.2]
+        }
+      }
+    },
+    "animation.privatepl_wings.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "wings": {
+          "rotation": [15, 0, 0],
+          "position": [0, 22, -5],
+          "scale": [0.1, 0.2, 0.1]
+        }
+      }
+    },
+    "animation.glider_plane_wings.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "wings": {
+          "rotation": [-251.83159, 56.1582, -392.25311],
+          "position": [15, -3, 18],
+          "scale": [0.2, 0.3, 0.2]
+        }
+      }
+    },
+    "animation.glider_plane_wings.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "wings": {
+          "rotation": [-7.5, 0, 0],
+          "position": [1, 31, 0],
+          "scale": [0.1, 0.2, 0.1]
+        }
+      }
+    }
+  }
+}

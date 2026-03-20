@@ -1,0 +1,190 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.jeep_wrangler.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wheel1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"tire0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"tire1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.jeep_wrangler.idle": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wheel0": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"wheel1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.jeep_wrangler.wiper": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wiper0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [6.48827, 14.24323, 39.32995],
+						"0.3333": [22.73017, 21.82685, 81.02809],
+						"0.5": [38.61433, 19.43297, 123.18733],
+						"0.625": [30.76633, 21.8634, 92.52113],
+						"0.75": [18.06161, 21.69265, 60.48177],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [2, 0, 0],
+						"0.5": [2, 0, 0]
+					}
+				},
+				"wiper1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [3.31702, 14.72395, 39.03168],
+						"0.3333": [21.13086, 22.06763, 80.87507],
+						"0.5": [38.61433, 19.43297, 123.18733],
+						"0.625": [27.92107, 21.75145, 91.75269],
+						"0.75": [16.0725, 19.19697, 60.20242],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.375": [-0.82, -1.07, 0],
+						"0.5": [-1.1, -0.5, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.jeep_wrangler.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -45, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [-0.3, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 45, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0.1, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "jeep_wrangler_door_open"
+				}
+			}
+		},
+		"animation.jeep_wrangler.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, -45, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [-0.3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 45, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0.1, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "jeep_wrangler_door_open"
+				}
+			}
+		},
+		"animation.jeep_wrangler.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [0, -45, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [-0.3, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door2": {
+					"rotation": {
+						"0.0": [0, 45, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0.1, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "jeep_wrangler_door_open"
+				}
+			}
+		},
+		"animation.jeep_wrangler.doors_idle": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"door1": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"door2": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,99 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.snow_mobile.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"roll": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"roll2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.snow_mobile.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						"math.max(-10,math.min(10,query.yaw_speed*0.5))*-query.modified_move_speed*0.7",
+						0
+					]
+				},
+				"lowsteer": {
+					"rotation": [
+						0,
+						"math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7",
+						0
+					]
+				},
+				"lowsteer0": {
+					"rotation": [
+						0,
+						"math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7",
+						0
+					]
+				}
+			}
+		},
+		"animation.snow_mobile.ups": {
+			"loop": true,
+			"bones": {
+				"snowmobile_root": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								"query.vertical_speed * 2",
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.snow_mobile.downs": {
+			"loop": true,
+			"bones": {
+				"snowmobile_root": {
+					"rotation": {
+						"0.0": {
+							"post": [
+								"query.vertical_speed * -2",
+								0,
+								0
+							],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		}
+	}
+}

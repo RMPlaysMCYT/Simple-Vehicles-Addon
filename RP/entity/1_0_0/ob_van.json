@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:ob_van",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/ob_van"
+			},
+			"geometry": {
+				"default": "geometry.ob_van"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 34
+			},
+			"animations": {
+				"move": "animation.ob_van.move",
+				"turn": "animation.ob_van.turn",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"v_turn": "controller.animation.vehicle.v_turn"
+				},
+				{
+					"general": "controller.animation.chrysler_windsor.general"
+				}
+			],
+			"render_controllers": [
+				"controller.render.bus"
+			],
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

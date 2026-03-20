@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:key_lowrider1"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehicles_key_low1",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

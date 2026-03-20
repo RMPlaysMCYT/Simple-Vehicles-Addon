@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:bulldozer",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/simple_vehicles_bulldozer"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.bulldozer"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.bulldozer.move",
+				"setup": "animation.simple_vehicles.bulldozer.setup",
+				"doors_idle": "animation.simple_vehicles.bulldozer.doors_idle",
+				"open": "animation.simple_vehicles.bulldozer.open",
+				"close": "animation.simple_vehicles.bulldozer.close",
+				"close2": "animation.simple_vehicles.bulldozer.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"setup",
+					"door_mechanic",
+					{
+						"move": "query.modified_distance_moved"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 27
+			},
+			"sound_effects": {
+				"bulldozer_door_open": "simple_vehicles.corolla.open",
+				"bulldozer_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

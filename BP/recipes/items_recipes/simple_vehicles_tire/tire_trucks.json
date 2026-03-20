@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:trucks_tire"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"IK2",
+			"WBW"
+		],
+		"key": {
+			"K": {"item": "minecraft:redstone"},
+			"2": {"item": "minecraft:iron_bars"},
+			"B": {
+				"item": "minecraft:light_gray_terracotta"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:gray_wool"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_trucks",
+				"count": 4
+			}
+		]
+	}
+}

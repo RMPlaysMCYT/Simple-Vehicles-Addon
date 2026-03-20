@@ -1,0 +1,32 @@
+{
+    "rawtext":[
+        {"text":"§a== §2Vehicle Speedometer ==§r\n"},
+        {"text":"§a    == §7"},
+        {
+            "score":{
+                "name":"@s","objective":"speed"
+            }
+        },
+        {"text": "Speed Status:"},
+        {
+            "score":{
+                "name": "@s", "objective": "status"
+            }
+        }
+        {"text":"km §a§l==\n§4"},
+        {"translate":"oil"},
+        {"text":" "},
+        {"score":{"name":"@s","objective":"oil"}},
+        {"text":"L §6"},
+        {"translate":"dur"},
+        {"text":" "},
+        {"score":
+            {
+                "name":"@e[r=5,c=1,tag=car]","objective":"durability"
+            }
+        },
+        {
+            "text":"%"
+        }
+    ]
+}

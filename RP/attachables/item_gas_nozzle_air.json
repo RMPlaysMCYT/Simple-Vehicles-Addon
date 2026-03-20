@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "simple_vehicles:gas_nozzle_air",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/items/gas_nozzle_air"
+            },
+            "geometry": {
+                "default": "geometry.simple_vehicles.gas_nozzle"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "animations": {
+                "thirdperson_main_hand": "animation.gas_nozzle.thirdperson_main_hand",
+                "firstperson_main_hand": "animation.gas_nozzle.firstperson_main_hand"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "v.main_hand = c.item_slot == 'main_hand';"
+                ],
+                "animate": [
+                    {
+                        "thirdperson_main_hand": "v.main_hand && !c.is_first_person"
+                    },
+                    {
+                        "firstperson_main_hand": "v.main_hand && c.is_first_person"
+                    }
+                ]
+            }
+        }
+    }
+}

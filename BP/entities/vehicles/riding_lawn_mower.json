@@ -1,0 +1,255 @@
+{
+    "format_version": "1.18.30",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "simple_vehicles:riding_lawn_mower",
+            "is_experimental": false,
+            "is_summonable": true,
+            "is_spawnable": true,
+            "scripts": {
+                "animate": [
+                    "command",
+                    "durability",
+                    "fuel2",
+                    "move",
+                    "item_setpack"
+                ]
+            },
+            "animations": {
+                "command": "controller.animation.vehicle.command",
+                "move": "controller.animation.vehicle.move",
+                "durability": "controller.animation.vehicle.durability",
+                "fuel2": "controller.animation.simple_vehicles.fuel2",
+                "item_setpack": "controller.animation.riding_lawn_mower.item_setpack"
+            }
+        },
+        "component_groups": {
+            "simple_vehicles:static": {
+                "minecraft:rideable": {
+                    "controlling_seat": 1,
+                    "rider_can_interact": true,
+                    "family_types": [
+                        "player"
+                    ],
+                    "interact_text": "Ride",
+                    "seat_count": 1,
+                    "seats": [
+                        {
+                            "position": [
+                                0,
+                                0.5,
+                                -0.6
+                            ]
+                        }
+                    ]
+                },
+                "minecraft:interact": {
+                    "interactions": [
+                        {
+                            "interact_text": "Remove the grass",
+                            "on_interact": {
+                                "event": "simple_vehicles:clean_grass",
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family",
+                                            "subject": "other",
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "has_equipment",
+                                            "subject": "other",
+                                            "value": "simple_vehicles:grass_remover"
+                                        }
+                                    ]
+                                }
+                            },
+                            "use_item": false
+                        },
+                        {
+                            "interact_text": "Fuel It Up!!",
+                            "on_interact": {
+                                "event": "simple_vehicles:refuel",
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family",
+                                            "subject": "other",
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "has_equipment",
+                                            "subject": "other",
+                                            "value": "simple_vehicles:gas_nozzle"
+                                        }
+                                    ]
+                                }
+                            },
+                            "use_item": false
+                        },
+                        {
+                            "interact_text": "Fuel It Up!!",
+                            "on_interact": {
+                                "event": "simple_vehicles:refuel",
+                                "filters": {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family",
+                                            "subject": "other",
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "has_equipment",
+                                            "subject": "other",
+                                            "value": "simple_vehicles:jerry_can"
+                                        }
+                                    ]
+                                }
+                            },
+                            "use_item": true
+                        }
+                    ]
+                }
+            },
+            "simple_vehicles:activated": {
+                "minecraft:input_ground_controlled": {},
+                "minecraft:is_tamed": {},
+                "minecraft:movement": {
+                    "value": 0.45
+                }
+            },
+            "simple_vehicles:grass_remove": {
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": [
+                        30,
+                        30
+                    ],
+                    "time_down_event": {
+                        "event": "simple_vehicles:grass_deactivated"
+                    }
+                },
+                "minecraft:break_blocks": {
+                    "breakable_blocks": [
+                        "minecraft:tall_grass",
+                        "minecraft:short_grass",
+                        "minecraft:chorus_plant"
+                    ]
+                }
+            },
+            "simple_vehicles:refuel": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "simple_vehicles:refueled": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "simple_vehicles:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 2,
+                "height": 2
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/vehicles_3_4_0/riding_lawn_mower.json"
+            },
+            "minecraft:health": {
+                "value": 50
+            },
+            "minecraft:movement.generic": {},
+            "minecraft:is_chested": {},
+            "minecraft:inventory": {
+                "inventory_size": 5,
+                "container_type": "horse"
+            },
+            "minecraft:equippable": {
+                "slots": [
+                    {
+                        "accepted_items": [
+                            "simple_vehicles:key_lawn_mower"
+                        ],
+                        "item": "simple_vehicles:key_lawn_mower",
+                        "on_equip": {
+                            "event": "simple_vehicles:activated"
+                        },
+                        "on_unequip": {
+                            "event": "simple_vehicles:deactivated"
+                        }
+                    }
+                ]
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:jump.static": {},
+                   "minecraft:nameable": {         "always_show": false       },
+            "minecraft:horse.jump_strength": {
+                "value": 0
+            },
+            "minecraft:physics": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:static"
+                    ]
+                }
+            },
+            "simple_vehicles:activated": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:activated"
+                    ]
+                }
+            },
+            "simple_vehicles:deactivated": {
+                "remove": {
+                    "component_groups": [
+                        "simple_vehicles:activated"
+                    ]
+                }
+            },
+            "simple_vehicles:clean_grass": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:grass_remove"
+                    ]
+                }
+            },
+            "simple_vehicles:grass_deactivated": {
+                "remove": {
+                    "component_groups": [
+                        "simple_vehicles:grass_remove"
+                    ]
+                }
+            },
+            "simple_vehicles:refuel": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:refueled"
+                    ]
+                }
+            },
+            "simple_vehicles:refuel_re": {
+                "add": {
+                    "component_groups": [
+                        "simple_vehicles:refuel"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "simple_vehicles:refueled"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ae86.speedometer": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"meter": "query.ground_speed > 3"
+						}
+					]
+				},
+				"meter": {
+					"transitions": [
+						{
+							"default": "query.ground_speed < 3"
+						}
+					],
+					"on_entry": [
+						"/function vehicle_speedometer/speedo_ae86"
+					]
+				}
+			}
+		}
+    }
+}

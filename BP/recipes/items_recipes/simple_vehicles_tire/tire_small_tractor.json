@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:small_tractor_tire"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"BsB",
+			"WBW"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 4
+			},
+			"s": {"item": "minecraft:redstone"},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 8
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_small_tractor",
+				"count": 4
+			}
+		]
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ambulance.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				}
+			}
+		},
+		"animation.ice_cream_truck.turn": {
+			"loop": true,
+			"bones": {
+				"steering_wheel": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				}
+			}
+		},
+		"animation.ambulance.move": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"tire1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"tire0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "smoke_particle_0",
+					"locator": "smoke0"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:key_honda_accord_2019"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehicles_key_honda_accord_2019",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

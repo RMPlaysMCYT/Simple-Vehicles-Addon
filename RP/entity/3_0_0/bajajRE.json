@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:bajajre",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"blue": "textures/entity/bajajre",
+				"black": "textures/entity/bajajre/bajajre_black",
+				"green": "textures/entity/bajajre/bajajre_green",
+				"red": "textures/entity/bajajre/bajajre_red",
+				"white": "textures/entity/bajajre/bajajre_white",
+				"yellow": "textures/entity/bajajre/bajajre_yellow"
+			},
+			"geometry": {
+				"default": "geometry.bajajre"
+			},
+			"render_controllers": [
+				"controller.render.bajajre"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 48
+			},
+			"animations": {
+				"move": "animation.cargo_cont_truck.move",
+				"doors_idle": "animation.simple_vehicles.bulldozer.doors_idle",
+				"open": "animation.simple_vehicles.bulldozer.door_open",
+				"close": "animation.simple_vehicles.bulldozer.door_close",
+				"close2": "animation.simple_vehicles.bulldozer.door_close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"general",
+					"door_mechanic",
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			}
+		}
+	}
+}

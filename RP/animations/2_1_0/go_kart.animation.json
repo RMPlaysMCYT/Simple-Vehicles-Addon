@@ -1,0 +1,96 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.go_kart.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"tire0": {
+					"rotation": ["query.anim_time*20", 0, 0]
+				},
+				"tire1": {
+					"rotation": ["query.anim_time*20", 0, 0]
+				},
+				"tire2": {
+					"rotation": ["query.anim_time*20", 0, 0]
+				},
+				"leg0": {
+					"rotation": ["query.anim_time*20", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["query.anim_time*20", 0, 0]
+				},
+				"leg2": {
+					"rotation": ["query.anim_time*20", 0, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.go_kart.steer": {
+			"loop": true,
+			"bones": {
+				"tire0": {
+					"rotation": [0, "math.max(-30,math.min(30,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-30,math.min(30,query.yaw_speed*0.5))", 0]
+				},
+				"steering_wheel": {
+					"rotation": [0, 0, "math.max(-30,math.min(30,query.yaw_speed*0.5))"]
+				},
+				"steer": {
+					"rotation": ["-this", "-this", "math.max(-30,math.min(30,query.yaw_speed*0.5))"]
+				}
+			}
+		},
+		"animation.simple_vehicles.quadbike.steer": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": ["-this", "math.max(-30,math.min(30,query.yaw_speed*0.5))", "-this"]
+				}
+			}
+		},
+		"animation.simple_vehicles.go_kart.ups": {
+			"loop": true,
+			"bones": {
+				"kart_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * 1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"kart2_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * 1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.go_kart.downs": {
+			"loop": true,
+			"bones": {
+				"kart_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * -1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"kart2_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * -1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1441 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:motor_bike",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"item_setpack",
+					"motorbike_ride",
+					"command",
+					"durability",
+					"fuel",
+					"move"
+				]
+			},
+			"animations": {
+				"item_setpack": "controller.animation.vehicle_ride.item_setpack",
+				"motorbike_ride": "controller.animation.motorbike_ride",
+				"command": "controller.animation.vehicle.command",
+				"move": "controller.animation.vehicle.move",
+				"durability": "controller.animation.vehicle.durability",
+				"fuel": "controller.animation.simple_vehicles.fuel"
+			}
+		},
+		"component_groups": {
+			"minecraft:minecar": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:gas_nozzle"
+										}
+									]
+								}
+							},
+							"use_item": false
+						},
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:jerry_can"
+										}
+									]
+								}
+							},
+							"use_item": true
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:black_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_black"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:white_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_white"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:orange_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_orange"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:magenta_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_magenta"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:light_blue_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_light_blue"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:yellow_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_yellow"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:lime_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_lime"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:pink_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_pink"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:gray_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_gray"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:silver_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_silver"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:cyan_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_cyan"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:purple_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_purple"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:blue_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_blue"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:brown_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_brown"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:green_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_green"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"all_of": [
+												{
+													"test": "has_equipment",
+													"subject": "other",
+													"domain": "hand",
+													"value": "simple_vehicles:red_spray"
+												}
+											]
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										}
+									]
+								},
+								"event": "rmplaysmcyt:turn_red"
+							},
+							"use_item": true,
+							"interact_text": "Paint on it!"
+						}
+					]
+				},
+				"minecraft:is_tamed": {},
+				"minecraft:rideable": {
+					"seat_count": 1,
+					"crouching_skip_interact": true,
+					"family_types": [
+						"player"
+					],
+					"interact_text": "Drive",
+					"pull_in_entities": true,
+					"seats": [
+						{
+							"position": [
+								0,
+								0.7,
+								-0.2
+							]
+						}
+					]
+				}
+			},
+			"minecraft:bugfixer": {
+				"minecraft:timer": {
+					"time": [
+						0.1,
+						0.1
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:bugfix",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:horse_saddled": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:can_power_jump": {},
+				"minecraft:behavior.player_ride_tamed": {}
+			},
+			"rmplaysmcyt:black": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"rmplaysmcyt:white": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"rmplaysmcyt:orange": {
+				"minecraft:skin_id": {
+					"value": 2
+				}
+			},
+			"rmplaysmcyt:magenta": {
+				"minecraft:skin_id": {
+					"value": 3
+				}
+			},
+			"rmplaysmcyt:light_blue": {
+				"minecraft:skin_id": {
+					"value": 4
+				}
+			},
+			"rmplaysmcyt:yellow": {
+				"minecraft:skin_id": {
+					"value": 5
+				}
+			},
+			"rmplaysmcyt:lime": {
+				"minecraft:skin_id": {
+					"value": 6
+				}
+			},
+			"rmplaysmcyt:pink": {
+				"minecraft:skin_id": {
+					"value": 7
+				}
+			},
+			"rmplaysmcyt:gray": {
+				"minecraft:skin_id": {
+					"value": 8
+				}
+			},
+			"rmplaysmcyt:silver": {
+				"minecraft:skin_id": {
+					"value": 9
+				}
+			},
+			"rmplaysmcyt:cyan": {
+				"minecraft:skin_id": {
+					"value": 10
+				}
+			},
+			"rmplaysmcyt:purple": {
+				"minecraft:skin_id": {
+					"value": 11
+				}
+			},
+			"rmplaysmcyt:blue": {
+				"minecraft:skin_id": {
+					"value": 12
+				}
+			},
+			"rmplaysmcyt:brown": {
+				"minecraft:skin_id": {
+					"value": 13
+				}
+			},
+			"rmplaysmcyt:green": {
+				"minecraft:skin_id": {
+					"value": 14
+				}
+			},
+			"rmplaysmcyt:red": {
+				"minecraft:skin_id": {
+					"value": 15
+				}
+			},
+			"simple_vehicles:refuel": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"simple_vehicles:refueled": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:equippable": {
+				"slots": [
+					{
+						"slot": 0,
+						"item": "simple_vehicles:key_motor",
+						"accepted_items": [
+							"simple_vehicles:key_motor"
+						],
+						"on_equip": {
+							"event": "minecraft:horse_saddled"
+						},
+						"on_unequip": {
+							"event": "minecraft:horse_unsaddled"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"motor_bike",
+					"simple_vehicles"
+				]
+			},
+			"minecraft:horse.jump_strength": {
+				"value": 0.3
+			},
+			"minecraft:breathable": {
+				"totalSupply": 10,
+				"suffocateTime": 0
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/motor_bike.json"
+			},
+			"minecraft:collision_box": {
+				"width": 2,
+				"height": 1
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 120,
+					"range_max": 120
+				}
+			},
+			"minecraft:movement": {
+				"value": 0.45
+			},
+			"minecraft:physics": {
+				"has_gravity": true
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:knockback_resistance": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:navigation.walk": {
+				"can_float": true,
+				"avoid_water": false
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			       "minecraft:nameable": {         "always_show": false       },
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 100,
+						"effects": [
+							{
+								"name": "absorption",
+								"chance": 0.8,
+								"duration": 5,
+								"amplifier": 5
+							}
+						]
+					}
+				],
+				"force_use": true
+			},
+			"minecraft:inventory": {
+				"container_type": "horse",
+				"inventory_size": 18
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:black_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_black"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:white_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_white"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:orange_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_orange"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:magenta_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_magenta"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:light_blue_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_light_blue"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:yellow_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_yellow"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:lime_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_lime"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:pink_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_pink"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:gray_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_gray"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:silver_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_silver"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:cyan_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_cyan"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:purple_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_purple"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:blue_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_blue"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:brown_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_brown"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:green_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_green"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"all_of": [
+											{
+												"test": "has_equipment",
+												"subject": "other",
+												"domain": "hand",
+												"value": "simple_vehicles:red_spray"
+											}
+										]
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							},
+							"event": "rmplaysmcyt:turn_red"
+						},
+						"use_item": true,
+						"interact_text": "Paint on it!"
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"weight": 1000,
+								"add": {
+									"component_groups": [
+										"minecraft:minecar"
+									]
+								}
+							}
+						]
+					},
+					{
+						"randomize": [
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:black"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:white"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:orange"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:magenta"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:light_blue"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:yellow"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:lime"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:pink"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:gray"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:silver"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:cyan"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:purple"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:blue"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:brown"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:green"
+									]
+								}
+							},
+							{
+								"weight": 100,
+								"add": {
+									"component_groups": [
+										"rmplaysmcyt:red"
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"minecraft:horse_saddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:horse_unsaddled": {
+				"add": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"minecraft:horse_saddled"
+					]
+				}
+			},
+			"minecraft:bugfix": {
+				"remove": {
+					"component_groups": [
+						"minecraft:bugfixer"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_black": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:black"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_white": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:white"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_orange": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:orange"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_magenta": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:magenta"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_light_blue": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:light_blue"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_yellow": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:yellow"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_lime": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:lime"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_pink": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:pink"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_gray": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:gray"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_silver": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:silver"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_cyan": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:cyan"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_purple": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:purple"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_blue": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:blue"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_brown": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:brown"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_green": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:green"
+					]
+				}
+			},
+			"rmplaysmcyt:turn_red": {
+				"add": {
+					"component_groups": [
+						"rmplaysmcyt:red"
+					]
+				}
+			},
+			"simple_vehicles:refuel": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			},
+			"simple_vehicles:refuel_re": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refuel"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			}
+		}
+	}
+}

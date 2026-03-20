@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_volt_bike334222"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"",
+			"PIP",
+			" B "
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:redstone"
+			},
+			"P": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_volt_bike"
+			}
+		]
+	}
+}

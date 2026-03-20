@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:cadillac_dts_2010_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"MBM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_cadillac_dts_2010"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_cadillac_dts_2010",
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:cadillac_dts_2010_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.bajajre": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.blue",
+						"Texture.black",
+						"Texture.green",
+						"Texture.red",
+						"Texture.white",
+						"Texture.yellow"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

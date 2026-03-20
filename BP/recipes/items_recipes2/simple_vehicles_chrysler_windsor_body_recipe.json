@@ -1,0 +1,33 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:chrysler_windsor_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 5
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 2,
+                "data": 5
+            },
+            {
+                "item": "minecraft:glass",
+                "count": 1
+            },
+            {
+                "item": "redstone",
+                "count": 1
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:chrysler_windsor_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

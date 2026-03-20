@@ -1,0 +1,147 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.roller_truck.move": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				},
+				"wheel2": {
+					"rotation": ["query.anim_time*15", 0, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.roller_machine.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.roller_machine.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.roller_machine.close2": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [0, -60, 0]
+				},
+				"door1": {
+					"rotation": [0, 60, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.roller_truck.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "roller_truck_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.roller_truck.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "roller_truck_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.roller_truck.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "roller_truck_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.roller_truck.doors_idle": {
+			"loop": true,
+			"bones": {
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

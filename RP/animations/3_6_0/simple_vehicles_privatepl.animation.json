@@ -1,0 +1,85 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.privatepl.look_at_target": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.privatepl.flying": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"stand0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [90, 0, 0]
+					},
+					"position": {
+						"0.5417": [0, 0, 0],
+						"1.0": [0, 7, 0]
+					}
+				},
+				"stand1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [90, 0, 0]
+					},
+					"position": {
+						"0.5417": [0, 0, 0],
+						"1.0": [0, 7, 0]
+					}
+				},
+				"stand2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [90, 0, 0]
+					},
+					"position": {
+						"0.5417": [0, 0, 0],
+						"1.0": [0, 7, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.privatepl.landing": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"stand0": {
+					"rotation": {
+						"0.0": [90, 0, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 7, 0],
+						"0.4583": [0, 0, 0]
+					}
+				},
+				"stand1": {
+					"rotation": {
+						"0.0": [90, 0, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 7, 0],
+						"0.4583": [0, 0, 0]
+					}
+				},
+				"stand2": {
+					"rotation": {
+						"0.0": [90, 0, 0],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 7, 0],
+						"0.4583": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

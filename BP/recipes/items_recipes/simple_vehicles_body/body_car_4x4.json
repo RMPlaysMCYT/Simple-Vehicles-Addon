@@ -1,0 +1,38 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:fkjfkvzd"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" BG",
+			"DSW",
+			"BBB"
+		],
+		"key": {
+			"D": {
+				"item": "minecraft:chest"
+			},
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_car_4x4"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_car_4x4"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_car4x4"
+			}
+		]
+	}
+}

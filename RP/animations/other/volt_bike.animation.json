@@ -1,0 +1,65 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.volt_bike.move": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "leg0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": ["360*4", 0, 0]
+          }
+        },
+        "leg1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": ["360*4", 0, 0]
+          }
+        }
+      },
+      "particle_effects": {
+        "0.0": {
+          "effect": "llama_spit",
+          "locator": "volt_part"
+        },
+        "0.4": {
+          "effect": "llama_spit",
+          "locator": "volt_part"
+        },
+        "0.8": {
+          "effect": "llama_spit",
+          "locator": "volt_part"
+        }
+      }
+    },
+    "animation.volt_bike.tilt": {
+      "loop": true,
+      "bones": {
+        "voltbike_root": {
+          "rotation": [0, 0, "Math.max(-10, math.min(10, query.yaw_speed * 0.4)) *-1"]
+        }
+      }
+    },
+    "animation.volt_bike.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [59.9156, 64.41955, -57.58848],
+          "position": [5, -7, 10],
+          "scale": [0.5, 0.5, 0.5]
+        }
+      }
+    },
+    "animation.volt_bike.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [87.5, 0, 0],
+          "position": [0, -3, -3],
+          "scale": 0.3
+        }
+      }
+    }
+  }
+}

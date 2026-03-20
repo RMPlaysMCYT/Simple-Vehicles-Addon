@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.simple_vehicles.camera_movement": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "riding": "query.has_rider"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function camera_system/camera_clear",
+                        "/tag @a remove Yawa"
+                    ]
+                },
+                "riding": {
+                    "transitions": [
+                        {
+                            "default": "!query.has_rider"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @a[c=1] add Yawa",
+                        "/function camera_system/camera_activated"
+                    ]
+                }
+            }
+        }
+    }
+}

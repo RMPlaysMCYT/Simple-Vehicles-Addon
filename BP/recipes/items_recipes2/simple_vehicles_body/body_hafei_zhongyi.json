@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_hafei_zhongyi"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BG",
+			"BSW",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_hafei_zhongyi"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_hafei_zhongyi"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_hafei_zhongyi"
+			}
+		]
+	}
+}

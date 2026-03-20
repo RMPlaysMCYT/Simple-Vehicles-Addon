@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:land_cruiser",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.land_cruiser"
+			},
+			"textures": {
+				"default": "textures/entity/land_cruiser"
+			},
+			"animations": {
+				"move": "animation.land_cruiser.move",
+				"setup": "animation.land_cruiser.setup",
+				"open": "animation.land_cruiser.open",
+				"close": "animation.land_cruiser.close",
+				"close2": "animation.land_cruiser.close2",
+				"doors_idle": "animation.land_cruiser.doors_idle",
+				"turn": "animation.land_cruiser.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					{
+						"move": "query.modified_move_speed"
+					},
+					"setup",
+					"door_mechanic"
+				]
+			},
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 6
+			},
+			"render_controllers": [
+				"controller.render.grummanllv"
+			],
+			"sound_effects": {
+				"lc_door_open": "simple_vehicles.corolla.open",
+				"lc_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

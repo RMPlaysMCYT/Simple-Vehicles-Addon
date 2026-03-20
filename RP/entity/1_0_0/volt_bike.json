@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:volt_bike",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/volt_bike"
+			},
+			"geometry": {
+				"default": "geometry.volt_bike"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 30
+			},
+			"animations": {
+				"move": "animation.volt_bike.move",
+				"tilt": "animation.volt_bike.tilt"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.vehicles.move"
+				},
+				{
+					"voltbike_general": "controller.animation.volt_bike.general"
+				}
+			],
+			"render_controllers": [
+				"controller.render.corolla"
+			],
+            "particle_effects": {
+	            "llama_spit": "minecraft:llama_spit_smoke"
+            }
+		}
+	}
+}

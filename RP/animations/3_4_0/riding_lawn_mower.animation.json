@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.riding_lawn_mower.move": {
+			"loop": true,
+			"bones": {
+				"wheel0": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				},
+				"wheel1": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,245 @@
+{
+	"format_version": "1.18.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:bridge_building_machine",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+      "scripts": {
+        "animate": [ "place1", "item_setpack" ]
+      },
+      "animations": {
+        "place1": "controller.animation.simple_vehicles.bridge_building_machine.place1"/*,
+        "item_setpack": "controller.animation.bridge_building_machine.item_setpack"*/
+      }
+		},
+		"component_groups": {
+      "simple_vehicles:vehicles": {
+        "minecraft:equippable": {
+          "slots": [
+            {
+              "slot": 0,
+              "accepted_items": [
+                "simple_vehicles:key_bridge_building_machine"
+              ],
+              "item": "simple_vehicles:key_bridge_building_machine",
+              "on_equip": {
+                "event": "simple_vehicles:activated",
+                "target": "self"
+              },
+              "on_unequip": {
+                "event": "simple_vehicles:deactivated",
+                "target": "self"
+              }
+            }
+          ]
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:rideable": {
+					"controlling_seat": 0,
+					"crouching_skip_interact": true,
+					"rider_can_interact": true,
+					"family_types": [
+						"player",
+            "secret_inventory"
+					],
+					"interact_text": "action.hint.ride.grummanllv",
+					"seat_count": 2,
+					"seats": [
+						{
+							"position": [2.5, 0.8, 0]
+						},
+						{
+							"position": [2.5, 0.8, 0]
+						}
+					]
+				}
+			},
+			"simple_vehicles:activated": {
+				"minecraft:input_ground_controlled": {},
+				"minecraft:movement": {
+					"value": 0.5
+				},
+				"minecraft:can_power_jump": {},
+				"minecraft:horse.jump_strength": {
+					"value": 0.2
+				}
+			},
+      "simple_vehicles:place_nothing": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:place_black_concrete": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "simple_vehicles:mix_time": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 75,
+          "time_down_event": {
+            "event": "simple_vehicles:slow_down",
+            "target": "self"
+          }
+        }
+      },
+      "simple_vehicles:reset": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 6,
+          "time_down_event": {
+            "event": "simple_vehicles:off_mode",
+            "target": "self"
+          }
+        }
+      }
+		},
+		"components": {
+      "minecraft:nameable": {
+        "always_show": false
+      },
+			"minecraft:health": {
+				"value": 120
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"simple_vehicles_addon",
+          "simple_vehicles"
+				]
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.generic": {},
+			"minecraft:can_climb": {},
+			"minecraft:physics": {
+				"has_collision": true
+			},
+			"minecraft:knockback_resistance": {
+				"value": 10
+			},
+			"minecraft:healable": {
+				"items": [
+					{
+						"item": "simple_vehicles:wrench",
+						"heal_amount": 20
+					}
+				],
+				"force_use": true
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+      "minecraft:inventory": {
+        "inventory_size": 15,
+        "container_type": "horse"
+      },
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/vehicles_2-2-0/simple_vehicles_bridge_building_mach.json"
+			},
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "simple_vehicles:bridge_building_placer" }
+                ]
+              },
+              "event": "simple_vehicles:concrete1mix_time",
+              "target": "self"
+            },
+            "play_sounds": "random.pop",
+            "use_item": true,
+            "swing": true,
+            "interact_text": "Mix It up!!!!"
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+	      "width": 5,
+	      "height": 4
+      }
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:vehicles",
+						"simple_vehicles:place_nothing"
+					]
+				}
+			},
+			"simple_vehicles:concrete1mix_time": {
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:place_nothing"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "simple_vehicles:place_black_concrete",
+            "simple_vehicles:mix_time"
+          ]
+        }
+      },
+			"simple_vehicles:slow_down": {
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:place_black_concrete",
+            "simple_vehicles:mix_time"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "simple_vehicles:reset"
+          ]
+        }
+      },
+			"simple_vehicles:off_mode": {
+        "remove": {
+          "component_groups": [
+            "simple_vehicles:place_black_concrete",
+            "simple_vehicles:mix_time"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "simple_vehicles:place_nothing"
+          ]
+        }
+      },
+			"simple_vehicles:activated": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			},
+			"simple_vehicles:deactivated": {
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			}
+		}
+	}
+}

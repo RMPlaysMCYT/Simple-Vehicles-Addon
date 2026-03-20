@@ -1,0 +1,33 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_privatepl_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 2
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 2,
+                "data": 6
+            },
+            {
+                "item": "minecraft:glass",
+                "count": 1
+            },
+            {
+                "item": "minecraft:redstone",
+                "count": 1
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:privatepl_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

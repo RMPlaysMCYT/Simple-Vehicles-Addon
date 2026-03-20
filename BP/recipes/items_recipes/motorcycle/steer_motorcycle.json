@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_motorcycle"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"B  ",
+			" B ",
+			"  T"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"T": {
+				"item": "simple_vehicles:tire_motorcycle"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_motorcycle"
+			}
+		]
+	}
+}

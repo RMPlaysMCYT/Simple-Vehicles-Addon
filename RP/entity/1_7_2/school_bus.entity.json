@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:school_bus",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/school_bus"
+			},
+			"geometry": {
+				"default": "geometry.school_bus"
+			},
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 9
+			},
+			"animations": {
+				"move": "animation.school_bus.move",
+				"wiper": "animation.school_bus.wiper",
+				"turn": "animation.school_bus.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.school_bus.doors_idle",
+				"open": "animation.school_bus.open",
+				"close": "animation.school_bus.close",
+				"close2": "animation.school_bus.close2",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"wiper": "query.is_in_water_or_rain&&query.is_saddled&&query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.rancher"
+			],
+			"sound_effects": {
+				"school_bus_door_open": "simple_vehicles.corolla.open",
+				"school_bus_door_close": "simple_vehicles.corolla.close",
+				"school_bus_wiper": "simple_vehicles.car.wiper"
+			}
+		}
+	}
+}

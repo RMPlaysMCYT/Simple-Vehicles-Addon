@@ -1,0 +1,324 @@
+{
+  "format_version": "1.18.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:motorcycle",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "item_setpack",
+          "command",
+          "durability",
+          "fuel",
+          "move",
+          "motorcycle_ride",
+          "horn"
+        ]
+      },
+      "animations": {
+        "item_setpack": "controller.animation.vehicle_ride.item_setpack",
+        "command": "controller.animation.vehicle.command",
+        "move": "controller.animation.vehicle.move",
+        "durability": "controller.animation.vehicle.durability",
+        "fuel": "controller.animation.simple_vehicles.fuel",
+        "motorcycle_ride": "controller.animation.motorcycle_ride",
+        "horn": "controller.animation.motorcycle.horn"
+      }
+    },
+    "component_groups": {
+      "simple_vehicles:motorcycle": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:gas_nozzle"
+                    }
+                  ]
+                }
+              },
+              "use_item": false
+            },
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:jerry_can"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "controlling_seat": 0,
+          "crouching_skip_interact": true,
+          "family_types": ["player"],
+          "interact_text": "action.hint.ride.vehicle",
+          "pull_in_entities": false,
+          "rider_can_interact": false,
+          "seat_count": 2,
+          "seats": [
+            {
+              "position": [0, 0.75, 0]
+            },
+            {
+              "position": [0, 0.75, -0.6]
+            }
+          ]
+        }
+      },
+      "simple_vehicles:activated": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_tag",
+                    "operator": "equals",
+                    "value": "remove"
+                  },
+                  {
+                    "test": "hourly_clock_time",
+                    "operator": ">=",
+                    "value": 0
+                  },
+                  {
+                    "test": "hourly_clock_time",
+                    "operator": "<",
+                    "value": 12000
+                  }
+                ]
+              },
+              "event": "simple_vehicles:light_off"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "any_of": [
+                      {
+                        "all_of": [
+                          {
+                            "test": "hourly_clock_time",
+                            "operator": ">=",
+                            "value": 12000
+                          },
+                          {
+                            "test": "hourly_clock_time",
+                            "operator": "<",
+                            "value": 24000
+                          }
+                        ]
+                      },
+                      {
+                        "test": "light_level",
+                        "operator": "<",
+                        "value": 8
+                      }
+                    ]
+                  },
+                  {
+                    "test": "has_tag",
+                    "operator": "not",
+                    "value": "remove"
+                  }
+                ]
+              },
+              "event": "simple_vehicles:light_on"
+            }
+          ]
+        },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:movement": {
+          "value": 0.3
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:horse.jump_strength": {
+          "value": 0.01
+        }
+      },
+      "simple_vehicles:not_worked_on_water": {
+        "minecraft:movement": {
+          "value": 0.0001
+        }
+      },
+      "simple_vehicles:not_worked_on_ground": {
+        "minecraft:movement": {
+          "value": 0.1
+        }
+      },
+      "simple_vehicles:refuel": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:refueled": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:jump.static": {},
+             "minecraft:nameable": {         "always_show": false       },
+      "minecraft:health": {
+        "value": 100
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.generic": {
+        "is_amphibious": true
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "accepted_items": ["simple_vehicles:key_motorcycle"],
+            "item": "simple_vehicles:key_motorcycle",
+            "on_equip": {
+              "event": "simple_vehicles:activated",
+              "target": "self"
+            },
+            "on_unequip": {
+              "event": "simple_vehicles:deactivated",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 1.5
+      },
+      "minecraft:physics": {},
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "generates_bubbles": true,
+        "suffocate_time": 10
+      },
+      "minecraft:is_chested": {},
+      "minecraft:fire_immune": true,
+      "minecraft:knockback_resistance": {
+        "value": 100
+      },
+      "minecraft:balloonable": {},
+      "minecraft:inventory": {
+        "container_type": "horse",
+        "inventory_size": 10
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 100
+          }
+        ],
+        "force_use": true
+      },
+      "minecraft:type_family": {
+        "family": ["aspire", "simple_vehicles"]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/motorcycle.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["simple_vehicles:motorcycle"]
+        }
+      },
+      "simple_vehicles:activated": {
+        "add": {
+          "component_groups": ["simple_vehicles:activated"]
+        },
+        "queue_command": {
+          "command": [
+            "fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block_13 [] keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air replace light_block_13",
+            "fill ~-3~3~-3 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~2 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~-2 ~3~4~-3 air replace light_block_13",
+            "fill ~-3~-2~-3 ~-2~4~3 air replace light_block_13",
+            "fill ~2~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
+        }
+      },
+      "simple_vehicles:deactivated": {
+        "remove": {
+          "component_groups": ["simple_vehicles:activated"]
+        },
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        }
+      },
+      "simple_vehicles:light_off": {
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        }
+      },
+      "simple_vehicles:light_on": {
+        "queue_command": {
+          "command": [
+            "fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
+            "setblock ~~1~ light_block_13 [] keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air replace light_block_13",
+            "fill ~-3~3~-3 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~2 ~3~4~3 air replace light_block_13",
+            "fill ~-3~-2~-2 ~3~4~-3 air replace light_block_13",
+            "fill ~-3~-2~-3 ~-2~4~3 air replace light_block_13",
+            "fill ~2~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
+        }
+      },
+      "simple_vehicles:refuel": {
+        "add": {
+          "component_groups": ["simple_vehicles:refueled"]
+        }
+      },
+      "simple_vehicles:refuel_re": {
+        "add": {
+          "component_groups": ["simple_vehicles:refuel"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicles:refueled"]
+        }
+      }
+    }
+  }
+}

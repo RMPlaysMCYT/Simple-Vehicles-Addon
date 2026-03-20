@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vehicles.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"tire0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"tire1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"wheel0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"wheel1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.moto.idle": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [0, 0, 0]
+				},
+				"leg2": {
+					"rotation": [0, 0, 0]
+				},
+				"wheel0": {
+					"rotation": [0, 0, 0]
+				},
+				"wheel1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

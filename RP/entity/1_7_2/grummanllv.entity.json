@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:grummanllv",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/grummanllv"
+			},
+			"geometry": {
+				"default": "geometry.grummanllv"
+			},
+			"render_controllers": [
+				"controller.render.grummanllv"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 0
+			},
+			"animations": {
+				"move": "animation.grummanllv.move",
+				"doors_idle": "animation.grummanllv.doors_idle",
+				"open": "animation.grummanllv.open",
+				"close": "animation.grummanllv.close",
+				"close2": "animation.grummanllv.close2",
+				"turn": "animation.grummanllv.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic",
+					{
+						"move": "query.modified_move_speed"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"sound_effects": {
+				"grumann_door_open": "simple_vehicles.corolla.open",
+				"grumann_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

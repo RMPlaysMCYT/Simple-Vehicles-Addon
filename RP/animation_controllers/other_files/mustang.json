@@ -1,0 +1,16 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mustang.setup": {
+			"initial_state": "setup",
+			"states": {
+				"setup": {
+					"animations": [
+						"setup"
+					]
+				}
+			}
+		}
+	}
+}

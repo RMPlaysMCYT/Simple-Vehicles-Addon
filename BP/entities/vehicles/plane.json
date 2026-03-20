@@ -1,0 +1,499 @@
+{
+	"format_version": "1.18.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "simple_vehicles:plane",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"command",
+					"durability",
+					"fuel2",
+					"move",
+					{
+						"fly": "1"
+					},
+					{
+						"remove_effect": "1"
+					}
+				]
+			},
+			"animations": {
+				"move": "controller.animation.vehicle.move",
+				"fuel2": "controller.animation.simple_vehicles.fuel2",
+				"durability": "controller.animation.vehicle.durability",
+				"command": "controller.animation.vehicle.command",
+				"fly": "controller.animation.plane.fly",
+				"remove_effect": "controller.animation.plane.remove_effect"
+			}
+		},
+		"component_groups": {
+			"simple_vehicles:steady": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:jerry_can"
+										}
+									]
+								}
+							},
+							"use_item": true
+						},
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:gas_nozzle"
+										}
+									]
+								}
+							},
+							"use_item": false
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"value": "simple_vehicles:key_plane"
+										}
+									]
+								},
+								"event": "simple_vehicles:door_open"
+							},
+							"use_item": false,
+							"interact_text": "Open Door"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"value": "barrier"
+										},
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_ability",
+											"subject": "other",
+											"value": "instabuild"
+										}
+									]
+								},
+								"event": "simple_vehicles:remove_vehicle"
+							},
+							"use_item": false,
+							"interact_text": "Remove Vehicle?"
+						}
+					]
+				},
+				"minecraft:mark_variant": {
+					"value": 0
+				}
+			},
+			"simple_vehicles:door_close": {
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:gas_nozzle"
+										}
+									]
+								}
+							},
+							"use_item": false
+						},
+						{
+							"interact_text": "Fuel It Up!!",
+							"on_interact": {
+								"event": "simple_vehicles:refuel",
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"value": "simple_vehicles:air_jerry_can"
+										}
+									]
+								}
+							},
+							"use_item": true
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"value": "simple_vehicles:key_plane"
+										}
+									]
+								},
+								"event": "simple_vehicles:door_open2"
+							},
+							"use_item": false,
+							"interact_text": "Open Door"
+						}
+					]
+				},
+				"minecraft:mark_variant": {
+					"value": 1
+				}
+			},
+			"simple_vehicles:door_open": {
+				"minecraft:equippable": {
+					"slots": [
+						{
+							"accepted_items": [
+								"simple_vehicles:key_plane"
+							],
+							"item": "simple_vehicles:key_plane",
+							"on_equip": {
+								"event": "simple_vehicles:activated",
+								"target": "self"
+							},
+							"on_unequip": {
+								"event": "simple_vehicles:deactivated",
+								"target": "self"
+							}
+						}
+					]
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "has_equipment",
+											"subject": "other",
+											"domain": "hand",
+											"value": "simple_vehicles:key_plane"
+										}
+									]
+								},
+								"event": "simple_vehicles:door_close"
+							},
+							"use_item": false,
+							"interact_text": "Close Door"
+						}
+					]
+				},
+				"minecraft:mark_variant": {
+					"value": 2
+				},
+				"minecraft:rideable": {
+					"seat_count": 4,
+					"family_types": [
+						"player"
+					],
+					"seats": [
+						{
+							"position": [
+								0,
+								0.6,
+								0.85
+							]
+						},
+						{
+							"position": [
+								0,
+								0.6,
+								-0.1
+							]
+						},
+						{
+							"position": [
+								0,
+								0.6,
+								-0.95
+							]
+						},
+						{
+							"position": [
+								0,
+								0.6,
+								-1.7
+							]
+						}
+					],
+					"interact_text": "Hop in",
+					"rider_can_interact": true,
+					"controlling_seat": 0,
+					"pull_in_entities": false
+				}
+			},
+			"simple_vehicles:activated": {
+				"minecraft:is_saddled": {},
+				"minecraft:input_ground_controlled": {},
+				"minecraft:movement": {
+					"value": 0.41
+				},
+				"minecraft:can_power_jump": {},
+				"minecraft:horse.jump_strength": {
+					"value": 0.2
+				}
+			},
+			"simple_vehicles:refuel": {
+				"minecraft:skin_id": {
+					"value": 0
+				}
+			},
+			"simple_vehicles:refueled": {
+				"minecraft:skin_id": {
+					"value": 1
+				}
+			},
+			"simple_vehicles:remove_vehicle": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:inventory": {
+				"inventory_size": 15,
+				"container_type": "horse"
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "simple_vehicles:key_plane"
+									}
+								]
+							},
+							"event": "simple_vehicles:door_open"
+						},
+						"use_item": false,
+						"interact_text": "Open Door"
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"aspire",
+					"plane",
+					"vehicles",
+					"simple_vehicles"
+				]
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0
+			},
+			"minecraft:collision_box": {
+				"width": 7,
+				"height": 2.1
+			},
+			"minecraft:health": {
+				"value": {
+					"range_min": 60,
+					"range_max": 60
+				}
+			},
+			"minecraft:movement": {
+				"value": {
+					"range_min": 0.1125,
+					"range_max": 0.3375
+				}
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/plane.json"
+			},
+			"minecraft:navigation.walk": {
+				"can_path_over_water": true,
+				"avoid_water": false,
+				"avoid_damage_blocks": true,
+				"is_amphibious": true
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			       "minecraft:nameable": {         "always_show": false       },
+			"minecraft:horse.jump_strength": {
+				"value": {
+					"range_min": 0.4,
+					"range_max": 0.6
+				}
+			},
+			"minecraft:balloonable": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:is_chested": {},
+			"minecraft:physics": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "fall",
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"weight": 80,
+								"add": {
+									"component_groups": [
+										"simple_vehicles:steady"
+									]
+								}
+							}
+						]
+					}
+				]
+			},
+			"simple_vehicles:activated": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			},
+			"simple_vehicles:deactivated": {
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:activated"
+					]
+				}
+			},
+			"simple_vehicles:door_open": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:door_open"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:steady"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"playsound simple_vehicles.ae86.open @p[r=1]"
+					]
+				}
+			},
+			"simple_vehicles:door_open2": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:door_open"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:door_close"
+					]
+				}
+			},
+			"simple_vehicles:door_close": {
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:door_open"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"simple_vehicles:door_close"
+					]
+				}
+			},
+			"simple_vehicles:refuel": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			},
+			"simple_vehicles:refuel_re": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:refuel"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"simple_vehicles:refueled"
+					]
+				}
+			},
+			"simple_vehicles:remove_vehicle": {
+				"add": {
+					"component_groups": [
+						"simple_vehicles:remove_vehicle"
+					]
+				}
+			}
+		}
+	}
+}

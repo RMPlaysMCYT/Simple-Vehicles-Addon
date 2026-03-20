@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_double_deck_bus"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"fBf",
+			"BIB",
+			"fBf"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 7
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"f": {"item": "minecraft:gray_wool"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_double_deck_bus"
+			}
+		]
+	}
+}

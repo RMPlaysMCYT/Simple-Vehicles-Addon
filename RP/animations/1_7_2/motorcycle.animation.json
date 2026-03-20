@@ -1,0 +1,93 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.motorcycle.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.motorcycle.turn": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": ["-this", "math.max(-30,math.min(30,query.yaw_speed*0.5))", "-this"]
+				}
+			}
+		},
+		"animation.motorcycle.tilt": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": ["-this", "-this", "math.max(-15,math.min(15,query.yaw_speed*0.4))*-1"]
+				},
+				"leg0": {
+					"rotation": ["-this", "math.max(-20,math.min(20,query.yaw_speed*0.4))*-1", "-this"]
+				},
+				"motor_root": {
+					"rotation": [0, 0, "math.max(-30,math.min(30,query.yaw_speed*0.5))"]
+				}
+			}
+		},
+		"animation.motorcycle.ups": {
+			"loop": true,
+			"bones": {
+				"motor_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * 1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.motorcycle.downs": {
+			"loop": true,
+			"bones": {
+				"motor_root": {
+					"rotation": {
+						"0.0": {
+							"post": ["query.vertical_speed * -1", 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.motorcycle.setup1": {
+			"loop": true,
+			"bones": {
+				"motor_root": {
+					"rotation": [0, 0, 15]
+				},
+				"stick": {
+					"rotation": [-90, 0, -67.5]
+				}
+			}
+		},
+		"animation.motorcycle.setup2": {
+			"loop": true,
+			"bones": {
+				"motor_root": {
+					"rotation": [0, 0, 0]
+				},
+				"stick": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

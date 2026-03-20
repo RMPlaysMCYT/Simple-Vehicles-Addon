@@ -1,0 +1,1 @@
+playsound vehicles.helicopter @a[r=12]

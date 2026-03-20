@@ -1,0 +1,70 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:taxi",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"black": "textures/entity/taxi/taxi_black",
+				"white": "textures/entity/taxi/taxi_white",
+				"orange": "textures/entity/taxi/taxi_orange",
+				"magenta": "textures/entity/taxi/taxi_magenta",
+				"light_blue": "textures/entity/taxi/taxi_light_blue",
+				"yellow": "textures/entity/taxi",
+				"lime": "textures/entity/taxi/taxi_lime",
+				"pink": "textures/entity/taxi/taxi_pink",
+				"gray": "textures/entity/taxi/taxi_gray",
+				"silver": "textures/entity/taxi/taxi_silver",
+				"cyan": "textures/entity/taxi/taxi_cyan",
+				"purple": "textures/entity/taxi/taxi_purple",
+				"blue": "textures/entity/taxi/taxi_blue",
+				"brown": "textures/entity/taxi/taxi_brown",
+				"green": "textures/entity/taxi/taxi_green",
+				"red": "textures/entity/taxi/taxi_red"
+			},
+			"geometry": {
+				"default": "geometry.taxi"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.taxi.move2",
+				"turn": "animation.taxi.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"close": "animation.taxi.close",
+				"close2": "animation.simple_vehicles.ae86.close2",
+				"open": "animation.taxi.open",
+				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mech",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 14
+			},
+			"sound_effects": {
+				"taxi_door_open": "simple_vehicles.corolla.open",
+				"taxi_door_close": "simple_vehicles.corolla.close"
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			}
+		}
+	}
+}

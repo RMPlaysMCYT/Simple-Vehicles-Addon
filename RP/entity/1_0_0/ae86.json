@@ -1,0 +1,86 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "simple_vehicles:ae86",
+      "materials": {
+        "default": "witch"/*,
+        "ae86_lights": "entity_alphablend"*/
+      },
+      "textures": {
+        "default": "textures/entity/ae86"
+        // ,
+        // "doraemon": "textures/entity/ae86/ae86_Doraemon",
+        // "white_livery": "textures/entity/ae86/donut_white_livery",
+        // "mushroom_mario": "textures/entity/ae86/mushroom_from_mario"
+        /*,
+        "no_lights": "textures/entity/vehi_lights/_no_lights",
+        "ae86_lights": "textures/entity/vehi_lights/ae86_lights"*/
+      },
+      "geometry": {
+        "default": "geometry.ae86"/*,
+        "ae86_lights": "geometry.ae86_lights"*/
+      },
+      "render_controllers": [
+        "controller.render.default"
+        // "controller.render.ae86"/*,
+        // "controller.render.ae86_lights"*/
+      ],
+      "scripts": {
+        "pre_animation": [
+          "variable.moving_veh = query.modified_distance_moved;",
+          "variable.new_move_mechanic = variable.moving_veh * 25;",
+          "variable.new_move_mechreve = variable.moving_veh * -25;"
+        ],
+        "animate": [
+          "general",
+          "v_turn",
+          "door_mech",
+          "speedometer_ctrl",
+          "move_mechanic",
+          {
+            "wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"
+          }
+        ]
+      },
+      "animations": {
+        ////Move
+        "move_mechanic": "controller.animation.ae86.move_mechanic",
+        "move": "animation.simple_vehicles.ae86.move",
+        "movereverse": "animation.simple_vehicles.ae86.movereverse",
+        "idle": "animation.simple_vehicles.ae86.idle",
+        ///Turn
+        "turn": "animation.simple_vehicles.ae86.turn",
+        "v_turn": "controller.animation.vehicle.v_turn",
+        ///Wiper
+        "wiper": "animation.simple_vehicles.ae86.wiper",
+        /////Door Mechanic
+        "door_mech": "controller.animation.ae86.door_mechanica_v2",
+        "doors_idle": "animation.simple_vehicles.ae86.doors_idle",
+        "open": "animation.simple_vehicles.ae86.open",
+        "close": "animation.simple_vehicles.ae86.close",
+        "close2": "animation.simple_vehicles.ae86.close2",
+        /////Speedometer B1tch
+        "speedometer": "animation.ae86.speedometer",
+        "speedometer_rev": "animation.ae86.speedometer_rev",
+        "speedometer_ctrl": "controller.animation.simple_vehicles.speedometer",
+        ////Climb
+        "up": "animation.chrysler_windsor.up",
+        "down": "animation.chrysler_windsor.down",
+        "general": "controller.animation.chrysler_windsor.general"
+      },
+      "sound_effects": {
+        "ae86.wiper": "simple_vehicles.ae86.wiper",
+        "ae86.door_open": "simple_vehicles.ae86.open",
+        "ae86.door_close": "simple_vehicles.ae86.close"
+      },
+      "spawn_egg": {
+        "texture": "vehicles",
+        "texture_index": 25
+      },
+      "particle_effects": {
+        "arrow_particle": "simple_vehicles:arrow_spell_emitter"
+      }
+    }
+  }
+}

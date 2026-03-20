@@ -1,0 +1,38 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_hyundai_starex_with_casket"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BG",
+			"CSW",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"G": {
+				"item": "minecraft:glass_pane"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_hyundai_starex"
+			},
+			"W": {
+				"item": "simple_vehicles:steer_hyundai_starex"
+			},
+			"C": {
+				"item": "minecraft:chest"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_hyundai_starex_with_casket"
+			}
+		]
+	}
+}

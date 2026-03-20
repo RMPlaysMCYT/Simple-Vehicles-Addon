@@ -1,0 +1,51 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ambu_lights",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 13,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "ambu_lights",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-42.5, 21, -90],
+							"size": [85, 0, 33],
+							"pivot": [0, 23, -58.5],
+							"rotation": [-35, 0, 0],
+							"uv": {
+								"north": {"uv": [33, 85], "uv_size": [85, 0]},
+								"east": {"uv": [0, 85], "uv_size": [33, 0]},
+								"south": {"uv": [151, 85], "uv_size": [85, 0]},
+								"west": {"uv": [118, 85], "uv_size": [33, 0]},
+								"up": {"uv": [118, 52], "uv_size": [85, 33]},
+								"down": {"uv": [118, 85], "uv_size": [85, -33]}
+							}
+						},
+						{
+							"origin": [-42.5, 18, -112],
+							"size": [85, 0, 52],
+							"pivot": [0, 23, -58.5],
+							"rotation": [20, 0, 0],
+							"uv": {
+								"north": {"uv": [52, 52], "uv_size": [85, 0]},
+								"east": {"uv": [0, 52], "uv_size": [52, 0]},
+								"south": {"uv": [189, 52], "uv_size": [85, 0]},
+								"west": {"uv": [137, 52], "uv_size": [52, 0]},
+								"up": {"uv": [52, 0], "uv_size": [85, 52]},
+								"down": {"uv": [137, 52], "uv_size": [85, -52]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

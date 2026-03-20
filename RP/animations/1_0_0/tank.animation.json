@@ -1,0 +1,120 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tank.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"track0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"track1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"track2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"track3": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2333": [
+							1,
+							0,
+							0
+						],
+						"0.4833": [
+							0,
+							0,
+							0
+						],
+						"0.7667": [
+							1,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.tank.look_at_target": {
+			"loop": true,
+			"bones": {
+				"turret": {
+					"rotation": [
+						"0",
+						"query.target_y_rotation",
+						"-this"
+					]
+				}
+			}
+		},
+		"animation.common.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [
+						"query.target_x_rotation",
+						"query.target_y_rotation",
+						"-this"
+					]
+				}
+			}
+		}
+	}
+}

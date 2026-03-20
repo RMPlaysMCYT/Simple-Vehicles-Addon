@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.truck_1_6_0": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.grey",
+						"Texture.red",
+						"Texture.green",
+						"Texture.blue",
+						"Texture.black",
+						"Texture.white"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			]
+		}
+	}
+}

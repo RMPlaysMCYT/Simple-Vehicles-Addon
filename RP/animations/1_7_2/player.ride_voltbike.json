@@ -1,0 +1,73 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.volt_bike.ride": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [
+						45,
+						0,
+						0
+					]
+				},
+				"head": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						-80,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-80,
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						25,
+						-15,
+						0
+					]
+				},
+				"leftPants": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						25,
+						15,
+						0
+					]
+				},
+				"rightPants": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"root": {
+					"position": [
+						0,
+						2,
+						4
+					]
+				}
+			}
+		}
+	}
+}

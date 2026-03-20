@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.car.move": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"move": "1"
+						}
+					]
+				},
+				"move": {
+					"transitions": [
+						{
+							"default": "query.modified_move_speed"
+						}
+					]
+				}
+			}
+		}
+	}
+}

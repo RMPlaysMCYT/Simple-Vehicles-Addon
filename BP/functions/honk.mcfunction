@@ -1,0 +1,1 @@
+playsound vehicles.honk @a[r=3] ~ ~ ~ 1 1 1

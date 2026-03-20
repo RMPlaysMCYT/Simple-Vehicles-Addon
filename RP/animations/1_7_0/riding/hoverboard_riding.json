@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.hoverboard.ride": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [0, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [32.5, 0, 0]
+				},
+				"leftSleeve": {
+					"rotation": [0, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [32.5, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [65, 10, 0]
+				},
+				"rightLeg": {
+					"rotation": [65, -10, 0]
+				},
+				"root": {
+					"position": [0, -1, 2]
+				},
+				"rightSleeve": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

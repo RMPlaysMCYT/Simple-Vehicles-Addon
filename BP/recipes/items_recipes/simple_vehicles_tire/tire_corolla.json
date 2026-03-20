@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_corolla"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WcW",
+			"cIc",
+			"WcW"
+		],
+		"key": {
+			"c": {
+				"item": "minecraft:concrete",
+				"data": 7
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 8
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_corolla",
+				"count": 4
+			}
+		]
+	}
+}

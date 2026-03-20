@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:submarine",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/submarine"
+			},
+			"geometry": {
+				"default": "geometry.submarine"
+			},
+			"render_controllers": [
+				"controller.render.submarine"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 5
+			},
+			"animations": {
+				"move": "animation.submarine.move",
+				"setup": "animation.submarine.setup",
+				"turn": "animation.submarine.turn",
+				"v_turn": "controller.animation.vehicle.v_turn"
+			},
+			"scripts": {
+				"animate": [
+					"v_turn",
+					{
+						"move": "query.modified_move_speed"
+					},
+					"setup"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_honda_accord_2019"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"qpq",
+			"pIp",
+			"qpq"
+		],
+		"key": {
+			"q": {
+				"item": "minecraft:wool",
+				"data": 7
+			},
+			"p": {
+				"item": "minecraft:iron_ingot"
+			},
+			"I": {"item": "minecraft:redstone"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_honda_accord_2019"
+			}
+		]
+	}
+}

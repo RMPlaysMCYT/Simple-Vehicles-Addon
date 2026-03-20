@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_car300023"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"aca",
+			"cIc",
+			"2c2"
+		],
+		"key": {
+			"c": {
+				"item": "minecraft:concrete",
+				"data": 13
+			},
+			"I": {
+				"item": "minecraft:stone_button"
+			},
+			"2": {"item": "minecraft:iron_ingot"},
+			"a": {"item": "minecraft:gray_carpet"}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_car"
+			}
+		]
+	}
+}

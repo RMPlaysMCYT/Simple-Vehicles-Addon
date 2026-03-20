@@ -1,0 +1,29 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:biplane_body_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part",
+                "count": 3
+            },
+            {
+                "item": "minecraft:wool",
+                "count": 1,
+                "data": 9
+            },
+            {
+                "item": "minecraft:birch_slab",
+                "count": 4
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:biplane_body"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

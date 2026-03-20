@@ -1,0 +1,29 @@
+//Credits to Spiicy_Miata
+//https://mcpedl.com/user/spiicy/
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.snow_mobile.general": {
+			"states": {
+				"default": {
+					"variables": {
+						"move_up": {
+							"input": "query.ground_speed < 2.3"
+						},
+						"move_down": {
+							"input": "query.ground_speed >= 2.3"
+						}
+					},
+					"animations": [
+						{
+							"ups": "variable.move_up"
+						},
+						{
+							"downs": "variable.move_down"
+						}
+					]
+				}
+			}
+		}
+	}
+}

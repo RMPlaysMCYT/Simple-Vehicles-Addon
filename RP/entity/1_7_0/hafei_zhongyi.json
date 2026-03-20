@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:hafei_zhongyi",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"white": "textures/entity/hafei_zhongyi",
+				"red": "textures/entity/hafei_zhongyi/hafei_zhongyi_red",
+				"blue": "textures/entity/hafei_zhongyi/hafei_zhongyi_blue"
+			},
+			"geometry": {
+				"default": "geometry.hafei_zhongyi"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 46
+			},
+			"animations": {
+				"move": "animation.car_v2.move",
+				"turn": "animation.hafei_zhongyi.turn",
+				"general": "controller.animation.vehicle.v_turn",
+				"doors_idle": "animation.simple_vehicles.hafei_zhongyi.doors_idle",
+				"close": "animation.simple_vehicles.hafei_zhongyi.close",
+				"close2": "animation.simple_vehicles.hafei_zhongyi.close2",
+				"open": "animation.simple_vehicles.hafei_zhongyi.open",
+				"door_mech": "controller.animation.ae86.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general2",
+					{
+						"move": "query.modified_move_speed"
+					},
+					"general",
+					"door_mech"
+				]
+			},
+			"render_controllers": [
+				"controller.render.hafei_zhongyi"
+			],
+      		"sound_effects": {
+        		"hafei_zhongyi_door_open": "simple_vehicles.van.open",
+        		"hafei_zhongyi_door_close": "simple_vehicles.van.close"
+      		}
+		}
+	}
+}

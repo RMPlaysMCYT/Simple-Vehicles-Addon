@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:body_cadillac_dts_2010",
+      "render_controllers": ["controller.render.body_3d_item"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/cadillac_dts_2010"
+      },
+      "geometry": {
+        "default": "geometry.cadillac_dts_2010"
+      },
+      "animations": {
+        "first_person_hold": "animation.cadillac_dts_2010.first_peron_hold",
+        "third_person_hold": "animation.cadillac_dts_2010.third_person_front"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

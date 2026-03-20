@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:snowmobile",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"default": "textures/entity/snowmobile"
+			},
+			"geometry": {
+				"default": "geometry.snow_mobile"
+			},
+			"render_controllers": [
+				"controller.render.ambulance"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 28
+			},
+			"animations": {
+				"move": "animation.snow_mobile.move",
+				"turn": "animation.snow_mobile.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"ups": "animation.snow_mobile.ups",
+				"downs": "animation.snow_mobile.downs",
+				"general": "controller.animation.snow_mobile.general",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general2": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"v_turn",
+					"general",
+					"general2",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			}
+		}
+	}
+}

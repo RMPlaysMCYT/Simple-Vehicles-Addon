@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:jetski_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B",
+			"A A"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:quad_bike_body"
+			},
+			"A": {
+				"item": "minecraft:boat"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:jetski_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

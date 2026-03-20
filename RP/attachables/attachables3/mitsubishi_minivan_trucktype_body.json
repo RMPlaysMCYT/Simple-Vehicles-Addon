@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:mitsubishi_minivan_trucktype_body",
+      "render_controllers": ["controller.render.body_3d_item"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/mitsubishi_minivan_trucktype"
+      },
+      "geometry": {
+        "default": "geometry.mitsubishi_minivan_trucktype"
+      },
+      "animations": {
+        "first_person_hold": "animation.minivan_body.first_person_hold2",
+        "third_person_hold": "animation.minivan_body.third_person_hold2"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

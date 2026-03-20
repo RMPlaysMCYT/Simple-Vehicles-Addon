@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:gas_nozzle_air",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "gas_nozzle",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

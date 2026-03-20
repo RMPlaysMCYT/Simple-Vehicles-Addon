@@ -1,0 +1,43 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.scooter.general1": {
+			"initial_state": "setup",
+			"states": {
+				"setup": {
+					"animations": ["setup"],
+					"transitions": [
+						{"setup2": "query.has_player_rider"}
+					],
+					"blend_transition": 0.5
+				},
+				"setup2": {
+					"animations": ["setup2"],
+					"transitions": [
+						{"setup": "!query.has_player_rider"}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.scooter.general2": {
+			"initial_state": "ups",
+			"states": {
+				"ups": {
+					"animations": ["ups"],
+					"transitions": [
+						{"downs": "q.ground_speed > 1.0"}
+					],
+					"blend_transition": 0.2
+				},
+				"downs": {
+					"animations": ["downs"],
+					"transitions": [
+						{"ups": "q.ground_speed < 0.5"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

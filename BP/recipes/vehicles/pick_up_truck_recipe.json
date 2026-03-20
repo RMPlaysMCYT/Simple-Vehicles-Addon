@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:pick_up_truck_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B ",
+			"M M"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_pick_up_truck"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_pick_up_truck"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:pick_up_truck_spawn_egg"
+			}
+		]
+	}
+}

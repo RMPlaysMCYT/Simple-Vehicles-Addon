@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:odaszlc"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"i",
+			"i",
+			"GG"
+		],
+		"key": {
+			"i": {
+				"item": "minecraft:iron_ingot",
+				"data": 12
+			},
+			"G": {
+				"item": "minecraft:planks",
+				"data": 3
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_tesla_truck"
+			}
+		]
+	}
+}

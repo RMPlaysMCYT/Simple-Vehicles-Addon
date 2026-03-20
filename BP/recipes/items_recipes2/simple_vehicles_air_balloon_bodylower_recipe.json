@@ -1,0 +1,23 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:air_balloon_bodylower_recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:medium_body_part"
+            },
+            {
+                "item": "minecraft:planks",
+                "data": 2
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:air_balloon_bodylower"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

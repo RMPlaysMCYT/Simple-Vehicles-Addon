@@ -1,0 +1,1577 @@
+{
+	"resource_pack_name": "simple_vehicles_pk1",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"vehicles": {
+			"textures": [
+				"textures/items/ambulance",
+				"textures/items/auv_car",
+				"textures/items/bus",
+				"textures/items/bus_v2",
+				"textures/items/car",
+				"textures/items/offroad_car",
+				"textures/items/fire_truck",
+				"textures/items/helicopter",
+				"textures/items/limo",
+				"textures/items/mini_bus",
+				"textures/items/motor",
+				"textures/items/mustang",
+				"textures/items/police_car",
+				"textures/items/speedboat",
+				"textures/items/taxi",
+				"textures/items/truck",
+				"textures/items/travis",
+				"textures/items/corolla",
+				"textures/items/c_sled",
+				"textures/items/tesla_truck",
+				"textures/items/hoverboard",
+				"textures/items/jeep_ph",
+				"textures/items/tractor",
+				"textures/items/plane",
+				"textures/items/lowrider",
+				"textures/items/ae86",
+				"textures/items/pajero",
+				"textures/items/pick_up_truck",
+				"textures/items/tank",
+				"textures/items/van",
+				"textures/items/volt_bike",
+				"textures/items/ev_4",
+				"textures/items/bike",
+				"textures/items/modern_jeep_ph",
+				"textures/items/ob_van",
+				"textures/items/opel_crosa",
+				"textures/items/opel_astral",
+				"textures/items/vm_beetle",
+				"textures/items/cadillac_dts_2010",
+				"textures/items/honda_accord_2019",
+				"textures/items/ice_cream_truck",
+				"textures/items/hyundai_starex",
+				"textures/items/hyundai_starex_casket",
+				"textures/items/speedboat_b",
+				"textures/items/container_van",
+				"textures/items/century_luxury",
+				"textures/items/hafei_zhongyi",
+				"textures/items/van_v2",
+				"textures/items/scooter",
+				"textures/items/double_deck_bus"
+			]
+		},
+		"vehicles_2": {
+			"textures": [
+				"textures/items/grummanllv",
+				"textures/items/jetmax",
+				"textures/items/motorcycle",
+				"textures/items/rancher",
+				"textures/items/tricycle",
+				"textures/items/submarine",
+				"textures/items/land_cruiser",
+				"textures/items/sabre",
+				"textures/items/armored_truck",
+				"textures/items/school_bus",
+				"textures/items/pamobile/vespa_primavera",
+				"textures/items/pamobile/simple_vehicles_minicar",
+				"textures/items/pamobile/isuzu_dmax",
+				"textures/items/20220328_160308",
+				"textures/items/ford_rancherogt_sass_red",
+				"textures/items/simple_vehicles_rally_car",
+				"textures/items/mitsubishi_aero_midi_jp0",
+				"textures/items/montero",
+				"textures/items/20220630_150712",
+				"textures/items/20220614_154103",
+				"textures/items/20220725_142109",
+				"textures/items/20220725_141909",
+				"textures/items/20220726_164007",
+				"textures/items/20220801_145508",
+				"textures/items/20220801_145528",
+				"textures/items/20220801_145544",
+				"textures/items/20220901_154737",
+				"textures/items/20220901_154811",
+				"textures/items/20220901_154832",
+				"textures/items/20220901_154851",
+				"textures/items/20220901_155008",
+				"textures/items/20221029_080155",
+				"textures/items/simple_vehicles_multicab",
+				"textures/items/simple_vehicles_pedicab",
+				"textures/items/pick_up_flash_exp",
+				"textures/items/tammarawfx",
+				"textures/items/2_4_0/truck_cargo",
+				"textures/items/2_4_0/cargo_cont_truck",
+				"textures/items/2_4_0/quad_bike",
+				"textures/items/2_4_0/golf_cart",
+				"textures/items/2_4_0/golf_cart_street_legal",
+				"textures/items/cargo_truck2",
+				"textures/items/scooterB",
+				"textures/items/jetski",
+				"textures/items/tricycle_cont",
+				"textures/items/tricycle_cargo",
+				"textures/items/shenhaoq5",
+				"textures/items/tuktukthai",
+				"textures/items/bajajRE",
+				"textures/items/isuzuerga2017"
+			]
+		},
+		"vehicles_3": {
+			"textures": [
+				"textures/items/rally20",
+				"textures/items/f1_car",
+				"textures/items/monster_truck",
+				"textures/items/lightermax",
+				"textures/items/dragster",
+				"textures/items/lawn_mower",
+				"textures/items/farm_truck",
+				"textures/items/small_tractor",
+				"textures/items/seeder",
+				"textures/items/tractor_sprinkler",
+				"textures/items/tractor_plow",
+				"textures/items/hot_air_balloon",
+				"textures/items/simveh_blimp",
+				"textures/items/glider_plane",
+				"textures/items/sim_veh_monopl",
+				"textures/items/simveh_biplane",
+				"textures/vehiovrls4/simple_vehicles_gyroplane",
+				"textures/vehiovrls4/simple_vehicles_privatepl",
+				"textures/vehiovrls4/simple_vehicles_seaplane",
+				"textures/vehiovrls4/simple_vehicles_tiltrotor",
+				"textures/items/vintage_van_a",
+				"textures/items/vintage_van_b",
+				"textures/items/vintage_bus_a",
+				"textures/items/chrysler_windsor",
+				"textures/items/mitsubishi_minivan",
+				"textures/items/mitsubishi_minivan_trucktype",
+				"textures/items/auv_car"
+			]
+		},
+		"gas_pump_spawn_egg": {
+			"textures": [
+				"textures/items/simple_vehicles.gas_pump",
+				"textures/items/simple_vehicles.gas_pump_air"
+			]
+		},
+		"jump1_item": {
+			"textures": "textures/items/jump1_item"
+		},
+		"simple_vehicles_train_cart_add": {
+			"textures": "textures/items/20220725_142043"
+		},
+		"simple_vehicles_orange_spray": {
+			"textures": "textures/items/spray_orange"
+		},
+		"simple_vehicles_black_spray": {
+			"textures": "textures/items/spray_black"
+		},
+		"simple_vehicles_white_spray": {
+			"textures": "textures/items/spray_white"
+		},
+		"simple_vehicles_cyan_spray": {
+			"textures": "textures/items/spray_cyan"
+		},
+		"simple_vehicles_brown_spray": {
+			"textures": "textures/items/spray_brown"
+		},
+		"simple_vehicles_blue_spray": {
+			"textures": "textures/items/spray_blue"
+		},
+		"simple_vehicles_gray_spray": {
+			"textures": "textures/items/spray_gray"
+		},
+		"simple_vehicles_green_spray": {
+			"textures": "textures/items/spray_green"
+		},
+		"simple_vehicles_light_blue_spray": {
+			"textures": "textures/items/spray_light_blue"
+		},
+		"simple_vehicles_lime_spray": {
+			"textures": "textures/items/spray_lime"
+		},
+		"simple_vehicles_magenta_spray": {
+			"textures": "textures/items/spray_magenta"
+		},
+		"simple_vehicles_pink_spray": {
+			"textures": "textures/items/spray_pink"
+		},
+		"simple_vehicles_purple_spray": {
+			"textures": "textures/items/spray_purple"
+		},
+		"simple_vehicles_red_spray": {
+			"textures": "textures/items/spray_red"
+		},
+		"simple_vehicles_silver_spray": {
+			"textures": "textures/items/spray_silver"
+		},
+		"simple_vehicles_yellow_spray": {
+			"textures": "textures/items/spray_yellow"
+		},
+		"body_grummanllv": {
+			"textures": "textures/parts_items/7/grmmbod"
+		},
+		"body_jetmax": {
+			"textures": "textures/parts_items/7/jetmbod"
+		},
+		"body_land_cruiser": {
+			"textures": "textures/parts_items/10/lcbod"
+		},
+		"body_motorcycle": {
+			"textures": "textures/parts_items/7/motorcbod"
+		},
+		"body_rancher": {
+			"textures": "textures/parts_items/7/rachbod"
+		},
+		"body_sabre": {
+			"textures": "textures/parts_items/7/sabrbod"
+		},
+		"body_submarine": {
+			"textures": "textures/parts_items/7/submbod"
+		},
+		"body_tricycle": {
+			"textures": "textures/parts_items/7/tricbod"
+		},
+		"body_armored_truck": {
+			"textures": "textures/parts_items/7/armorbod"
+		},
+		"body_school_bus": {
+			"textures": "textures/parts_items/7/scbody"
+		},
+		"steer_grummanllv": {
+			"textures": "textures/parts_items/7/grmsteer"
+		},
+		"steer_jetmax": {
+			"textures": "textures/parts_items/7/jetmsteer"
+		},
+		"steer_land_cruiser": {
+			"textures": "textures/parts_items/7/lcster"
+		},
+		"steer_motorcycle": {
+			"textures": "textures/parts_items/7/mtrsteer"
+		},
+		"steer_rancher": {
+			"textures": "textures/parts_items/7/rancster"
+		},
+		"steer_sabre": {
+			"textures": "textures/parts_items/7/sabrsteer"
+		},
+		"steer_submarine": {
+			"textures": "textures/parts_items/7/submti"
+		},
+		"steer_armored_truck": {
+			"textures": "textures/parts_items/7/armsteer"
+		},
+		"steer_school_bus": {
+			"textures": "textures/parts_items/7/scsteer"
+		},
+		"seat_grummanllv": {
+			"textures": "textures/parts_items/7/gruseat"
+		},
+		"seat_jetmax": {
+			"textures": "textures/parts_items/7/jetmseat"
+		},
+		"seat_land_cruiser": {
+			"textures": "textures/parts_items/7/landcseat"
+		},
+		"seat_motorcycle": {
+			"textures": "textures/parts_items/7/motrcseat"
+		},
+		"seat_rancher": {
+			"textures": "textures/parts_items/7/rachseat"
+		},
+		"seat_sabre": {
+			"textures": "textures/parts_items/7/sabrseat"
+		},
+		"seat_submarine": {
+			"textures": "textures/parts_items/7/submseat"
+		},
+		"seat_tricycle": {
+			"textures": "textures/parts_items/7/tricseat"
+		},
+		"seat_armored_truck": {
+			"textures": "textures/parts_items/7/armorseat"
+		},
+		"seat_school_bus": {
+			"textures": "textures/parts_items/7/scseat"
+		},
+		"tire_grummanllv": {
+			"textures": "textures/parts_items/7/grumtire"
+		},
+		"tire_land_cruiser": {
+			"textures": "textures/parts_items/7/landctire"
+		},
+		"tire_motorcycle": {
+			"textures": "textures/parts_items/7/mtrtire"
+		},
+		"tire_rancher": {
+			"textures": "textures/parts_items/7/ranctire"
+		},
+		"tire_sabre": {
+			"textures": "textures/parts_items/7/sabrtire"
+		},
+		"tire_tricycle": {
+			"textures": "textures/parts_items/7/trictire"
+		},
+		"tire_armored_truck": {
+			"textures": "textures/parts_items/7/armtire"
+		},
+		"tire_school_bus": {
+			"textures": "textures/parts_items/7/sctire"
+		},
+		"propeller_submarine": {
+			"textures": "textures/parts_items/7/submprop"
+		},
+		"simple_vehi_breakable_item": {
+			"textures": [
+				"textures/tools_items/brkite"
+			]
+		},
+		"simple_vehicles_honk_item": {
+			"textures": [
+				"textures/honk_item"
+			]
+		},
+		"simple_vehicles_asphalt_paving_placer": {
+			"textures": "textures/tools_items/aspplacer"
+		},
+		"simple_vehicles_bridge_building_placer": {
+			"textures": "textures/tools_items/bbplacer"
+		},
+		"simple_vehicles_mixer_placer": {
+			"textures": "textures/tools_items/mxrplacer"
+		},
+		"simple_vehicles_key": {
+			"textures": "textures/items/20220803_133729"
+		},
+		"simple_vehicles_key_ae86": {
+			"textures": "textures/items/key_ae86"
+		},
+		"simple_vehicles_key_ambulance": {
+			"textures": "textures/items/key_ambulance"
+		},
+		"simple_vehicles_key_auv_car": {
+			"textures": "textures/items/key_auv_car"
+		},
+		"simple_vehicles_key_bus_v2": {
+			"textures": "textures/items/key_bus_v2"
+		},
+		"simple_vehicles_key_car4x4": {
+			"textures": "textures/items/key_car4x4"
+		},
+		"simple_vehicles_key_corolla": {
+			"textures": "textures/items/key_corolla"
+		},
+		"simple_vehicles_key_ev_4": {
+			"textures": "textures/items/key_ev_4"
+		},
+		"simple_vehicles_key_fire_truck": {
+			"textures": "textures/items/key_fire_truck"
+		},
+		"simple_vehicles_key_helicopter": {
+			"textures": "textures/items/key_helicopter"
+		},
+		"simple_vehicles_key_jeep_mode": {
+			"textures": "textures/items/key_jeepm"
+		},
+		"simple_vehicles_key_limmo": {
+			"textures": "textures/items/key_limmo"
+		},
+		"simple_vehicles_key_low1": {
+			"textures": "textures/items/key_limmo"
+		},
+		"simple_vehicles_key_mini_bus": {
+			"textures": "textures/items/key_minibus"
+		},
+		"simple_vehicles_key_mustang": {
+			"textures": "textures/items/key_mustang"
+		},
+		"simple_vehicles_key_ob_van": {
+			"textures": "textures/items/key_ob_van"
+		},
+		"simple_vehicles_key_pajero": {
+			"textures": "textures/items/key_pajero"
+		},
+		"simple_vehicles_key_pickup_truck": {
+			"textures": "textures/items/key_pitruck"
+		},
+		"simple_vehicles_key_plane": {
+			"textures": "textures/items/key_plane"
+		},
+		"simple_vehicles_key_police_car": {
+			"textures": "textures/items/key_police_car"
+		},
+		"simple_vehicles_key_snowmobile": {
+			"textures": "textures/items/key_snowmobile"
+		},
+		"simple_vehicles_key_speedboat1": {
+			"textures": "textures/items/key_speedboat1"
+		},
+		"simple_vehicles_key_taxi": {
+			"textures": "textures/items/key_taxi"
+		},
+		"simple_vehicles_key_tesla": {
+			"textures": "textures/items/key_tesla"
+		},
+		"simple_vehicles_key_tractor": {
+			"textures": "textures/items/key_tractor"
+		},
+		"simple_vehicles_key_travis": {
+			"textures": "textures/items/key_travis"
+		},
+		"simple_vehicles_key_car": {
+			"textures": "textures/items/20220803_133803"
+		},
+		"simple_vehicles_key_bus": {
+			"textures": "textures/items/20220803_134404"
+		},
+		"simple_vehicles_key_jeep": {
+			"textures": "textures/items/key_jeep"
+		},
+		"simple_vehicles_key_motor": {
+			"textures": "textures/items/key_motor"
+		},
+		"simple_vehicles_key_truck": {
+			"textures": "textures/items/key_truck"
+		},
+		"simple_vehicles_key_van": {
+			"textures": "textures/items/key_van"
+		},
+		"simple_vehicles_key_cadldt": {
+			"textures": "textures/items/key_cadldt"
+		},
+		"simple_vehicles_key_century_luxury": {
+			"textures": "textures/items/key_centlx"
+		},
+		"simple_vehicles_key_container_van": {
+			"textures": "textures/items/key_contv"
+		},
+		"simple_vehicles_key_double_deck_bus": {
+			"textures": "textures/items/key_doubd"
+		},
+		"simple_vehicles_key_hafei_zhongyi": {
+			"textures": "textures/items/key_hafzh"
+		},
+		"simple_vehicles_key_honda_accord_2019": {
+			"textures": "textures/items/key_hnacrd"
+		},
+		"simple_vehicles_key_hyundai_starex": {
+			"textures": "textures/items/key_hystr"
+		},
+		"simple_vehicles_key_ice_cream_truck": {
+			"textures": "textures/items/key_ictru"
+		},
+		"simple_vehicles_key_opel_astra": {
+			"textures": "textures/items/key_opast"
+		},
+		"simple_vehicles_key_opel_crosa": {
+			"textures": "textures/items/key_opcrs"
+		},
+		"simple_vehicles_key_scooterA": {
+			"textures": "textures/items/key_scotr"
+		},
+		"simple_vehicles_key_speedboat2": {
+			"textures": "textures/items/key_spdbt2"
+		},
+		"simple_vehicles_key_van_v2": {
+			"textures": "textures/items/key_vanv2"
+		},
+		"simple_vehicles_key_volkswagen_beetle": {
+			"textures": "textures/items/key_vlbtl"
+		},
+		"simple_vehicles_key_volt_bike": {
+			"textures": "textures/items/key_vltbk"
+		},
+		"simple_vehicles_key_armortruck": {
+			"textures": "textures/items/key_armtr"
+		},
+		"simple_vehicles_key_ford_rancherogt_sass": {
+			"textures": "textures/items/key_frgts"
+		},
+		"simple_vehicles_key_grumman_llv": {
+			"textures": "textures/items/key_grmllv"
+		},
+		"simple_vehicles_key_isuzu_dmax": {
+			"textures": "textures/items/key_isdmx"
+		},
+		"simple_vehicles_key_jetmax": {
+			"textures": "textures/items/key_jetmx"
+		},
+		"simple_vehicles_key_land_cruiser": {
+			"textures": "textures/items/key_lancr"
+		},
+		"simple_vehicles_key_jeep_wrangler": {
+			"textures": "textures/items/key_jpwgl"
+		},
+		"simple_vehicles_key_lowrider_v2": {
+			"textures": "textures/items/key_lowri2"
+		},
+		"simple_vehicles_key_mit_aerojp": {
+			"textures": "textures/items/key_mabus"
+		},
+		"simple_vehicles_key_minicar": {
+			"textures": "textures/items/key_mincr"
+		},
+		"simple_vehicles_key_mitsubishi_montero": {
+			"textures": "textures/items/key_mmont"
+		},
+		"simple_vehicles_key_motorcycle": {
+			"textures": "textures/items/key_mtcyc"
+		},
+		"simple_vehicles_key_rally_car": {
+			"textures": "textures/items/key_ralcr"
+		},
+		"simple_vehicles_key_rancher": {
+			"textures": "textures/items/key_rnchr"
+		},
+		"simple_vehicles_key_sabre": {
+			"textures": "textures/items/key_sabre"
+		},
+		"simple_vehicles_key_submarine": {
+			"textures": "textures/items/key_sbmrn"
+		},
+		"simple_vehicles_key_school_bus": {
+			"textures": "textures/items/key_scbus"
+		},
+		"simple_vehicles_key_tentmushi": {
+			"textures": "textures/items/key_tntms"
+		},
+		"simple_vehicles_key_tricycle": {
+			"textures": "textures/items/key_trcyc"
+		},
+		"simple_vehicles_key_vespa_primavera": {
+			"textures": "textures/items/key_vspmv"
+		},
+		"simple_vehicles_key_asphalt_paving_truck": {
+			"textures": "textures/items/key_asppt"
+		},
+		"simple_vehicles_key_bajaj_re": {
+			"textures": "textures/items/key_bajre"
+		},
+		"simple_vehicles_key_bulldozer": {
+			"textures": "textures/items/key_bldzr"
+		},
+		"simple_vehicles_key_bridge_building_machine": {
+			"textures": "textures/items/key_brblm"
+		},
+		"simple_vehicles_key_cargo_truck": {
+			"textures": "textures/items/key_crgt1"
+		},
+		"simple_vehicles_key_cargo_truck2": {
+			"textures": "textures/items/key_crgt2"
+		},
+		"simple_vehicles_key_dump_truck": {
+			"textures": "textures/items/key_dmptr"
+		},
+		"simple_vehicles_key_golf_cart": {
+			"textures": "textures/items/key_glfct1"
+		},
+		"simple_vehicles_key_golf_cart_street_legal": {
+			"textures": "textures/items/key_glfct2"
+		},
+		"simple_vehicles_key_go_kart": {
+			"textures": "textures/items/key_go_kart"
+		},
+		"simple_vehicles_key_isuzu_erga_2017": {
+			"textures": "textures/items/key_iserb"
+		},
+		"simple_vehicles_key_jetski": {
+			"textures": "textures/items/key_jetski"
+		},
+		"simple_vehicles_key_multicab": {
+			"textures": "textures/items/key_multc"
+		},
+		"simple_vehicles_key_mixer_truck": {
+			"textures": "textures/items/key_mxrtr"
+		},
+		"simple_vehicles_key_pickup_flash_exp": {
+			"textures": "textures/items/key_piflex"
+		},
+		"simple_vehicles_key_quadbike": {
+			"textures": "textures/items/key_qubke"
+		},
+		"simple_vehicles_key_rocket_viking": {
+			"textures": "textures/items/key_rocvi"
+		},
+		"simple_vehicles_key_roller_truck": {
+			"textures": "textures/items/key_roltr"
+		},
+		"simple_vehicles_key_shenhaoq5": {
+			"textures": "textures/items/key_sheq5"
+		},
+		"simple_vehicles_key_tuktukthai": {
+			"textures": "textures/items/key_tktkt"
+		},
+		"simple_vehicles_key_tamarraw_fx": {
+			"textures": "textures/items/key_tmrfx"
+		},
+		"simple_vehicles_key_train_locomotive": {
+			"textures": "textures/items/key_trainloc"
+		},
+		"simple_vehicles_key_tricycle_container": {
+			"textures": "textures/items/key_trcnt"
+		},
+		"simple_vehicles_key_tricycle_cargo": {
+			"textures": "textures/items/key_trcrg"
+		},
+		"simple_vehicles_key_rally_car20": {
+			"textures": "textures/items/key_rally20"
+		},
+		"simple_vehicles_key_f1_car": {
+			"textures": "textures/items/key_f1_car"
+		},
+		"simple_vehicles_key_monster_truck": {
+			"textures": "textures/items/key_monster_truck"
+		},
+		"simple_vehicles_key_lightermax": {
+			"textures": "textures/items/key_lightermax"
+		},
+		"simple_vehicles_key_dragster": {
+			"textures": "textures/items/key_dragster"
+		},
+		"wrench": {
+			"textures": "textures/items/wrench"
+		},
+		"body_ae86": {
+			"textures": "textures/parts_items/8/ae86_body"
+		},
+		"body_ambulance": {
+			"textures": "textures/parts_items/8/ambod"
+		},
+		"body_auv_car": {
+			"textures": "textures/parts_items/8/auv_body"
+		},
+		"body_bike": {
+			"textures": "textures/parts_items/8/bike_body"
+		},
+		"body_bus": {
+			"textures": "textures/parts_items/8/bus_body"
+		},
+		"body_busv2": {
+			"textures": "textures/parts_items/8/bus2_body"
+		},
+		"body_c_sled": {
+			"textures": "textures/parts_items/8/sled_body"
+		},
+		"body_car": {
+			"textures": "textures/parts_items/8/car_body"
+		},
+		"body_car4x4": {
+			"textures": "textures/parts_items/8/car4xbo"
+		},
+		"body_corolla": {
+			"textures": "textures/parts_items/8/crllbod"
+		},
+		"body_ev4": {
+			"textures": "textures/parts_items/8/ev4_body"
+		},
+		"body_fire_truck": {
+			"textures": "textures/parts_items/8/firbod"
+		},
+		"body_helicopter": {
+			"textures": "textures/parts_items/8/helbod"
+		},
+		"body_hoverboard": {
+			"textures": "textures/parts_items/8/hvbod"
+		},
+		"body_jeep_ph": {
+			"textures": "textures/parts_items/8/jepbod"
+		},
+		"body_limmo": {
+			"textures": "textures/parts_items/8/limbod"
+		},
+		"body_lowrider_car": {
+			"textures": "textures/parts_items/8/lwrbod"
+		},
+		"body_mini_bus": {
+			"textures": "textures/parts_items/8/minbod"
+		},
+		"body_modern_jeep_ph": {
+			"textures": "textures/parts_items/8/jpmbod"
+		},
+		"body_motor": {
+			"textures": "textures/parts_items/8/motbod"
+		},
+		"body_mustang": {
+			"textures": "textures/parts_items/8/musbod"
+		},
+		"body_ob_van": {
+			"textures": "textures/parts_items/8/obbod"
+		},
+		"body_pajero": {
+			"textures": "textures/parts_items/8/pajbod"
+		},
+		"body_pick_up_truck": {
+			"textures": "textures/parts_items/8/pikbod"
+		},
+		"body_plane": {
+			"textures": "textures/parts_items/8/plbod"
+		},
+		"body_police_car": {
+			"textures": "textures/parts_items/8/polbod"
+		},
+		"body_speedboat": {
+			"textures": "textures/parts_items/8/spbod"
+		},
+		"body_tank": {
+			"textures": "textures/parts_items/8/body_tank"
+		},
+		"body_tank_bottom": {
+			"textures": "textures/parts_items/8/tnbtm"
+		},
+		"body_taxi": {
+			"textures": "textures/parts_items/8/body_taxi"
+		},
+		"body_tesla_truck": {
+			"textures": "textures/parts_items/2/teslabod"
+		},
+		"body_tractor": {
+			"textures": "textures/parts_items/8/trctbod"
+		},
+		"body_travis": {
+			"textures": "textures/parts_items/8/travisb"
+		},
+		"body_trucks": {
+			"textures": "textures/parts_items/8/trubody"
+		},
+		"body_van": {
+			"textures": "textures/parts_items/8/body_van"
+		},
+		"body_volt_bike": {
+			"textures": "textures/parts_items/8/voltbbod"
+		},
+		"seat_ae86": {
+			"textures": "textures/parts_items/8/seat_ae86"
+		},
+		"seat_ambulance": {
+			"textures": "textures/parts_items/8/ambseat"
+		},
+		"seat_auv_car": {
+			"textures": "textures/parts_items/8/auvseat"
+		},
+		"seat_bike": {
+			"textures": "textures/parts_items/8/seat_bike"
+		},
+		"seat_bus": {
+			"textures": "textures/parts_items/8/seat_bus"
+		},
+		"seat_bus_v2": {
+			"textures": "textures/parts_items/8/busv2se"
+		},
+		"seat_c_sled": {
+			"textures": "textures/parts_items/8/csseat"
+		},
+		"seat_car": {
+			"textures": "textures/parts_items/8/seat_car"
+		},
+		"seat_car_4x4": {
+			"textures": "textures/parts_items/8/car4xseat"
+		},
+		"seat_corolla": {
+			"textures": "textures/parts_items/8/corllseat"
+		},
+		"seat_ev_4": {
+			"textures": "textures/parts_items/8/seat_ev_4"
+		},
+		"seat_fire_truck": {
+			"textures": "textures/parts_items/8/firetseat"
+		},
+		"seat_helicopter": {
+			"textures": "textures/parts_items/8/helseat"
+		},
+		"seat_jeep_ph": {
+			"textures": "textures/parts_items/8/jepseat"
+		},
+		"seat_limmo": {
+			"textures": "textures/parts_items/8/limmseat"
+		},
+		"seat_lowrider_car": {
+			"textures": "textures/parts_items/3/lowrseat"
+		},
+		"seat_mini_bus": {
+			"textures": "textures/parts_items/8/minseat"
+		},
+		"seat_modern_jeep_ph": {
+			"textures": "textures/parts_items/3/mojseat"
+		},
+		"seat_motor": {
+			"textures": "textures/parts_items/8/motrse"
+		},
+		"seat_mustang": {
+			"textures": "textures/parts_items/8/musteer"
+		},
+		"seat_ob_van": {
+			"textures": "textures/parts_items/8/obvseat"
+		},
+		"seat_pajero": {
+			"textures": "textures/parts_items/8/pajseat"
+		},
+		"seat_pick_up_truck": {
+			"textures": "textures/parts_items/3/pikseat"
+		},
+		"seat_plane": {
+			"textures": "textures/parts_items/8/plaseat"
+		},
+		"seat_police_car": {
+			"textures": "textures/parts_items/8/polseat"
+		},
+		"seat_speedboat": {
+			"textures": "textures/parts_items/8/speeseat"
+		},
+		"seat_taxi": {
+			"textures": "textures/parts_items/8/seat_taxi"
+		},
+		"seat_tesla_truck": {
+			"textures": "textures/parts_items/2/teslaseat"
+		},
+		"seat_tractor": {
+			"textures": "textures/parts_items/8/trceat"
+		},
+		"seat_travis": {
+			"textures": "textures/parts_items/8/travseat"
+		},
+		"seat_trucks": {
+			"textures": "textures/parts_items/8/travseat"
+		},
+		"seat_van": {
+			"textures": "textures/parts_items/8/seat_van"
+		},
+		"seat_volt_bike": {
+			"textures": "textures/parts_items/8/volbseat"
+		},
+		"steer_ae86": {
+			"textures": "textures/parts_items/8/aesteer"
+		},
+		"steer_ambulance": {
+			"textures": "textures/parts_items/8/ambster"
+		},
+		"steer_auv_car": {
+			"textures": "textures/parts_items/8/auvsteer"
+		},
+		"steer_bike": {
+			"textures": "textures/parts_items/8/bister"
+		},
+		"steer_bus": {
+			"textures": "textures/parts_items/8/steer_bus"
+		},
+		"steer_bus_v2": {
+			"textures": "textures/parts_items/8/busvsteer"
+		},
+		"steer_car": {
+			"textures": "textures/parts_items/8/steer_car"
+		},
+		"steer_car_4x4": {
+			"textures": "textures/parts_items/8/car4xst"
+		},
+		"steer_corolla": {
+			"textures": "textures/parts_items/8/crrlster"
+		},
+		"steer_ev_4": {
+			"textures": "textures/parts_items/8/ev4ster"
+		},
+		"steer_fire_truck": {
+			"textures": "textures/parts_items/2/firsteer"
+		},
+		"steer_helicopter": {
+			"textures": "textures/parts_items/2/helisteer"
+		},
+		"steer_jeep_ph": {
+			"textures": "textures/parts_items/8/jeepsteer"
+		},
+		"steer_limmo": {
+			"textures": "textures/parts_items/8/limsteer"
+		},
+		"steer_lowrider_car": {
+			"textures": "textures/parts_items/2/lorsteer"
+		},
+		"steer_mini_bus": {
+			"textures": "textures/parts_items/8/minsteer"
+		},
+		"steer_modern_jeep_ph": {
+			"textures": "textures/parts_items/2/modjsteer"
+		},
+		"steer_motor": {
+			"textures": "textures/parts_items/8/motsteer"
+		},
+		"steer_mustang": {
+			"textures": "textures/parts_items/8/musteer"
+		},
+		"steer_ob_van": {
+			"textures": "textures/parts_items/8/obsteer"
+		},
+		"steer_pajero": {
+			"textures": "textures/parts_items/8/pajster"
+		},
+		"steer_pick_up_truck": {
+			"textures": "textures/parts_items/3/pikusteer"
+		},
+		"steer_plane": {
+			"textures": "textures/parts_items/8/plsteer"
+		},
+		"steer_police_car": {
+			"textures": "textures/parts_items/2/polsteer"
+		},
+		"steer_speedboat": {
+			"textures": "textures/parts_items/8/spester"
+		},
+		"turret_tank": {
+			"textures": "textures/parts_items/8/tnktur"
+		},
+		"steer_taxi": {
+			"textures": "textures/parts_items/8/taxster"
+		},
+		"steer_tesla_truck": {
+			"textures": "textures/parts_items/3/teslsteer"
+		},
+		"steer_tractor": {
+			"textures": "textures/parts_items/8/trcsteer"
+		},
+		"steer_travis": {
+			"textures": "textures/parts_items/8/trvster"
+		},
+		"steer_trucks": {
+			"textures": "textures/parts_items/8/truster"
+		},
+		"steer_van": {
+			"textures": "textures/parts_items/8/steer_van"
+		},
+		"steer_volt_bike": {
+			"textures": "textures/parts_items/8/volster"
+		},
+		"tire_ae86": {
+			"textures": "textures/parts_items/8/tire_ae86"
+		},
+		"tire_ambulance": {
+			"textures": "textures/parts_items/8/ambtire"
+		},
+		"tire_auv_car": {
+			"textures": "textures/parts_items/8/auvtire"
+		},
+		"tire_bike": {
+			"textures": "textures/parts_items/8/tire_bike"
+		},
+		"tire_bus": {
+			"textures": "textures/parts_items/8/tire_bus"
+		},
+		"tire_bus_v2": {
+			"textures": "textures/parts_items/8/busvtire"
+		},
+		"tire_car": {
+			"textures": "textures/parts_items/8/tire_car"
+		},
+		"tire_car_4x4": {
+			"textures": "textures/parts_items/8/car4xtir"
+		},
+		"tire_corolla": {
+			"textures": "textures/parts_items/8/crlltir"
+		},
+		"tire_ev_4": {
+			"textures": "textures/parts_items/8/tire_ev_4"
+		},
+		"tire_fire_truck": {
+			"textures": "textures/parts_items/8/firtire"
+		},
+		"tire_hoverboard": {
+			"textures": "textures/parts_items/8/hvrtir"
+		},
+		"tire_jeep_ph": {
+			"textures": "textures/parts_items/8/jeeptire"
+		},
+		"tire_limmo": {
+			"textures": "textures/parts_items/8/limsteer"
+		},
+		"tire_lowrider_car": {
+			"textures": "textures/parts_items/3/lowrtire"
+		},
+		"tire_mini_bus": {
+			"textures": "textures/parts_items/8/mintire"
+		},
+		"tire_modern_jeep_ph": {
+			"textures": "textures/parts_items/8/mojeptir"
+		},
+		"tire_motor": {
+			"textures": "textures/parts_items/8/mottire"
+		},
+		"tire_mustang": {
+			"textures": "textures/parts_items/8/mustire"
+		},
+		"tire_ob_van": {
+			"textures": "textures/parts_items/8/obtire"
+		},
+		"tire_pajero": {
+			"textures": "textures/parts_items/8/pajtire"
+		},
+		"tire_pick_up_truck": {
+			"textures": "textures/parts_items/3/pickutire"
+		},
+		"tire_plane": {
+			"textures": "textures/parts_items/8/pltire"
+		},
+		"tire_police_car": {
+			"textures": "textures/parts_items/8/poltire"
+		},
+		"tire_taxi": {
+			"textures": "textures/parts_items/8/tire_taxi"
+		},
+		"tire_tesla_truck": {
+			"textures": "textures/parts_items/2/tesltire"
+		},
+		"tire_small_tractor": {
+			"textures": "textures/parts_items/8/trcsti"
+		},
+		"tire_large_tractor": {
+			"textures": "textures/parts_items/8/trclti"
+		},
+		"tire_travis": {
+			"textures": "textures/parts_items/8/trvtire"
+		},
+		"tire_trucks": {
+			"textures": "textures/parts_items/8/trktire"
+		},
+		"tire_van": {
+			"textures": "textures/parts_items/8/tire_van"
+		},
+		"tire_volt_bike": {
+			"textures": "textures/parts_items/8/volti"
+		},
+		"wings_plane": {
+			"textures": "textures/parts_items/8/plwngs"
+		},
+		"track_tank": {
+			"textures": "textures/parts_items/8/tntrk"
+		},
+		"body_plane_1": {
+			"textures": "textures/parts_items/8/plbod"
+		},
+		"landing_skid_helicopter": {
+			"textures": "textures/parts_items/3/heliskid"
+		},
+		"landing_skid_c_sled": {
+			"textures": "textures/parts_items/3/sleskid"
+		},
+		"tire_tractor": {
+			"textures": "textures/parts_items/8/trctire"
+		},
+		"body_cadillac_dts_2010": {
+			"textures": "textures/parts_items/1/caddt"
+		},
+		"body_century_luxury": {
+			"textures": "textures/parts_items/1/centlux"
+		},
+		"body_container_van": {
+			"textures": "textures/parts_items/1/contvan"
+		},
+		"body_double_deck_bus": {
+			"textures": "textures/parts_items/1/doubupbod"
+		},
+		"body_hafei_zhongyi": {
+			"textures": "textures/parts_items/1/hafbod"
+		},
+		"body_honda_accord_2019": {
+			"textures": "textures/parts_items/5/honacbod"
+		},
+		"body_hyundai_starex_with_casket": {
+			"textures": "textures/parts_items/1/hyundabod"
+		},
+		"body_hyundai_starex": {
+			"textures": "textures/parts_items/6/hysbod"
+		},
+		"body_ice_cream": {
+			"textures": "textures/parts_items/1/icebod"
+		},
+		"body_opel_astra": {
+			"textures": "textures/parts_items/9/opabod"
+		},
+		"body_opel_crosa": {
+			"textures": "textures/parts_items/9/opcbod"
+		},
+		"body_scooter_A": {
+			"textures": "textures/parts_items/9/sctbod"
+		},
+		"body_speedboat_two": {
+			"textures": "textures/parts_items/1/speebod2"
+		},
+		"body_VAN_V2": {
+			"textures": "textures/parts_items/9/vanv2bod"
+		},
+		"body_VM_Beetle": {
+			"textures": "textures/parts_items/9/vanv2bod"
+		},
+		"seat_cadillac_dts_2010": {
+			"textures": "textures/parts_items/6/cdtseat"
+		},
+		"seat_century_luxury": {
+			"textures": "textures/parts_items/5/centuseat"
+		},
+		"seat_container_van": {
+			"textures": "textures/parts_items/5/contvseat"
+		},
+		"seat_double_deck_bus": {
+			"textures": "textures/parts_items/5/doublseat"
+		},
+		"seat_hafei_zhongyi": {
+			"textures": "textures/parts_items/5/hafzhseat"
+		},
+		"seat_honda_accord_2019": {
+			"textures": "textures/parts_items/5/hyunseat"
+		},
+		"seat_hyundai_starex_with_casket": {
+			"textures": "textures/parts_items/6/hyssea"
+		},
+		"seat_hyundai_starex": {
+			"textures": "textures/parts_items/5/hyunseat"
+		},
+		"seat_ice_cream": {
+			"textures": "textures/parts_items/9/ictsea"
+		},
+		"seat_opel_astra": {
+			"textures": "textures/parts_items/9/opaseat"
+		},
+		"seat_opel_crosa": {
+			"textures": "textures/parts_items/9/opcseat"
+		},
+		"seat_scooter_A": {
+			"textures": "textures/parts_items/9/scseat"
+		},
+		"seat_speedboat_2": {
+			"textures": "textures/parts_items/5/spedbseat"
+		},
+		"seat_VAN_V2": {
+			"textures": "textures/parts_items/9/vanv2se"
+		},
+		"seat_VM_Beetle": {
+			"textures": "textures/parts_items/9/vmbseat"
+		},
+		"steer_cadillac_dts_2010": {
+			"textures": "textures/parts_items/5/cadtsteer"
+		},
+		"steer_century_luxury": {
+			"textures": "textures/parts_items/5/censteer"
+		},
+		"steer_container_van": {
+			"textures": "textures/parts_items/6/cntvster"
+		},
+		"steer_double_deck_bus": {
+			"textures": "textures/parts_items/9/douste"
+		},
+		"steer_hafei_zhongyi": {
+			"textures": "textures/parts_items/6/hfzster"
+		},
+		"steer_honda_accord_2019": {
+			"textures": "textures/parts_items/5/hnacster"
+		},
+		"steer_hyundai_starex": {
+			"textures": "textures/parts_items/6/hysste"
+		},
+		"steer_ice_cream": {
+			"textures": "textures/parts_items/6/icetster"
+		},
+		"steer_opel_astra": {
+			"textures": "textures/parts_items/5/opasster"
+		},
+		"steer_opel_crosa": {
+			"textures": "textures/parts_items/9/opcster"
+		},
+		"steer_scooter_A": {
+			"textures": "textures/parts_items/9/sctster"
+		},
+		"steer_speedboat_2": {
+			"textures": "textures/parts_items/5/spdbster"
+		},
+		"steer_VAN_V2": {
+			"textures": "textures/parts_items/9/vanv2ster"
+		},
+		"steer_VM_Beetle": {
+			"textures": "textures/parts_items/9/vmbsteer"
+		},
+		"tire_cadillac_dts_2010": {
+			"textures": "textures/parts_items/5/cadttire"
+		},
+		"tire_century_luxury": {
+			"textures": "textures/parts_items/5/centire"
+		},
+		"tire_container_van": {
+			"textures": "textures/parts_items/5/conttire"
+		},
+		"tire_double_deck_bus": {
+			"textures": "textures/parts_items/9/doubtire"
+		},
+		"tire_hafei_zhongyi": {
+			"textures": "textures/parts_items/5/hafzhtire"
+		},
+		"tire_honda_accord_2019": {
+			"textures": "textures/parts_items/6/hnactire"
+		},
+		"tire_hyundai_starex": {
+			"textures": "textures/parts_items/6/hystire"
+		},
+		"tire_ice_cream": {
+			"textures": "textures/parts_items/6/icettire"
+		},
+		"tire_opel_astra": {
+			"textures": "textures/parts_items/9/opatir"
+		},
+		"tire_opel_crosa": {
+			"textures": "textures/parts_items/9/opctir"
+		},
+		"tire_scooter_A": {
+			"textures": "textures/parts_items/9/scttire"
+		},
+		"tire_VAN_V2": {
+			"textures": "textures/parts_items/9/van2tire"
+		},
+		"tire_VM_Beetle": {
+			"textures": "textures/parts_items/9/vmbtire"
+		},
+		"body_lower_double_deck_bus": {
+			"textures": "textures/parts_items/1/dlowbod"
+		},
+		"body_upper_double_deck_bus": {
+			"textures": "textures/parts_items/1/doubupbod"
+		},
+		"jerry_can": {
+			"textures": "textures/items/jerry_can"
+		},
+		"gas_nozzle": {
+			"textures": "textures/items/gas_nozzle"
+		},
+		"simple_vehicles_key_farm_truck": {
+			"textures": "textures/items/key_farm_truck"
+		},
+		"simple_vehicles_key_lawn_mower": {
+			"textures": "textures/items/key_lawn_mower"
+		},
+		"simple_vehicles_key_tractor_seeder": {
+			"textures": "textures/items/key_trseeder"
+		},
+		"simple_vehicles_key_tractor_small": {
+			"textures": "textures/items/key_trsmall"
+		},
+		"simple_vehicles_key_tractor_sprinkler": {
+			"textures": "textures/items/key_trsprnkl"
+		},
+		"simple_vehicles_grass_remover": {
+			"textures": "textures/items/grass_remover"
+		},
+		"simple_vehicles_key_tractor_plow": {
+			"textures": "textures/items/key_plower"
+		},
+		"simple_vehicles_beetrpack": {
+			"textures": "textures/items/seedpck/beetrapck"
+		},
+		"simple_vehicles_wheatpack": {
+			"textures": "textures/items/seedpck/wheapck"
+		},
+		"simple_vehicles_key_biplane": {
+			"textures": "textures/items/bipln"
+		},
+		"simple_vehicles_key_blimp": {
+			"textures": "textures/items/blmp"
+		},
+		"simple_vehicles_key_gliding_plane": {
+			"textures": "textures/items/gldrpln"
+		},
+		"simple_vehicles_key_monoplane": {
+			"textures": "textures/items/mnpln"
+		},
+		"simple_vehicles_key_gyroplane": {
+			"textures": "textures/items/gyropln"
+		},
+		"simple_vehicles_key_private_plane": {
+			"textures": "textures/items/prvtpln"
+		},
+		"simple_vehicles_key_seaplane": {
+			"textures": "textures/items/seapln"
+		},
+		"simple_vehicles_key_tiltmotor": {
+			"textures": "textures/items/tltrtr"
+		},
+		"air_jerry_can": {
+			"textures": "textures/items/air_jerry_can"
+		},
+		"simple_vehicles_key_vintage_van_a": {
+			"textures": "textures/items/key_vintage_van_a"
+		},
+		"simple_vehicles_key_vintage_van_b": {
+			"textures": "textures/items/key_vintage_van_a"
+		},
+		"simple_vehicles_key_vintage_bus_a": {
+			"textures": "textures/items/key_vintage_van_a"
+		},
+		"gas_pump": {
+			"textures": "textures/items/jerry_can"
+		},
+		"simple_vehicles_large_body_part": {
+			"textures": "textures/items/newparts/large_body_part"
+		},
+		"simple_vehicles_small_body_part": {
+			"textures": "textures/items/newparts/small_body_part"
+		},
+		"simple_vehicles_air_balloon_bodylower_i_tex": {
+			"textures": "textures/parts_items/12/air_balloon_bodylower"
+		},
+		"simple_vehicles_air_balloon_bodyupper_i_tex": {
+			"textures": "textures/parts_items/12/air_balloon_bodyupper"
+		},
+		"simple_vehicles_asphalt_paving_truck_body_i_tex": {
+			"textures": "textures/parts_items/11/asphalt_paving_truck_body"
+		},
+		"simple_vehicles_bajajRE_body_i_tex": {
+			"textures": "textures/parts_items/11/bajajRE_body"
+		},
+		"simple_vehicles_biplane_body_i_tex": {
+			"textures": "textures/parts_items/12/biplane_body"
+		},
+		"simple_vehicles_blimp_body_lower_i_tex": {
+			"textures": "textures/parts_items/12/blimp_body_lower"
+		},
+		"simple_vehicles_blimp_body_upper_i_tex": {
+			"textures": "textures/parts_items/12/blimp_body_upper"
+		},
+		"simple_vehicles_bridge_builder_body_i_tex": {
+			"textures": "textures/parts_items/11/bridge_builder_body"
+		},
+		"simple_vehicles_bulldozer_body_i_tex": {
+			"textures": "textures/parts_items/11/bulldozer_body"
+		},
+		"simple_vehicles_bus_engine_i_tex": {
+			"textures": "textures/items/newparts/bus_engine"
+		},
+		"simple_vehicles_car_engine_i_tex": {
+			"textures": "textures/items/newparts/car_engine"
+		},
+		"simple_vehicles_car_lowrider_v2_body_i_tex": {
+			"textures": "textures/parts_items/11/car_lowrider_v2_body"
+		},
+		"simple_vehicles_cargo_cont_truck_body_i_tex": {
+			"textures": "textures/parts_items/11/cargo_cont_truck_body"
+		},
+		"simple_vehicles_chrysler_windsor_body_i_tex": {
+			"textures": "textures/parts_items/12/chrysler_windsor_body"
+		},
+		"simple_vehicles_dragster_body_i_tex": {
+			"textures": "textures/parts_items/11/dragster_body"
+		},
+		"simple_vehicles_dump_truck_body_i_tex": {
+			"textures": "textures/parts_items/11/dump_truck_body"
+		},
+		"simple_vehicles_f1_car_body_i_tex": {
+			"textures": "textures/parts_items/11/f1_car_body"
+		},
+		"simple_vehicles_farm_truck_body_i_tex": {
+			"textures": "textures/parts_items/12/farm_truck_body"
+		},
+		"simple_vehicles_ford_rancherogt_sass_body_i_tex": {
+			"textures": "textures/parts_items/11/ford_rancherogt_sass_body"
+		},
+		"simple_vehicles_fuso_aero_midi_jp_body_i_tex": {
+			"textures": "textures/parts_items/11/fuso_aero_midi_jp_body"
+		},
+		"simple_vehicles_go_kart_body_i_tex": {
+			"textures": "textures/parts_items/11/go_kart_body"
+		},
+		"simple_vehicles_go_kart_v2_body_i_tex": {
+			"textures": "textures/parts_items/11/go_kart_v2_body"
+		},
+		"simple_vehicles_golf_cart_body_i_tex": {
+			"textures": "textures/parts_items/11/go_kart_v2_body"
+		},
+		"simple_vehicles_golf_cart_street_legal_body_i_tex": {
+			"textures": "textures/parts_items/11/golf_cart_body"
+		},
+		"simple_vehicles_gyroplane_blade_i_tex": {
+			"textures": "textures/parts_items/12/gyroplane_blade"
+		},
+		"simple_vehicles_gyroplane_body_i_tex": {
+			"textures": "textures/parts_items/12/gyroplane_body"
+		},
+		"simple_vehicles_isuzu_dmax_body_i_tex": {
+			"textures": "textures/parts_items/11/isuzu_dmax_body"
+		},
+		"simple_vehicles_isuzuerga2017_body_i_tex": {
+			"textures": "textures/parts_items/11/isuzuerga2017_body"
+		},
+		"simple_vehicles_jeep_wrangler_body_i_tex": {
+			"textures": "textures/parts_items/11/jeep_wrangler_body"
+		},
+		"simple_vehicles_large_tire1_i_tex": {
+			"textures": "textures/items/newparts/large_tire1"
+		},
+		"simple_vehicles_lightermax_body_i_tex": {
+			"textures": "textures/parts_items/11/lightermax_body"
+		},
+		"simple_vehicles_medium_body_part_i_tex": {
+			"textures": "textures/items/newparts/medium_body_part"
+		},
+		"simple_vehicles_medium_tire1_i_tex": {
+			"textures": "textures/items/newparts/medium_tire1"
+		},
+		"simple_vehicles_medium_tire2_i_tex": {
+			"textures": "textures/items/newparts/medium_tire2"
+		},
+		"simple_vehicles_medium_tire3_i_tex": {
+			"textures": "textures/items/newparts/medium_tire3"
+		},
+		"simple_vehicles_minicar_body_i_tex": {
+			"textures": "textures/parts_items/11/minicar_body"
+		},
+		"simple_vehicles_mitsubishi_minivan_body_i_tex": {
+			"textures": "textures/parts_items/12/mitsubishi_minivan_body"
+		},
+		"simple_vehicles_mitsubishi_minivan_trucktype_body_i_tex": {
+			"textures": "textures/parts_items/12/mitsubishi_minivan_trucktype_body"
+		},
+		"simple_vehicles_mixer_truck_body_i_tex": {
+			"textures": "textures/parts_items/11/mixer_truck_body"
+		},
+		"simple_vehicles_monopl_body_i_tex": {
+			"textures": "textures/parts_items/12/monopl_body"
+		},
+		"simple_vehicles_monster_truck_body_i_tex": {
+			"textures": "textures/parts_items/11/monster_truck_body"
+		},
+		"simple_vehicles_montero_body_i_tex": {
+			"textures": "textures/parts_items/11/montero_body"
+		},
+		"simple_vehicles_pick_up_flash_exp_body_i_tex": {
+			"textures": "textures/parts_items/11/pick_up_flash_exp_body"
+		},
+		"simple_vehicles_privatepl_body_i_tex": {
+			"textures": "textures/parts_items/12/privatepl_body"
+		},
+		"simple_vehicles_privatepl_turbine_i_tex": {
+			"textures": "textures/parts_items/12/privatepl_turbine"
+		},
+		"simple_vehicles_privatepl_wings_i_tex": {
+			"textures": "textures/parts_items/12/privatepl_wings"
+		},
+		"simple_vehicles_quad_bike_body_i_tex": {
+			"textures": "textures/parts_items/11/quad_bike_body"
+		},
+		"simple_vehicles_rally_car_2_0_body_i_tex": {
+			"textures": "textures/parts_items/11/rally_car_2_0_body"
+		},
+		"simple_vehicles_rally_car_body_i_tex": {
+			"textures": "textures/parts_items/11/rally_car_body"
+		},
+		"simple_vehicles_riding_lawn_mower_body_i_tex": {
+			"textures": "textures/parts_items/12/riding_lawn_mower_body"
+		},
+		"simple_vehicles_rocket_viking_body_i_tex": {
+			"textures": "textures/parts_items/11/rocket_viking_body"
+		},
+		"simple_vehicles_roller_truck_body_i_tex": {
+			"textures": "textures/parts_items/11/roller_truck_body"
+		},
+		"simple_vehicles_scooterB_body_i_tex": {
+			"textures": "textures/parts_items/11/scooterB_body"
+		},
+		"simple_vehicles_seaplane_body_i_tex": {
+			"textures": "textures/parts_items/12/seaplane_body"
+		},
+		"simple_vehicles_shenhaoq5_body_i_tex": {
+			"textures": "textures/parts_items/11/shenhaoq5_body"
+		},
+		"simple_vehicles_simple_vehicles_multicab_boddy_i_tex": {
+			"textures": "textures/parts_items/11/simple_vehicles_multicab_boddy"
+		},
+		"simple_vehicles_simple_vehicles_pedicab_body_i_tex": {
+			"textures": "textures/parts_items/11/simple_vehicles.pedicab_body"
+		},
+		"simple_vehicles_skid_1_i_tex": {
+			"textures": "textures/items/newparts/skid1"
+		},
+		"simple_vehicles_small_engine_i_tex": {
+			"textures": "textures/items/newparts/small_engine"
+		},
+		"simple_vehicles_small_tire_i_tex": {
+			"textures": "textures/items/newparts/small_tire"
+		},
+		"simple_vehicles_small_tractor_body_i_tex": {
+			"textures": "textures/parts_items/12/small_tractor_body"
+		},
+		"simple_vehicles_submarine_body_i_tex": {
+			"textures": "textures/parts_items/11/submarine_body"
+		},
+		"simple_vehicles_submarine_glass_i_tex": {
+			"textures": "textures/parts_items/11/submarine_glass"
+		},
+		"simple_vehicles_submarine_propeller_i_tex": {
+			"textures": "textures/parts_items/11/submarine_propeller"
+		},
+		"simple_vehicles_tammarawfx_body_i_tex": {
+			"textures": "textures/parts_items/11/tammarawfx_body"
+		},
+		"simple_vehicles_tentmushi_body_i_tex": {
+			"textures": "textures/parts_items/11/tentmushi_body"
+		},
+		"simple_vehicles_tiltrotor_blade_i_tex": {
+			"textures": "textures/parts_items/12/tiltrotor_blade"
+		},
+		"simple_vehicles_tiltrotor_body_i_tex": {
+			"textures": "textures/parts_items/12/tiltrotor_body"
+		},
+		"simple_vehicles_tractor_plow_body0_i_tex": {
+			"textures": "textures/parts_items/12/tractor_plow_body0"
+		},
+		"simple_vehicles_tractor_plow_body1_i_tex": {
+			"textures": "textures/parts_items/12/tractor_plow_body1"
+		},
+		"simple_vehicles_tractor_plow_body2_i_tex": {
+			"textures": "textures/parts_items/12/tractor_plow_body2"
+		},
+		"simple_vehicles_tractor_seeder+_body2_i_tex": {
+			"textures": "textures/parts_items/12/tractor_seeder+_body2"
+		},
+		"simple_vehicles_tractor_seeder_body0_i_tex": {
+			"textures": "textures/parts_items/12/tractor_seeder_body0"
+		},
+		"simple_vehicles_tractor_seeder_body1_i_tex": {
+			"textures": "textures/parts_items/12/tractor_seeder_body1"
+		},
+		"simple_vehicles_tractor_sprinkler_body0_i_tex": {
+			"textures": "textures/parts_items/12/tractor_sprinkler_body0"
+		},
+		"simple_vehicles_tractor_sprinkler_body1_i_tex": {
+			"textures": "textures/parts_items/12/tractor_sprinkler_body1"
+		},
+		"simple_vehicles_tractor_sprinkler_body2_i_tex": {
+			"textures": "textures/parts_items/12/tractor_sprinkler_body2"
+		},
+		"simple_vehicles_train_cart_body_i_tex": {
+			"textures": "textures/parts_items/11/train_cart_body"
+		},
+		"simple_vehicles_train_locomotive_body_i_tex": {
+			"textures": "textures/parts_items/11/train_cart_body"
+		},
+		"simple_vehicles_tricycle_cargo_body_i_tex": {
+			"textures": "textures/parts_items/11/tricycle_cargo_body"
+		},
+		"simple_vehicles_tricycle_cont_body_i_tex": {
+			"textures": "textures/parts_items/11/tricycle_cont_body"
+		},
+		"simple_vehicles_tricycle_ricksaw_body_i_tex": {
+			"textures": "textures/parts_items/11/tricycle_ricksaw_body"
+		},
+		"simple_vehicles_truck_cargo2_body_i_tex": {
+			"textures": "textures/parts_items/11/truck_cargo2_body"
+		},
+		"simple_vehicles_truck_cargo_body_i_tex": {
+			"textures": "textures/parts_items/11/truck_cargo_body"
+		},
+		"simple_vehicles_tuktukthai_body_i_tex": {
+			"textures": "textures/parts_items/11/tuktukthai_body"
+		},
+		"simple_vehicles_vespa_primavera_body_i_tex": {
+			"textures": "textures/parts_items/11/vespa_primavera_body"
+		},
+		"simple_vehicles_vintage_bus_a_body_i_tex": {
+			"textures": "textures/parts_items/12/vintage_bus_a_body"
+		},
+		"simple_vehicles_vintage_van_a_body_i_tex": {
+			"textures": "textures/parts_items/12/vintage_van_a_body"
+		},
+		"simple_vehicles_vintage_van_b_body_i_tex": {
+			"textures": "textures/parts_items/12/vintage_van_b_body"
+		},
+		"simple_vehicles_gliding_plane_body": {
+			"textures": "textures/parts_items/12/glider_plane_body"
+		},
+		"simple_vehicles_gliding_plane_wings": {
+			"textures": "textures/parts_items/12/glider_plane_wings"
+		}
+	}
+}

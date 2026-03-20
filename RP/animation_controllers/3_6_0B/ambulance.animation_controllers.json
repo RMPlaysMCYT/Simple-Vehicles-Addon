@@ -1,0 +1,76 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ambulance.door_mechanica_v2": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["doors_idle"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"close": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "query.mark_variant == 2"}
+					]
+				},
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.mark_variant == 1"},
+						{"close2": "query.has_player_rider"}
+					]
+				},
+				"close2": {
+					"animations": ["close2"],
+					"transitions": [
+						{"open": "!query.has_player_rider"}
+					]
+				}
+			}
+		},
+		"controller.animation.ambulance.move_mechanic": {
+			"initial_state": "idle",
+			"states": {
+				"move_front": {
+					"animations": ["move"],
+					"transitions": [
+						{"move_back": "query.ground_speed < 2.3"}
+					]
+				},
+				"idle": {
+					"animations": ["idle"],
+					"transitions": [
+						{"move_front": "query.ground_speed < 2.3"},
+						{"move_back": "query.ground_speed >= 2.3"}
+					]
+				},
+				"move_back": {
+					"animations": ["movereverse"],
+					"transitions": [
+						{"move_front": "query.ground_speed >= 2.3"}
+					]
+				}
+			}
+		},
+		"controller.animation.ae86.speedometer": {
+			"initial_state": "up",
+			"states": {
+				"up": {
+					"animations": ["speedometer"],
+					"transitions": [
+						{"down": "query.modified_distance_moved"}
+					]
+				},
+				"down": {
+					"animations": ["speedometer_rev"],
+					"transitions": [
+						{"up": "!query.modified_distance_moved"}
+					]
+				}
+			}
+		}
+	}
+}

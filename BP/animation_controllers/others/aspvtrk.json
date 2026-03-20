@@ -1,0 +1,106 @@
+//////The Component for Mixer Truck will give credit to MNO https://mcpedl.com/road-builder-add-on/
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.simple_vehicles.asphalt_paving_truck.mix1": {
+			"initial_state": "no_concrete",
+			"states": {
+				"deactivated": {
+					"transitions": [
+						{
+							"start_concrete": "1"
+						}
+					]
+				},
+				"no_concrete": {
+					"transitions": [
+						{
+							"start_concrete": "1"
+						}
+					],
+					"on_entry": [
+						"/title @p actionbar §2Out Of Fuel - Please Top Up some concrete to continue",
+						"/playsound random.explode @a[r=30]"
+					]
+				},
+				"start_concrete": {
+					"transitions": [
+						{
+							"black_concrete1": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+						},
+						{
+							"start_concrete2": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 0"
+						}
+					]
+				},
+				"start_concrete2": {
+					"transitions": [
+						{
+							"black_concrete1": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+						},
+						{
+							"start_concrete": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 0"
+						}
+					]
+				},
+				"black_concrete_south": {
+					"transitions": [
+						{
+							"no_concrete": "q.mark_variant == 9"
+						},
+						{
+							"black_concrete1": "q.mark_variant == 1"
+						},
+						{
+							"deactivated": "!q.mark_variant == 1"
+						}
+					]
+				},
+				"black_concrete1": {
+					"transitions": [
+						{
+							"no_concrete": "q.mark_variant == 2"
+						},
+						{
+							"black_concrete2": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+						},
+						{
+							"black_concrete_south": "q.cardinal_facing_2d == 2.0 && q.has_rider && math.mod(math.floor(query.position(2)),15) == 0"
+						},
+						{
+							"black_concrete_south": "q.cardinal_facing_2d == 3.0 && q.has_rider && math.mod(math.floor(query.position(2)),15) == 0"
+						},
+						{
+							"black_concrete_south": "q.cardinal_facing_2d == 4.0 && q.has_rider && math.mod(math.floor(query.position(0)),15) == 0"
+						},
+						{
+							"black_concrete_south": "q.cardinal_facing_2d == 5.0 && q.has_rider && math.mod(math.floor(query.position(0)),15) == 0"
+						},
+						{
+							"deactivated": "!q.has_rider || !q.mark_variant == 1"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=simple_vehicles:asphalt_paving_truck,r=5] ~ ~ ~ fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 concrete 15 replace stone 0"
+					]
+				},
+				"black_concrete2": {
+					"transitions": [
+						{
+							"no_concrete": "q.mark_variant == 2"
+						},
+						{
+							"black_concrete1": "q.has_rider && query.ground_speed > 0 && q.mark_variant == 1"
+						},
+						{
+							"deactivated": "!q.has_rider || !q.mark_variant == 1"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=simple_vehicles:asphalt_paving_truck,r=5] ~ ~ ~ fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 concrete 15 replace stone 0"
+					]
+				}
+			}
+		}
+	}
+}

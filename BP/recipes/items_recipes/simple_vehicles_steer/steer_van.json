@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_van13334"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"7B7",
+			"BIB",
+			"7B7"
+		],
+		"key": {
+			"7": {"item": "minecraft:white_dye"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_van"
+			}
+		]
+	}
+}

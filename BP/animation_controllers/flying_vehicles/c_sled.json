@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.c_sled.fly": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "1"
+						}
+					],
+					"on_entry": [
+						"/function flying_system/c_sled"
+					]
+				},
+				"flying": {
+					"transitions": [
+						{
+							"default": "query.is_saddled"
+						}
+					],
+					"on_entry": [
+						"/function flying_system/c_sled",
+						"/function honk"
+					]
+				}
+			}
+		}
+	}
+}

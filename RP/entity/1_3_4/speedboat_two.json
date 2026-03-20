@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "simple_vehicles:speedboat_two",
+            "materials": {
+                "default": "witch"
+            },
+            "geometry": {
+                "default": "geometry.speeboat_two"
+            },
+            "textures": {
+                "red": "textures/entity/speeboat_two",
+                "green": "textures/entity/speedboat_b/speeboat_two_green",
+                "blue": "textures/entity/speedboat_b/speeboat_two_blue",
+                "black": "textures/entity/speedboat_b/speeboat_two_black",
+                "white": "textures/entity/speedboat_b/speeboat_two_white",
+                "pink": "textures/entity/speedboat_b/speeboat_two_pink",
+                "purple": "textures/entity/speedboat_b/speeboat_two_purple"
+            },
+            "animations": {
+                "ups": "animation.speedboat_1.14.ups",
+                "downs": "animation.speedboat_1.14.downs",
+                "speedboat_general": "controller.animation.speedboat.general"
+            },
+            "scripts": {
+                "animate": [
+                    "speedboat_general"
+                ]
+            },
+            "spawn_egg": {
+                "texture": "vehicles",
+                "texture_index": 43
+            },
+            "render_controllers": [
+                "controller.render.speedboat_variant"
+            ]
+        }
+    }
+}

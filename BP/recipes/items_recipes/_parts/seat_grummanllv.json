@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:seat_grummanllv"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"W  ",
+			"WW "
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:orange_wool"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:seat_grummanllv"
+			},
+			{
+				"item": "simple_vehicles:seat_land_cruiser",
+				"count": 4
+			},
+			{
+				"item": "simple_vehicles:seat_rancher"
+			}
+		]
+	}
+}

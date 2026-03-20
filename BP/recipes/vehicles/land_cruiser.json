@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:land_cruiser"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" B ",
+			"M M"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_land_cruiser"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_land_cruiser"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:land_cruiser_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

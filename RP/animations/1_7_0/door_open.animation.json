@@ -1,0 +1,47 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vehicles.door_open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.8,
+			"anim_time_update": "query.mark_variant==1",
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.8": [
+							0,
+							57.5,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.vehicles.door_close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.8,
+			"anim_time_update": "query.mark_variant==0",
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							57.5,
+							0
+						],
+						"0.8": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

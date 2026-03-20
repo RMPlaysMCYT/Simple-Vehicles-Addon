@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.motorcycle.general": {
+			"states": {
+				"default": {
+					"variables": {
+						"move_up": {
+							"input": "query.ground_speed<2.3"
+						},
+						"move_down": {
+							"input": "query.ground_speed>=2.3"
+						}
+					},
+					"animations": [
+						"turn",
+						"tilt",
+						{
+							"ups": "variable.move_up"
+						},
+						{
+							"downs": "variable.move_down"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.motorcycle.general2": {
+			"initial_state": "setup",
+			"states": {
+				"setup": {
+					"animations": ["setup"],
+					"transitions": [
+						{"setup2": "query.has_player_rider"}
+					],
+					"blend_transition": 0.25,
+					"blend_via_shortest_path": true
+				},
+				"setup2": {
+					"animations": ["setup2"],
+					"transitions": [
+						{"setup": "!query.has_player_rider"}
+					],
+					"blend_transition": 0.25,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

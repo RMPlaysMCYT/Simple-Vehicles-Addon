@@ -1,0 +1,242 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ambulance.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-25,math.min(25,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-20,math.min(20,query.yaw_speed*0.5))", 0]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-20,math.min(20,query.yaw_speed*0.5))", 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.ambulance.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				}
+			}
+		},
+		"animation.ice_cream_truck.turn": {
+			"loop": true,
+			"bones": {
+				"steering_wheel": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				}
+			}
+		},
+		"animation.ambulance.move": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"leg0": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"tire1": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				},
+				"tire0": {
+					"rotation": ["variable.new_move_mechanic", 0, 0]
+				}
+			}
+		},
+		"animation.ambulance.movereverse": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"leg0": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"tire1": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				},
+				"tire0": {
+					"rotation": ["variable.new_move_mechreve", 0, 0]
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "ambulance.wiper"
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "arrow_particle",
+					"locator": "smoke0"
+				},
+				"0.4": {
+					"effect": "arrow_particle",
+					"locator": "smoke0"
+				},
+				"0.8": {
+					"effect": "arrow_particle",
+					"locator": "smoke0"
+				}
+			}
+		},
+		"animation.simple_vehicles.ambulance.doors_idle": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.simple_vehicles.ambulance.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "ambulance_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.ambulance.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "ambulance_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.ambulance.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.ambulance.wiper": {
+			"loop": true,
+			"animation_length": 0.79167,
+			"bones": {
+				"wiper0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5417": [0, 115, 0],
+						"0.7917": [0, 0, 0]
+					}
+				},
+				"wiper1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5417": [0, 110, 0],
+						"0.7917": [13.53297, 0.59788, -0.28322]
+					}
+				}
+			}
+		},
+		"animation.ambulance.speedometer": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5417,
+			"bones": {
+				"speedometer": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4583": [-3.04863, 12.55403, -28.75585],
+						"0.875": [-10.0279, 21.55409, -55.6731],
+						"1.2083": [-18.98982, 25.22791, -78.7757],
+						"1.5417": [-28.87793, 23.97481, -102.15674]
+					}
+				}
+			}
+		},
+		"animation.ambulance.speedometer_rev": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.5417,
+			"bones": {
+				"speedometer": {
+					"rotation": {
+						"0.0": [-28.87793, 23.97481, -102.15674],
+						"0.3333": [-18.98982, 25.22791, -78.7757],
+						"0.6667": [-10.0279, 21.55409, -55.6731],
+						"1.0833": [-3.04863, 12.55403, -28.75585],
+						"1.5417": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.ambulance.idle": {
+			"loop": true,
+			"bones": {
+				"leg2": {
+					"rotation": [0, 0, 0]
+				},
+				"leg1": {
+					"rotation": [0, 0, 0]
+				},
+				"tire1": {
+					"rotation": [0, 0, 0]
+				},
+				"tire0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

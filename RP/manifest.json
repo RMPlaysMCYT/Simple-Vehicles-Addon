@@ -1,0 +1,55 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"version": [
+			3,
+			7,
+			2
+		],
+		"uuid": "284e5fad-b2c4-49ad-b823-55e261c49dd0",
+		"min_engine_version": [
+			1,
+			20,
+			2
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "8287328d-184f-4fc9-abe1-afef303069ec",
+			"version": [
+				3,
+				7,
+				2
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "49b0cfa5-bd3f-4ad4-9317-37f1509a7d6b",
+			"version": [
+				3,
+				7,
+				2
+			]
+		}
+	],
+	"metadata": {
+		"authors": [
+			"RMPlaysMC YT",
+			"RMPlaysMC Studios"
+		],
+		"license": "All Rights Reserved",
+		"product_type": "addon",
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:train_cart",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/train/train_cart"
+			},
+			"geometry": {
+				"default": "geometry.train_cart"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.train_cart.move",
+				"open": "animation.simple_vehicles.train_cart.open",
+				"close": "animation.simple_vehicles.train_cart.close",
+				"close2": "animation.simple_vehicles.train_cart.close2"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.is_moving"
+					},
+					{
+						"open": "query.mark_variant==1"
+					},
+					{
+						"close": "query.mark_variant==0"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 21
+			}
+		}
+	}
+}

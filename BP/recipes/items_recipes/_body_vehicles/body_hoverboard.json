@@ -1,0 +1,28 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:hjsjsdkks"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			" F ",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"F": {
+				"item": "minecraft:redstone"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_hoverboard"
+			}
+		]
+	}
+}

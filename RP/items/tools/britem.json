@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "simple_vehicles:breakable_item",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "simple_vehi_breakable_item",
+	    "minecraft:render_offsets": "apple"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:gyroplane_blade",
+      "render_controllers": ["controller.render.body_3d_item_blade"],
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/gyroplane/gyroplane_blue"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_gyroplane"
+      },
+      "animations": {
+        "first_person_hold": "animation.gyroplane_propeller.first_person_hold",
+        "third_person_hold": "animation.gyroplane_propeller.third_person_hold"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "first_person_hold": "c.is_first_person"
+          },
+          {
+            "third_person_hold": "!c.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

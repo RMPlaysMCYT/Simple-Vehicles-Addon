@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ae86.door_mech": {
+			"initial_state": "close",
+			"states": {
+				"open": {
+					"animations": ["open"],
+					"transitions": [
+						{"close": "query.mark_variant == 0"}
+					],
+					"blend_transition": 0.2
+				},
+				"close": {
+					"animations": ["close"],
+					"transitions": [
+						{"open": "query.mark_variant == 1"}
+					],
+					"blend_transition": 0.2
+				},
+				"close2": {
+					"animations": ["close2"],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

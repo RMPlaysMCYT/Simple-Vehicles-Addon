@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:pedicab",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.pedicab"
+			},
+			"textures": {
+				"red": "textures/entity/pedicab/red",
+				"green": "textures/entity/pedicab/green",
+				"blue": "textures/entity/simple_vehicles_pedicab",
+				"pink": "textures/entity/pedicab/pink"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.pedicab.move",
+				"turn": "animation.simple_vehicles.pedicab.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"render_controllers": [
+				"controller.render.pedicab"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 33
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			}
+		}
+	}
+}

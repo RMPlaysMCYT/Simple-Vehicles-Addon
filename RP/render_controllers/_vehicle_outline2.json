@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.simple_vehicles.outline2": {
+			"geometry": "geometry.inflated",
+			"materials": [
+				{
+					"*": "material.outline"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			],
+			"light_color_multiplier": -1000,
+			"ignore_lighting": true,
+			"overlay_color": {
+				"a": 1,
+				"r": 0.5,
+				"g": 0.5,
+				"b": 0.5
+			}
+		}
+	}
+}

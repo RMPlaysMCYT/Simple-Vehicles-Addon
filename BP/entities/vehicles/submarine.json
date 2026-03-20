@@ -1,0 +1,333 @@
+{
+  "format_version": "1.18.30",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "simple_vehicles:submarine",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": ["dive", "command", "durability", "fuel", "move"]
+      },
+      "animations": {
+        "dive": "controller.animation.submarine.dive",
+        "command": "controller.animation.vehicle.command",
+        "move": "controller.animation.vehicle.move",
+        "durability": "controller.animation.vehicle.durability",
+        "fuel": "controller.animation.simple_vehicles.fuel"
+      }
+    },
+    "component_groups": {
+      "simple_vehicles:vehicle": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:gas_nozzle"
+                    }
+                  ]
+                }
+              },
+              "use_item": false
+            },
+            {
+              "interact_text": "Fuel It Up!!",
+              "on_interact": {
+                "event": "simple_vehicles:refuel",
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "value": "simple_vehicles:jerry_can"
+                    }
+                  ]
+                }
+              },
+              "use_item": true
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "controlling_seat": 0,
+          "crouching_skip_interact": true,
+          "family_types": ["player"],
+          "interact_text": "Ride",
+          "seat_count": 1,
+          "seats": [
+            {
+              "position": [0, 0.3, 0.05]
+            }
+          ]
+        }
+      },
+      "simple_vehicles:activated": {
+        "minecraft:input_ground_controlled": {},
+        "minecraft:movement": {
+          "value": 0.3
+        },
+        "minecraft:can_power_jump": {},
+        "minecraft:horse.jump_strength": {
+          "value": 0.2
+        },
+        "minecraft:breathable": {
+          "breathes_water": true
+        }
+      },
+      "simple_vehicles:submarine_up": {
+        "minecraft:navigation.walk": {
+          "can_path_over_water": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": true,
+          "can_sink": false
+        },
+        "minecraft:physics": {
+          "has_gravity": false
+        }
+      },
+      "simple_vehicles:submarine_down": {
+        "minecraft:navigation.walk": {
+          "can_path_over_water": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": true,
+          "can_sink": true
+        },
+        "minecraft:physics": {
+          "has_gravity": true
+        }
+      },
+      "simple_vehicles:refuel": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "simple_vehicles:refueled": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:nameable": {
+        "always_show": false
+      },
+      "minecraft:health": {
+        "value": 120
+      },
+      "minecraft:type_family": {
+        "family": ["aspire", "simple_vehicles_addon", "simple_vehicles"]
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.generic": {
+        "is_amphibious": true
+      },
+      "minecraft:can_climb": {},
+      "minecraft:physics": {
+        "has_collision": true
+      },
+      "minecraft:collision_box": {
+        "width": 6.3,
+        "height": 3.2
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:knockback_resistance": {
+        "value": 10
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "simple_vehicles:wrench",
+            "heal_amount": 20
+          }
+        ],
+        "force_use": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:inventory": {
+        "inventory_size": 26,
+        "container_type": "horse"
+      },
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "accepted_items": ["simple_vehicles:key_submarine"],
+            "item": "simple_vehicles:key_submarine",
+            "on_equip": {
+              "event": "simple_vehicles:activated",
+              "target": "self"
+            },
+            "on_unequip": {
+              "event": "simple_vehicles:deactivated",
+              "target": "self"
+            }
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/submarine.json"
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.16
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_underwater",
+                  "subject": "self",
+                  "value": true
+                },
+                {
+                  "test": "in_water_or_rain",
+                  "subject": "self",
+                  "value": true
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "operator": "equals",
+                  "value": "submarine"
+                },
+                {
+                  "test": "hourly_clock_time",
+                  "operator": ">=",
+                  "value": 12000
+                },
+                {
+                  "test": "hourly_clock_time",
+                  "operator": "<",
+                  "value": 24000
+                }
+              ]
+            },
+            "event": "simple_vehicles:lights_on_water"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "subject": "self",
+                  "value": false,
+                  "test": "is_underwater"
+                },
+                {
+                  "test": "in_water_or_rain",
+                  "value": false,
+                  "subject": "self"
+                },
+                {
+                  "test": "hourly_clock_time",
+                  "operator": ">=",
+                  "value": 0
+                },
+                {
+                  "test": "hourly_clock_time",
+                  "operator": "<",
+                  "value": 12000
+                }
+              ]
+            },
+            "event": "simple_vehicles:no_lights_on_water"
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["simple_vehicles:vehicle"]
+        }
+      },
+      "simple_vehicles:activated": {
+        "add": {
+          "component_groups": ["simple_vehicles:activated"]
+        }
+      },
+      "simple_vehicles:deactivated": {
+        "remove": {
+          "component_groups": ["simple_vehicles:activated"]
+        }
+      },
+      "simple_vehicles:lights_on_water": {
+        "queue_command": {
+          "command": [
+            "setblock ~~1~ light_block 13 keep",
+            "fill ~-3~-2~-3 ~3~-1~3 air 0 replace light_block 13",
+            "fill ~-3~3~-3 ~3~4~3 air 0 replace light_block 13",
+            "fill ~-3~-2~2 ~3~4~3 air 0 replace light_block 13",
+            "fill ~-3~-2~-2 ~3~4~-3 air 0 replace light_block 13",
+            "fill ~-3~-2~-3 ~-2~4~3 air 0 replace light_block 13",
+            "fill ~2~-2~-3 ~3~4~3 air 0 replace light_block 13"
+          ]
+        }
+      },
+      "simple_vehicles:no_lights_on_water": {
+        "queue_command": {
+          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+        }
+      },
+      "simple_vehicles:refuel": {
+        "add": {
+          "component_groups": ["simple_vehicles:refueled"]
+        }
+      },
+      "simple_vehicles:refuel_re": {
+        "add": {
+          "component_groups": ["simple_vehicles:refuel"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicles:refueled"]
+        }
+      },
+      "simple_vehicles:swimUp": {
+        "add": {
+          "component_groups": ["simple_vehicles:submarine_up"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicles:submarine_down"]
+        }
+      },
+      "simple_vehicles:swimDown": {
+        "add": {
+          "component_groups": ["simple_vehicles:submarine_down"]
+        },
+        "remove": {
+          "component_groups": ["simple_vehicles:submarine_up"]
+        }
+      }
+    }
+  }
+}

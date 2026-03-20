@@ -1,0 +1,57 @@
+//Credits to iMasterProX
+//bridge-file-version: #9
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.vehicle.command": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"a": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function speed_system/simveh_car"
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function speed_system/simveh_car"
+					]
+				}
+			}
+		},
+		"controller.animation.vehicle.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tag @s remove move"
+					],
+					"transitions": [
+						{
+							"a": "query.is_moving"
+						}
+					]
+				},
+				"a": {
+					"transitions": [
+						{
+							"default": "!query.is_moving"
+						}
+					],
+					"on_entry": [
+						"/tag @s add move"
+					]
+				}
+			}
+		}
+	}
+}

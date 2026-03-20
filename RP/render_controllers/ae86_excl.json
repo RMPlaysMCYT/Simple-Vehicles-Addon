@@ -1,0 +1,47 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.ae86_excl": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.classic",
+						"Texture.doraemon",
+						"Texture.white_livery",
+						"Texture.mushroom_mario"
+					]
+				}
+			},
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[q.property('simple_vehicles:ae86_skin_variants')]"
+			]
+		},
+		"controller.render.ae86_lights": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.no_lights",
+						"Texture.ae86_lights"
+					]
+				}
+			},
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.ae86_lights",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"Array.skins[q.property('simple_vehicles:ae86_lights')]"
+			]
+		}
+	}
+}

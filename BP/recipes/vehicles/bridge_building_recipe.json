@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:bridge_building_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"SBS",
+			"676"
+		],
+		"key": {
+			"7": {
+				"item": "minecraft:redstone"
+			},
+			"S": {
+				"item": "minecraft:iron_bars"
+			},
+			"B": {
+				"item": "simple_vehicles:bridge_builder_body"
+			},
+			"6": {
+				"item": "simple_vehicles:tire_trucks"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:bridge_building_machine_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

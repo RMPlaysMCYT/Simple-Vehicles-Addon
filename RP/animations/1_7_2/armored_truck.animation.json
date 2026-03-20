@@ -1,0 +1,230 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.armored_truck.setup": {
+      "loop": true,
+      "bones": {
+        "steer": {
+          "scale": [0.6, 1, 0.6]
+        }
+      }
+    },
+    "animation.armored_truck.move": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "steer": {
+          "rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))"]
+        },
+        "leg1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "tire0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "tire1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "wheel3": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [360, 0, 0]
+          }
+        },
+        "Body": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.2": [0, 0, -0.75],
+            "0.5": [0, 0, 0],
+            "0.8": [0, 0, 0.75],
+            "1.0": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.armored_truck.wipe": {
+      "loop": true,
+      "animation_length": 1.6,
+      "bones": {
+        "wiper0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.56": [30, 25, 120],
+            "1.0": [0, 0, 0],
+            "1.32": [30, 25, 112.5],
+            "1.6": [0, 0, 0]
+          }
+        },
+        "wiper1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.56": [30, 25, 117.5],
+            "1.0": [0, 0, 0],
+            "1.32": [30, 25, 112.5],
+            "1.6": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.armored_truck.wipe2": {
+      "loop": true,
+      "animation_length": 0.4,
+      "bones": {
+        "wiper0": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.2": [30, 25, 117],
+            "0.4": [0, 0, 0]
+          }
+        },
+        "wiper1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.2": [30, 25, 117],
+            "0.4": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.armored_truck.doors_idle": {
+      "loop": true,
+      "bones": {
+        "door": {
+          "rotation": [0, 0, 0]
+        },
+        "door1": {
+          "rotation": [0, 0, 0]
+        },
+        "door2": {
+          "rotation": [0, 0, 0]
+        }
+      }
+    },
+    "animation.armored_truck.turn": {
+      "loop": true,
+      "bones": {
+        "tire0": {
+          "rotation": [0, "math.max(15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7", 0]
+        },
+        "tire1": {
+          "rotation": [0, "math.max(15,math.min(-15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7", 0]
+        }
+      }
+    },
+    "animation.armored_truck.open": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "door2": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, 65, 0]
+          }
+        },
+        "door": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, -35, 0]
+          }
+        },
+        "door1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, 35, 0]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "armored_truck_door_open"
+        }
+      }
+    },
+    "animation.armored_truck.close": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "door": {
+          "rotation": {
+            "0.0": [0, -35, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "door1": {
+          "rotation": {
+            "0.0": [0, 35, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "door2": {
+          "rotation": {
+            "0.0": [0, 65, 0],
+            "1.0": [0, 0, 0]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "armored_truck_door_close"
+        }
+      }
+    },
+    "animation.armored_truck.close2": {
+      "loop": "hold_on_last_frame",
+      "animation_length": 1,
+      "bones": {
+        "door": {
+          "rotation": {
+            "0.0": [0, -35, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "door1": {
+          "rotation": {
+            "0.0": [0, 35, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "door2": {
+          "rotation": {
+            "0.0": [0, 65, 0],
+            "1.0": [0, 0, 0]
+          }
+        }
+      },
+      "sound_effects": {
+        "0.0": {
+          "effect": "armored_truck_door_close"
+        }
+      }
+    },
+    "animation.armored_truck.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [0, -24, -10],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    },
+    "animation.armored_truck.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [72.1471, 56.87845, -50.03454],
+          "position": [0, -22, 1],
+          "scale": [0.2, 0.2, 0.2]
+        }
+      }
+    }
+  }
+}

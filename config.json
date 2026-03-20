@@ -1,0 +1,42 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Simple Vehicles Addon 3.7.2 - The INSANITY Edition",
+	"namespace": "simple_vehicles",
+	"authors": [
+		"RMPlaysMCYT"
+	],
+	"targetVersion": "1.21.20",
+	"description": "This Addon Adds 100+ Vehicles and Over 200+ Items and perfect for creative, survival, city role-play, and other creative maps inside Minecraft World \nThis is now all in one pack which includes items, traders and more but the structure pack will be stayed as separated so there's no problem to have a contact to your structures with this structures \nThis is the heaviest project that I compile to have full experience",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": false,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"experimentalMolangFeatures": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Simple Vehicles Addon 3.7.2"
+				}
+			]
+		]
+	}
+}

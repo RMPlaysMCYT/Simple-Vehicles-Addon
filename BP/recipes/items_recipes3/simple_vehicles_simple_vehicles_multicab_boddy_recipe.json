@@ -1,0 +1,22 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:simple_vehicles_multicab_boddy recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:simple_vehicles_multicab_boddy"
+            },
+            {
+                "item": "minecraft:wool"
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:simple_vehicles_multicab_boddy"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

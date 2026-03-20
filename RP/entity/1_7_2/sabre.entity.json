@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:sabre",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"black": "textures/entity/sabre/sabre_black",
+				"white": "textures/entity/sabre/sabre_white",
+				"orange": "textures/entity/sabre/sabre_orange",
+				"magenta": "textures/entity/sabre/sabre_magenta",
+				"light_blue": "textures/entity/sabre/sabre_light_blue",
+				"yellow": "textures/entity/sabre/sabre_yellow",
+				"lime": "textures/entity/sabre/sabre_lime",
+				"pink": "textures/entity/sabre/sabre_pink",
+				"gray": "textures/entity/sabre/sabre_gray",
+				"silver": "textures/entity/sabre/sabre_silver",
+				"cyan": "textures/entity/sabre/sabre_cyan",
+				"purple": "textures/entity/sabre/sabre_purple",
+				"blue": "textures/entity/sabre/sabre_blue",
+				"brown": "textures/entity/sabre/sabre_brown",
+				"green": "textures/entity/sabre/sabre_green",
+				"red": "textures/entity/sabre"
+			},
+			"geometry": {
+				"default": "geometry.sabre"
+			},
+			"render_controllers": [
+				"controller.render.simple_car"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 7
+			},
+			"animations": {
+				"move": "animation.grummanllv.move",
+				"open": "animation.sabre.open",
+				"doors_idle": "animation.sabre.doors_idle",
+				"close": "animation.sabre.close",
+				"close2": "animation.sabre.close2",
+				"turn": "animation.rancher.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic",
+					{
+						"move": "query.modified_move_speed"
+					}
+				]
+			},
+			"sound_effects": {
+				"sabre_door_open": "simple_vehicles.corolla.open",
+				"sabre_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

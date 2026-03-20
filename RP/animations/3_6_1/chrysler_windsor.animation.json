@@ -1,0 +1,286 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.chrysler_windsor.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							-57.5,
+							0
+						]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							57.5,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.chrysler_windsor.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							-57.5,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							57.5,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.chrysler_windsor.doors_idle": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"door0": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.chrysler_windsor.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							-57.5,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							57.5,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.chrysler_windsor.move": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [
+						"variable.new_move_mechanic",
+						0,
+						0
+					]
+				},
+				"tire1": {
+					"rotation": [
+						"variable.new_move_mechanic",
+						0,
+						0
+					]
+				},
+				"tire0": {
+					"rotation": [
+						"variable.new_move_mechanic",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.chrysler_windsor.idle": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"tire1": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"tire0": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.chrysler_windsor.movereverse": {
+			"loop": true,
+			"bones": {
+				"leg0": {
+					"rotation": [
+						"variable.new_move_mechreve",
+						0,
+						0
+					]
+				},
+				"tire1": {
+					"rotation": [
+						"variable.new_move_mechreve",
+						0,
+						0
+					]
+				},
+				"tire0": {
+					"rotation": [
+						"variable.new_move_mechreve",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.chrysler_windsor.particlesmoke": {
+			"loop": true,
+			"animation_length": 0.05,
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "_simple_vehicles_arrowspell",
+						"locator": "smoke0"
+					},
+					{
+						"effect": "_simple_vehicles_arrowspell",
+						"locator": "smoke1"
+					},
+					{
+						"effect": "_simple_vehicles_arrowspell",
+						"locator": "smoke2"
+					},
+					{
+						"effect": "_simple_vehicles_arrowspell",
+						"locator": "smoke3"
+					}
+				]
+			}
+		},
+		"animation.chrysler_windsor.up": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						"query.vertical_speed*3",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.chrysler_windsor.down": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [
+						"query.vertical_speed*-3",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.chrysler_windsor.steer": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						0,
+						"variable.steering_wheel/10"
+					]
+				},
+				"tire1": {
+					"rotation": [
+						0,
+						"variable.steering_wheel/6",
+						0
+					]
+				},
+				"tire0": {
+					"rotation": [
+						0,
+						"variable.steering_wheel/6",
+						0
+					]
+				},
+				"root": {
+					"rotation": [
+						0,
+						"variable.steering_wheel/7.5",
+						0
+					]
+				}
+			}
+		}
+	}
+}

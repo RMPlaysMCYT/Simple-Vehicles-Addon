@@ -1,0 +1,1329 @@
+//Credit to iMasterProX
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.vehicle.durability": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"d0": "math.round((query.health / query.max_health) * 100) == 0"
+						},
+						{
+							"d1": "math.round((query.health / query.max_health) * 100) == 1"
+						},
+						{
+							"d2": "math.round((query.health / query.max_health) * 100) == 2"
+						},
+						{
+							"d3": "math.round((query.health / query.max_health) * 100) == 3"
+						},
+						{
+							"d4": "math.round((query.health / query.max_health) * 100) == 4"
+						},
+						{
+							"d5": "math.round((query.health / query.max_health) * 100) == 5"
+						},
+						{
+							"d6": "math.round((query.health / query.max_health) * 100) == 6"
+						},
+						{
+							"d7": "math.round((query.health / query.max_health) * 100) == 7"
+						},
+						{
+							"d8": "math.round((query.health / query.max_health) * 100) == 8"
+						},
+						{
+							"d9": "math.round((query.health / query.max_health) * 100) == 9"
+						},
+						{
+							"d10": "math.round((query.health / query.max_health) * 100) == 10"
+						},
+						{
+							"d11": "math.round((query.health / query.max_health) * 100) == 11"
+						},
+						{
+							"d12": "math.round((query.health / query.max_health) * 100) == 12"
+						},
+						{
+							"d13": "math.round((query.health / query.max_health) * 100) == 13"
+						},
+						{
+							"d14": "math.round((query.health / query.max_health) * 100) == 14"
+						},
+						{
+							"d15": "math.round((query.health / query.max_health) * 100) == 15"
+						},
+						{
+							"d16": "math.round((query.health / query.max_health) * 100) == 16"
+						},
+						{
+							"d17": "math.round((query.health / query.max_health) * 100) == 17"
+						},
+						{
+							"d18": "math.round((query.health / query.max_health) * 100) == 18"
+						},
+						{
+							"d19": "math.round((query.health / query.max_health) * 100) == 19"
+						},
+						{
+							"d20": "math.round((query.health / query.max_health) * 100) == 20"
+						},
+						{
+							"d21": "math.round((query.health / query.max_health) * 100) == 21"
+						},
+						{
+							"d22": "math.round((query.health / query.max_health) * 100) == 22"
+						},
+						{
+							"d23": "math.round((query.health / query.max_health) * 100) == 23"
+						},
+						{
+							"d24": "math.round((query.health / query.max_health) * 100) == 24"
+						},
+						{
+							"d25": "math.round((query.health / query.max_health) * 100) == 25"
+						},
+						{
+							"d26": "math.round((query.health / query.max_health) * 100) == 26"
+						},
+						{
+							"d27": "math.round((query.health / query.max_health) * 100) == 27"
+						},
+						{
+							"d28": "math.round((query.health / query.max_health) * 100) == 28"
+						},
+						{
+							"d29": "math.round((query.health / query.max_health) * 100) == 29"
+						},
+						{
+							"d30": "math.round((query.health / query.max_health) * 100) == 30"
+						},
+						{
+							"d31": "math.round((query.health / query.max_health) * 100) == 31"
+						},
+						{
+							"d32": "math.round((query.health / query.max_health) * 100) == 32"
+						},
+						{
+							"d33": "math.round((query.health / query.max_health) * 100) == 33"
+						},
+						{
+							"d34": "math.round((query.health / query.max_health) * 100) == 34"
+						},
+						{
+							"d35": "math.round((query.health / query.max_health) * 100) == 35"
+						},
+						{
+							"d36": "math.round((query.health / query.max_health) * 100) == 36"
+						},
+						{
+							"d37": "math.round((query.health / query.max_health) * 100) == 37"
+						},
+						{
+							"d38": "math.round((query.health / query.max_health) * 100) == 38"
+						},
+						{
+							"d39": "math.round((query.health / query.max_health) * 100) == 39"
+						},
+						{
+							"d40": "math.round((query.health / query.max_health) * 100) == 40"
+						},
+						{
+							"d41": "math.round((query.health / query.max_health) * 100) == 41"
+						},
+						{
+							"d42": "math.round((query.health / query.max_health) * 100) == 42"
+						},
+						{
+							"d43": "math.round((query.health / query.max_health) * 100) == 43"
+						},
+						{
+							"d44": "math.round((query.health / query.max_health) * 100) == 44"
+						},
+						{
+							"d45": "math.round((query.health / query.max_health) * 100) == 45"
+						},
+						{
+							"d46": "math.round((query.health / query.max_health) * 100) == 46"
+						},
+						{
+							"d47": "math.round((query.health / query.max_health) * 100) == 47"
+						},
+						{
+							"d48": "math.round((query.health / query.max_health) * 100) == 48"
+						},
+						{
+							"d49": "math.round((query.health / query.max_health) * 100) == 49"
+						},
+						{
+							"d50": "math.round((query.health / query.max_health) * 100) == 50"
+						},
+						{
+							"d51": "math.round((query.health / query.max_health) * 100) == 51"
+						},
+						{
+							"d52": "math.round((query.health / query.max_health) * 100) == 52"
+						},
+						{
+							"d53": "math.round((query.health / query.max_health) * 100) == 53"
+						},
+						{
+							"d54": "math.round((query.health / query.max_health) * 100) == 54"
+						},
+						{
+							"d55": "math.round((query.health / query.max_health) * 100) == 55"
+						},
+						{
+							"d56": "math.round((query.health / query.max_health) * 100) == 56"
+						},
+						{
+							"d57": "math.round((query.health / query.max_health) * 100) == 57"
+						},
+						{
+							"d58": "math.round((query.health / query.max_health) * 100) == 58"
+						},
+						{
+							"d59": "math.round((query.health / query.max_health) * 100) == 59"
+						},
+						{
+							"d60": "math.round((query.health / query.max_health) * 100) == 60"
+						},
+						{
+							"d61": "math.round((query.health / query.max_health) * 100) == 61"
+						},
+						{
+							"d62": "math.round((query.health / query.max_health) * 100) == 62"
+						},
+						{
+							"d63": "math.round((query.health / query.max_health) * 100) == 63"
+						},
+						{
+							"d64": "math.round((query.health / query.max_health) * 100) == 64"
+						},
+						{
+							"d65": "math.round((query.health / query.max_health) * 100) == 65"
+						},
+						{
+							"d66": "math.round((query.health / query.max_health) * 100) == 66"
+						},
+						{
+							"d67": "math.round((query.health / query.max_health) * 100) == 67"
+						},
+						{
+							"d68": "math.round((query.health / query.max_health) * 100) == 68"
+						},
+						{
+							"d69": "math.round((query.health / query.max_health) * 100) == 69"
+						},
+						{
+							"d70": "math.round((query.health / query.max_health) * 100) == 70"
+						},
+						{
+							"d71": "math.round((query.health / query.max_health) * 100) == 71"
+						},
+						{
+							"d72": "math.round((query.health / query.max_health) * 100) == 72"
+						},
+						{
+							"d73": "math.round((query.health / query.max_health) * 100) == 73"
+						},
+						{
+							"d74": "math.round((query.health / query.max_health) * 100) == 74"
+						},
+						{
+							"d75": "math.round((query.health / query.max_health) * 100) == 75"
+						},
+						{
+							"d76": "math.round((query.health / query.max_health) * 100) == 76"
+						},
+						{
+							"d77": "math.round((query.health / query.max_health) * 100) == 77"
+						},
+						{
+							"d78": "math.round((query.health / query.max_health) * 100) == 78"
+						},
+						{
+							"d79": "math.round((query.health / query.max_health) * 100) == 79"
+						},
+						{
+							"d80": "math.round((query.health / query.max_health) * 100) == 80"
+						},
+						{
+							"d81": "math.round((query.health / query.max_health) * 100) == 81"
+						},
+						{
+							"d82": "math.round((query.health / query.max_health) * 100) == 82"
+						},
+						{
+							"d83": "math.round((query.health / query.max_health) * 100) == 83"
+						},
+						{
+							"d84": "math.round((query.health / query.max_health) * 100) == 84"
+						},
+						{
+							"d85": "math.round((query.health / query.max_health) * 100) == 85"
+						},
+						{
+							"d86": "math.round((query.health / query.max_health) * 100) == 86"
+						},
+						{
+							"d87": "math.round((query.health / query.max_health) * 100) == 87"
+						},
+						{
+							"d88": "math.round((query.health / query.max_health) * 100) == 88"
+						},
+						{
+							"d89": "math.round((query.health / query.max_health) * 100) == 89"
+						},
+						{
+							"d90": "math.round((query.health / query.max_health) * 100) == 90"
+						},
+						{
+							"d91": "math.round((query.health / query.max_health) * 100) == 91"
+						},
+						{
+							"d92": "math.round((query.health / query.max_health) * 100) == 92"
+						},
+						{
+							"d93": "math.round((query.health / query.max_health) * 100) == 93"
+						},
+						{
+							"d94": "math.round((query.health / query.max_health) * 100) == 94"
+						},
+						{
+							"d95": "math.round((query.health / query.max_health) * 100) == 95"
+						},
+						{
+							"d96": "math.round((query.health / query.max_health) * 100) == 96"
+						},
+						{
+							"d97": "math.round((query.health / query.max_health) * 100) == 97"
+						},
+						{
+							"d98": "math.round((query.health / query.max_health) * 100) == 98"
+						},
+						{
+							"d99": "math.round((query.health / query.max_health) * 100) == 99"
+						},
+						{
+							"d100": "math.round((query.health / query.max_health) * 100) == 100"
+						}
+					]
+				},
+				"d0": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 0"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 0"
+					]
+				},
+				"d1": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 1"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 1"
+					]
+				},
+				"d2": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 2"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 2"
+					]
+				},
+				"d3": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 3"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 3"
+					]
+				},
+				"d4": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 4"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 4"
+					]
+				},
+				"d5": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 5"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 5"
+					]
+				},
+				"d6": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 6"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 6"
+					]
+				},
+				"d7": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 7"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 7"
+					]
+				},
+				"d8": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 8"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 8"
+					]
+				},
+				"d9": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 9"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 9"
+					]
+				},
+				"d10": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 10"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 10"
+					]
+				},
+				"d11": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 11"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 11"
+					]
+				},
+				"d12": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 12"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 12"
+					]
+				},
+				"d13": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 13"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 13"
+					]
+				},
+				"d14": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 14"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 14"
+					]
+				},
+				"d15": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 15"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 15"
+					]
+				},
+				"d16": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 16"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 16"
+					]
+				},
+				"d17": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 17"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 17"
+					]
+				},
+				"d18": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 18"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 18"
+					]
+				},
+				"d19": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 19"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 19"
+					]
+				},
+				"d20": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 20"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 20"
+					]
+				},
+				"d21": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 21"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 21"
+					]
+				},
+				"d22": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 22"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 22"
+					]
+				},
+				"d23": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 23"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 23"
+					]
+				},
+				"d24": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 24"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 24"
+					]
+				},
+				"d25": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 25"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 25"
+					]
+				},
+				"d26": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 26"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 26"
+					]
+				},
+				"d27": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 27"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 27"
+					]
+				},
+				"d28": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 28"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 28"
+					]
+				},
+				"d29": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 29"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 29"
+					]
+				},
+				"d30": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 30"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 30"
+					]
+				},
+				"d31": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 31"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 31"
+					]
+				},
+				"d32": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 32"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 32"
+					]
+				},
+				"d33": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 33"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 33"
+					]
+				},
+				"d34": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 34"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 34"
+					]
+				},
+				"d35": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 35"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 35"
+					]
+				},
+				"d36": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 36"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 36"
+					]
+				},
+				"d37": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 37"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 37"
+					]
+				},
+				"d38": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 38"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 38"
+					]
+				},
+				"d39": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 39"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 39"
+					]
+				},
+				"d40": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 40"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 40"
+					]
+				},
+				"d41": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 41"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 41"
+					]
+				},
+				"d42": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 42"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 42"
+					]
+				},
+				"d43": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 43"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 43"
+					]
+				},
+				"d44": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 44"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 44"
+					]
+				},
+				"d45": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 45"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 45"
+					]
+				},
+				"d46": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 46"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 46"
+					]
+				},
+				"d47": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 47"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 47"
+					]
+				},
+				"d48": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 48"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 48"
+					]
+				},
+				"d49": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 49"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 49"
+					]
+				},
+				"d50": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 50"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 50"
+					]
+				},
+				"d51": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 51"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 51"
+					]
+				},
+				"d52": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 52"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 52"
+					]
+				},
+				"d53": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 53"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 53"
+					]
+				},
+				"d54": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 54"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 54"
+					]
+				},
+				"d55": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 55"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 55"
+					]
+				},
+				"d56": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 56"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 56"
+					]
+				},
+				"d57": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 57"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 57"
+					]
+				},
+				"d58": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 58"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 58"
+					]
+				},
+				"d59": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 59"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 59"
+					]
+				},
+				"d60": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 60"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 60"
+					]
+				},
+				"d61": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 61"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 61"
+					]
+				},
+				"d62": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 62"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 62"
+					]
+				},
+				"d63": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 63"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 63"
+					]
+				},
+				"d64": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 64"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 64"
+					]
+				},
+				"d65": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 65"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 65"
+					]
+				},
+				"d66": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 66"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 66"
+					]
+				},
+				"d67": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 67"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 67"
+					]
+				},
+				"d68": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 68"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 68"
+					]
+				},
+				"d69": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 69"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 69"
+					]
+				},
+				"d70": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 70"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 70"
+					]
+				},
+				"d71": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 71"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 71"
+					]
+				},
+				"d72": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 72"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 72"
+					]
+				},
+				"d73": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 73"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 73"
+					]
+				},
+				"d74": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 74"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 74"
+					]
+				},
+				"d75": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 75"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 75"
+					]
+				},
+				"d76": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 76"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 76"
+					]
+				},
+				"d77": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 77"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 77"
+					]
+				},
+				"d78": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 78"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 78"
+					]
+				},
+				"d79": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 79"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 79"
+					]
+				},
+				"d80": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 80"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 80"
+					]
+				},
+				"d81": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 81"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 81"
+					]
+				},
+				"d82": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 82"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 82"
+					]
+				},
+				"d83": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 83"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 83"
+					]
+				},
+				"d84": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 84"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 84"
+					]
+				},
+				"d85": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 85"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 85"
+					]
+				},
+				"d86": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 86"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 86"
+					]
+				},
+				"d87": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 87"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 87"
+					]
+				},
+				"d88": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 88"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 88"
+					]
+				},
+				"d89": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 89"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 89"
+					]
+				},
+				"d90": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 90"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 90"
+					]
+				},
+				"d91": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 91"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 91"
+					]
+				},
+				"d92": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 92"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 92"
+					]
+				},
+				"d93": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 93"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 93"
+					]
+				},
+				"d94": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 94"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 94"
+					]
+				},
+				"d95": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 95"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 95"
+					]
+				},
+				"d96": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 96"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 96"
+					]
+				},
+				"d97": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 97"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 97"
+					]
+				},
+				"d98": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 98"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 98"
+					]
+				},
+				"d99": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 99"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 99"
+					]
+				},
+				"d100": {
+					"transitions": [
+						{
+							"default": "math.round((query.health / query.max_health) * 100) != 100"
+						}
+					],
+					"on_entry": [
+						"/scoreboard players set @s durability 100"
+					]
+				}
+			}
+		}
+	}
+}

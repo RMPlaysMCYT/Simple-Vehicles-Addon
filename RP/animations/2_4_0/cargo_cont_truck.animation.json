@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cargo_cont_truck.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": [
+						"query.anim_time*15",
+						0,
+						0
+					]
+				},
+				"leg1": {
+					"rotation": [
+						"query.anim_time*15",
+						0,
+						0
+					]
+				},
+				"limb": {
+					"position": [
+						0,
+						15,
+						0
+					],
+					"scale": [
+						1,
+						1.1,
+						1
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.submarine.radar": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"radar": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"4.0": [
+							0,
+							720,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.submarine.move": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"propeller": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"4.0": [
+							0,
+							0,
+							-2560
+						]
+					}
+				}
+			}
+		},
+		"animation.submarine.setup": {
+			"loop": true,
+			"bones": {
+				"submarine": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"scale": [
+						0.7,
+						0.7,
+						0.7
+					]
+				},
+				"steer": {
+					"rotation": [
+						0,
+						0,
+						0
+					],
+					"scale": [
+						1.2,
+						2,
+						1.2
+					]
+				}
+			}
+		},
+		"animation.submarine.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						0,
+						"math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.riding.lowrider3": {
+			"loop": true,
+			"animation_length": 0.66667,
+			"bones": {
+				"leftLeg": {
+					"rotation": [
+						"-72-this",
+						"-18-this",
+						"-this"
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						"-72-this",
+						"18-this",
+						"-this"
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						-36,
+						0,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-36,
+						0,
+						0
+					]
+				},
+				"root": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.3333": [
+							0,
+							0,
+							10
+						],
+						"0.5833": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.3333": [
+							0,
+							3,
+							0
+						],
+						"0.5833": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

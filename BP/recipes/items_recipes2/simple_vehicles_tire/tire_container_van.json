@@ -1,0 +1,38 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tire_container_van"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBW",
+			"BIs",
+			"vBe"
+		],
+		"key": {
+			"e": {"item": "minecraft:redstone"},
+			"s": {"item": "minecraft:leather"},
+			"v": {"item": "minecraft:gray_terracotta"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 8
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 7
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_container_van",
+				"count": 4
+			}
+		]
+	}
+}

@@ -1,0 +1,60 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "translucence:entity_alphatest": {},
+    "fish:entity_alphatest": {},
+    "audi_r8:entity_alphatest": {},
+    "cars:entity_alphatest": {},
+    "sesto_elemento:entity_alphatest": {},
+    "televisor:entity_alphatest": {},
+    "vehicle_outlineares:entity_static": {
+        "+states": ["InvertCulling"],
+        "+defines": ["ALPHA_TEST","USE_OVERLAY"]
+    },
+
+
+
+
+
+    "vehicle_base:entity_alphatest": {
+      "+states": [
+        "EnableStencilTest",
+        "StencilWrite"
+      ],
+      "frontFace": {
+        "stencilFunc": "Always",
+        "stencilFailOp": "Replace",
+        "stencilDepthFailOp": "Replace",
+        "stencilPassOp": "Replace"
+      },
+      "backFace": {
+        "stencilFunc": "Always",
+        "stencilFailOp": "Replace",
+        "stencilDepthFailOp": "Replace",
+        "stencilPassOp": "Replace"
+      },
+      "stencilRef": 2
+    },
+    "vehicle_outline:entity_alphatest":{
+      "+states": [
+        "EnableStencilTest",
+        "InvertCulling"
+      ],
+      "-states": [
+        "DisableCulling"
+      ],
+      "-defines": [
+        "FANCY"
+      ],
+      "depthFunc": "Always",
+      "frontFace": {
+        "stencilFunc": "NotEqual"
+      },
+      "backFace": {
+        "stencilFunc": "Equal"
+      },
+      "stencilRef": 2,
+      "stencilReadMask": 2
+    }
+  }
+}

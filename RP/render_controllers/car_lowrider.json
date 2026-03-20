@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.carlow_lights": {
+			"part_visibility": [
+				{
+					"*":true
+				},
+				{
+					"car_lowrider_lights": "query.is_saddled"
+				}
+			],
+			"geometry": "Geometry.car_lowrider_lights",
+			"materials": [
+				{
+					"*":"Material.default"
+				},
+				{
+					"car_lowrider_lights": "Material.car_lowrider_lights"
+				}
+			],
+			"textures": [
+				"Texture.car_lowrider_lights"
+			]
+		},
+		"controller.render.car_lowrider": {
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		}
+	}
+}

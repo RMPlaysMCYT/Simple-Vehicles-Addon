@@ -1,0 +1,1 @@
+playanimation @p[r=1] animation.player.bike_move.ridee controller.animation.player.base 0 "!query.is_riding || !query.is_moving"

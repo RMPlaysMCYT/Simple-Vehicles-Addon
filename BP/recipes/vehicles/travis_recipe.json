@@ -1,0 +1,27 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:travis_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BM"
+		],
+		"key": {
+			"B": {
+				"item": "simple_vehicles:body_travis"
+			},
+			"M": {
+				"item": "simple_vehicles:tire_travis"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:travis_spawn_egg"
+			}
+		]
+	}
+}

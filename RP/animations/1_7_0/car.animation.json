@@ -1,0 +1,138 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.car.death": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.8,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.92": [0, 7, 0],
+						"1.44": [0, -3, 0]
+					}
+				},
+				"wheel0": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.92": [0, 6, 0]
+					}
+				},
+				"core": {
+					"rotation": [0, 0, 0],
+					"scale": {
+						"0.92": [1, 1, 1],
+						"1.48": [0, 0, 0]
+					}
+				},
+				"wheel1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.92": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.92": [0, 6, 0]
+					}
+				},
+				"wheel0A": {
+					"rotation": {
+						"0.92": [0, 0, 0],
+						"1.44": [0, 0, 90]
+					},
+					"position": {
+						"0.92": [0, 0, 0],
+						"1.44": [10, -11, 0]
+					}
+				},
+				"wheel0B": {
+					"rotation": {
+						"0.92": [0, 0, 0],
+						"1.44": [0, 0, -90]
+					},
+					"position": {
+						"0.92": [0, 0, 0],
+						"1.44": [-10, -11, 0]
+					}
+				},
+				"wheel1A": {
+					"rotation": {
+						"0.92": [0, 0, 0],
+						"1.48": [0, 0, 90]
+					},
+					"position": {
+						"0.92": [0, 0, 0],
+						"1.48": [10, -11, 0]
+					}
+				},
+				"wheel1B": {
+					"rotation": {
+						"0.92": [0, 0, 0],
+						"1.48": [0, 0, -90]
+					},
+					"position": {
+						"0.92": [0, 0, 0],
+						"1.48": [-10, -11, 0]
+					}
+				},
+				"core0": {
+					"rotation": {
+						"0.92": [0, 0, 0],
+						"1.8": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": {
+						"0.92": [1, 1, 1],
+						"1.8": [-1.6, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"1.64": {
+					"effect": "explode"
+				}
+			}
+		},
+		"animation.car.look_at_target": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": [0, "math.max(-1.5,math.min(1.5,query.yaw_speed*0.2))*query.modified_move_speed*5", 0]
+				},
+				"steering_wheel": {
+					"rotation": [0, 0, "math.max(-25,math.min(20,query.yaw_speed*0.2))*query.modified_move_speed*5"]
+				},
+				"wheel0A": {
+					"rotation": [0, "math.max(-1.5,math.min(1.5,query.yaw_speed*0.2))*query.modified_move_speed*5", 0]
+				},
+				"wheel0B": {
+					"rotation": [0, "math.max(-1.5,math.min(1.5,query.yaw_speed*0.2))*query.modified_move_speed*5", 0]
+				},
+				"leg0": {
+					"rotation": [0, "math.max(-5,math.min(10,query.yaw_speed*0.2))*query.modified_move_speed*1", 0]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-20,math.min(20,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-20,math.min(20,query.yaw_speed*0.5))", 0]
+				}
+			}
+		},
+		"animation.car.turn": {
+			"loop": true,
+			"bones": {
+				"steering_wheel": {
+					"rotation": [0, 0, "math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"]
+				},
+				"tire0": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-28,math.min(28,query.yaw_speed*0.5))", 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,239 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.body_3d_item_blade": {
+			"part_visibility": [
+				{
+					"root": true
+				},
+				{
+					"container_body": false
+				},
+				{
+					"door0": false
+				},
+				{
+					"door1": false
+				},
+				{
+					"container": false
+				},
+				{
+					"container_leg1": false
+				},
+				{
+					"container_leg0": false
+				},
+				{
+					"container_leg": false
+				},
+				{
+					"container_leg2": false
+				},
+				{
+					"body": false
+				},
+				{
+					"base": false
+				},
+				{
+					"balloon": false
+				},
+				{
+					"leg0": false
+				},
+				{
+					"steer": false
+				},
+				{
+					"steering_wheel": false
+				},
+				{
+					"leg1": false
+				},
+				{
+					"leg2": false
+				},
+				{
+					"leg3": false
+				},
+				{
+					"leg4": false
+				},
+				{
+					"leg5": false
+				},
+				{
+					"leg6": false
+				},
+				{
+					"leg7": false
+				},
+				{
+					"tire": false
+				},
+				{
+					"tire0": false
+				},
+				{
+					"tire1": false
+				},
+				{
+					"tire2": false
+				},
+				{
+					"tire3": false
+				},
+				{
+					"tire4": false
+				},
+				{
+					"tire5": false
+				},
+				{
+					"tire6": false
+				},
+				{
+					"tire7": false
+				},
+				{
+					"tire8": false
+				},
+				{
+					"tire9": false
+				},
+				{
+					"tire10": false
+				},
+				{
+					"tire11": false
+				},
+				{
+					"tire12": false
+				},
+				{
+					"wheel0": false
+				},
+				{
+					"wheel1": false
+				},
+				{
+					"wheel1A": false
+				},
+				{
+					"wheel1B": false
+				},
+				{
+					"wheel2": false
+				},
+				{
+					"wheel3": false
+				},
+				{
+					"wheel4": false
+				},
+				{
+					"wheel5": false
+				},
+				{
+					"wheel6": false
+				},
+				{
+					"wheel7": false
+				},
+				{
+					"wheel6": false
+				},
+				{
+					"wheel7": false
+				},
+				{
+					"backwing0": false
+				},
+				{
+					"flap0": false
+				},
+				{
+					"flap1": false
+				},
+				{
+					"flap2": false
+				},
+				{
+					"flap3": false
+				},
+				{
+					"wheel7": false
+				},
+				{
+					"stand0": false
+				},
+				{
+					"stand1": false
+				},
+				{
+					"stand2": false
+				},
+				{
+					"stand3": false
+				},
+				{
+					"stand4": false
+				},
+				{
+					"pit0": false
+				},
+				{
+					"pit1": false
+				},
+				{
+					"pit2": false
+				},
+				{
+					"pit3": false
+				},
+				{
+					"pit4": false
+				},
+				{
+					"tir0": false
+				},
+				{
+					"tir1": false
+				},
+				{
+					"tir2": false
+				},
+				{
+					"tir3": false
+				},
+				{
+					"tir4": false
+				},
+				{
+					"propeller": true
+				},
+				{
+					"propeller0": true
+				},
+				{
+					"propeller1": false
+				},
+				{
+					"wings": true
+				},
+				{
+					"tube": false
+				}
+			],
+			"rebuild_animation_matrices": true,
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": ["Texture.default"]
+		}
+	}
+}

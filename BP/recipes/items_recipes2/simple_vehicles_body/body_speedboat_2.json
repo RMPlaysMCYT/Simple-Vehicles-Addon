@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:body_speedboat_2"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"BST",
+			"BBB"
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"S": {
+				"item": "simple_vehicles:seat_speedboat_2"
+			},
+			"T": {
+				"item": "simple_vehicles:steer_speedboat_2"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:body_speedboat_two"
+			}
+		]
+	}
+}

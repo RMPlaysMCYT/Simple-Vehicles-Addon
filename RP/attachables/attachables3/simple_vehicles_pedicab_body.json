@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "simple_vehicles:simple_vehicles_pedicab_body",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/parts_items/11/simple_vehicles.pedicab_body"
+      },
+      "geometry": {
+        "default": "geometry.simple_vehicles_large_item"
+      },
+      "animations": {
+        "hold": "animation.simple_vehicles_large_item.hold"
+      },
+      "scripts": {
+        "animate": [
+          "hold"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.large_item"
+      ]
+    }
+  }
+}

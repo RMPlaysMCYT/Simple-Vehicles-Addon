@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.seaplane.loop": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"propeller1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 1440]
+					}
+				},
+				"propeller0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 0, 1440]
+					}
+				}
+			}
+		},
+		"animation.simple_vehicles.seaplane.look_at_target": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		}
+	}
+}

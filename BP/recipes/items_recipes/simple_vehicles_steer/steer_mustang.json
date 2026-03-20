@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_mustang242"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"fBf",
+			"BIB",
+			"fBf"
+		],
+		"key": {
+			"f": {"item": "minecraft:red_wool"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 4
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_mustang"
+			}
+		]
+	}
+}

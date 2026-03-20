@@ -1,0 +1,98 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.motorcycle_ride": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"riding": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function player_ride_sys/player_ride_motorcycle"
+					]
+				},
+				"riding": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function player_ride_sys/player_ride_motorcycle"
+					]
+				}
+			}
+		},
+		"controller.animation.motorcycle.horn": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"jumping": "query.is_riding&&query.is_jumping"
+						}
+					],
+					"on_entry": [
+						"/playsound vehicles.horn @a[r=2] ~ ~ ~ 1 1 1",
+						"/playsound vehicles.horn @s ~ ~ ~ 1 1 1"
+					]
+				},
+				"jumping": {
+					"transitions": [
+						{
+							"default": "!query.is_riding&&!query.is_jumping"
+						}
+					],
+					"on_entry": [
+						"/playsound vehicles.horn @a[r=2] ~ ~ ~ 1 1 1",
+						"/playsound vehicles.horn @s ~ ~ ~ 1 1 1"
+					]
+				}
+			}
+		},
+		"controller.animation.motorcycle.on_water": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"on_water": "query.is_in_water"
+						}
+					]
+				},
+				"on_water": {
+					"transitions": [
+						{
+							"default": "!query.is_in_water"
+						}
+					],
+					"on_entry": [
+						"@s simple_vehicles:on_water_event"
+					]
+				}
+			}
+		},
+		"controller.animation.motorcycle.on_ground": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"on_water": "query.is_on_ground"
+						}
+					]
+				},
+				"on_water": {
+					"transitions": [
+						{
+							"default": "!query.is_on_ground"
+						}
+					],
+					"on_entry": [
+						"@s simple_vehicles:on_ground_event"
+					]
+				}
+			}
+		}
+	}
+}

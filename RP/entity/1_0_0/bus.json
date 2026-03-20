@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:bus",
+			"materials": {
+				"default": "witch"
+			},
+			"geometry": {
+				"default": "geometry.bus"
+			},
+			"textures": {
+				"black": "textures/entity/bus/bus_black",
+				"white": "textures/entity/bus/bus_white",
+				"orange": "textures/entity/bus/bus_orange",
+				"magenta": "textures/entity/bus/bus_magenta",
+				"light_blue": "textures/entity/bus/bus_light_blue",
+				"yellow": "textures/entity/bus/bus_yellow",
+				"lime": "textures/entity/bus/bus_lime",
+				"pink": "textures/entity/bus/bus_pink",
+				"gray": "textures/entity/bus",
+				"silver": "textures/entity/bus/bus_silver",
+				"cyan": "textures/entity/bus/bus_cyan",
+				"purple": "textures/entity/bus/bus_purple",
+				"blue": "textures/entity/bus/bus_blue",
+				"brown": "textures/entity/bus/bus_brown",
+				"green": "textures/entity/bus/bus_green",
+				"red": "textures/entity/bus/bus_red"
+			},
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 2
+			},
+			"animations": {
+				"move": "animation.bus.move",
+				"look_at_target_car": "animation.car.look_at_target"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"move": "query.modified_move_speed"
+					},
+					"look_at_target_car"
+				]
+			},
+			"particle_effects": {
+				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
+			},
+			"render_controllers": [
+				"controller.render.bus_colors"
+			]
+		}
+	}
+}

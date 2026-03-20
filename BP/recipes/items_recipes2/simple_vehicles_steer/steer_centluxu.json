@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:steer_century_luxury"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"sBx",
+			"BIB",
+			" B "
+		],
+		"key": {
+			"s": {"item": "minecraft:redstone"},
+			"x": {"item": "minecraft:gray_terracotta"},
+			"B": {
+				"item": "minecraft:wool",
+				"data": 8
+			},
+			"I": {
+				"item": "minecraft:redstone"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:steer_century_luxury"
+			}
+		]
+	}
+}

@@ -1,0 +1,321 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.simple_vehicles.pick_up_truck.move": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					},
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.25": [
+							0,
+							-1.5,
+							0
+						],
+						"0.5": [
+							0,
+							0,
+							0
+						],
+						"0.75": [
+							0,
+							-1.5,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"leg0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"door0": {
+					"position": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.simple_vehicles.pick_up_truck.move2": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"tire1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"tire0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							360,
+							0,
+							0
+						]
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.2": [
+							0,
+							-1,
+							0
+						],
+						"0.5": [
+							0,
+							0,
+							0
+						],
+						"0.7": [
+							0,
+							-1,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "ambulance.wiper"
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "arrow_particle",
+					"locator": "vehicle_particle"
+				},
+				"0.4": {
+					"effect": "arrow_particle",
+					"locator": "vehicle_particle"
+				},
+				"0.8": {
+					"effect": "arrow_particle",
+					"locator": "vehicle_particle"
+				}
+			}
+		},
+		"animation.pick_up_truck.turn": {
+			"loop": true,
+			"bones": {
+				"steer": {
+					"rotation": [
+						0,
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))*-query.modified_move_speed*0.7"
+					]
+				},
+				"tire0": {
+					"rotation": [
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))",
+						0
+					]
+				},
+				"tire1": {
+					"rotation": [
+						0,
+						"math.max(-28,math.min(28,query.yaw_speed*0.5))",
+						0
+					]
+				}
+			}
+		},
+		"animation.simple_vehicles.pick_up_truck.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							-40,
+							0
+						]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							40,
+							0
+						]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "pick_up_truck_door_open"
+				}
+			}
+		},
+		"animation.simple_vehicles.pick_up_truck.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [
+							0,
+							-40,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							40,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.1": {
+					"effect": "pick_up_truck_door_close"
+				}
+			}
+		},
+		"animation.simple_vehicles.pick_up_truck.close2": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"door0": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				},
+				"door1": {
+					"rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

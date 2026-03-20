@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:dump_truck",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/simple_vehicles_dump_truck"
+			},
+			"geometry": {
+				"default": "geometry.simple_vehicles.dump_truck"
+			},
+			"animations": {
+				"move": "animation.simple_vehicles.dump_truck.move",
+				"doors_idle": "animation.simple_vehicles.dump_truck.doors_idle",
+				"open": "animation.simple_vehicles.dump_truck.open",
+				"close": "animation.simple_vehicles.dump_truck.close",
+				"close2": "animation.simple_vehicles.dump_truck.close2",
+				"turn": "animation.simple_vehicles.dump_truck.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic",
+					{
+						"move": "query.modified_distance_moved"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 28
+			},
+			"sound_effects": {
+				"dump_door_open": "simple_vehicles.corolla.open",
+				"dump_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

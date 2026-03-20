@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:dragster",
+			"textures": {
+				"black": "textures/entity/3_1_0/dragster",
+				"white": "textures/entity/3_1_0/dragster/dragster_white",
+				"orange": "textures/entity/3_1_0/dragster/dragster_orange",
+				"magenta": "textures/entity/3_1_0/dragster/dragster_magenta",
+				"light_blue": "textures/entity/3_1_0/dragster/dragster_light_blue",
+				"yellow": "textures/entity/3_1_0/dragster/dragster_yellow",
+				"lime": "textures/entity/3_1_0/dragster/dragster_lime",
+				"pink": "textures/entity/3_1_0/dragster/dragster_pink",
+				"gray": "textures/entity/3_1_0/dragster/dragster_gray",
+				"silver": "textures/entity/3_1_0/dragster/dragster_silver",
+				"cyan": "textures/entity/3_1_0/dragster/dragster_cyan",
+				"purple": "textures/entity/3_1_0/dragster/dragster_purple",
+				"blue": "textures/entity/3_1_0/dragster/dragster_blue",
+				"brown": "textures/entity/3_1_0/dragster/dragster_brown",
+				"green": "textures/entity/3_1_0/dragster/dragster_green",
+				"red": "textures/entity/3_1_0/dragster/dragster_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.dragster"
+			},
+			"render_controllers": [
+				"controller.render.f1_car2"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 4
+			},
+			"animations": {
+				"move": "animation.dragster.move",
+				"turn": "animation.dragster.turn",
+				"ups": "animation.dragster.ups",
+				"downs": "animation.dragster.downs",
+				"general": "controller.animation.f1_car.general"
+			},
+			"scripts": {
+				"animate": [
+					"general"
+				]
+			}
+		}
+	}
+}

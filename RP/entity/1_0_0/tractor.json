@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:tractor",
+			"materials": {
+				"default": "witch"
+			},
+			"textures": {
+				"orange": "textures/entity/tractor",
+				"green": "textures/entity/tractor/tractor_green"
+			},
+			"geometry": {
+				"default": "geometry.tractor"
+			},
+			"render_controllers": [
+				"controller.render.tractor_small"
+			],
+			"spawn_egg": {
+				"texture": "vehicles",
+				"texture_index": 22
+			},
+			"animations": {
+				"turn": "animation.simple_vehicles.tractor.turn",
+				"move": "animation.tractor.move",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"animate": [
+					"general",
+					"v_turn",
+					"move"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.ride_quad_bike": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"riding": "query.has_rider"
+						}
+					]
+				},
+				"riding": {
+					"transitions": [
+						{
+							"default": "!query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function player_ride_sys/quad_bike"
+					]
+				}
+			}
+		}
+	}
+}

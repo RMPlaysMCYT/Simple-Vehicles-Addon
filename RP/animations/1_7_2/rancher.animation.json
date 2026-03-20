@@ -1,0 +1,176 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.rancher.look_at_target": {
+			"loop": true,
+			"bones": {
+				"steering_wheel": {
+					"rotation": [0, 0, "math.max(-30,math.min(30,query.yaw_speed*0.5))*1"]
+				},
+				"wheel0": {
+					"rotation": [0, "math.max(-26,math.min(26,query.yaw_speed*0.5))", 0]
+				}
+			}
+		},
+		"animation.rancher.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"blend_weight": "0.3",
+			"bones": {
+				"door_1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -60, 0]
+					}
+				},
+				"door_0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, 60, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "rancher_door_open"
+				}
+			}
+		},
+		"animation.rancher.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"blend_weight": "0.3",
+			"bones": {
+				"door_1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door_0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "rancher_door_close"
+				}
+			}
+		},
+		"animation.rancher.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"blend_weight": "0.3",
+			"bones": {
+				"door_1": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door_0": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "rancher_door_close"
+				}
+			}
+		},
+		"animation.rancher.move": {
+			"loop": true,
+			"bones": {
+				"wheel1": {
+					"rotation": ["query.modified_distance_moved * 35", 0, 0]
+				},
+				"tire0": {
+					"rotation": ["query.modified_distance_moved * 35", 0, 0]
+				},
+				"tire1": {
+					"rotation": ["query.modified_distance_moved * 35", 0, 0]
+				}
+			}
+		},
+		"animation.rancher.move2_bts": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leg0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"leg1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"tire0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				},
+				"tire1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.rancher.doors_idle": {
+			"loop": true,
+			"blend_weight": "0.3",
+			"bones": {
+				"door_1": {
+					"rotation": [0, 0, 0]
+				},
+				"door_0": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"animation.rancher.turn": {
+			"loop": true,
+			"bones": {
+				"tire0": {
+					"rotation": [0, "math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7", 0]
+				},
+				"tire1": {
+					"rotation": [0, "math.max(-15,math.min(15,query.yaw_speed*0.5))*-query.modified_move_speed*0.7", 0]
+				}
+			}
+		},
+		"animation.rancher.setup": {
+			"loop": true,
+			"bones": {
+				"rancher_root": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"tire0": {
+					"rotation": [0, 0, 0]
+				},
+				"wheel1": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.simple_vehicles_gyroplane.loop_init": {
+			"states": {
+				"default": {
+					"animations": ["unloop"],
+					"transitions": [
+						{"active": "query.is_saddled"}
+					],
+					"blend_transition": 5
+				},
+				"active": {
+					"animations": ["loop"],
+					"transitions": [
+						{"default": "!query.is_saddled"}
+					],
+					"blend_transition": 5
+				}
+			}
+		}
+	}
+}

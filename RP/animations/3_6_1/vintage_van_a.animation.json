@@ -1,0 +1,216 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vintage_van_a.setup": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"scale": 1
+				},
+				"wiper0": {
+					"position": [0, 0, -0.1]
+				},
+				"wiper1": {
+					"position": [0, 0, -0.1]
+				}
+			}
+		},
+		"animation.vintage_van_a.move": {
+			"loop": true,
+			"bones": {
+				"wheel1": {
+					"rotation": ["query.modified_distance_moved * 20", 0, 0]
+				},
+				"wheel0": {
+					"rotation": ["query.modified_distance_moved * 20", "variable.steering / 10", 0]
+				},
+				"wheel2": {
+					"rotation": ["query.modified_distance_moved * 20", "variable.steering / 10", 0]
+				},
+				"steering_wheel": {
+					"rotation": [0, "variable.steering / 10", 0]
+				}
+			}
+		},
+		"animation.vintage_van_a.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, -2.71, 0],
+						"0.2083": [0, 0, 0],
+						"1.0": [0, -50, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 2.71, 0],
+						"0.2083": [0, 0, 0],
+						"1.0": [0, 50, 0]
+					}
+				},
+				"door3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-2, 0, 0],
+						"1.0": [-2, 0, 29]
+					}
+				}
+			}
+		},
+		"animation.vintage_van_a.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, -50, 0],
+						"0.7917": [0, 0, 0],
+						"0.9167": [0, -2.71, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 50, 0],
+						"0.7917": [0, 0, 0],
+						"0.9167": [0, 2.71, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"position": {
+						"0.0": [-2, 0, 29],
+						"0.7917": [-2, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vintage_van_a.doors_idle": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": [0, 0, 0]
+				},
+				"door1": {
+					"rotation": [0, 0, 0]
+				},
+				"door3": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.vintage_van_a.wipe_open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"glass0": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -11, 0]
+					},
+					"scale": {
+						"0.6667": [1, 1, 1],
+						"1.0": [1, 0.7, 1]
+					}
+				},
+				"glass1": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.0": [0, -11, 0]
+					},
+					"scale": {
+						"0.6667": [1, 1, 1],
+						"1.0": [1, 0.7, 1]
+					}
+				}
+			}
+		},
+		"animation.vintage_van_a.wipe_close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"glass0": {
+					"position": {
+						"0.0": [0, -11, 0],
+						"1.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 0.7, 1],
+						"0.3333": [1, 1, 1]
+					}
+				},
+				"glass1": {
+					"position": {
+						"0.0": [0, -11, 0],
+						"1.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 0.7, 1],
+						"0.3333": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.vintage_van_a.close2": {
+			"animation_length": 1,
+			"bones": {
+				"door0": {
+					"rotation": {
+						"0.0": [0, -50, 0],
+						"0.7917": [0, 0, 0],
+						"0.9167": [0, -2.71, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door1": {
+					"rotation": {
+						"0.0": [0, 50, 0],
+						"0.7917": [0, 0, 0],
+						"0.9167": [0, 2.71, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"door3": {
+					"position": {
+						"0.0": [-2, 0, 29],
+						"0.7917": [-2, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vintage_van_a.wiper": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"wiper0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0.92631, -6.73717, -42.06341],
+						"0.5": [25, 0, -127.5],
+						"0.75": [0.92631, -6.73717, -42.06341],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"wiper1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [0.92631, -6.73717, -42.06341],
+						"0.5": [25, 0, -127.5],
+						"0.75": [0.92631, -6.73717, -42.06341],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vintage_van_a.steer": {
+			"loop": true
+		}
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:lowrider_v2",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"black": "textures/entity/car_lowrider_v2/black",
+				"white": "textures/entity/car_lowrider_v2/white",
+				"red": "textures/entity/car_lowrider_v2/red",
+				"green": "textures/entity/car_lowrider_v2/green",
+				"blue": "textures/entity/car_lowrider_v2/blue"
+			},
+			"geometry": {
+				"default": "geometry.car_lowrider_v2"
+			},
+			"animations": {
+				"move_mechanic": "controller.animation.ae86.move_mechanic",
+				"move": "animation.simple_vehicles.ae86.move",
+				"movereverse": "animation.simple_vehicles.ae86.movereverse",
+				"idle": "animation.simple_vehicles.ae86.idle",
+				"turn": "animation.car_lowrider.turn",
+				"v_turn": "controller.animation.vehicle.v_turn",
+				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
+				"doors_idle": "animation.rancherogt_sass.doors_idle",
+				"open": "animation.rancherogt_sass.open",
+				"close": "animation.rancherogt_sass.close",
+				"close2": "animation.rancherogt_sass.close2",
+				////Climb
+				"up": "animation.chrysler_windsor.up",
+				"down": "animation.chrysler_windsor.down",
+				"general": "controller.animation.chrysler_windsor.general"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.moving_veh = query.modified_distance_moved;",
+					"variable.new_move_mechanic = variable.moving_veh * 25;",
+					"variable.new_move_mechreve = variable.moving_veh * -25;"
+				],
+				"animate": [
+					"general",
+					"v_turn",
+					"door_mechanic",
+					{
+						"move": "query.is_moving"
+					},
+					{
+						"close2": "query.has_rider"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.vespa_primavera"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_2",
+				"texture_index": 13
+			},
+			"sound_effects": {
+				"car_lowrider_v2_door_open": "simple_vehicles.corolla.open",
+				"car_lowrider_v2_door_close": "simple_vehicles.corolla.close"
+			}
+		}
+	}
+}

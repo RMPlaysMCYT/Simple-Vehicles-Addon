@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.scooter.ride": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [
+						5,
+						0,
+						0
+					]
+				},
+				"leftLeg": {
+					"rotation": [
+						25,
+						-10,
+						10
+					]
+				},
+				"rightLeg": {
+					"rotation": [
+						25,
+						10,
+						-10
+					]
+				},
+				"root": {
+					"position": [
+						0,
+						0,
+						1
+					]
+				},
+				"leftArm": {
+					"rotation": [
+						-15,
+						-7.5,
+						0
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						-15,
+						7.5,
+						0
+					]
+				}
+			}
+		}
+	}
+}

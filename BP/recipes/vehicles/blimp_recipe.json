@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:blimp_recipe"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"UL"
+		],
+		"key": {
+			"U": {
+				"item": "simple_vehicles:blimp_body_upper"
+			},
+			"L": {
+				"item": "simple_vehicles:blimp_body_lower"
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:blimp_spawn_egg",
+				"count": 1
+			}
+		]
+	}
+}

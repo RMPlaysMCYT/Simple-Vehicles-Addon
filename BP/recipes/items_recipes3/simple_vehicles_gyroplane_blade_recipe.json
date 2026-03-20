@@ -1,0 +1,22 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "simple_vehicles:gyroplane_blade recipe"
+        },
+        "ingredients": [
+            {
+                "item": "simple_vehicles:large_body_part"
+            },
+            {
+                "item": "minecraft:wool"
+            }
+        ],
+        "result": {
+            "item": "simple_vehicles:gyroplane_blade"
+        },
+        "tags": [
+            "vehicle_workbench"
+        ]
+    }
+}

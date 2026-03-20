@@ -1,0 +1,37 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "simple_vehicles:tires_car_4x4"
+		},
+		"tags": [
+			"vehicle_workbench"
+		],
+		"pattern": [
+			"WBO",
+			"BIB",
+			"SBW"
+		],
+		"key": {
+			"O": {"item": "minecraft:black_terracotta"},
+			"S": {"item": "minecraft:redstone"},
+			"B": {
+				"item": "minecraft:concrete",
+				"data": 15
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 15
+			}
+		},
+		"result": [
+			{
+				"item": "simple_vehicles:tire_car_4x4",
+				"count": 4
+			}
+		]
+	}
+}

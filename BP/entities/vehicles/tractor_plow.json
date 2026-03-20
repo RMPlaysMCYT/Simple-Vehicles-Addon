@@ -1,0 +1,110 @@
+{
+    "format_version": "1.18.30",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "simple_vehicles:tractor_plow",
+            "is_experimental": false,
+            "is_spawnable": true,
+            "is_summonable": true,
+            "scripts": {
+                "animate": [
+                    "command",
+                    "durability",
+                    "fuel2",
+                    "move",
+                    "tractor_plow_north",
+                    "tractor_plow_south",
+                    "tractor_plow_west",
+                    "tractor_plow_east"
+                ]
+            },
+            "animations": {
+                "command": "controller.animation.vehicle.command",
+                "durability": "controller.animation.vehicle.durability",
+                "fuel2": "controller.animation.simple_vehicles.fuel2",
+                "move": "controller.animation.vehicle.move",
+                "tractor_plow_north": "controller.animation.tractor_plower.tractor_plow_north",
+                "tractor_plow_south": "controller.animation.tractor_plower.tractor_plow_south",
+                "tractor_plow_west": "controller.animation.tractor_plower.tractor_plow_west",
+                "tractor_plow_east": "controller.animation.tractor_plower.tractor_plow_east"
+            }
+        },
+        "component_groups": {
+            "simple_vehicles:door_close": {
+                "minecraft:interact": {
+                    "interactions": [
+                        {"interact_text": "Fuel It Up!!","on_interact": {"event": "simple_vehicles:refuel","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "simple_vehicles:jerry_can"}]}},"use_item": true},
+                        {"interact_text": "Fuel It Up!!","on_interact": {"event": "simple_vehicles:refuel","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "simple_vehicles:gas_nozzle"}]}},"use_item": false},
+                        {"interact_text": "Sprnkle It Up!!","on_interact": {"event": "simple_vehicles:water_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "minecraft:iron_hoe"}]}},"use_item": false},
+                        {"interact_text": "Plow It Up!!","on_interact": {"event": "simple_vehicles:water_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "minecraft:golden_hoe"}]}},"use_item": false},
+                        {"interact_text": "Plow It Up!!","on_interact": {"event": "simple_vehicles:water_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "minecraft:wooden_hoe"}]}},"use_item": false},
+                        {"interact_text": "Plow It Up!!","on_interact": {"event": "simple_vehicles:water_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "minecraft:diamond_hoe"}]}},"use_item": false},
+                        {"interact_text": "Plow It Up!!","on_interact": {"event": "simple_vehicles:water_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "minecraft:stone_hoe"}]}},"use_item": false},
+                        {"interact_text": "Plow It Up!!","on_interact": {"event": "simple_vehicles:water_started","filters": {"all_of": [{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "minecraft:netherite_hoe"}]}},"use_item": false}
+                    ]
+                },
+                "minecraft:rideable": {"controlling_seat": 1,"crouching_skip_interact": true,"family_types": ["player"],"interact_text": "Ride","rider_can_interact": false,"seat_count": 1,"seats": [{"position": [0,1,0.2]}]}
+            },
+            "simple_vehicles:activated": {
+                "minecraft:input_ground_controlled": {},
+                "minecraft:is_tamed": {}
+            },
+            "simple_vehicles:refuel": {
+                "minecraft:skin_id": {"value": 0}
+            },
+            "simple_vehicles:refueled": {
+                "minecraft:skin_id": {"value": 1}
+            },
+            "simple_vehicles:orange": {
+                "minecraft:variant": {"value": 0}
+            },
+            "simple_vehicles:green": {
+                "minecraft:variant": {"value": 1}
+            },
+            "simple_vehicles:no_plowing_action": {"minecraft:mark_variant": {"value": 0}
+            },
+            "simple_vehicles:plowing_applied": {"minecraft:is_tamed": {},"minecraft:timer": {"looping": false,"time": [30,30],"time_down_event": {"event": "simple_vehicles:stopped"}},"minecraft:mark_variant": {"value": 1}}
+        },
+        "components": {
+            "minecraft:loot": {"table": "loot_tables/entities/vehicles_3_4_0/tractor_plow.json"},
+            "minecraft:collision_box": {"width": 3,"height": 3},
+            "minecraft:health": {"value": 50},
+            "minecraft:movement.generic": {},
+            "minecraft:is_chested": {},
+            "minecraft:inventory": {"inventory_size": 5,"container_type": "horse"},
+            "minecraft:equippable": {"slots": [{"accepted_items": ["simple_vehicles:key_tractor_plow"],"item": "simple_vehicles:key_tractor_plow","on_equip": {"event": "simple_vehicles:activated"},"on_unequip": {"event": "simple_vehicles:deactivated"}}]},
+            "minecraft:jump.static": {},
+                   "minecraft:nameable": {         "always_show": false       },
+			"minecraft:pushable": {"is_pushable": false,"is_pushable_by_piston": true},
+            "minecraft:horse.jump_strength": {"value": 0},
+            "minecraft:physics": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {"randomize": [{"add": {"component_groups": ["simple_vehicles:door_close"]}}]},
+                    {"randomize": [{"add": {"component_groups": ["simple_vehicles:orange"]}},{"add": {"component_groups": ["simple_vehicles:green"]}}]}
+                ]
+            },
+            "simple_vehicles:activated": {
+                "add": {"component_groups": ["simple_vehicles:activated"]}
+            },
+            "simple_vehicles:deactivated": {
+                "remove": {"component_groups": ["simple_vehicles:activated"]}
+            },
+            "simple_vehicles:refuel": {
+                "add": {"component_groups": ["simple_vehicles:refueled"]}
+            },
+            "simple_vehicles:refuel_re": {
+                "add": {"component_groups": ["simple_vehicles:refuel"]},
+                "remove": {"component_groups": ["simple_vehicles:refueled"]}
+            },
+            "simple_vehicles:water_started": {"add": {"component_groups": ["simple_vehicles:plowing_applied"]}
+            },
+            "simple_vehicles:stopped": {
+                "add": {"component_groups": ["simple_vehicles:no_plowing_action"]},
+                "remove": {"component_groups": ["simple_vehicles:plowing_applied"]}
+            }
+        }
+    }
+}

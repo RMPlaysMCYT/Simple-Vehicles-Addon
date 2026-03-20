@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "simple_vehicles:monster_truck",
+			"textures": {
+				"black": "textures/entity/3_1_0/monster_truck",
+				"white": "textures/entity/3_1_0/monster_truck/monster_truck_white",
+				"orange": "textures/entity/3_1_0/monster_truck/monster_truck_orange",
+				"magenta": "textures/entity/3_1_0/monster_truck/monster_truck_magenta",
+				"light_blue": "textures/entity/3_1_0/monster_truck/monster_truck_light_blue",
+				"yellow": "textures/entity/3_1_0/monster_truck/monster_truck_yellow",
+				"lime": "textures/entity/3_1_0/monster_truck/monster_truck_lime",
+				"pink": "textures/entity/3_1_0/monster_truck/monster_truck_pink",
+				"gray": "textures/entity/3_1_0/monster_truck/monster_truck_gray",
+				"silver": "textures/entity/3_1_0/monster_truck/monster_truck_silver",
+				"cyan": "textures/entity/3_1_0/monster_truck/monster_truck_cyan",
+				"purple": "textures/entity/3_1_0/monster_truck/monster_truck_purple",
+				"blue": "textures/entity/3_1_0/monster_truck/monster_truck_blue",
+				"brown": "textures/entity/3_1_0/monster_truck/monster_truck_brown",
+				"green": "textures/entity/3_1_0/monster_truck/monster_truck_green",
+				"red": "textures/entity/3_1_0/monster_truck/monster_truck_red"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.monster_truck"
+			},
+			"render_controllers": [
+				"controller.render.f1_car2"
+			],
+			"spawn_egg": {
+				"texture": "vehicles_3",
+				"texture_index": 2
+			},
+			"animations": {
+				"move": "animation.monster_truck.move",
+				"turn": "animation.monster_truck.turn",
+				"ups": "animation.monster_truck.ups",
+				"downs": "animation.monster_truck.downs",
+				"general": "controller.animation.monster_truck.general"
+			},
+			"scripts": {
+				"animate": [
+					"general"
+				]
+			}
+		}
+	}
+}

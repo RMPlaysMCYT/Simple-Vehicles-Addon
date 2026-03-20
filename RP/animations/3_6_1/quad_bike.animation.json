@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.quad_bike.ups": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.vertical_speed * 1", 0, 0]
+				}
+			}
+		},
+		"animation.quad_bike.downs": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["query.vertical_speed * -1", 0, 0]
+				}
+			}
+		}
+	}
+}
