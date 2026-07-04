@@ -19,6 +19,24 @@
     },
     "component_groups": {
       "simple_vehicles:steady": {
+                "minecraft:rideable": {
+          "seat_count": 2,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "secret_inventory"
+          ],
+          "seats": [
+            {
+              "position": [
+                0.6,
+                1,
+                0.9
+              ],
+              "min_rider_count": 2,
+              "max_rider_count": 2
+            }
+          ]
+        },
         "minecraft:interact": {
           "interactions": [
             {
@@ -71,7 +89,7 @@
                       "test": "has_equipment",
                       "subject": "other",
                       "domain": "hand",
-                      "value": "simple_vehicles:key_ambulance"
+                      "value": "simple_vehicles:key_fire_truck"
                     }
                   ]
                 },
@@ -226,7 +244,8 @@
         "minecraft:rideable": {
           "seat_count": 4,
           "crouching_skip_interact": true,
-          "family_types": ["player"],
+          "family_types": ["player",
+            "secret_inventory"],
           "interact_text": "Drive",
           "seats": [
             {
