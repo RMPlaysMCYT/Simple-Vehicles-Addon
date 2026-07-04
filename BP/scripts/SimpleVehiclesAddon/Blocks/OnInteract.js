@@ -13,6 +13,7 @@ import {
   BlockPermutation,
   ItemStack
 } from '@minecraft/server';
+
 /*For 1.20.50 as to joined for Minecraft China Edition*/
 // List of interactable blocks
 /*const InteractableBlocks =[
@@ -41,6 +42,7 @@ world.afterEvents.playerInteractWithBlock.subscribe((event) => {
     }
 });*/
 /*For 1.21.20 ONLY*/
+
 world.beforeEvents.worldInitialize.subscribe(
   eventData => {
     eventData.blockComponentRegistry.registerCustomComponent(

@@ -7,7 +7,13 @@
       "is_summonable": true,
       "is_experimental": false,
       "scripts": {
-        "animate": ["command", "durability", "fuel", "move", "item_setpack"]
+        "animate": [
+          "command",
+          "durability",
+          "fuel",
+          "move",
+          "item_setpack"
+        ]
       },
       "animations": {
         "command": "controller.animation.vehicle.command",
@@ -19,7 +25,7 @@
     },
     "component_groups": {
       "simple_vehicles:steady": {
-                "minecraft:rideable": {
+        "minecraft:rideable": {
           "seat_count": 2,
           "crouching_skip_interact": true,
           "family_types": [
@@ -203,7 +209,9 @@
         "minecraft:equippable": {
           "slots": [
             {
-              "accepted_items": ["simple_vehicles:key_fire_truck"],
+              "accepted_items": [
+                "simple_vehicles:key_fire_truck"
+              ],
               "item": "simple_vehicles:key_fire_truck",
               "on_equip": {
                 "event": "simple_vehicles:activated",
@@ -244,30 +252,51 @@
         "minecraft:rideable": {
           "seat_count": 4,
           "crouching_skip_interact": true,
-          "family_types": ["player",
-            "secret_inventory"],
+          "family_types": [
+            "player",
+            "secret_inventory"
+          ],
           "interact_text": "Drive",
           "seats": [
             {
-              "position": [0.6, 1, 0.9],
-							"camera_relax_distance_smoothing": 0.5,
-							"third_person_camera_radius": 4
+              "position": [
+                0.6,
+                1,
+                0.9
+              ],
+              "camera_relax_distance_smoothing": 0.5,
+              "third_person_camera_radius": 4
             },
             {
-              "position": [-0.6, 1, 0.9]
+              "position": [
+                -0.6,
+                1,
+                0.9
+              ]
             },
             {
-              "position": [-0.6, 1, 0]
+              "position": [
+                -0.6,
+                1,
+                0
+              ]
             },
             {
-              "position": [0.6, 1, 0]
+              "position": [
+                0.6,
+                1,
+                0
+              ]
             }
           ]
         }
       },
       "minecraft:bugfixer": {
         "minecraft:timer": {
-          "time": [0.1, 0.1],
+          "time": [
+            0.1,
+            0.1
+          ],
           "looping": false,
           "time_down_event": {
             "event": "minecraft:bugfix",
@@ -381,7 +410,10 @@
         "value": 1
       },
       "minecraft:type_family": {
-        "family": ["fire_truck", "simple_vehicles"]
+        "family": [
+          "fire_truck",
+          "simple_vehicles"
+        ]
       },
       "minecraft:breathable": {
         "totalSupply": 15,
@@ -418,7 +450,9 @@
       },
       "minecraft:movement.basic": {},
       "minecraft:jump.static": {},
-             "minecraft:nameable": {         "always_show": false       },
+      "minecraft:nameable": {
+        "always_show": false
+      },
       "minecraft:horse.jump_strength": {
         "value": {
           "range_min": 0.4,
@@ -459,14 +493,18 @@
           {
             "weight": 80,
             "add": {
-              "component_groups": ["simple_vehicles:steady"]
+              "component_groups": [
+                "simple_vehicles:steady"
+              ]
             }
           }
         ]
       },
       "simple_vehicles:light_off": {
         "queue_command": {
-          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+          "command": [
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
         }
       },
       "simple_vehicles:light_on": {
@@ -485,7 +523,9 @@
       },
       "simple_vehicles:activated": {
         "add": {
-          "component_groups": ["simple_vehicles:activated"]
+          "component_groups": [
+            "simple_vehicles:activated"
+          ]
         },
         "queue_command": {
           "command": [
@@ -503,55 +543,81 @@
       },
       "simple_vehicles:deactivated": {
         "remove": {
-          "component_groups": ["simple_vehicles:activated"]
+          "component_groups": [
+            "simple_vehicles:activated"
+          ]
         },
         "queue_command": {
-          "command": [" fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"]
+          "command": [
+            " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13"
+          ]
         }
       },
       "simple_vehicles:door_open": {
         "add": {
-          "component_groups": ["simple_vehicles:door_open"]
+          "component_groups": [
+            "simple_vehicles:door_open"
+          ]
         },
         "remove": {
-          "component_groups": ["simple_vehicles:steady"]
+          "component_groups": [
+            "simple_vehicles:steady"
+          ]
         },
         "queue_command": {
-          "command": ["playsound simple_vehicles.ae86.open @p[r=1]"]
+          "command": [
+            "playsound simple_vehicles.ae86.open @p[r=1]"
+          ]
         }
       },
       "simple_vehicles:door_open2": {
         "add": {
-          "component_groups": ["simple_vehicles:door_open"]
+          "component_groups": [
+            "simple_vehicles:door_open"
+          ]
         },
         "remove": {
-          "component_groups": ["simple_vehicles:door_close"]
+          "component_groups": [
+            "simple_vehicles:door_close"
+          ]
         }
       },
       "simple_vehicles:door_close": {
         "remove": {
-          "component_groups": ["simple_vehicles:door_open"]
+          "component_groups": [
+            "simple_vehicles:door_open"
+          ]
         },
         "add": {
-          "component_groups": ["simple_vehicles:door_close"]
+          "component_groups": [
+            "simple_vehicles:door_close"
+          ]
         }
       },
       "simple_vehicles:refuel": {
         "add": {
-          "component_groups": ["simple_vehicles:refueled"]
+          "component_groups": [
+            "simple_vehicles:refueled"
+          ]
         }
       },
       "simple_vehicles:refuel_re": {
         "add": {
-          "component_groups": ["simple_vehicles:refuel"]
+          "component_groups": [
+            "simple_vehicles:refuel"
+          ]
         },
         "remove": {
-          "component_groups": ["simple_vehicles:refueled"]
+          "component_groups": [
+            "simple_vehicles:refueled"
+          ]
         }
       },
       "simple_vehicles:remove_vehicle": {
         "add": {
-          "component_groups": ["simple_vehicles:despawn"]
+          "component_groups": [
+            "simple_vehicles:despawn"
+          ]
         }
       }
     }

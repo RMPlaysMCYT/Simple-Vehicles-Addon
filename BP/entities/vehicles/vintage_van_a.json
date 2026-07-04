@@ -20,27 +20,12 @@
       },
       "animations": {
         "item_setpack": "controller.animation.vehicle_ride.item_setpack",
-        /////FordaVehicleAnFerson
-        /////FordaVehicleAnFerson
-        /////FordaVehicleAnFerson
-        /////FordaVehicleAnFerson
-        /////FordaVehicleAnFerson
-        /////FordaVehicleAnFerson
+        
         "command": "controller.animation.vehicle.command",
         "move": "controller.animation.vehicle.move",
         "durability": "controller.animation.vehicle.durability",
         "fuel": "controller.animation.simple_vehicles.fuel",
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
-        /////PlayerB
+        
         "player_command": "controller.animation.player.vehicle_command",
         "ride": "controller.animation.player.vehicle_ride",
         "join": "controller.animation.player.vehicle_join"
