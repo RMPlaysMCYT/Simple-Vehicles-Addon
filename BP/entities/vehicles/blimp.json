@@ -501,7 +501,9 @@
                 0.6,
                 1,
                 0.9
-              ]
+              ],
+							"camera_relax_distance_smoothing": 0.5,
+							"third_person_camera_radius": 4
             },
             {
               "position": [
