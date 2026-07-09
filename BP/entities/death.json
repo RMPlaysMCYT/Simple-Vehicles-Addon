@@ -1,0 +1,16 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "simple_vehicles:death",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:instant_despawn": {
+                "remove_child_entities": false
+            }
+        }
+    }
+}
