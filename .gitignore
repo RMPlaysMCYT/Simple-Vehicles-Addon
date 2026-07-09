@@ -4,6 +4,7 @@ Desktop.ini
 .bridge/*
 !.bridge/compiler/
 !.bridge/extensions
+/builds
 builds
 .regolith/*
 .AddCompLib

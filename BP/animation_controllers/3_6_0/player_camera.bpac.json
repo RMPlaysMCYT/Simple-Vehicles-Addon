@@ -28,12 +28,6 @@
                 }
             }
         },
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
         "controller.animation.simple_vehicles.player_camera_south":{
             "initial_state": "default",
             "states": {
@@ -61,12 +55,6 @@
                 }
             }
         },
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
         "controller.animation.simple_vehicles.player_camera_west":{
             "initial_state": "default",
             "states": {
@@ -88,18 +76,11 @@
                         }
                     ],
                     "on_entry": [
-                        "/tag @a[c=1] add SimVehCumShot",
-                        "/function camera_system/camera_directional/wast"
+                        "/tag @a[c=1] add SimVehCumShot"
                     ]
                 }
             }
         },
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
-////////Mierda
         "controller.animation.simple_vehicles.player_camera_east":{
             "initial_state": "default",
             "states": {

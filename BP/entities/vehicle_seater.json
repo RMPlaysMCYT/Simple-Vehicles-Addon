@@ -87,7 +87,7 @@
             }
         },
         "events": {
-            "simple_vehicles:despawn": {
+            "simple_vehicles:death": {
                 "add": {
                     "component_groups": [
                         "simple_vehicles:despawn"
