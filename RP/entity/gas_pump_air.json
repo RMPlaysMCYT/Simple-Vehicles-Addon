@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "simple_vehicles:gas_pump_air",
+			"identifier": "simple_vehicles:gas_pump_air_entity",
 			"materials": {
 				"default": "entity_alphatest"
 			},

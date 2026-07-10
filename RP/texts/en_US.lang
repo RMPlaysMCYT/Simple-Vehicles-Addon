@@ -1074,8 +1074,10 @@ item.simple_vehicles:vintage_van_b_body=Vintage Van B Body
 item.simple_vehicles:simple_vehicles_gliding_plane_body=Simple Vehicles Gliding Plane Body
 item.simple_vehicles:simple_vehicles_gliding_plane_wings=Simple Vehicles Gliding Plane Wings
 
-entity.simple_vehicles:gas_pump_air.name=Gas Pump Air
-entity.simple_vehicles:gas_pump.name=Gas Pump
+entity.simple_vehicles:gas_pump_air_entity.name=Gas Pump Air
+entity.simple_vehicles:gas_pump_entity.name=Gas Pump
 
-item.spawn_egg.entity.simple_vehicles:gas_pump_air.name=Gas Pump Air
-item.spawn_egg.entity.simple_vehicles:gas_pump.name=Gas Pump
+item.spawn_egg.entity.simple_vehicles:gas_pump_air_entity.name=Gas Pump Air
+item.spawn_egg.entity.simple_vehicles:gas_pump_entity.name=Gas Pump 
+
+action.hint.simple_vehicles.remove=Remove Vehicle?

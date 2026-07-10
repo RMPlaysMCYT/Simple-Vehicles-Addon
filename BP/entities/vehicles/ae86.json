@@ -14,8 +14,7 @@
           "move",
           "player_command",
           "ride",
-          "join" /*,
-          "item_setpack"*/
+          "join"
         ]
       },
       "properties": {
@@ -30,7 +29,6 @@
         }
       },
       "animations": {
-        /*"item_setpack": "controller.animation.ae86.item_setpack",*/
         "command": "controller.animation.vehicle.command",
         "move": "controller.animation.vehicle.move",
         "durability": "controller.animation.vehicle.durability",
@@ -483,11 +481,6 @@
       "minecraft:nameable": {},
       "minecraft:horse.jump_strength": {
         "value": 0
-      },
-      "minecraft:leashable": {
-        "soft_distance": 4,
-        "hard_distance": 6,
-        "max_distance": 10
       },
       "minecraft:balloonable": {},
       "minecraft:behavior.float": {

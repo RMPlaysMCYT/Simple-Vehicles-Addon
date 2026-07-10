@@ -2,7 +2,7 @@
 	"format_version": "1.18.30",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "simple_vehicles:gas_pump",
+			"identifier": "simple_vehicles:gas_pump_entity",
 			"is_summonable": true,
 			"is_spawnable": true,
 			"properties": {

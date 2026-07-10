@@ -11,16 +11,14 @@
           "command",
           "durability",
           "fuel",
-          "move" /*,
-                    "item_setpack"*/
+          "move"
         ]
       },
       "animations": {
         "command": "controller.animation.vehicle.command",
         "move": "controller.animation.vehicle.move",
         "durability": "controller.animation.vehicle.durability",
-        "fuel": "controller.animation.simple_vehicles.fuel" /*,
-                "item_setpack": "controller.animation.ambulance.item_setpack"*/
+        "fuel": "controller.animation.simple_vehicles.fuel"
       }
     },
     "component_groups": {
@@ -129,7 +127,7 @@
                 "event": "simple_vehicles:remove_vehicle"
               },
               "use_item": false,
-              "interact_text": "Remove Vehicle?"
+              "interact_text": "action.hint.simple_vehicles.remove"
             }
           ]
         },
