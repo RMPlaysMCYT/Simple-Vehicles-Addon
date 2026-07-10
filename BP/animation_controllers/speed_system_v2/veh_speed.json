@@ -1,3 +1,4 @@
+// mc-disable minecraft.commands.execute.syntax
 {
 	"format_version": "1.17.0",
 	"animation_controllers": {

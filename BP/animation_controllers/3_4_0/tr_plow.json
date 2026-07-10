@@ -1,3 +1,4 @@
+// mc-disable minecraft.commands.setblock.syntax
 //////Credits to Jean Lucas MCPE Based from Advanced Farming Addon 
 {
   "format_version": "1.10.0",

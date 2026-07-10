@@ -7,3 +7,4 @@ diagnostic.disable.minecraft.commands.execute.deprecated=true
 diagnostic.disable.minecraft.commands.execute.deprecated=true
 diagnostic.disable.minecraft.commands.setblock.syntax=true
 diagnostic.disable.minecraft.commands.setblock.syntax=true
+diagnostic.disable.minecraft.commands.execute.deprecated=true
