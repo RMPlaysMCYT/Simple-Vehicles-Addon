@@ -306,7 +306,7 @@
 									"functions": [
 										{
 											"function": "set_actor_id",
-											"id": "simple_vehicles:car4x4_1"
+											"id": "simple_vehicles:car4x4"
 										}
 									]
 								}
@@ -549,28 +549,6 @@
 										{
 											"function": "set_actor_id",
 											"id": "simple_vehicles:ob_van"
-										}
-									]
-								}
-							]
-						},
-						{
-							"wants": [
-								{
-									"item": "simple_vehicles:body_tank"
-								},
-								{
-									"item": "simple_vehicles:track_tank",
-									"quantity": 4
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:spawn_egg",
-									"functions": [
-										{
-											"function": "set_actor_id",
-											"id": "simple_vehicles:tank"
 										}
 									]
 								}

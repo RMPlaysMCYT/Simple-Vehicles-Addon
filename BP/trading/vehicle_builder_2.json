@@ -7,28 +7,6 @@
 						{
 							"wants": [
 								{
-									"item": "simple_vehicles:body_tank"
-								},
-								{
-									"item": "simple_vehicles:track_tank"
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:spawn_egg",
-									"functions": [
-										{
-											"function": "set_actor_id",
-											"id": "simple_vehicles:tank"
-										}
-									]
-								}
-							],
-							"max_uses": 16
-						},
-						{
-							"wants": [
-								{
 									"item": "simple_vehicles:body_plane"
 								},
 								{
