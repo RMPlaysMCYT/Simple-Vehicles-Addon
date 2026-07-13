@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "simple_vehicles:gas_pump_entity_spawn_egg",
+					"name": "simple_vehicles:gas_pump_air_entity_spawn_egg",
 					"weight": 1,
 					"functions": [
 						{
