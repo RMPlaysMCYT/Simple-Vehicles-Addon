@@ -12,7 +12,6 @@
                     "durability",
                     "fuel2",
                     "move",
-                    //////WHEAT
                     "seeder_wheat_north",
                     "seeder_wheat_south",
                     "seeder_wheat_west",
@@ -21,7 +20,6 @@
                     "seeder_wheat_diagonal_2",
                     "seeder_wheat_diagonal_3",
                     "seeder_wheat_diagonal_4",
-                    /////BEETROOT
                     "seeder_beetroot_north",
                     "seeder_beetroot_south",
                     "seeder_beetroot_west",
@@ -37,9 +35,7 @@
                 "durability": "controller.animation.vehicle.durability",
                 "fuel2": "controller.animation.simple_vehicles.fuel2",
                 "move": "controller.animation.vehicle.move",
-                    //////WHEAT
-                    //////WHEAT
-                    //////WHEAT
+                
                 "seeder_wheat_north": "controller.animation.tractor_seeder.seeder_wheat_north",
                 "seeder_wheat_south": "controller.animation.tractor_seeder.seeder_wheat_south",
                 "seeder_wheat_east": "controller.animation.tractor_seeder.seeder_wheat_east",
@@ -48,9 +44,8 @@
                 "seeder_wheat_diagonal_2": "controller.animation.tractor_seeder.seeder_wheat_diagonal_2",
                 "seeder_wheat_diagonal_3": "controller.animation.tractor_seeder.seeder_wheat_diagonal_3",
                 "seeder_wheat_diagonal_4": "controller.animation.tractor_seeder.seeder_wheat_diagonal_4",
-/////BEETROOT
-/////BEETROOT
-/////BEETROOT
+
+                
                 "seeder_beetroot_north": "controller.animation.tractor_seeder.seeder_beetroot_north",
                 "seeder_beetroot_south": "controller.animation.tractor_seeder.seeder_beetroot_south",
                 "seeder_beetroot_west": "controller.animation.tractor_seeder.seeder_beetroot_west",
@@ -174,6 +169,7 @@
                 "value": 50
             },
             "minecraft:movement.generic": {},
+            "minecraft:navigation.generic": {},
             "minecraft:is_chested": {},
             "minecraft:inventory": {
                 "inventory_size": 5,

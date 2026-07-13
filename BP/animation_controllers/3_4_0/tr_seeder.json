@@ -1,13 +1,8 @@
-//////Credits to Jean Lucas MCPE Based from Advanced Farming Addon 
 {
   "format_version": "1.10.0",
   "animation_controllers": {
-    ////WHEAT
-    ////WHEAT
-    ////WHEAT
-    ////WHEAT
-    ////WHEAT
-    ////WHEAT
+    
+
     "controller.animation.tractor_seeder.seeder_wheat_north": {
       "initial_state": "default",
       "states": {
@@ -599,24 +594,8 @@
         }
       }
     },
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
+    
+
     "controller.animation.tractor_seeder.seeder_beetroot_north": {
       "initial_state": "default",
       "states": {
@@ -993,10 +972,8 @@
         }
       }
     },
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT
-    ////BEETROOT_Diagonal
+    
+
     "controller.animation.tractor_seeder.seeder_beetroot_diagonal_1": {
       "initial_state": "default",
       "states": {

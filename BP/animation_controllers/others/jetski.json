@@ -16,9 +16,6 @@
 						{
 							"default": "!query.has_rider"
 						}
-					],
-					"on_entry": [
-						"/function player/ride/jetski"
 					]
 				}
 			}

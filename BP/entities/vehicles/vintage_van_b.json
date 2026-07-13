@@ -15,8 +15,7 @@
           "move",
           "player_command",
           "ride",
-          "join",
-          "vehicle_lights"
+          "join"
         ]
       },
       "animations": {
@@ -25,7 +24,6 @@
         "move": "controller.animation.vehicle.move",
         "durability": "controller.animation.vehicle.durability",
         "fuel": "controller.animation.simple_vehicles.fuel",
-        "vehicle_lights": "controller.animation.simple_vehicles.vehicle_lights",
         
         "player_command": "controller.animation.player.vehicle_command",
         "ride": "controller.animation.player.vehicle_ride",

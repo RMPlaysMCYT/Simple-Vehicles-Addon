@@ -70,6 +70,7 @@
             "minecraft:collision_box": {"width": 3,"height": 3},
             "minecraft:health": {"value": 50},
             "minecraft:movement.generic": {},
+            "minecraft:navigation.generic": {},
             "minecraft:is_chested": {},
             "minecraft:inventory": {"inventory_size": 5,"container_type": "horse"},
             "minecraft:equippable": {"slots": [{"accepted_items": ["simple_vehicles:key_tractor_plow"],"item": "simple_vehicles:key_tractor_plow","on_equip": {"event": "simple_vehicles:activated"},"on_unequip": {"event": "simple_vehicles:deactivated"}}]},

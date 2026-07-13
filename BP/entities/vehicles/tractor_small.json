@@ -45,6 +45,7 @@
 			}
         },
         "components":{
+            "minecraft:navigation.generic": {},
             "minecraft:loot": {"table":"loot_tables/entities/vehicles_3_4_0/tractor_small.json"},
             "minecraft:collision_box": {"width": 3, "height": 2},
             "minecraft:health": {"value": 50},

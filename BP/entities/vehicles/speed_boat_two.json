@@ -130,7 +130,6 @@
 		"component_groups": {
 			"saddled": {
 				"minecraft:input_ground_controlled": {},
-				"minecraft:behavior.controlled_by_player": {},
 				"minecraft:is_saddled": {},
 				"minecraft:behavior.player_ride_tamed": {}
 			},
@@ -259,6 +258,7 @@
 			"minecraft:movement": {
 				"value": 0.1
 			},
+			"minecraft:navigation.generic": {},
 			"minecraft:underwater_movement": {
 				"value": 0.5
 			},
@@ -271,8 +271,7 @@
 				"pull_in_entities": true,
 				"family_types": [
 					"player",
-					"villager",
-					"captain"
+					"villager"
 				],
 				"interact_text": "action.interact.get_on",
 				"seats": [

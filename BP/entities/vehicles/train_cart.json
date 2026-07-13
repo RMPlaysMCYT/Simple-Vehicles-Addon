@@ -193,10 +193,6 @@
           "look_distance": 32,
           "priority": 3
         },
-        "minecraft:behavior.ranged_attack": {
-          "priority": 0,
-          "attack_radius": 32
-        },
         "minecraft:follow_range": {
           "value": 32,
           "max": 32

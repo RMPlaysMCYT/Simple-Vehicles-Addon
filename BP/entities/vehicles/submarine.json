@@ -132,7 +132,7 @@
         "value": 120
       },
       "minecraft:type_family": {
-        "family": ["aspire", "simple_vehicles_addon", "simple_vehicles"]
+        "family": ["aspire", "simple_vehicles_addon", "simple_vehicles", "submarine"]
       },
       "minecraft:movement.basic": {},
       "minecraft:navigation.generic": {

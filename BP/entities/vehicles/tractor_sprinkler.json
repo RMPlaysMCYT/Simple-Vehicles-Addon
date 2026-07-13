@@ -183,6 +183,7 @@
             "minecraft:health": {
                 "value": 50
             },
+            "minecraft:navigation.generic": {},
             "minecraft:movement.generic": {},
             "minecraft:is_chested": {},
             "minecraft:inventory": {
