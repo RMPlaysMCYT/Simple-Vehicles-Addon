@@ -157,7 +157,7 @@
               "post": [40.02558, 21.82121, 102.14506],
               "lerp_mode": "catmullrom"
             },
-            "0.7917": {
+            "0.79167": {
               "post": [0, 0, 0],
               "lerp_mode": "catmullrom"
             }
@@ -173,7 +173,7 @@
               "post": [40.02558, 21.82121, 102.14506],
               "lerp_mode": "catmullrom"
             },
-            "0.7917": {
+            "0.79167": {
               "post": [0, 0, 0],
               "lerp_mode": "catmullrom"
             }
