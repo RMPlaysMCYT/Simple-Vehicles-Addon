@@ -8,7 +8,7 @@
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/parts_items/11/simple_vehicles.pedicab_body"
+        "default": "textures/entity/pedicab/red"
       },
       "geometry": {
         "default": "geometry.simple_vehicles_large_item"

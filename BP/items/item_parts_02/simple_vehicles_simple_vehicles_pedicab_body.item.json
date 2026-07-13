@@ -8,7 +8,7 @@
             "minecraft:max_stack_size": 64
         },
         "description": {
-            "identifier": "simple_vehicles:pedicab_body",
+            "identifier": "simple_vehicles:simple_vehicles_pedicab_body",
             "menu_category": {
                 "category": "equipment"
             }
