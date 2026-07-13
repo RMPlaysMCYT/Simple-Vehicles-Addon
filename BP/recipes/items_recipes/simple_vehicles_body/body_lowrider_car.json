@@ -26,10 +26,8 @@
 				"item": "simple_vehicles:steer_lowrider_car"
 			}
 		},
-		"result": [
-			{
-				"item": "simple_vehicles:body_lowrider_car"
-			}
-		]
+		"result": {
+			"item": "simple_vehicles:body_lowrider_car"
+		}
 	}
 }

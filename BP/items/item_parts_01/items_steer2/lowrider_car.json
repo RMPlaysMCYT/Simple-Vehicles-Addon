@@ -3,7 +3,7 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "simple_vehicles:steer_lowrider_car",
-			"category": "items",
+			"category": "items"
 		},
 		"components": {
 			"minecraft:max_stack_size": 16,
