@@ -14,13 +14,13 @@
 		],
 		"key": {
 			"C":{
-				"item": "simple_vehicles:tire_hoverboard",
+				"item": "simple_vehicles:tire_hoverboard"
 			},
 			"B": {
 				"item": "simple_vehicles:asphalt_paving_truck_body"
 			},
 			"A": {
-				"item": "simple_vehicles:tire_bus_v2",
+				"item": "simple_vehicles:tire_bus_v2"
 			}
 		},
 		"result": [

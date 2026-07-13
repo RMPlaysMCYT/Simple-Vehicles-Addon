@@ -24,7 +24,7 @@
             },
             {
                 "item": "minecraft:chest"
-            },
+            }
         ],
         "result": {
             "item": "simple_vehicles:pick_up_flash_exp_body"

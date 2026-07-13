@@ -2,13 +2,13 @@
 	"format_version": "1.13.0",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "simple_vehicles:asdfjkl"
+			"identifier": "simple_vehicles:seat_lowrider_car_recipe"
 		},
 		"tags": [
 			"vehicle_workbench"
 		],
 		"pattern": [
-			"LL",
+			"W ",
 			"WW",
 			"GG"
 		],

@@ -9,8 +9,7 @@
 		],
 		"pattern": [
 			"IFI",
-			"ICI",
-			{}
+			"ICI"
 		],
 		"key": {
 			"I": {
@@ -24,12 +23,9 @@
 				"item": "minecraft:feather"
 			}
 		},
-		"result": [
-			{
-				"item": "simple_vehicles:wings_plane",
-				"count": 1,
-				"data": 0
-			}
-		]
+		"result": {
+			"item": "simple_vehicles:wings_plane",
+			"count": 1
+		}
 	}
 }

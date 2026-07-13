@@ -7,19 +7,19 @@
         "ingredients": [
             {
                 "item": "simple_vehicles:large_body_part",
-                "count": 15
+                "count": 2
             },
             {
                 "item": "minecraft:concrete",
-                "count": 10
+                "count": 3
             },
             {
                 "item": "minecraft:redstone",
-                "count": 8
+                "count": 2
             },
             {
                 "item": "simple_vehicles:large_tire1",
-                "count": 4
+                "count": 2
             }
         ],
         "result": {
