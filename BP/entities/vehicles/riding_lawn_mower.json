@@ -114,6 +114,7 @@
             "simple_vehicles:activated": {
                 "minecraft:input_ground_controlled": {},
                 "minecraft:is_tamed": {},
+                "minecraft:navigation.generic": {},
                 "minecraft:movement": {
                     "value": 0.45
                 }
