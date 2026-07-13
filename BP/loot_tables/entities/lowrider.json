@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "simple_vehicles:jeep_wrangler_spawn_egg",
+					"name": "simple_vehicles:car_lowrider_spawn_egg",
 					"weight": 1,
 					"functions": [
 						{

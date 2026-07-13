@@ -634,14 +634,14 @@
       "simple_vehicles:doors_open": {
         "queue_command": {
           "command": [
-            "playanimation @e[type=simple_vehicles:mitsubishi_aero_midi_jp,c=1] animation.mitsubishi_fuso_aero_midi_jp.open f 0.79167"
+            "playanimation @e[type=simple_vehicles:mit_aerojp,c=1] animation.mitsubishi_fuso_aero_midi_jp.open f 0.79167"
           ]
         }
       },
       "simple_vehicles:doors_close": {
         "queue_command": {
           "command": [
-            "playanimation @e[type=simple_vehicles:mitsubishi_aero_midi_jp,c=1] animation.mitsubishi_fuso_aero_midi_jp.close f 0.79167"
+            "playanimation @e[type=simple_vehicles:mit_aerojp,c=1] animation.mitsubishi_fuso_aero_midi_jp.close f 0.79167"
           ]
         }
       },

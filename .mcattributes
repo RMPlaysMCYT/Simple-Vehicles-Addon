@@ -10,3 +10,5 @@ diagnostic.disable.minecraft.commands.setblock.syntax=true
 diagnostic.disable.minecraft.commands.execute.deprecated=true
 diagnostic.disable.behaviorpack.item.components.deprecated=true
 diagnostic.disable.behaviorpack.item.components.icon=true
+diagnostic.disable.behaviorpack.entities.missing=true
+diagnostic.disable.behaviorpack.entities.missing=true

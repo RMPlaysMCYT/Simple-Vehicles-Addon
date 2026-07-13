@@ -280,7 +280,6 @@
             "player",
             "villager",
             "cat",
-            "human",
             "npc"
           ],
           "interact_text": "Drive",
@@ -422,7 +421,6 @@
             "player",
             "villager",
             "cat",
-            "human",
             "npc"
           ],
           "interact_text": "Drive",
