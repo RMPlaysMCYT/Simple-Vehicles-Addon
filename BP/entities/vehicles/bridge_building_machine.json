@@ -7,11 +7,10 @@
 			"is_summonable": true,
 			"is_experimental": false,
       "scripts": {
-        "animate": [ "place1", "item_setpack" ]
+        "animate": [ "place1" ]
       },
       "animations": {
-        "place1": "controller.animation.simple_vehicles.bridge_building_machine.place1"/*,
-        "item_setpack": "controller.animation.bridge_building_machine.item_setpack"*/
+        "place1": "controller.animation.simple_vehicles.bridge_building_machine.place1"
       }
 		},
 		"component_groups": {

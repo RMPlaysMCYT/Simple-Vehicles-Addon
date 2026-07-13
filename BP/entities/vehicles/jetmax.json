@@ -116,7 +116,6 @@
 					]
 				},
 				"minecraft:input_ground_controlled": {},
-				"minecraft:behavior.controlled_by_player": {},
 				"minecraft:is_saddled": {},
 				"minecraft:behavior.player_ride_tamed": {}
 			},
@@ -202,8 +201,7 @@
 				"pull_in_entities": true,
 				"family_types": [
 					"player",
-					"villager",
-					"captain"
+					"villager"
 				],
 				"interact_text": "action.interact.get_on",
 				"seats": [

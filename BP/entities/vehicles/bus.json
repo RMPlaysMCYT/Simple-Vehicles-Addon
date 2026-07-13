@@ -485,7 +485,7 @@
         "minecraft:rideable": {
           "seat_count": 10,
           "crouching_skip_interact": false,
-          "family_types": ["player", "villager", "cat", "human", "npc"],
+          "family_types": ["player", "villager", "cat", "npc"],
           "interact_text": "Drive",
           "pull_in_entities": true,
           "seats": [

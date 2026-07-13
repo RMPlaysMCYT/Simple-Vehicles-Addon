@@ -7,14 +7,13 @@
       "is_summonable": true,
       "is_experimental": false,
       "scripts": {
-        "animate": ["command", "durability", "fuel", "move", "item_setpack"]
+        "animate": ["command", "durability", "fuel", "move"]
       },
       "animations": {
         "command": "controller.animation.vehicle.command",
         "move": "controller.animation.vehicle.move",
         "durability": "controller.animation.vehicle.durability",
-        "fuel": "controller.animation.simple_vehicles.fuel"/*,
-"item_setpack": "controller.animation.auv_car_b.item_setpack"*/
+        "fuel": "controller.animation.simple_vehicles.fuel"
       }
     },
     "component_groups": {

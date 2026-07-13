@@ -1,14 +1,6 @@
-// mc-disable minecraft.commands.setblock.syntax
-//////Credits to Jean Lucas MCPE Based from Advanced Farming Addon 
 {
   "format_version": "1.10.0",
   "animation_controllers": {
-    ////FARMLAND MAIN POS
-    ////FARMLAND MAIN POS
-    ////FARMLAND MAIN POS
-    ////FARMLAND MAIN POS
-    ////FARMLAND MAIN POS
-    ////FARMLAND MAIN POS
     "controller.animation.tractor_plower.tractor_plow_north": {
       "initial_state": "default",
       "states": {
@@ -29,12 +21,12 @@
             }
           ],
           "on_entry": [
-            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
             "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
             "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
             "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace"
@@ -50,15 +42,15 @@
             }
           ],
           "on_entry": [
-            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace"
+            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~ ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~-1 ~-1 ~-3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~1 ~-1 ~-3 detect ^~ ^~ ^~ grass_block 0 setblock ^~ ^~ ^~ farmland 1 replace",
+            "/execute @s ~ ~-1 ~-3 detect ^~ ^~ ^~ grass_block 0 setblock ^~ ^~ ^~ farmland 1 replace"
           ]
         }
       }
@@ -83,15 +75,15 @@
             }
           ],
           "on_entry": [
-            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
             "/execute @s ~-1 ~-1 ~4 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~4 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~4 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace"
+            "/execute @s ~1 ~-1 ~4 detect ~ ~ ~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace",
+            "/execute @s ~ ~-1 ~4 detect ~/~ ~/~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace"
           ]
         },
         "reset_function": {
@@ -104,18 +96,15 @@
             }
           ],
           "on_entry": [
-            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace"
-            /*
-              "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass 0 execute @s ~-1 ~-1 ~ detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace"
-            */
+            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~ ~-1 ~3 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~-1 ~-1 ~3 detect ~ ~ ~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace",
+            "/execute @s ~1 ~-1 ~3 detect ~ ~ ~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace",
+            "/execute @s ~/~ ~/~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace"
           ]
         }
       }
@@ -140,15 +129,15 @@
             }
           ],
           "on_entry": [
-            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 0 replace",
-            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ grass 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace",
-            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ dirt 0 setblock ~ ~ ~ farmland 1 replace"
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 0 replace",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~3 ~-1 ~ detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~3 ~-1 ~-1 detect ~ ~ ~ grass_block 0 setblock ~ ~ ~ farmland 1 replace",
+            "/execute @s ~3 ~-1 ~1 detect ~ ~ ~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace",
+            "/execute @s ~3 ~-1 ~ detect ~/~ ~/~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace",
+            "/execute @s ~3 ~-1 ~-1 detect ~/~ ~/~ dirt 0 setblock ^~ ^~ ^~ farmland 1 replace"
           ]
         },
         "reset_function": {
@@ -228,21 +217,6 @@
         }
       }
     },
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WATER DIAGONAL
-    ////WHERE YOU CAN PUT SOME FarmLand ON THE FIELD
-    ////WHERE YOU CAN PUT SOME FarmLand ON THE FIELD
-    ////WHERE YOU CAN PUT SOME FarmLand ON THE FIELD
-    ////WHERE YOU CAN PUT SOME FarmLand ON THE FIELD
-    ////WHERE YOU CAN PUT SOME FarmLand ON THE FIELD
     "controller.animation.tractor_plower.tractor_plow_diagonal_1": {
       "initial_state": "default",
       "states": {

@@ -676,7 +676,6 @@
             " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
             "fill ~-3~-2~-3 ~-2~4~3 air 0 replace light_block 13",
             " fill ~-3~-2~-3 ~3~4~3 air replace light_block_13",
-            ////SpeedSystem
             "effect @s[tag=car,scores={oil=0}] slowness 3 255 true"
           ]
         }
