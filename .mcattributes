@@ -13,3 +13,4 @@ diagnostic.disable.behaviorpack.item.components.icon=true
 diagnostic.disable.behaviorpack.entities.missing=true
 diagnostic.disable.behaviorpack.entities.missing=true
 diagnostic.disable.minecraft.commands.execute.syntax=true
+diagnostic.disable.behaviorpack.lootTables.missing=true
