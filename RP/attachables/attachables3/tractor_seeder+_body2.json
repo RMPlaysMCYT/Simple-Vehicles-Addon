@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "simple_vehicles:tractor_seeder+_body2",
+      "identifier": "simple_vehicles:tractor_seeder_body2",
       "render_controllers": ["controller.render.body_3d_item"],
       "materials": {
         "default": "entity_alphatest",

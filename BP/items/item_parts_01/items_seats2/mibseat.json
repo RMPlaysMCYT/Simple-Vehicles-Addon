@@ -2,7 +2,7 @@
   	"format_version": "1.16.0",
 	"minecraft:item": {
 		"description": {
-			"identifier": "simple_vehicles:seat_mini_bus",
+			"identifier": "simple_vehicles:seat_minibus",
 			"category": "items"
 		},
 		"components": {

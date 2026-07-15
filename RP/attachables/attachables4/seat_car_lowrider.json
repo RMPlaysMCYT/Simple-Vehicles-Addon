@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "simple_vehicles:seat_car_lowrider",
+      "identifier": "simple_vehicles:seat_lowrider_car",
       "render_controllers": ["controller.render.seat_3d_item"],
       "materials": {
         "default": "entity_alphatest",
