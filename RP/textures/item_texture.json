@@ -1469,7 +1469,7 @@
 			"textures": "textures/parts_items/11/simple_vehicles_multicab_boddy"
 		},
 		"simple_vehicles_simple_vehicles_pedicab_body_i_tex": {
-			"textures": "textures/parts_items/11/simple_vehicles.pedicab_body"
+			"textures": "textures/parts_items/11/simple_vehicles_pedicab_body"
 		},
 		"simple_vehicles_skid_1_i_tex": {
 			"textures": "textures/items/newparts/skid1"
@@ -1514,7 +1514,7 @@
 			"textures": "textures/parts_items/12/tractor_plow_body2"
 		},
 		"simple_vehicles_tractor_seeder+_body2_i_tex": {
-			"textures": "textures/parts_items/12/tractor_seeder+_body2"
+			"textures": "textures/parts_items/12/tractor_seeder_body2"
 		},
 		"simple_vehicles_tractor_seeder_body0_i_tex": {
 			"textures": "textures/parts_items/12/tractor_seeder_body0"
@@ -1572,6 +1572,9 @@
 		},
 		"simple_vehicles_gliding_plane_wings": {
 			"textures": "textures/parts_items/12/glider_plane_wings"
+		},
+		"simple_vehicles_steer_car_lowrider_i_tex": {
+			"textures": "textures/parts_items/10/lwr2st"
 		}
 	}
 }
