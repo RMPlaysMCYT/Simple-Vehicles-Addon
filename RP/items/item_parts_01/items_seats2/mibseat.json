@@ -1,12 +1,15 @@
 {
-	"format_version": "1.10.0",
+	"format_version": "1.16.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "simple_vehicles:seat_mini_bus",
 			"category": "items"
 		},
 		"components": {
-			"minecraft:icon": "seat_mini_bus"
-			}
+			"minecraft:icon": "seat_mini_bus",
+			"minecraft:render_offsets": "apple",
+			"minecraft:max_stack_size": 16,
+			"minecraft:stacked_by_data": true
+		}
 	}
 }
