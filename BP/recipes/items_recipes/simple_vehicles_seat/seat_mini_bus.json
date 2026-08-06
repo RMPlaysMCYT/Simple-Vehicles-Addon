@@ -13,7 +13,9 @@
 			"GGG"
 		],
 		"key": {
-			"3": {"item": "minecraft:light_gray_carpet"},
+			"3": {
+				"item": "minecraft:light_gray_carpet"
+			},
 			"W": {
 				"item": "minecraft:wool",
 				"data": 12
@@ -23,10 +25,8 @@
 				"data": 0
 			}
 		},
-		"result": [
-			{
-				"item": "simple_vehicles:seat_mini_bus"
-			}
-		]
+		"result": {
+			"item": "simple_vehicles:seat_minibus"
+		}
 	}
 }

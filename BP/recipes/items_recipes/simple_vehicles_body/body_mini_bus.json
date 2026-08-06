@@ -1,4 +1,3 @@
-// mc-disable behaviorpack.items.missing
 {
 	"format_version": "1.12.0",
 	"minecraft:recipe_shaped": {
@@ -21,7 +20,7 @@
 				"item": "minecraft:glass_pane"
 			},
 			"S": {
-				"item": "simple_vehicles:seat_mini_bus"
+				"item": "simple_vehicles:seat_minibus"
 			},
 			"W": {
 				"item": "simple_vehicles:steer_mini_bus"
