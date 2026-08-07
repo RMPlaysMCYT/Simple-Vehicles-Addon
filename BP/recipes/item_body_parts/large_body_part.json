@@ -18,12 +18,11 @@
 			},
 			"C": {"item": "iron_block"}
 		},
-		"result":[
+		"result":
 			{
 				"item": "simple_vehicles:large_body_part",
 				"count": 8
-			}
-		],
+			},
 		
 		"tags":[
 			"crafting_table"

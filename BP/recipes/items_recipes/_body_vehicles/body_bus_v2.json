@@ -29,10 +29,10 @@
 				"item": "chest"
 			}
 		},
-		"result": [
+		"result": 
 			{
 				"item": "simple_vehicles:body_busv2"
 			}
-		]
+		
 	}
 }

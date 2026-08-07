@@ -26,10 +26,10 @@
 				"item": "simple_vehicles:steer_helicopter"
 			}
 		},
-		"result": [
+		"result": 
 			{
 				"item": "simple_vehicles:body_helicopter"
 			}
-		]
+		
 	}
 }

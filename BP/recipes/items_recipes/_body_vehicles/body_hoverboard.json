@@ -19,10 +19,8 @@
 				"item": "minecraft:redstone"
 			}
 		},
-		"result": [
-			{
-				"item": "simple_vehicles:body_hoverboard"
-			}
-		]
+		"result": {
+			"item": "simple_vehicles:body_hoverboard"
+		}
 	}
 }

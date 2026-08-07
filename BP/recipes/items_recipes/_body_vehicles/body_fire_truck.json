@@ -26,10 +26,10 @@
 				"item": "simple_vehicles:steer_fire_truck"
 			}
 		},
-		"result": [
+		"result": 
 			{
 				"item": "simple_vehicles:body_fire_truck"
 			}
-		]
+		
 	}
 }

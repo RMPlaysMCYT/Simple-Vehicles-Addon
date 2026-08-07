@@ -10,21 +10,21 @@
 			"ABA"
 		],
 		"key": {
-			"A":{
+			"A": {
 				"item": "iron_ingot"
 			},
-			"B":{
+			"B": {
 				"item": "iron_nugget"
 			},
-			"D": {"item": "heavy_weighted_pressure_plate"}
-		},
-		"result":[
-			{
-				"item": "simple_vehicles:small_body_part",
-				"count": 8
+			"D": {
+				"item": "heavy_weighted_pressure_plate"
 			}
-		],
-		"tags":[
+		},
+		"result": {
+			"item": "simple_vehicles:small_body_part",
+			"count": 8
+		},
+		"tags": [
 			"crafting_table"
 		]
 	}
