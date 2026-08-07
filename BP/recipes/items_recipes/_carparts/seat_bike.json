@@ -21,10 +21,8 @@
 				"data": 0
 			}
 		},
-		"result": [
-			{
-				"item": "simple_vehicles:seat_bike"
-			}
-		]
+		"result": {
+			"item": "simple_vehicles:seat_bike"
+		}
 	}
 }
