@@ -23,10 +23,10 @@
 				"item": "simple_vehicles:steer_bike"
 			}
 		},
-		"result": [
+		"result": 
 			{
 				"item": "simple_vehicles:body_bike"
 			}
-		]
+		
 	}
 }

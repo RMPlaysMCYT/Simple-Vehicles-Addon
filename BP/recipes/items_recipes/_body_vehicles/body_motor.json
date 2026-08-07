@@ -26,10 +26,10 @@
 				"item": "simple_vehicles:steer_motor"
 			}
 		},
-		"result": [
+		"result": 
 			{
 				"item": "simple_vehicles:body_motor"
 			}
-		]
+		
 	}
 }
