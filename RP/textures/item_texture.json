@@ -143,8 +143,8 @@
 		},
 		"gas_pump_spawn_egg": {
 			"textures": [
-				"textures/items/simple_vehicles.gas_pump",
-				"textures/items/simple_vehicles.gas_pump_air"
+				"textures/items/simple_vehicles_gas_pump",
+				"textures/items/simple_vehicles_gas_pump_air"
 			]
 		},
 		"jump1_item": {
