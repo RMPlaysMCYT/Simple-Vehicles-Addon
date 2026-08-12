@@ -14,3 +14,4 @@ diagnostic.disable.behaviorpack.entities.missing=true
 diagnostic.disable.behaviorpack.entities.missing=true
 diagnostic.disable.minecraft.commands.execute.syntax=true
 diagnostic.disable.behaviorpack.lootTables.missing=true
+diagnostic.disable.behaviorpack.block.components.material_instance_clash=true
