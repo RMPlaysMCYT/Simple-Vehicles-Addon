@@ -652,9 +652,6 @@ item.simple_vehicles:turret_tank.name=Turret Tank
 item.simple_vehicles:wheatpack=Wheatpack
 item.simple_vehicles:wings_plane.name=Wings Plane
 item.simple_vehicles:wrench=Wrench
-tile.simple_vehicles:gas_pump.name=Gas Pump
-tile.simple_vehicles:vehicle_workbench.name=Vehicle Workbench
-item.simple_vehicles:train_cart_add.name=Train Cart Coupler
 
 
 action.hint.exit.simple_vehicles:ambulance=Use Ambulance Key to drive Press sneak to exit
@@ -854,7 +851,6 @@ item.simple_vehicles:key_opel_astra.name=Key Opel Astra
 item.simple_vehicles:key_opel_crosa.name=Key Opel Corsa
 item.simple_vehicles:key_pajero.name=Key Pajero
 item.simple_vehicles:key_pickup_flash_exp.name=Key Pickup Flash Exp
-item.simple_vehicles:key_pickup_flash_exp.name=Key Pickup Flash Exp
 item.simple_vehicles:key_pickup_truck.name=Key Pickup Truck
 item.simple_vehicles:key_plane.name=Key Plane
 item.simple_vehicles:key_police_car.name=Key Police Car
@@ -974,7 +970,6 @@ item.simple_vehicles:monopl_wings=Monopl Wings
 item.simple_vehicles:small_body_part=Small Body Part
 item.simple_vehicles:small_engine=Small Engine
 item.simple_vehicles:small_tire=Small Tire
-item.simple_vehicles:skid_1=Skid 1
 
 item.simple_vehicles:medium_body_part=Medium Body Part
 item.simple_vehicles:medium_tire1=Medium Tire 1
