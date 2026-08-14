@@ -46,7 +46,7 @@
 				"close": "animation.simple_vehicles.corolla.close",
 				"close2": "animation.simple_vehicles.corolla.close2",
 				"door_mechanic_v2": "controller.animation.ae86.door_mechanica_v2",
-				////Climb
+
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
