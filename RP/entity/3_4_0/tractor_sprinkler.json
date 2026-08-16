@@ -16,7 +16,7 @@
                 "turn": "animation.tractor_sprinkler.turn",
                 "v_turn": "controller.animation.vehicle.v_turn",
                 "water_pour": "animation.tractor_sprinkler.water_pour",
-				////Climb
+                
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

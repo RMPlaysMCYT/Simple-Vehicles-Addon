@@ -13,7 +13,7 @@
                 "close": "animation.farm_truck.close",
                 "close2": "animation.farm_truck.close2",
                 "door_mech": "controller.animation.ae86.door_mech",
-				////Climb
+                
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
