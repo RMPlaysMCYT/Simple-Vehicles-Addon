@@ -32,7 +32,7 @@
 				"close2": "animation.simple_vehicles.auv_car.close2",
 				"door_mechanic_v2": "controller.animation.bus_v2.door_mechanic_v2",
 				"wiper": "animation.simple_vehicles.auv_car.wiper",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general2": "controller.animation.chrysler_windsor.general"

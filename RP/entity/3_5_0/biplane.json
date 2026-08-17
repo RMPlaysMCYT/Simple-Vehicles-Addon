@@ -41,7 +41,6 @@
 				"landing": "animation.sim_veh_monopl.landing",
 				"fly_ctrl": "controller.animation.sim_veh_monopl.fly_ctrl",
 				"look_at_target": "animation.simveh_biplane.look_at_target",
-				"unloop": "animation.sim_veh_monopl.unloop",
 				"loop_init": "controller.animation.simple_vehicles_gyroplane.loop_init"
 			},
 			"scripts": {

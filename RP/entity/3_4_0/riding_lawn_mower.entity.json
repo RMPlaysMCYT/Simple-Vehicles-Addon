@@ -14,7 +14,7 @@
             },
             "animations": {
                 "move": "animation.riding_lawn_mower.move",
-				////Climb
+                
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
