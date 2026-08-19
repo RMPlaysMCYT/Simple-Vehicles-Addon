@@ -22,6 +22,9 @@
 				"general": "controller.animation.chrysler_windsor.general"
             },
             "scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
                 "animate": [
                     "general",
                     {
