@@ -41,6 +41,9 @@
 				"controller.render.ambulance"
 			],
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
 				"animate": [
 					"general",
 					"general2",

@@ -46,6 +46,9 @@
 				"controller.render.ambulance"
 			],
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
 				"pre_animation": [
 					"variable.moving_veh = query.modified_distance_moved;",
 					"variable.new_move_mechanic = variable.moving_veh * 25;",
