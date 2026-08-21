@@ -36,6 +36,9 @@
 				"look_at_target_car": "animation.car.look_at_target"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
 				"animate": [
 					{
 						"move": "query.modified_move_speed"

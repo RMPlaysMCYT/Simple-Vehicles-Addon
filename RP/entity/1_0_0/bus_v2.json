@@ -27,6 +27,9 @@
         "wiper": "animation.simple_vehicles.bus_v2.wiper"
       },
       "scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
         "animate": [
           "v_turn",
           "move",

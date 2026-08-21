@@ -52,6 +52,9 @@
         "controller.render.simple_car"
       ],
       "scripts": {
+				"initialize": [
+					"variable.steering = 0;"
+				],
         "animate": [
           {
             "move": "query.modified_move_speed"
