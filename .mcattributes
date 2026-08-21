@@ -16,3 +16,4 @@ diagnostic.disable.minecraft.commands.execute.syntax=true
 diagnostic.disable.behaviorpack.lootTables.missing=true
 diagnostic.disable.behaviorpack.block.components.material_instance_clash=true
 diagnostic.disable.resourcepack.sounds.missing=true
+diagnostic.disable.resourcepack.sounds.missing=true
