@@ -36,7 +36,7 @@
 				"close": "animation.simple_vehicles.helicopter.close",
 				"close2": "animation.simple_vehicles.helicopter.close2",
 				"door_mech": "controller.animation.helicopter.door_mechanica_v2",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

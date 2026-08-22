@@ -19,7 +19,7 @@
 			"animations": {
 				"move": "animation.jeep_ph.move",
 				"turn": "animation.jeep_ph.turn",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down"
 			},
