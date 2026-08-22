@@ -19,7 +19,7 @@
 			"animations": {
 				"move": "animation.ob_van.move",
 				"turn": "animation.ob_van.turn",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down"
 			},

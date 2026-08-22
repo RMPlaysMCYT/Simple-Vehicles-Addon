@@ -26,16 +26,6 @@
 			]
 		}
 	],
-	"dependencies": [
-		{
-			"uuid": "49b0cfa5-bd3f-4ad4-9317-37f1509a7d6b",
-			"version": [
-				3,
-				7,
-				2
-			]
-		}
-	],
 	"metadata": {
 		"authors": [
 			"RMPlaysMC YT",

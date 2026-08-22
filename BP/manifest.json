@@ -20,7 +20,7 @@
 			"type": "script",
 			"language": "javascript",
 			"entry": "SimpleVehiclesAddon/main.js",
-			"description": "",
+			"description": "Well somthing",
 			"uuid": "26157812-38da-413a-80da-32340bceb454",
 			"version": [
 				1,
@@ -39,14 +39,6 @@
 		}
 	],
 	"dependencies": [
-		{
-			"uuid": "284e5fad-b2c4-49ad-b823-55e261c49dd0",
-			"version": [
-				3,
-				7,
-				0
-			]
-		},
 		{
 			"module_name": "@minecraft/server",
 			"version": "1.13.0"
