@@ -19,7 +19,7 @@
 			"animations": {
 				"move": "animation.mini_bus.move",
 				"turn": "animation.mini_bus.turn",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down"
 			},
