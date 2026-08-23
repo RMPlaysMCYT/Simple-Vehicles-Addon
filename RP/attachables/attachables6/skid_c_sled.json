@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "simple_vehicles:skid_c_sled",
+      "identifier": "simple_vehicles:landing_skid_c_sled",
       "render_controllers": ["controller.render.body_3d_item"],
       "materials": {
         "default": "entity_alphatest",

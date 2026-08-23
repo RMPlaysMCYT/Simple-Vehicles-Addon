@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "simple_vehicles:skid_helicopter",
+      "identifier": "simple_vehicles:landing_skid_helicopter",
       "render_controllers": ["controller.render.body_3d_item"],
       "materials": {
         "default": "entity_alphatest",
