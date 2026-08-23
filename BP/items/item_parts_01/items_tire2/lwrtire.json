@@ -2,7 +2,7 @@
 	"format_version": "1.16.0",
 	"minecraft:item": {
 		"description": {
-			"identifier": "simple_vehicles:tire_lowrider_car",
+			"identifier": "simple_vehicles:tire_car_lowrider",
 			"category": "items"
 		},
 		"components": {
