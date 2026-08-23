@@ -37,7 +37,7 @@
 				"close2": "animation.simple_vehicles.ambulance.close2",
 				"door_mech": "controller.animation.ambulance.door_mechanica_v2",
 				"wiper": "animation.simple_vehicles.ambulance.wiper",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
@@ -47,7 +47,9 @@
 			],
 			"scripts": {
 				"initialize": [
-					"variable.steering = 0;"
+					"variable.steering = 0;",
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
 				],
 				"pre_animation": [
 					"variable.moving_veh = query.modified_distance_moved;",

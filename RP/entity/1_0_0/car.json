@@ -43,7 +43,7 @@
         "close2": "animation.simple_vehicles.car_new.close2",
         "general": "controller.animation.vehicle.v_turn",				
         "door_mechanic_v2": "controller.animation.bus_v2.door_mechanic_v2",
-        ////Climb
+        
         "up": "animation.chrysler_windsor.up",
         "down": "animation.chrysler_windsor.down",
         "general2": "controller.animation.chrysler_windsor.general"
@@ -53,7 +53,9 @@
       ],
       "scripts": {
 				"initialize": [
-					"variable.steering = 0;"
+					"variable.steering = 0;",
+					"variable.move_up= 0;",
+					"variable.move_down= 0;"
 				],
         "animate": [
           {
