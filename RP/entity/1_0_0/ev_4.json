@@ -37,6 +37,11 @@
 				"arrow_particle": "minecraft:arrow_spell_emitter"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up= 0;",
+					"variable.move_down= 0;"
+				],
 				"animate": [
 					"general",
 					"v_turn",

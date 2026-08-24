@@ -45,6 +45,11 @@
 				"heli0": "simple_vehicles.helicopter.loop"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up= 0;",
+					"variable.move_down= 0;"
+				],
 				"animate": [
 					"general",
 					"door_mech",
