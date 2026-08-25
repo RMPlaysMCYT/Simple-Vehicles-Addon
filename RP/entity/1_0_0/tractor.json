@@ -24,7 +24,7 @@
 				"turn": "animation.simple_vehicles.tractor.turn",
 				"move": "animation.tractor.move",
 				"v_turn": "controller.animation.vehicle.v_turn",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

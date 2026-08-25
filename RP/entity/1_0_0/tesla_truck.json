@@ -25,12 +25,17 @@
 				"close2": "animation.simple_vehicles.ae86.close2",
 				"doors_idle": "animation.simple_vehicles.ae86.doors_idle",
 				"door_mech": "controller.animation.ae86.door_mechanica_v2",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up= 0;",
+					"variable.move_down= 0;"
+				],
 				"animate": [
 					"general",
 					"v_turn",
