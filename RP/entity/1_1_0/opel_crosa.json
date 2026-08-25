@@ -24,7 +24,7 @@
 				"close2": "animation.simple_vehicles.opel_corsa.close2",
 				"open": "animation.simple_vehicles.opel_corsa.open",
 				"door_mech": "controller.animation.opel_corsa.door_mechanic",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general2": "controller.animation.chrysler_windsor.general"
