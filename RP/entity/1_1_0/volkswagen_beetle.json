@@ -49,6 +49,11 @@
 				"general2": "controller.animation.chrysler_windsor.general"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up= 0;",
+					"variable.move_down= 0;"
+				],
 				"animate": [
 					{
 						"move": "query.modified_move_speed"
