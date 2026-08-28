@@ -40,7 +40,7 @@
         "close2": "animation.simple_vehicles.van_v2.close2",
         "open": "animation.simple_vehicles.van_v2.open",
         "door_mech": "controller.animation.ae86.door_mechanica_v2",
-				////Climb
+        
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general2": "controller.animation.chrysler_windsor.general"
