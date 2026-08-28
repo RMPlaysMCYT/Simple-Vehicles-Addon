@@ -16,7 +16,7 @@
 				"item": "simple_vehicles:body_lowrider_car"
 			},
 			"A": {
-				"item": "simple_vehicles:tire_lowrider_car"
+				"item": "simple_vehicles:tire_car_lowrider"
 			}
 		},
 		"result": [
