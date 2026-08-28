@@ -39,6 +39,11 @@
 				"general2": "controller.animation.scooter.general1"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up= 0;",
+					"variable.move_down= 0;"
+				],
 				"animate": [
 					{
 						"move": "query.modified_move_speed"
