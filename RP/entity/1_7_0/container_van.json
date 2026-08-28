@@ -40,12 +40,17 @@
 				"close2": "animation.simple_vehicles.container_van.close2",
 				"open": "animation.simple_vehicles.container_van.open",
 				"door_mech": "controller.animation.ae86.door_mech",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general2": "controller.animation.chrysler_windsor.general"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up= 0;",
+					"variable.move_down= 0;"
+				],
 				"animate": [
 					"general2",
 					{
