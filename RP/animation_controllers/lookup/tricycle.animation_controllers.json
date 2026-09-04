@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tricycle.general": {
+			"states": {
+				"default": {
+					"animations": [
+						{"up": "variable.move_up"},
+						{"down": "variable.move_down"}
+					],
+					"variables": {
+						"move_up": {
+							"input": "query.ground_speed < 2.3"
+						},
+						"move_down": {
+							"input": "query.ground_speed >= 2.3"
+						}
+					}
+				}
+			}
+		}
+	}
+}

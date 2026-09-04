@@ -14,10 +14,9 @@
 			},
 			"animations": {
 				"move": "animation.rancher.move",
-				////Climb
 				"up": "animation.tricycle.up",
 				"down": "animation.tricycle.down",
-				"general": "controller.animation.chrysler_windsor.general"
+				"general": "controller.animation.tricycle.general"
 			},
 			"scripts": {
         
