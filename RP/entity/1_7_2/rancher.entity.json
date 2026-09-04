@@ -27,7 +27,6 @@
 				"v_turn": "controller.animation.vehicle.v_turn",
 				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
 				"move_ac": "controller.animation.rancher.move_ac",
-				////Climb
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

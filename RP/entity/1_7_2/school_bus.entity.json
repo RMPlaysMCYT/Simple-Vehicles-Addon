@@ -26,7 +26,6 @@
 				"close": "animation.school_bus.close",
 				"close2": "animation.school_bus.close2",
 				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
-				////Climb
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
