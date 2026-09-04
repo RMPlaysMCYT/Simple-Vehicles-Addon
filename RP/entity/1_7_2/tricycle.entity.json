@@ -15,11 +15,17 @@
 			"animations": {
 				"move": "animation.rancher.move",
 				////Climb
-				"up": "animation.chrysler_windsor.up",
-				"down": "animation.chrysler_windsor.down",
+				"up": "animation.tricycle.up",
+				"down": "animation.tricycle.down",
 				"general": "controller.animation.chrysler_windsor.general"
 			},
 			"scripts": {
+        
+				"initialize": [
+					"variable.move_up = 0;",
+					"variable.move_down = 0;",
+					"variable.steering = 0;"
+				],
 				"animate": [
 					"general",
 					{

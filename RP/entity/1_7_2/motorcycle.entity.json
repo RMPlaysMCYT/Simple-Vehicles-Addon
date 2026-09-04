@@ -31,6 +31,12 @@
 				"motorcycle_general2": "controller.animation.motorcycle.general2"
 			},
 			"scripts": {
+        
+				"initialize": [
+					"variable.move_up = 0;",
+					"variable.move_down = 0;",
+					"variable.steering = 0;"
+				],
 				"animate": [
 					"motorcycle_general",
 					"motorcycle_general2",
