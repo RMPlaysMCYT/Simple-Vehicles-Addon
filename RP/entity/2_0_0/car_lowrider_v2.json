@@ -35,6 +35,9 @@
 			},
 			"scripts": {
 				"pre_animation": [
+					"variable.move_up = 0;",
+					"variable.move_down = 0;",
+					"variable.steering = 0;",
 					"variable.moving_veh = query.modified_distance_moved;",
 					"variable.new_move_mechanic = variable.moving_veh * 25;",
 					"variable.new_move_mechreve = variable.moving_veh * -25;"
