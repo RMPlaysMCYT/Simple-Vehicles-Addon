@@ -28,7 +28,7 @@
 				"open": "animation.rancherogt_sass.open",
 				"close": "animation.rancherogt_sass.close",
 				"close2": "animation.rancherogt_sass.close2",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
