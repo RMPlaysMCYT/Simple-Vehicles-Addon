@@ -16,6 +16,13 @@
 				"texture": "vehicles",
 				"texture_index": 21
 			},
+			"scripts": {
+				"pre_animation": [
+					"variable.steering = 0;",
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
+				]
+			},
 			"animations": {
 				"move": "animation.jeep_ph.move",
 				"turn": "animation.jeep_ph.turn",

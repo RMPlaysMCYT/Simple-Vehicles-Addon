@@ -23,6 +23,13 @@
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down"
 			},
+			"scripts": {
+				"pre_animation": [
+					"variable.steering = 0;",
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
+				]
+			},
 			"animation_controllers": [
 				{
 					"move": "controller.animation.vehicles.move"

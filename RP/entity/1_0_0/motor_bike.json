@@ -35,6 +35,13 @@
 				"setup": "animation.motor.setup",
 				"setup2": "animation.motor.setup2"
 			},
+			"scripts": {
+				"pre_animation": [
+					"variable.steering = 0;",
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
+				]
+			},
 			"particle_effects": {
 				"arrow_particle": "simple_vehicles:arrow_spell_emitter"
 			},
