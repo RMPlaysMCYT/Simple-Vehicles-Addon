@@ -41,7 +41,7 @@
 				"close2": "animation.simple_vehicles.pick_up_flash_exp.close2",
 				"turn": "animation.simple_vehicles.pick_up_flash_exp.turn",
 				"v_turn": "controller.animation.vehicle.v_turn",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

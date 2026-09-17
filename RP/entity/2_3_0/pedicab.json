@@ -19,7 +19,7 @@
 				"move": "animation.simple_vehicles.pedicab.move",
 				"turn": "animation.simple_vehicles.pedicab.turn",
 				"v_turn": "controller.animation.vehicle.v_turn",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

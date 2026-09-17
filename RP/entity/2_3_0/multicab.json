@@ -39,7 +39,7 @@
 				"close2": "animation.simple_vehicles_multicab.close2",
 				"door_mech": "controller.animation.ae86.door_mechanica_v2",
 				"v_turn": "controller.animation.vehicle.v_turn",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
