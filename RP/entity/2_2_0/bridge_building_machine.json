@@ -14,7 +14,6 @@
 			},
 			"animations": {
 				"move": "animation.simple_vehicles_bridge_builder.move",
-				////Climb
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

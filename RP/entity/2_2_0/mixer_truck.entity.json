@@ -23,7 +23,6 @@
 				"v_turn": "controller.animation.vehicle.v_turn",
 				"door_mechanic": "controller.animation.armored_truck.door_mechanica_v2",
 				"wiper": "animation.simple_vehicles.mixer_truck.wiper",
-				////Climb
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

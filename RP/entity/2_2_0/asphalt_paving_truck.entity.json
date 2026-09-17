@@ -14,7 +14,6 @@
 			},
 			"animations": {
 				"move": "animation.simple_vehicles.asphalt_paving_truck.move",
-				////Climb
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
