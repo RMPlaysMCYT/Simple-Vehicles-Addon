@@ -13,6 +13,11 @@
 				"default": "textures/entity/pick_up_flash_exp"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
+				],
 				"animate": [
 					"v_turn",
 					"general",
