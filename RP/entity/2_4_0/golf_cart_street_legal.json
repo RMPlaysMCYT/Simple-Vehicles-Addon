@@ -38,7 +38,7 @@
 				"move": "animation.simple_vehicles.go_kart.move",
 				"steer": "animation.simple_vehicles.go_kart.steer",
 				"steer_ac": "controller.animation.go_kart.steer",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
