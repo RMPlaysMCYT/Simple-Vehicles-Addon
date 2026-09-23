@@ -48,13 +48,7 @@
 			"simple_vehicles:get_gas": {
 				"minecraft:interact": {
 					"interactions": [
-						{
-							"interact_text": "Get Gas Here",
-							"use_item": false,
-							"on_interact": {
-								"event": "simple_vehicles:get_gas"
-							}
-						}
+						{"interact_text": "Get Gas Here","use_item": false,"on_interact": {"event": "simple_vehicles:get_gas"}}
 					]
 				}
 			},
@@ -67,11 +61,7 @@
 							"on_interact": {
 								"filters": {
 									"all_of": [
-										{
-											"test": "is_family",
-											"subject": "other",
-											"value": "player"
-										},
+										{"test": "is_family","subject": "other","value": "player"},
 										{
 											"test": "has_equipment",
 											"subject": "other",
