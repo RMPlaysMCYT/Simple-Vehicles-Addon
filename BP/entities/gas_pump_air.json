@@ -6,12 +6,8 @@
 			"is_summonable": true,
 			"is_spawnable": true,
 			"properties": {
-				"simple_vehicles:get_gas":{
-					"client_sync": true,
-					"default": 0,
-					"type": "int",
-					"range": [0, 1]
-				}
+				"simple_vehicles:get_gas":{"client_sync": true,"default": 0,
+"type": "int","range": [0, 1]}
 			}
 		},
 		"components": {
@@ -26,21 +22,14 @@
 				"has_collision": true
 			},
 			"minecraft:type_family": {
-				"family": [
-					"simple_vehicles",
-					"vehicles",
-					"vehicle_builder"
-				]
+				"family": ["simple_vehicles","vehicles","vehicle_builder"]
 			},
 			"minecraft:loot": {
 				"table": "loot_tables/gas_pump.json"
 			},
 			"minecraft:healable": {
 				"items": [
-					{
-						"item": "simple_vehicles:wrench",
-						"heal_amount": 2
-					}
+					{"item": "simple_vehicles:wrench","heal_amount": 2}
 				]
 			}
 		},
