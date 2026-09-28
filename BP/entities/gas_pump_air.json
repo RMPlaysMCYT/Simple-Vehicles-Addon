@@ -6,8 +6,7 @@
 			"is_summonable": true,
 			"is_spawnable": true,
 			"properties": {
-				"simple_vehicles:get_gas":{"client_sync": true,"default": 0,
-"type": "int","range": [0, 1]}
+				"simple_vehicles:get_gas":{"client_sync": true,"default": 0,"type": "int","range": [0, 1]}
 			}
 		},
 		"components": {
@@ -44,19 +43,11 @@
 			"simple_vehicles:upsetted": {
 				"minecraft:interact": {
 					"interactions": [
-						{
-							"interact_text": "Put It Back",
-							"use_item": true,
-							"on_interact": {
-								"filters": {
-									"all_of": [
-										{"test": "is_family","subject": "other","value": "player"},
-										{"test": "has_equipment","subject": "other","value": "simple_vehicles:gas_nozzle_air"}
-									]
-								},
-								"event": "simple_vehicles:return_gas"
-							}
-						}
+						{"interact_text": "Put It Back","use_item": true,"on_interact": {
+							"filters": {"all_of": [
+								{"test": "is_family","subject": "other","value": "player"},{"test": "has_equipment","subject": "other","value": "simple_vehicles:gas_nozzle_air"}
+							]
+						},"event": "simple_vehicles:return_gas"}}
 					]
 				}
 			}
