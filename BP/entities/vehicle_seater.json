@@ -11,7 +11,7 @@
             "minecraft:damage_sensor": {
                 "triggers": {
                     "cause": "all",
-                    "deals_damage": false
+                    "deals_damage": "no"
                 }
             },
             "minecraft:rideable": {
@@ -23,28 +23,11 @@
                 "interact_text": "action.interact.ride.horse",
                 "rider_can_interact": false,
                 "seat_count": 1,
-                "seats": [
-                    {
-                        "rotate_rider_by": 0,
-                        "position": [
-                            0,
-                            0,
-                            0
-                        ]
-                    }
-                ]
+                "seats": [{"rotate_rider_by": 0,"position": [0,0,0]}]
             },
             "minecraft:custom_hit_test": {
                 "hitboxes": [
-                    {
-                        "height": 100,
-                        "pivot": [
-                            0,
-                            0.5,
-                            0
-                        ],
-                        "width": 1.5
-                    }
+                    {"height": 100,"pivot": [0,0.5,0],"width": 1.5}
                 ]
             },
             "minecraft:collision_box": {
