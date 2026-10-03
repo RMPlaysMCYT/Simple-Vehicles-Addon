@@ -5,23 +5,15 @@
       "states": {
         "default": {
           "transitions": [
-            {
-              "riding": "1"
-            }
+            {"riding": "1"}
           ],
-          "on_entry": [
-            "/function player_ride_sys/vespa_primavera"
-          ]
+          "on_entry": ["/function player_ride_sys/vespa_primavera"]
         },
         "riding": {
           "transitions": [
-            {
-              "default": "query.has_rider"
-            }
+            {"default": "query.has_rider"}
           ],
-          "on_entry": [
-            "/function player_ride_sys/vespa_primavera"
-          ]
+          "on_entry": [  "/function player_ride_sys/vespa_primavera"]
         }
       }
     }
