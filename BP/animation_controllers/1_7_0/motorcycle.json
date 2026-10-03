@@ -26,9 +26,7 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{
-							"jumping": "query.is_riding&&query.is_jumping"
-						}
+						{"jumping": "query.is_riding&&query.is_jumping"}
 					],
 					"on_entry": [
 						"/playsound vehicles.horn @a[r=2] ~ ~ ~ 1 1 1",
@@ -37,9 +35,7 @@
 				},
 				"jumping": {
 					"transitions": [
-						{
-							"default": "!query.is_riding&&!query.is_jumping"
-						}
+						{"default": "!query.is_riding&&!query.is_jumping"}
 					],
 					"on_entry": [
 						"/playsound vehicles.horn @a[r=2] ~ ~ ~ 1 1 1",
