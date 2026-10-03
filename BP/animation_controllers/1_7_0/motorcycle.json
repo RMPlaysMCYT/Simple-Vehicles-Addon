@@ -6,9 +6,7 @@
 			"states": {
 				"default": {
 					"transitions": [
-						{
-							"riding": "(1.0)"
-						}
+						{"riding": "(1.0)"}
 					],
 					"on_entry": [
 						"/function player_ride_sys/player_ride_motorcycle"
@@ -16,9 +14,7 @@
 				},
 				"riding": {
 					"transitions": [
-						{
-							"default": "query.has_rider"
-						}
+						{"default": "query.has_rider"}
 					],
 					"on_entry": [
 						"/function player_ride_sys/player_ride_motorcycle"
