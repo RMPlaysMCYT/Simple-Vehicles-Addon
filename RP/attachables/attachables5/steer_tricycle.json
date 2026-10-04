@@ -12,7 +12,7 @@
         "default": "textures/entity/grummanllv"
       },
       "geometry": {
-        "default": "geometry.grummanllv"
+        "default": "geometry.tricycle"
       },
       "animations": {
         "first_person_hold": "animation.steer_ae86.first_person_hold",
