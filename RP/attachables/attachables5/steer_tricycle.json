@@ -9,7 +9,7 @@
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/entity/grummanllv"
+        "default": "textures/entity/tricycle"
       },
       "geometry": {
         "default": "geometry.tricycle"
