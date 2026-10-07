@@ -58,18 +58,9 @@
 				}
 			},
 			"particle_effects": {
-				"0.0": {
-					"effect": "arrow_particle",
-					"locator": "vehicle_particle"
-				},
-				"0.3": {
-					"effect": "arrow_particle",
-					"locator": "vehicle_particle"
-				},
-				"0.6": {
-					"effect": "arrow_particle",
-					"locator": "vehicle_particle"
-				}
+				"0.0": {"effect": "arrow_particle","locator": "vehicle_particle"},
+				"0.3": {"effect": "arrow_particle","locator": "vehicle_particle"},
+				"0.6": {"effect": "arrow_particle","locator": "vehicle_particle"}
 			}
 		}
 	}
