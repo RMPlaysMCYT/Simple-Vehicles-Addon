@@ -9,10 +9,10 @@
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/entity/grummanllv"
+        "default": "textures/entity/tricycle"
       },
       "geometry": {
-        "default": "geometry.grummanllv"
+        "default": "geometry.tricycle"
       },
       "animations": {
         "first_person_hold": "animation.steer_ae86.first_person_hold",
