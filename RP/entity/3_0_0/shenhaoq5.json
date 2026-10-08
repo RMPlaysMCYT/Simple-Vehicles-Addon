@@ -21,7 +21,7 @@
 			},
 			"animations": {
 				"move": "animation.cargo_cont_truck.move",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

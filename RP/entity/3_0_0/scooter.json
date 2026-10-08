@@ -40,7 +40,7 @@
 				"steer_ac": "controller.animation.go_kart.steer",
 				"setupride": "animation.scooterB.setupride",
 				"setup": "animation.scooterB.setup",
-				////Climb
+				
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
