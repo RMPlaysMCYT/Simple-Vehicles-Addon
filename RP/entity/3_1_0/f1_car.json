@@ -43,6 +43,11 @@
 				"move_ac": "controller.animation.f1_car.move_ac"
 			},
 			"scripts": {
+				"initialize": [
+					"variable.steering = 0;",
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
+				],
 				"animate": [
 					"general",
 					"move_ac"
