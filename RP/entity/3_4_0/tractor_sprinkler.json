@@ -27,13 +27,9 @@
 				],
                 "animate": [
                     "general",
-                    {
-                        "move":"query.modified_move_speed"
-                    },
+                    {"move":"query.modified_move_speed"},
                     "v_turn",
-                    {
-                        "water_pour": "query.mark_variant == 1 && query.has_rider"
-                    }
+                    {"water_pour": "query.mark_variant == 1 && query.has_rider"}
                 ]
             },
             "particle_effects": {

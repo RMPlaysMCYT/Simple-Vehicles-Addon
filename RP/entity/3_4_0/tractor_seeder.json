@@ -26,9 +26,7 @@
 				],
                 "animate": [
                     "general",
-                    {
-                        "move":"query.modified_move_speed"
-                    },
+                    {"move":"query.modified_move_speed"},
                     "v_turn"
                 ]
             },
