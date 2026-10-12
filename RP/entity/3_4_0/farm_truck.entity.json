@@ -20,7 +20,9 @@
             },
             "scripts": {
 				"initialize": [
-					"variable.steering = 0;"
+					"variable.steering = 0;",
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
 				],
 				"pre_animation": [
 					"query.has_rider ? (variable.steering = Math.lerp(variable.steering, query.yaw_speed, 0.15));"

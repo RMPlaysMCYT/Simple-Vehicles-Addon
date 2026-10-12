@@ -20,6 +20,10 @@
 				"general": "controller.animation.chrysler_windsor.general"
             },
             "scripts": {
+                "variables": [
+					"variable.move_up = 0;",
+					"variable.move_down = 0;"
+                ],
                 "animate": [
                     "move",
                     "general"
