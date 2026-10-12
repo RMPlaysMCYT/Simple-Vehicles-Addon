@@ -28,9 +28,7 @@
                 "animate": [
                     "move",
                     "general",
-                    {
-                        "close2": "query.has_rider"
-                    },
+                    {"close2": "query.has_rider"},
                     "door_mech"
                 ]
             },
