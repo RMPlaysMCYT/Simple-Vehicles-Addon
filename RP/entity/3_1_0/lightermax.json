@@ -29,9 +29,7 @@
 				],
                 "animate": [
                     "vehi2general",
-                    {
-                        "move": "query.modified_move_speed"
-                    }
+                    {"move": "query.modified_move_speed"}
                 ]
             },
             "render_controllers": [
