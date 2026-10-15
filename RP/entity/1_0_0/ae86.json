@@ -44,9 +44,7 @@
           "door_mech",
           "speedometer_ctrl",
           "move_mechanic",
-          {
-            "wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"
-          }
+          {"wiper": "query.is_in_water_or_rain && query.is_saddled && query.has_rider"}
         ]
       },
       "animations": {
