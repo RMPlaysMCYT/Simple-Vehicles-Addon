@@ -25,7 +25,6 @@
                 "close": "animation.mitsubishi_minivan_trucktype.close",
                 "close2": "animation.mitsubishi_minivan_trucktype.close2",
                 "door_mech": "controller.animation.vintage_bus_a.door_mechanic",
-				////Climb
 				"up": "animation.mitsubishi_minivan_trucktype.ups",
 				"down": "animation.mitsubishi_minivan_trucktype.downs",
 				"general": "controller.animation.chrysler_windsor.general"
