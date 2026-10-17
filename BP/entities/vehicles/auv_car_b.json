@@ -362,8 +362,16 @@
         "family": ["aspire", "apv", "simple_vehicles"]
       },
       "minecraft:breathable": {
-        "totalSupply": 10,
-        "suffocateTime": 0
+        "total_supply": 15,
+        "suffocate_time": -20,
+        "inhale_time": 0,
+        "breathes_air": true,
+        "breathes_water": false,
+        "breathes_lava": false,
+        "breathes_solids": false,
+        "generates_bubbles": true,
+        "breathe_blocks": [],
+        "non_breathe_blocks": []
       },
       "minecraft:is_chested": {},
       "minecraft:collision_box": {

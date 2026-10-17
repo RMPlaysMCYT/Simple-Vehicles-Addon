@@ -216,9 +216,8 @@
         "inventory_size": 15,
         "container_type": "horse"
       },
-      "minecraft:pushable": {
-        "is_pushable": false,
-        "is_pushable_by_piston": true
+      "minecraft:push_through": {
+        "value": 0
       },
       "minecraft:damage_sensor": {
         "triggers": [
