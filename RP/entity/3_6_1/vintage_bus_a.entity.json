@@ -23,7 +23,6 @@
                 "close": "animation.vintage_bus_a.close",
                 "close2": "animation.vintage_bus_a.close2",
                 "door_mech": "controller.animation.vintage_bus_a.door_mechanic",
-				////Climb
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"

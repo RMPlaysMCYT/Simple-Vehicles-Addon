@@ -25,7 +25,6 @@
                 "close2": "animation.vintage_van_a.close2",
                 "door_mech": "controller.animation.vintage_bus_a.door_mechanic",
                 "wiper": "animation.vintage_van_a.wiper",
-				////Climb
 				"up": "animation.chrysler_windsor.up",
 				"down": "animation.chrysler_windsor.down",
 				"general": "controller.animation.chrysler_windsor.general"
