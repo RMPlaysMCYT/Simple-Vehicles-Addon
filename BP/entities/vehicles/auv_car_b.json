@@ -393,7 +393,6 @@
       "minecraft:physics": {
         "has_collision": true
       },
-      "minecraft:fire_immune": true,
       "minecraft:knockback_resistance": {
         "value": 100,
         "max": 100
@@ -407,11 +406,10 @@
       "minecraft:walk_animation_speed": {
         "value": 20
       },
-      "minecraft:pushable": {
-        "is_pushable": false,
-        "is_pushable_by_piston": true
+      "minecraft:push_through": {
+        "value": 0
       },
-             "minecraft:nameable": {         "always_show": false       },
+      "minecraft:nameable": {"always_show": false},
       "minecraft:healable": {
         "items": [
           {
