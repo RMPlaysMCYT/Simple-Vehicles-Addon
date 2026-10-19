@@ -202,10 +202,7 @@
       },
       "minecraft:healable": {
         "items": [
-          {
-            "item": "simple_vehicles:wrench",
-            "heal_amount": 20
-          }
+          {"item": "simple_vehicles:wrench","heal_amount": 20}
         ],
         "force_use": true
       },
@@ -219,14 +216,7 @@
       "minecraft:push_through": {
         "value": 0
       },
-      "minecraft:damage_sensor": {
-        "triggers": [
-          {
-            "cause": "fall",
-            "deals_damage": false
-          }
-        ]
-      },
+      "minecraft:damage_sensor": {"triggers": [{"cause": "fall","deals_damage": false}]},
       "minecraft:loot": {
         "table": "loot_tables/entities/vehicles_2-2-0/simple_vehicles_asphalt_paving_truck.json"
       },
