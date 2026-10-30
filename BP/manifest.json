@@ -4,9 +4,9 @@
 		"name": "pack.name",
 		"description": "pack.description",
 		"version": [
-			3,
-			7,
-			2
+			4,
+			0,
+			0
 		],
 		"uuid": "49b0cfa5-bd3f-4ad4-9317-37f1509a7d6b",
 		"min_engine_version": [
@@ -23,18 +23,18 @@
 			"description": "Well somthing",
 			"uuid": "26157812-38da-413a-80da-32340bceb454",
 			"version": [
-				1,
+				4,
 				0,
-				2
+				0
 			]
 		},
 		{
 			"type": "data",
 			"uuid": "948a7543-159f-48ba-8833-afc81f495a84",
 			"version": [
-				3,
-				7,
-				2
+				4,
+				0,
+				0
 			]
 		}
 	],
