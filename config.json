@@ -1,6 +1,6 @@
 {
 	"type": "minecraftBedrock",
-	"name": "Simple Vehicles Addon 3.7.2 - The INSANITY Edition",
+	"name": "Simple Vehicles Addon 4.0.0",
 	"namespace": "simple_vehicles",
 	"authors": [
 		"RMPlaysMCYT"
@@ -34,7 +34,7 @@
 			[
 				"simpleRewrite",
 				{
-					"packName": "Simple Vehicles Addon 3.7.2"
+					"packName": "Simple Vehicles Addon 4.0.0"
 				}
 			]
 		]
