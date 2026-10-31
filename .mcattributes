@@ -20,3 +20,4 @@ diagnostic.disable.resourcepack.sounds.missing=true
 diagnostic.disable.resourcepack.texture.missing=true
 diagnostic.disable.behaviorpack.entity.component_group.missing=true
 diagnostic.disable.resourcepack.particle.missing=true
+diagnostic.disable.minecraft.animation.unused=true
