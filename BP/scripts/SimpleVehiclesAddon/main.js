@@ -1,23 +1,7 @@
-////I'm an addon creator who want to teach others using scripts its very scary sometimes but i'll try my best
-
-////The Code of my addons were always open or open-source or whatever it is it's up to you if you try to learn, copy and paste
-
-////You can help me if you have external ideas especially if you are good in scripts you can contribute
-
-////If you use it to my addons please leave me a credit by using RMPlaysMC YT on your content
-
-////PLEASE DON'T DOWNLOAD THIS ADDON FROM OTHER SITES EVEN DON'T DOWNLOAD THIS VIA DIRECT LINKS EXCEPT FOR THE WEBSITE DID I MENTION LIKE MCPEDL, MODBAY, CURSEFORGE, PLANETMINECRAFT MY WEBSITE AND MCPE ADDONS APP by Kayen Works
-
 import { system, world } from '@minecraft/server';
-/////ESSENTIALS
-/////ESSENTIALS
-/////ESSENTIALS
 import './Blocks/OnInteract';
-/*import './Items/Itemlore';*/
 import './Items/OnInteract';
 import './Entities/SimpleVehiclesName';
-/////ANOTHER ESSENTIALS (THANKS TO L4GGCRAFTER)
-/////ANOTHER ESSENTIALS (THANKS TO L4GGCRAFTER)
 /////ANOTHER ESSENTIALS (THANKS TO L4GGCRAFTER)
 import './Entities/EntityMain';
 import './Entities/OnEntitySpawn';

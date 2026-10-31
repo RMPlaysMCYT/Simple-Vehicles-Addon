@@ -1,14 +1,10 @@
 ////I'm an addon creator who want to teach others using scripts its very scary sometimes but i'll try my best
-
 ////The Code of my addons were always open or open-source or whatever it is it's up to you if you try to learn, copy and paste
-
 ////You can help me if you have external ideas especially if you are good in scripts you can contribute
-
 ////If you use it to my addons please leave me a credit by using RMPlaysMC YT on your content
 
 import { world, system } from "@minecraft/server";
 import { VEHICLES_EGGS } from "./itemEggs";
-
 
 const lore_items = {
     "simple_vehicles:jump1_item": [
@@ -94,7 +90,6 @@ function updatePlayerInventoryLore() {
             }
         }
     }
-
     system.runTimeout(updatePlayerInventoryLore, 1);
 }
 
