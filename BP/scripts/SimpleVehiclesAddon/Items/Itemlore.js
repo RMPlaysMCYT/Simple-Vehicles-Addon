@@ -76,14 +76,9 @@ const lore_items = {
 function updatePlayerInventoryLore() {
     for (const player of world.getPlayers()) {
         const inventory = player.getComponent("minecraft:inventory").container;
-
         for (let i = 0; i < inventory.size; i++) {
             const item = inventory.getItem(i);
-
-            if (item && lore_items[item.typeId]) {
-                item.setLore(lore_items[item.typeId]);
-                inventory.setItem(i, item);
-            }
+            if (item && lore_items[item.typeId]) {item.setLore(lore_items[item.typeId]);inventory.setItem(i, item);}
             if (item && VEHICLES_EGGS[item.typeId]) {
                 item.setLore(VEHICLES_EGGS[item.typeId]);
                 inventory.setItem(i, item);
