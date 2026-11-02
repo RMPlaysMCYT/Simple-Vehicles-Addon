@@ -84,5 +84,4 @@ function updatePlayerInventoryLore() {
     }
     system.runTimeout(updatePlayerInventoryLore, 1);
 }
-
 updatePlayerInventoryLore();
